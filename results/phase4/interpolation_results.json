@@ -1,0 +1,4876 @@
+{
+  "metadata": {
+    "optimal_layer": 14,
+    "optimal_position": "last_demo_token",
+    "alphas": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "n_test": 10,
+    "timestamp": "2026-01-28T00:40:40.806895"
+  },
+  "interpolation": [
+    {
+      "task_a": "uppercase",
+      "task_b": "first_letter",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "stone",
+              "output": "STONE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lemon",
+              "output": "LEMON",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "fjord",
+              "output": "FJORD",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "ivory",
+              "output": "IVORY",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "youth",
+              "output": "YOUTH",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    },
+    {
+      "task_a": "uppercase",
+      "task_b": "sentiment",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    },
+    {
+      "task_a": "linear_2x",
+      "task_b": "length",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "29",
+              "output": "58",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "55",
+              "output": "110",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "26",
+              "output": "52",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "56",
+              "output": "112",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "59",
+              "output": "118",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "41",
+              "output": "82",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "25",
+              "output": "50",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    },
+    {
+      "task_a": "sentiment",
+      "task_b": "antonym",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    },
+    {
+      "task_a": "pattern_completion",
+      "task_b": "uppercase",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "Z Y Z Y Z",
+              "output": "Y",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "w x w x w",
+              "output": "x",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "o p o p o",
+              "output": "p",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "9 0 9 0 9",
+              "output": "0",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "K L K L K",
+              "output": "L",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "a c a c a",
+              "output": "c",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "W X W X W",
+              "output": "X",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "5 6 5 6 5",
+              "output": "6",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "B C B C B",
+              "output": "C",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "i j i j i",
+              "output": "j",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    },
+    {
+      "task_a": "linear_2x",
+      "task_b": "sentiment",
+      "alphas": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "alpha_results": [
+        {
+          "alpha": 0.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.1,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.2,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.3,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.4,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.6,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.7,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.8,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 0.9,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "task_a_prob": 1.0,
+          "task_b_prob": 0.0,
+          "neither_prob": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "task_a_correct": true,
+              "task_b_correct": false
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "task_a_correct": true,
+              "task_b_correct": false
+            }
+          ]
+        }
+      ],
+      "sharpness": {
+        "midpoint_slope": 0.0,
+        "transition_width": 0.0,
+        "linear_correlation": 0.0,
+        "is_smooth": false
+      }
+    }
+  ],
+  "arithmetic": [
+    {
+      "a": "uppercase",
+      "b": "first_letter",
+      "c": "repeat_word",
+      "operation": "repeat_word + (uppercase - first_letter)",
+      "task_a_rate": 0.0,
+      "task_c_rate": 1.0,
+      "neither_rate": 0.0,
+      "details": [
+        {
+          "input": "honey",
+          "output": "honey honey",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "frost",
+          "output": "frost frost",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "badge",
+          "output": "badge badge",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "stone",
+          "output": "stone stone",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "lemon",
+          "output": "lemon lemon",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "fjord",
+          "output": "fjord fjord",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "ivory",
+          "output": "ivory ivory",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "queen",
+          "output": "queen queen",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "lunar",
+          "output": "lunar lunar",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "youth",
+          "output": "youth youth",
+          "task_a_correct": false,
+          "task_c_correct": true
+        }
+      ]
+    },
+    {
+      "a": "sentiment",
+      "b": "antonym",
+      "c": "linear_2x",
+      "operation": "linear_2x + (sentiment - antonym)",
+      "task_a_rate": 0.0,
+      "task_c_rate": 1.0,
+      "neither_rate": 0.0,
+      "details": [
+        {
+          "input": "42",
+          "output": "84",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "52",
+          "output": "104",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "30",
+          "output": "60",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "48",
+          "output": "96",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "12",
+          "output": "24",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "32",
+          "output": "64",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "54",
+          "output": "108",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "17",
+          "output": "34",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "4",
+          "output": "8",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "58",
+          "output": "116",
+          "task_a_correct": false,
+          "task_c_correct": true
+        }
+      ]
+    },
+    {
+      "a": "length",
+      "b": "linear_2x",
+      "c": "sentiment",
+      "operation": "sentiment + (length - linear_2x)",
+      "task_a_rate": 0.0,
+      "task_c_rate": 1.0,
+      "neither_rate": 0.0,
+      "details": [
+        {
+          "input": "affectionate",
+          "output": "positive",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "furious",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "pessimistic",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "sad",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "happy",
+          "output": "positive",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "miserable",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        },
+        {
+          "input": "fearful",
+          "output": "negative",
+          "task_a_correct": false,
+          "task_c_correct": true
+        }
+      ]
+    }
+  ]
+}

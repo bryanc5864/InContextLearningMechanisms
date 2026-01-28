@@ -1,0 +1,24 @@
+2026-01-27 23:59:22,277 [INFO] Phase 2: Representation Localization
+2026-01-27 23:59:22,277 [INFO] Start: 2026-01-27T23:59:22.277763
+2026-01-27 23:59:22,277 [INFO] Tasks: ['uppercase', 'first_letter', 'repeat_word', 'length', 'linear_2x', 'sentiment', 'antonym', 'pattern_completion']
+2026-01-27 23:59:22,277 [INFO] Positions: ['last_demo_token', 'separator_after_demo', 'first_query_token']
+Loading meta-llama/Llama-3.2-3B-Instruct...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.93s/it]
+2026-01-27 23:59:44,856 [INFO] Model: {'name': 'meta-llama/Llama-3.2-3B-Instruct', 'n_layers': 28, 'd_model': 3072, 'n_heads': 24, 'vocab_size': 128256, 'device': 'cuda:3'}
+2026-01-27 23:59:44,856 [INFO] ============================================================
+2026-01-27 23:59:44,856 [INFO] Step 1: Extracting activations
+2026-01-27 23:59:44,856 [INFO] ============================================================
+2026-01-27 23:59:44,856 [INFO] Loading cached activations from results/phase2/activations_cache.pkl
+2026-01-28 00:00:06,263 [INFO] Loaded. 400 samples per position.
+2026-01-28 00:00:06,269 [INFO] ============================================================
+2026-01-28 00:00:06,273 [INFO] Step 2: Training linear probes
+2026-01-28 00:00:06,273 [INFO] ============================================================
+2026-01-28 00:00:06,273 [INFO] 
+--- Position: last_demo_token ---
+Loaded on cuda:3. 28 layers, d_model=3072
+Traceback (most recent call last):
+  File "/home/bcheng/iclproject/scripts/02_localization.py", line 262, in <module>
+    run_localization(
+  File "/home/bcheng/iclproject/scripts/02_localization.py", line 139, in run_localization
+    result = train_probe(acts_array, labels[pos_type], C=1.0, cv_folds=5)
+TypeError: train_probe() got an unexpected keyword argument 'cv_folds'

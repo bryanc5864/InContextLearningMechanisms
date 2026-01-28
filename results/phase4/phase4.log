@@ -1,0 +1,106 @@
+2026-01-28 00:37:56,731 [INFO] Phase 4: Compositionality Analysis
+2026-01-28 00:37:56,731 [INFO] Start: 2026-01-28T00:37:56.731858
+2026-01-28 00:37:56,732 [INFO] Optimal: layer=14, position=last_demo_token
+2026-01-28 00:37:56,735 [INFO] Loaded task vectors for ['uppercase', 'first_letter', 'repeat_word', 'length', 'linear_2x', 'sentiment', 'antonym', 'pattern_completion']
+2026-01-28 00:38:22,605 [INFO] ============================================================
+2026-01-28 00:38:22,606 [INFO] Part A: Linear Interpolation
+2026-01-28 00:38:22,606 [INFO] ============================================================
+2026-01-28 00:38:22,606 [INFO] 
+--- uppercase ↔ first_letter ---
+2026-01-28 00:38:26,075 [INFO]   alpha=0.0: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:28,439 [INFO]   alpha=0.1: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:30,834 [INFO]   alpha=0.2: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:33,231 [INFO]   alpha=0.3: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:35,606 [INFO]   alpha=0.4: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:37,983 [INFO]   alpha=0.5: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:40,364 [INFO]   alpha=0.6: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:42,745 [INFO]   alpha=0.7: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:45,129 [INFO]   alpha=0.8: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:47,507 [INFO]   alpha=0.9: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:49,891 [INFO]   alpha=1.0: uppercase=1.00 first_letter=0.00 neither=0.00
+2026-01-28 00:38:49,893 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:38:49,893 [INFO] 
+--- uppercase ↔ sentiment ---
+2026-01-28 00:38:52,060 [INFO]   alpha=0.0: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:38:54,210 [INFO]   alpha=0.1: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:38:56,369 [INFO]   alpha=0.2: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:38:58,533 [INFO]   alpha=0.3: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:00,668 [INFO]   alpha=0.4: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:02,807 [INFO]   alpha=0.5: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:04,944 [INFO]   alpha=0.6: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:07,090 [INFO]   alpha=0.7: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:09,229 [INFO]   alpha=0.8: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:11,379 [INFO]   alpha=0.9: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:13,550 [INFO]   alpha=1.0: uppercase=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:39:13,550 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:39:13,551 [INFO] 
+--- linear_2x ↔ length ---
+2026-01-28 00:39:15,720 [INFO]   alpha=0.0: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:17,868 [INFO]   alpha=0.1: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:20,028 [INFO]   alpha=0.2: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:22,191 [INFO]   alpha=0.3: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:24,338 [INFO]   alpha=0.4: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:26,490 [INFO]   alpha=0.5: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:28,643 [INFO]   alpha=0.6: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:30,813 [INFO]   alpha=0.7: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:32,979 [INFO]   alpha=0.8: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:35,125 [INFO]   alpha=0.9: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:37,273 [INFO]   alpha=1.0: linear_2x=1.00 length=0.00 neither=0.00
+2026-01-28 00:39:37,274 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:39:37,275 [INFO] 
+--- sentiment ↔ antonym ---
+2026-01-28 00:39:38,695 [INFO]   alpha=0.0: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:40,128 [INFO]   alpha=0.1: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:41,538 [INFO]   alpha=0.2: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:42,967 [INFO]   alpha=0.3: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:44,395 [INFO]   alpha=0.4: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:45,826 [INFO]   alpha=0.5: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:47,237 [INFO]   alpha=0.6: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:48,672 [INFO]   alpha=0.7: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:50,102 [INFO]   alpha=0.8: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:51,498 [INFO]   alpha=0.9: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:52,919 [INFO]   alpha=1.0: sentiment=1.00 antonym=0.00 neither=0.00
+2026-01-28 00:39:52,920 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:39:52,920 [INFO] 
+--- pattern_completion ↔ uppercase ---
+2026-01-28 00:39:54,576 [INFO]   alpha=0.0: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:39:56,192 [INFO]   alpha=0.1: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:39:57,815 [INFO]   alpha=0.2: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:39:59,437 [INFO]   alpha=0.3: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:01,060 [INFO]   alpha=0.4: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:02,700 [INFO]   alpha=0.5: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:04,336 [INFO]   alpha=0.6: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:05,967 [INFO]   alpha=0.7: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:07,593 [INFO]   alpha=0.8: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:09,219 [INFO]   alpha=0.9: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:10,852 [INFO]   alpha=1.0: pattern_completion=1.00 uppercase=0.00 neither=0.00
+2026-01-28 00:40:10,853 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:40:10,853 [INFO] 
+--- linear_2x ↔ sentiment ---
+2026-01-28 00:40:13,027 [INFO]   alpha=0.0: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:15,183 [INFO]   alpha=0.1: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:17,429 [INFO]   alpha=0.2: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:19,642 [INFO]   alpha=0.3: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:21,742 [INFO]   alpha=0.4: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:23,874 [INFO]   alpha=0.5: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:26,047 [INFO]   alpha=0.6: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:28,247 [INFO]   alpha=0.7: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:30,451 [INFO]   alpha=0.8: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:32,639 [INFO]   alpha=0.9: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:34,829 [INFO]   alpha=1.0: linear_2x=1.00 sentiment=0.00 neither=0.00
+2026-01-28 00:40:34,830 [INFO]   Sharpness: slope=0.000 width=0.000 smooth=False
+2026-01-28 00:40:34,830 [INFO] ============================================================
+2026-01-28 00:40:34,830 [INFO] Part B: Vector Arithmetic
+2026-01-28 00:40:34,830 [INFO] ============================================================
+2026-01-28 00:40:34,830 [INFO] 
+--- Arithmetic: repeat_word + (uppercase - first_letter) ---
+2026-01-28 00:40:37,162 [INFO]   Result: uppercase=0.00 repeat_word=1.00 neither=0.00
+2026-01-28 00:40:37,163 [INFO] 
+--- Arithmetic: linear_2x + (sentiment - antonym) ---
+2026-01-28 00:40:39,360 [INFO]   Result: sentiment=0.00 linear_2x=1.00 neither=0.00
+2026-01-28 00:40:39,360 [INFO] 
+--- Arithmetic: sentiment + (length - linear_2x) ---
+2026-01-28 00:40:40,806 [INFO]   Result: length=0.00 sentiment=1.00 neither=0.00
+2026-01-28 00:40:40,821 [INFO] 
+Results saved to results/phase4
+2026-01-28 00:40:40,821 [INFO] Phase 4 complete: 2026-01-28T00:40:40.821805

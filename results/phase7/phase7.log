@@ -1,0 +1,133 @@
+2026-01-28 00:47:15,866 [INFO] Phase 7: Trajectory Analysis
+2026-01-28 00:47:15,866 [INFO] Start: 2026-01-28T00:47:15.866933
+2026-01-28 00:47:15,867 [INFO] Position type: last_demo_token, n_layers=28
+2026-01-28 00:47:40,456 [INFO] Step 1: Extracting activations at all layers
+2026-01-28 00:47:40,456 [INFO]   uppercase: 20 inputs
+2026-01-28 00:47:43,098 [INFO]   first_letter: 20 inputs
+2026-01-28 00:47:44,738 [INFO]   repeat_word: 20 inputs
+2026-01-28 00:47:46,602 [INFO]   length: 20 inputs
+2026-01-28 00:47:48,393 [INFO]   linear_2x: 20 inputs
+2026-01-28 00:47:50,286 [INFO]   sentiment: 20 inputs
+2026-01-28 00:47:52,086 [INFO]   antonym: 20 inputs
+2026-01-28 00:47:53,891 [INFO]   pattern_completion: 20 inputs
+2026-01-28 00:47:55,823 [INFO] Extracted: 160 samples × 28 layers
+2026-01-28 00:47:55,823 [INFO] 
+Step 2: Probe confidence trajectory
+2026-01-28 01:05:29,163 [INFO]   Layer  0: probe accuracy = 1.0000
+2026-01-28 01:05:29,163 [INFO]   Layer  1: probe accuracy = 1.0000
+2026-01-28 01:05:29,163 [INFO]   Layer  2: probe accuracy = 1.0000
+2026-01-28 01:05:29,163 [INFO]   Layer  3: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  4: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  5: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  6: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  7: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  8: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer  9: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 10: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 11: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 12: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 13: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 14: probe accuracy = 1.0000
+2026-01-28 01:05:29,164 [INFO]   Layer 15: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 16: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 17: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 18: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 19: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 20: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 21: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 22: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 23: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 24: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 25: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 26: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO]   Layer 27: probe accuracy = 1.0000
+2026-01-28 01:05:29,165 [INFO] 
+Step 3: Layer-to-layer representational change
+2026-01-28 01:06:01,924 [INFO] Phase 7: Trajectory Analysis
+2026-01-28 01:06:01,924 [INFO] Start: 2026-01-28T01:06:01.924530
+2026-01-28 01:06:01,925 [INFO] Position type: last_demo_token, n_layers=28
+2026-01-28 01:06:19,671 [INFO] Step 1: Extracting activations at all layers
+2026-01-28 01:06:19,672 [INFO]   uppercase: 20 inputs
+2026-01-28 01:06:22,359 [INFO]   first_letter: 20 inputs
+2026-01-28 01:06:23,955 [INFO]   repeat_word: 20 inputs
+2026-01-28 01:06:25,587 [INFO]   length: 20 inputs
+2026-01-28 01:06:27,201 [INFO]   linear_2x: 20 inputs
+2026-01-28 01:06:28,847 [INFO]   sentiment: 20 inputs
+2026-01-28 01:06:30,483 [INFO]   antonym: 20 inputs
+2026-01-28 01:06:32,132 [INFO]   pattern_completion: 20 inputs
+2026-01-28 01:06:34,037 [INFO] Extracted: 160 samples × 28 layers
+2026-01-28 01:06:34,037 [INFO] 
+Step 2: Probe confidence trajectory
+2026-01-28 01:23:39,183 [INFO]   Layer  0: probe accuracy = 1.0000
+2026-01-28 01:23:39,187 [INFO]   Layer  1: probe accuracy = 1.0000
+2026-01-28 01:23:39,187 [INFO]   Layer  2: probe accuracy = 1.0000
+2026-01-28 01:23:39,188 [INFO]   Layer  3: probe accuracy = 1.0000
+2026-01-28 01:23:39,188 [INFO]   Layer  4: probe accuracy = 1.0000
+2026-01-28 01:23:39,188 [INFO]   Layer  5: probe accuracy = 1.0000
+2026-01-28 01:23:39,188 [INFO]   Layer  6: probe accuracy = 1.0000
+2026-01-28 01:23:39,188 [INFO]   Layer  7: probe accuracy = 1.0000
+2026-01-28 01:23:39,189 [INFO]   Layer  8: probe accuracy = 1.0000
+2026-01-28 01:23:39,189 [INFO]   Layer  9: probe accuracy = 1.0000
+2026-01-28 01:23:39,189 [INFO]   Layer 10: probe accuracy = 1.0000
+2026-01-28 01:23:39,189 [INFO]   Layer 11: probe accuracy = 1.0000
+2026-01-28 01:23:39,189 [INFO]   Layer 12: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 13: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 14: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 15: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 16: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 17: probe accuracy = 1.0000
+2026-01-28 01:23:39,190 [INFO]   Layer 18: probe accuracy = 1.0000
+2026-01-28 01:23:39,191 [INFO]   Layer 19: probe accuracy = 1.0000
+2026-01-28 01:23:39,191 [INFO]   Layer 20: probe accuracy = 1.0000
+2026-01-28 01:23:39,191 [INFO]   Layer 21: probe accuracy = 1.0000
+2026-01-28 01:23:39,191 [INFO]   Layer 22: probe accuracy = 1.0000
+2026-01-28 01:23:39,191 [INFO]   Layer 23: probe accuracy = 1.0000
+2026-01-28 01:23:39,192 [INFO]   Layer 24: probe accuracy = 1.0000
+2026-01-28 01:23:39,194 [INFO]   Layer 25: probe accuracy = 1.0000
+2026-01-28 01:23:39,194 [INFO]   Layer 26: probe accuracy = 1.0000
+2026-01-28 01:23:39,202 [INFO]   Layer 27: probe accuracy = 1.0000
+2026-01-28 01:23:39,202 [INFO] 
+Step 3: Layer-to-layer representational change
+2026-01-28 01:23:42,813 [INFO]   Layer  0 →  1: cosine dist = 0.212252
+2026-01-28 01:23:42,813 [INFO]   Layer  1 →  2: cosine dist = 0.162124
+2026-01-28 01:23:42,813 [INFO]   Layer  2 →  3: cosine dist = 0.220329
+2026-01-28 01:23:42,813 [INFO]   Layer  3 →  4: cosine dist = 0.222958
+2026-01-28 01:23:42,813 [INFO]   Layer  4 →  5: cosine dist = 0.217091
+2026-01-28 01:23:42,813 [INFO]   Layer  5 →  6: cosine dist = 0.257259
+2026-01-28 01:23:42,813 [INFO]   Layer  6 →  7: cosine dist = 0.254161
+2026-01-28 01:23:42,813 [INFO]   Layer  7 →  8: cosine dist = 0.233004
+2026-01-28 01:23:42,814 [INFO]   Layer  8 →  9: cosine dist = 0.197557
+2026-01-28 01:23:42,814 [INFO]   Layer  9 → 10: cosine dist = 0.185846
+2026-01-28 01:23:42,814 [INFO]   Layer 10 → 11: cosine dist = 0.236162
+2026-01-28 01:23:42,814 [INFO]   Layer 11 → 12: cosine dist = 0.179890
+2026-01-28 01:23:42,814 [INFO]   Layer 12 → 13: cosine dist = 0.172112
+2026-01-28 01:23:42,814 [INFO]   Layer 13 → 14: cosine dist = 0.196898
+2026-01-28 01:23:42,814 [INFO]   Layer 14 → 15: cosine dist = 0.159514
+2026-01-28 01:23:42,814 [INFO]   Layer 15 → 16: cosine dist = 0.107505
+2026-01-28 01:23:42,814 [INFO]   Layer 16 → 17: cosine dist = 0.106090
+2026-01-28 01:23:42,814 [INFO]   Layer 17 → 18: cosine dist = 0.089167
+2026-01-28 01:23:42,814 [INFO]   Layer 18 → 19: cosine dist = 0.081200
+2026-01-28 01:23:42,814 [INFO]   Layer 19 → 20: cosine dist = 0.065978
+2026-01-28 01:23:42,814 [INFO]   Layer 20 → 21: cosine dist = 0.085615
+2026-01-28 01:23:42,815 [INFO]   Layer 21 → 22: cosine dist = 0.052801
+2026-01-28 01:23:42,815 [INFO]   Layer 22 → 23: cosine dist = 0.060042
+2026-01-28 01:23:42,815 [INFO]   Layer 23 → 24: cosine dist = 0.083404
+2026-01-28 01:23:42,815 [INFO]   Layer 24 → 25: cosine dist = 0.065810
+2026-01-28 01:23:42,815 [INFO]   Layer 25 → 26: cosine dist = 0.083598
+2026-01-28 01:23:42,815 [INFO]   Layer 26 → 27: cosine dist = 0.359291
+2026-01-28 01:23:42,815 [INFO] 
+Step 4: Crystallization layers
+2026-01-28 01:23:42,815 [INFO]   Threshold 80%: crystallization at layer 0
+2026-01-28 01:23:42,815 [INFO]   Threshold 90%: crystallization at layer 0
+2026-01-28 01:23:42,815 [INFO]   Threshold 95%: crystallization at layer 0
+2026-01-28 01:23:42,815 [INFO] 
+Step 5: Per-regime probe trajectories
+2026-01-28 01:23:42,816 [INFO]   bayesian: only 1 task, skipping per-regime probe
+2026-01-28 01:23:42,816 [INFO]   counting: only 1 task, skipping per-regime probe
+2026-01-28 01:23:42,816 [INFO]   gd_like: only 1 task, skipping per-regime probe
+2026-01-28 01:23:42,816 [INFO]   induction: only 1 task, skipping per-regime probe
+2026-01-28 01:23:46,102 [INFO]   procedural  : crystallization@90% = layer 0, final accuracy = 1.0000
+2026-01-28 01:23:46,103 [INFO]   retrieval: only 1 task, skipping per-regime probe
+2026-01-28 01:23:46,104 [INFO] 
+Results saved to results/phase7
+2026-01-28 01:23:46,105 [INFO] Phase 7 complete: 2026-01-28T01:23:46.105093

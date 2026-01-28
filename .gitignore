@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# Large cache files
+*.pkl
+*.pt
+*.bin
+
+# IDE
+.vscode/
+.idea/
+
+# Logs (keep structure, ignore raw output)
+**/run_output.txt
+
+# OS
+.DS_Store
+Thumbs.db

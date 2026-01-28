@@ -1,0 +1,101 @@
+2026-01-28 00:31:51,791 [INFO] Phase 3: Transplantation Experiments
+2026-01-28 00:31:51,792 [INFO] Start: 2026-01-28T00:31:51.792038
+2026-01-28 00:31:51,792 [INFO] Using optimal: layer=14, position=last_demo_token (probe accuracy=1.0000)
+2026-01-28 00:32:16,341 [INFO] Step 1: Caching source activations for all tasks
+2026-01-28 00:32:18,242 [INFO]   uppercase: mean vector norm = 9.80
+2026-01-28 00:32:19,005 [INFO]   first_letter: mean vector norm = 9.46
+2026-01-28 00:32:19,771 [INFO]   repeat_word: mean vector norm = 10.38
+2026-01-28 00:32:20,548 [INFO]   length: mean vector norm = 10.41
+2026-01-28 00:32:21,316 [INFO]   linear_2x: mean vector norm = 10.42
+2026-01-28 00:32:22,069 [INFO]   sentiment: mean vector norm = 9.54
+2026-01-28 00:32:22,831 [INFO]   antonym: mean vector norm = 10.07
+2026-01-28 00:32:23,631 [INFO]   pattern_completion: mean vector norm = 9.92
+2026-01-28 00:32:23,634 [INFO] Task vectors saved to results/phase3/task_vectors.pkl
+2026-01-28 00:32:23,634 [INFO] ============================================================
+2026-01-28 00:32:23,634 [INFO] Step 2: Cross-task transplantation
+2026-01-28 00:32:23,634 [INFO] ============================================================
+2026-01-28 00:32:25,798 [INFO]   uppercase            → uppercase           : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:32:27,236 [INFO]   uppercase            → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:29,373 [INFO]   uppercase            → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:31,498 [INFO]   uppercase            → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:33,648 [INFO]   uppercase            → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:35,072 [INFO]   uppercase            → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:36,502 [INFO]   uppercase            → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:38,941 [INFO]   uppercase            → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:41,383 [INFO]   first_letter         → uppercase           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:42,818 [INFO]   first_letter         → first_letter        : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:32:45,120 [INFO]   first_letter         → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:47,286 [INFO]   first_letter         → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:49,451 [INFO]   first_letter         → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:50,894 [INFO]   first_letter         → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:52,394 [INFO]   first_letter         → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:54,849 [INFO]   first_letter         → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:32:57,288 [INFO]   repeat_word          → uppercase           : transfer=0.00 disrupt=0.10 preserve=0.90 
+2026-01-28 00:32:58,714 [INFO]   repeat_word          → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:01,138 [INFO]   repeat_word          → repeat_word         : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:33:03,284 [INFO]   repeat_word          → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:05,422 [INFO]   repeat_word          → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:06,856 [INFO]   repeat_word          → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:08,291 [INFO]   repeat_word          → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:09,940 [INFO]   repeat_word          → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:12,389 [INFO]   length               → uppercase           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:13,829 [INFO]   length               → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:15,993 [INFO]   length               → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:18,142 [INFO]   length               → length              : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:33:20,304 [INFO]   length               → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:21,734 [INFO]   length               → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:23,219 [INFO]   length               → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:24,793 [INFO]   length               → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:27,015 [INFO]   linear_2x            → uppercase           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:28,426 [INFO]   linear_2x            → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:30,562 [INFO]   linear_2x            → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:32,712 [INFO]   linear_2x            → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:34,889 [INFO]   linear_2x            → linear_2x           : transfer=0.90 disrupt=0.10 preserve=0.00 
+2026-01-28 00:33:36,321 [INFO]   linear_2x            → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:37,847 [INFO]   linear_2x            → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:39,604 [INFO]   linear_2x            → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:41,983 [INFO]   sentiment            → uppercase           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:43,534 [INFO]   sentiment            → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:46,645 [INFO]   sentiment            → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:49,201 [INFO]   sentiment            → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:51,679 [INFO]   sentiment            → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:53,294 [INFO]   sentiment            → sentiment           : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:33:54,634 [INFO]   sentiment            → antonym             : transfer=0.00 disrupt=0.10 preserve=0.90 
+2026-01-28 00:33:56,155 [INFO]   sentiment            → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:33:58,329 [INFO]   antonym              → uppercase           : transfer=0.00 disrupt=0.10 preserve=0.90 
+2026-01-28 00:33:59,600 [INFO]   antonym              → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:01,653 [INFO]   antonym              → repeat_word         : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:03,589 [INFO]   antonym              → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:05,514 [INFO]   antonym              → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:06,783 [INFO]   antonym              → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:08,054 [INFO]   antonym              → antonym             : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:34:09,512 [INFO]   antonym              → pattern_completion  : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:11,578 [INFO]   pattern_completion   → uppercase           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:12,856 [INFO]   pattern_completion   → first_letter        : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:14,803 [INFO]   pattern_completion   → repeat_word         : transfer=1.00 disrupt=0.00 preserve=0.00 ***
+2026-01-28 00:34:16,726 [INFO]   pattern_completion   → length              : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:18,655 [INFO]   pattern_completion   → linear_2x           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:19,941 [INFO]   pattern_completion   → sentiment           : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:21,282 [INFO]   pattern_completion   → antonym             : transfer=0.00 disrupt=0.00 preserve=1.00 
+2026-01-28 00:34:23,120 [INFO]   pattern_completion   → pattern_completion  : transfer=1.00 disrupt=0.00 preserve=0.00 
+2026-01-28 00:34:23,120 [INFO] ============================================================
+2026-01-28 00:34:23,121 [INFO] Step 3: Control conditions
+2026-01-28 00:34:23,121 [INFO] ============================================================
+2026-01-28 00:34:40,001 [INFO]   uppercase           : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:34:55,065 [INFO]   first_letter        : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:35:11,731 [INFO]   repeat_word         : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:35:28,558 [INFO]   length              : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:35:45,662 [INFO]   linear_2x           : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:36:02,620 [INFO]   sentiment           : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:36:18,248 [INFO]   antonym             : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:36:34,200 [INFO]   pattern_completion  : baseline=1.00 zero=1.00 random=1.00
+2026-01-28 00:36:34,213 [INFO] 
+Results saved to results/phase3
+2026-01-28 00:36:34,213 [INFO] ============================================================
+2026-01-28 00:36:34,213 [INFO] PHASE 3 SUMMARY
+2026-01-28 00:36:34,213 [INFO] ============================================================
+2026-01-28 00:36:34,214 [INFO] Mean cross-task transfer rate: 0.018
+2026-01-28 00:36:34,214 [INFO] Mean disruption rate: 0.005
+2026-01-28 00:36:34,214 [INFO] Same-task transplant accuracy: 0.988
+2026-01-28 00:36:34,214 [INFO] 
+Phase 3 complete: 2026-01-28T00:36:34.214939

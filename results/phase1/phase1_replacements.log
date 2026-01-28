@@ -1,0 +1,25 @@
+2026-01-27 23:27:41,325 [INFO] Task: first_letter (regime: procedural)
+2026-01-27 23:27:41,326 [INFO] Demos: [('apple', 'a'), ('brain', 'b'), ('cloud', 'c'), ('delta', 'd'), ('flame', 'f')]
+2026-01-27 23:27:56,190 [INFO]   [ 10/50] youth           exp=y               got=y                    -> correct
+2026-01-27 23:28:10,424 [INFO]   [ 20/50] grape           exp=g               got=g                    -> correct
+2026-01-27 23:28:27,010 [INFO]   [ 30/50] crane           exp=c               got=c                    -> correct
+2026-01-27 23:28:41,299 [INFO]   [ 40/50] trend           exp=t               got=t                    -> correct
+2026-01-27 23:28:53,845 [INFO]   [ 50/50] waltz           exp=w               got=w                    -> correct
+2026-01-27 23:28:53,846 [INFO]   => first_letter: 100.0% (50/50) [PASS]
+2026-01-27 23:28:53,848 [INFO] Task: repeat_word (regime: procedural)
+2026-01-27 23:28:53,848 [INFO] Demos: [('apple', 'apple apple'), ('brain', 'brain brain'), ('cloud', 'cloud cloud'), ('delta', 'delta delta'), ('flame', 'flame flame')]
+2026-01-27 23:29:06,315 [INFO]   [ 10/50] youth           exp=youth youth     got=youth youth          -> correct
+2026-01-27 23:29:18,670 [INFO]   [ 20/50] grape           exp=grape grape     got=grape grape          -> correct
+2026-01-27 23:29:31,594 [INFO]   [ 30/50] crane           exp=crane crane     got=crane crane          -> correct
+2026-01-27 23:29:44,365 [INFO]   [ 40/50] trend           exp=trend trend     got=trend trend          -> correct
+2026-01-27 23:29:57,116 [INFO]   [ 50/50] waltz           exp=waltz waltz     got=waltz waltz          -> correct
+2026-01-27 23:29:57,116 [INFO]   => repeat_word: 100.0% (50/50) [PASS]
+2026-01-27 23:29:57,118 [INFO] Task: antonym (regime: retrieval)
+2026-01-27 23:29:57,118 [INFO] Demos: [('hot', 'cold'), ('big', 'small'), ('fast', 'slow'), ('happy', 'sad'), ('light', 'dark')]
+2026-01-27 23:30:11,992 [INFO]   [ 10/50] smooth          exp=rough           got=rough                -> correct
+2026-01-27 23:30:24,783 [INFO]   [ 20/50] tall            exp=short           got=short                -> correct
+2026-01-27 23:30:37,496 [INFO]   [ 30/50] create          exp=destroy         got=destroy              -> correct
+2026-01-27 23:30:50,340 [INFO]   [ 40/50] accept          exp=reject          got=reject               -> correct
+2026-01-27 23:31:03,163 [INFO]   [ 50/50] bold            exp=timid           got=weak                 -> incorrect
+2026-01-27 23:31:03,163 [INFO]   => antonym: 98.0% (49/50) [PASS]
+2026-01-27 23:31:03,164 [INFO] Done!

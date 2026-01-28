@@ -1,0 +1,311 @@
+{
+  "task": "first_letter",
+  "regime": "procedural",
+  "outputs": [
+    {
+      "input": "honey",
+      "expected": "h",
+      "output": "h",
+      "score": "correct"
+    },
+    {
+      "input": "frost",
+      "expected": "f",
+      "output": "f",
+      "score": "correct"
+    },
+    {
+      "input": "badge",
+      "expected": "b",
+      "output": "b",
+      "score": "correct"
+    },
+    {
+      "input": "stone",
+      "expected": "s",
+      "output": "s",
+      "score": "correct"
+    },
+    {
+      "input": "lemon",
+      "expected": "l",
+      "output": "l",
+      "score": "correct"
+    },
+    {
+      "input": "fjord",
+      "expected": "f",
+      "output": "f",
+      "score": "correct"
+    },
+    {
+      "input": "ivory",
+      "expected": "i",
+      "output": "i",
+      "score": "correct"
+    },
+    {
+      "input": "queen",
+      "expected": "q",
+      "output": "q",
+      "score": "correct"
+    },
+    {
+      "input": "lunar",
+      "expected": "l",
+      "output": "l",
+      "score": "correct"
+    },
+    {
+      "input": "youth",
+      "expected": "y",
+      "output": "y",
+      "score": "correct"
+    },
+    {
+      "input": "noble",
+      "expected": "n",
+      "output": "n",
+      "score": "correct"
+    },
+    {
+      "input": "dream",
+      "expected": "d",
+      "output": "d",
+      "score": "correct"
+    },
+    {
+      "input": "tower",
+      "expected": "t",
+      "output": "t",
+      "score": "correct"
+    },
+    {
+      "input": "knife",
+      "expected": "k",
+      "output": "k",
+      "score": "correct"
+    },
+    {
+      "input": "vivid",
+      "expected": "v",
+      "output": "v",
+      "score": "correct"
+    },
+    {
+      "input": "urban",
+      "expected": "u",
+      "output": "u",
+      "score": "correct"
+    },
+    {
+      "input": "river",
+      "expected": "r",
+      "output": "r",
+      "score": "correct"
+    },
+    {
+      "input": "globe",
+      "expected": "g",
+      "output": "g",
+      "score": "correct"
+    },
+    {
+      "input": "robin",
+      "expected": "r",
+      "output": "r",
+      "score": "correct"
+    },
+    {
+      "input": "grape",
+      "expected": "g",
+      "output": "g",
+      "score": "correct"
+    },
+    {
+      "input": "dwarf",
+      "expected": "d",
+      "output": "d",
+      "score": "correct"
+    },
+    {
+      "input": "ankle",
+      "expected": "a",
+      "output": "a",
+      "score": "correct"
+    },
+    {
+      "input": "piano",
+      "expected": "p",
+      "output": "p",
+      "score": "correct"
+    },
+    {
+      "input": "index",
+      "expected": "i",
+      "output": "i",
+      "score": "correct"
+    },
+    {
+      "input": "pixel",
+      "expected": "p",
+      "output": "p",
+      "score": "correct"
+    },
+    {
+      "input": "maple",
+      "expected": "m",
+      "output": "m",
+      "score": "correct"
+    },
+    {
+      "input": "kayak",
+      "expected": "k",
+      "output": "k",
+      "score": "correct"
+    },
+    {
+      "input": "candy",
+      "expected": "c",
+      "output": "c",
+      "score": "correct"
+    },
+    {
+      "input": "eagle",
+      "expected": "e",
+      "output": "e",
+      "score": "correct"
+    },
+    {
+      "input": "crane",
+      "expected": "c",
+      "output": "c",
+      "score": "correct"
+    },
+    {
+      "input": "glyph",
+      "expected": "g",
+      "output": "g",
+      "score": "correct"
+    },
+    {
+      "input": "sugar",
+      "expected": "s",
+      "output": "s",
+      "score": "correct"
+    },
+    {
+      "input": "ocean",
+      "expected": "o",
+      "output": "o",
+      "score": "correct"
+    },
+    {
+      "input": "ember",
+      "expected": "e",
+      "output": "e",
+      "score": "correct"
+    },
+    {
+      "input": "uncle",
+      "expected": "u",
+      "output": "u",
+      "score": "correct"
+    },
+    {
+      "input": "joker",
+      "expected": "j",
+      "output": "j",
+      "score": "correct"
+    },
+    {
+      "input": "haven",
+      "expected": "h",
+      "output": "h",
+      "score": "correct"
+    },
+    {
+      "input": "juice",
+      "expected": "j",
+      "output": "j",
+      "score": "correct"
+    },
+    {
+      "input": "jolly",
+      "expected": "j",
+      "output": "j",
+      "score": "correct"
+    },
+    {
+      "input": "trend",
+      "expected": "t",
+      "output": "t",
+      "score": "correct"
+    },
+    {
+      "input": "mango",
+      "expected": "m",
+      "output": "m",
+      "score": "correct"
+    },
+    {
+      "input": "quilt",
+      "expected": "q",
+      "output": "q",
+      "score": "correct"
+    },
+    {
+      "input": "nerve",
+      "expected": "n",
+      "output": "n",
+      "score": "correct"
+    },
+    {
+      "input": "pearl",
+      "expected": "p",
+      "output": "p",
+      "score": "correct"
+    },
+    {
+      "input": "valve",
+      "expected": "v",
+      "output": "v",
+      "score": "correct"
+    },
+    {
+      "input": "wheat",
+      "expected": "w",
+      "output": "w",
+      "score": "correct"
+    },
+    {
+      "input": "zebra",
+      "expected": "z",
+      "output": "z",
+      "score": "correct"
+    },
+    {
+      "input": "house",
+      "expected": "h",
+      "output": "h",
+      "score": "correct"
+    },
+    {
+      "input": "olive",
+      "expected": "o",
+      "output": "o",
+      "score": "correct"
+    },
+    {
+      "input": "waltz",
+      "expected": "w",
+      "output": "w",
+      "score": "correct"
+    }
+  ],
+  "accuracy": 1.0,
+  "correct": 50,
+  "incorrect": 0,
+  "malformed": 0,
+  "passes_threshold": true
+}

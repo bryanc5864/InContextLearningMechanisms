@@ -1,0 +1,144 @@
+2026-01-28 00:23:16,343 [INFO] Phase 2: Representation Localization
+2026-01-28 00:23:16,344 [INFO] Start: 2026-01-28T00:23:16.344227
+2026-01-28 00:23:16,344 [INFO] Tasks: ['uppercase', 'first_letter', 'repeat_word', 'length', 'linear_2x', 'sentiment', 'antonym', 'pattern_completion']
+2026-01-28 00:23:16,344 [INFO] Positions: ['last_demo_token', 'separator_after_demo', 'first_query_token']
+Loading meta-llama/Llama-3.2-3B-Instruct...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.65s/it]
+2026-01-28 00:23:36,085 [INFO] Model: {'name': 'meta-llama/Llama-3.2-3B-Instruct', 'n_layers': 28, 'd_model': 3072, 'n_heads': 24, 'vocab_size': 128256, 'device': 'cuda:3'}
+2026-01-28 00:23:36,085 [INFO] ============================================================
+2026-01-28 00:23:36,085 [INFO] Step 1: Extracting activations
+2026-01-28 00:23:36,086 [INFO] ============================================================
+2026-01-28 00:23:36,086 [INFO] Loading cached activations from results/phase2/activations_cache.pkl
+2026-01-28 00:23:58,047 [INFO] Loaded. 400 samples per position.
+2026-01-28 00:23:58,053 [INFO] ============================================================
+2026-01-28 00:23:58,058 [INFO] Step 2: Training linear probes
+2026-01-28 00:23:58,058 [INFO] ============================================================
+2026-01-28 00:23:58,058 [INFO] 
+--- Position: last_demo_token ---
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+2026-01-28 00:23:58,934 [INFO]   Layer  0: 1.000 +/- 0.000
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+2026-01-28 00:24:01,891 [INFO]   Layer  4: 1.000 +/- 0.000
+2026-01-28 00:24:04,846 [INFO]   Layer  8: 1.000 +/- 0.000
+2026-01-28 00:24:07,825 [INFO]   Layer 12: 1.000 +/- 0.000
+2026-01-28 00:24:10,724 [INFO]   Layer 16: 1.000 +/- 0.000
+2026-01-28 00:24:13,654 [INFO]   Layer 20: 1.000 +/- 0.000
+2026-01-28 00:24:16,694 [INFO]   Layer 24: 1.000 +/- 0.000
+2026-01-28 00:24:18,932 [INFO]   Layer 27: 1.000 +/- 0.000
+2026-01-28 00:24:18,932 [INFO] 
+--- Position: separator_after_demo ---
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+2026-01-28 00:24:19,532 [INFO]   Layer  0: 1.000 +/- 0.000
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/sklearn/neighbors/_nearest_centroid.py:244: UserWarning: self.within_class_std_dev_ has at least 1 zero standard deviation.Inputs within the same classes for at least 1 feature are identical.
+  warnings.warn(
+2026-01-28 00:24:22,395 [INFO]   Layer  4: 1.000 +/- 0.000
+2026-01-28 00:24:25,299 [INFO]   Layer  8: 1.000 +/- 0.000
+2026-01-28 00:24:28,430 [INFO]   Layer 12: 1.000 +/- 0.000
+2026-01-28 00:24:31,429 [INFO]   Layer 16: 1.000 +/- 0.000
+2026-01-28 00:24:34,392 [INFO]   Layer 20: 1.000 +/- 0.000
+2026-01-28 00:24:37,334 [INFO]   Layer 24: 1.000 +/- 0.000
+2026-01-28 00:24:39,651 [INFO]   Layer 27: 1.000 +/- 0.000
+2026-01-28 00:24:39,652 [INFO] 
+--- Position: first_query_token ---
+2026-01-28 00:24:40,439 [INFO]   Layer  0: 0.458 +/- 0.026
+2026-01-28 00:24:43,571 [INFO]   Layer  4: 0.467 +/- 0.026
+2026-01-28 00:24:46,484 [INFO]   Layer  8: 0.658 +/- 0.042
+2026-01-28 00:24:49,259 [INFO]   Layer 12: 0.829 +/- 0.041
+2026-01-28 00:24:52,274 [INFO]   Layer 16: 0.504 +/- 0.016
+2026-01-28 00:24:55,170 [INFO]   Layer 20: 0.496 +/- 0.006
+2026-01-28 00:24:58,226 [INFO]   Layer 24: 0.500 +/- 0.000
+2026-01-28 00:25:00,702 [INFO]   Layer 27: 0.604 +/- 0.016
+2026-01-28 00:25:00,702 [INFO] ============================================================
+2026-01-28 00:25:00,702 [INFO] Step 3: Finding optimal intervention coordinates
+2026-01-28 00:25:00,702 [INFO] ============================================================
+2026-01-28 00:25:00,702 [INFO] Optimal: layer=0, position=last_demo_token, accuracy=1.0000
+2026-01-28 00:25:00,702 [INFO]   Best for last_demo_token: layer=0, accuracy=1.0000
+2026-01-28 00:25:00,702 [INFO]   Best for separator_after_demo: layer=0, accuracy=1.0000
+2026-01-28 00:25:00,702 [INFO]   Best for first_query_token: layer=12, accuracy=0.8292
+2026-01-28 00:25:00,705 [INFO] Results saved to results/phase2/localization_results.json
+2026-01-28 00:25:00,706 [INFO] Probe CSV saved to results/phase2/probe_accuracy.csv
+2026-01-28 00:25:00,706 [INFO] ============================================================
+2026-01-28 00:25:00,706 [INFO] PHASE 2 SUMMARY
+2026-01-28 00:25:00,706 [INFO] ============================================================
+2026-01-28 00:25:00,706 [INFO] Optimal intervention point: layer=0, position=last_demo_token
+2026-01-28 00:25:00,706 [INFO] Probe accuracy at optimal: 1.0000
+2026-01-28 00:25:00,706 [INFO]   last_demo_token: best layer=0, accuracy=1.0000
+2026-01-28 00:25:00,706 [INFO]   separator_after_demo: best layer=0, accuracy=1.0000
+2026-01-28 00:25:00,706 [INFO]   first_query_token: best layer=12, accuracy=0.8292
+2026-01-28 00:25:00,706 [INFO] 
+Probe accuracy heatmap (layer × position):
+2026-01-28 00:25:00,706 [INFO]  Layer  last_demo_to  separator_af  first_query_
+2026-01-28 00:25:00,706 [INFO]      0        1.0000        1.0000        0.4583
+2026-01-28 00:25:00,706 [INFO]      1        1.0000        1.0000        0.4500
+2026-01-28 00:25:00,706 [INFO]      2        1.0000        1.0000        0.4500
+2026-01-28 00:25:00,706 [INFO]      3        1.0000        1.0000        0.4750
+2026-01-28 00:25:00,706 [INFO]      4        1.0000        1.0000        0.4667
+2026-01-28 00:25:00,706 [INFO]      5        1.0000        1.0000        0.4792
+2026-01-28 00:25:00,707 [INFO]      6        1.0000        1.0000        0.5250
+2026-01-28 00:25:00,707 [INFO]      7        1.0000        1.0000        0.6292
+2026-01-28 00:25:00,707 [INFO]      8        1.0000        1.0000        0.6583
+2026-01-28 00:25:00,707 [INFO]      9        1.0000        1.0000        0.7250
+2026-01-28 00:25:00,707 [INFO]     10        1.0000        1.0000        0.7875
+2026-01-28 00:25:00,707 [INFO]     11        1.0000        1.0000        0.7958
+2026-01-28 00:25:00,707 [INFO]     12        1.0000        1.0000        0.8292
+2026-01-28 00:25:00,707 [INFO]     13        1.0000        1.0000        0.7583
+2026-01-28 00:25:00,707 [INFO]     14        1.0000        1.0000        0.5667
+2026-01-28 00:25:00,707 [INFO]     15        1.0000        1.0000        0.5292
+2026-01-28 00:25:00,707 [INFO]     16        1.0000        1.0000        0.5042
+2026-01-28 00:25:00,707 [INFO]     17        1.0000        1.0000        0.5083
+2026-01-28 00:25:00,707 [INFO]     18        1.0000        1.0000        0.5125
+2026-01-28 00:25:00,707 [INFO]     19        1.0000        1.0000        0.5083
+2026-01-28 00:25:00,707 [INFO]     20        1.0000        1.0000        0.4958
+2026-01-28 00:25:00,707 [INFO]     21        1.0000        1.0000        0.4917
+2026-01-28 00:25:00,707 [INFO]     22        1.0000        1.0000        0.4958
+2026-01-28 00:25:00,707 [INFO]     23        1.0000        1.0000        0.4958
+2026-01-28 00:25:00,707 [INFO]     24        1.0000        1.0000        0.5000
+2026-01-28 00:25:00,707 [INFO]     25        1.0000        1.0000        0.5042
+2026-01-28 00:25:00,708 [INFO]     26        1.0000        1.0000        0.5083
+2026-01-28 00:25:00,708 [INFO]     27        1.0000        1.0000        0.6042
+2026-01-28 00:25:00,708 [INFO] 
+Phase 2 complete: 2026-01-28T00:25:00.708139
+Loaded on cuda:3. 28 layers, d_model=3072

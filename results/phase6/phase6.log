@@ -1,0 +1,48 @@
+2026-01-28 00:46:53,948 [INFO] Phase 6: Task Ontology Analysis
+2026-01-28 00:46:53,949 [INFO] Start: 2026-01-28T00:46:53.949202
+2026-01-28 00:46:53,951 [INFO] Loaded task vectors: ['uppercase', 'first_letter', 'repeat_word', 'length', 'linear_2x', 'sentiment', 'antonym', 'pattern_completion']
+2026-01-28 00:46:53,951 [INFO] Using 8 task vectors
+2026-01-28 00:46:53,951 [INFO] ==================================================
+2026-01-28 00:46:53,951 [INFO] 1. Pairwise cosine similarity
+2026-01-28 00:46:53,952 [INFO]                        antonym  first_le    length  linear_2  pattern_  repeat_w  sentimen  uppercas
+2026-01-28 00:46:53,952 [INFO]              antonym     1.000     0.736     0.710     0.689     0.724     0.746     0.660     0.766
+2026-01-28 00:46:53,952 [INFO]         first_letter     0.736     1.000     0.831     0.625     0.664     0.861     0.653     0.886
+2026-01-28 00:46:53,952 [INFO]               length     0.710     0.831     1.000     0.634     0.666     0.861     0.694     0.880
+2026-01-28 00:46:53,952 [INFO]            linear_2x     0.689     0.625     0.634     1.000     0.752     0.646     0.546     0.673
+2026-01-28 00:46:53,952 [INFO]   pattern_completion     0.724     0.664     0.666     0.752     1.000     0.707     0.568     0.710
+2026-01-28 00:46:53,952 [INFO]          repeat_word     0.746     0.861     0.861     0.646     0.707     1.000     0.648     0.935
+2026-01-28 00:46:53,953 [INFO]            sentiment     0.660     0.653     0.694     0.546     0.568     0.648     1.000     0.670
+2026-01-28 00:46:53,953 [INFO]            uppercase     0.766     0.886     0.880     0.673     0.710     0.935     0.670     1.000
+2026-01-28 00:46:53,953 [INFO] 
+2. Hierarchical clustering
+2026-01-28 00:46:53,954 [INFO] Linkage matrix:
+[[ 5.          7.          0.06520481  2.        ]
+ [ 1.          8.          0.12657557  3.        ]
+ [ 2.          9.          0.14264534  4.        ]
+ [ 3.          4.          0.24807997  2.        ]
+ [ 0.         10.          0.26045857  5.        ]
+ [11.         12.          0.32598336  7.        ]
+ [ 6.         13.          0.36582097  8.        ]]
+2026-01-28 00:46:53,954 [INFO] 
+3. PCA embedding (2D)
+2026-01-28 00:46:53,961 [INFO]   antonym              (retrieval   ): PC1=+1.3122 PC2=+0.9616
+2026-01-28 00:46:53,961 [INFO]   first_letter         (procedural  ): PC1=-2.2337 PC2=-1.0010
+2026-01-28 00:46:53,961 [INFO]   length               (counting    ): PC1=-2.7161 PC2=-0.6573
+2026-01-28 00:46:53,961 [INFO]   linear_2x            (gd_like     ): PC1=+5.2846 PC2=-0.8683
+2026-01-28 00:46:53,961 [INFO]   pattern_completion   (induction   ): PC1=+3.8107 PC2=-0.9321
+2026-01-28 00:46:53,961 [INFO]   repeat_word          (procedural  ): PC1=-2.4307 PC2=-2.0282
+2026-01-28 00:46:53,961 [INFO]   sentiment            (bayesian    ): PC1=-0.8899 PC2=+6.0925
+2026-01-28 00:46:53,961 [INFO]   uppercase            (procedural  ): PC1=-2.1370 PC2=-1.5672
+2026-01-28 00:46:53,966 [INFO] 
+4. Regime clustering quality
+2026-01-28 00:46:56,077 [INFO]   Silhouette score: 0.0961
+2026-01-28 00:46:56,077 [INFO]   Permutation p-value: 0.0050
+2026-01-28 00:46:56,077 [INFO]   N permutations: 1000
+2026-01-28 00:46:56,077 [INFO] 
+5. Within-regime vs between-regime similarity
+2026-01-28 00:46:56,077 [INFO]   Within-regime mean similarity:  0.8939 (n=3)
+2026-01-28 00:46:56,077 [INFO]   Between-regime mean similarity: 0.6985 (n=25)
+2026-01-28 00:46:56,077 [INFO]   Difference: 0.1954
+2026-01-28 00:46:56,079 [INFO] 
+Results saved to results/phase6
+2026-01-28 00:46:56,079 [INFO] Phase 6 complete: 2026-01-28T00:46:56.079490

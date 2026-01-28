@@ -1,0 +1,543 @@
+{
+  "metadata": {
+    "optimal_layer": 14,
+    "optimal_position": "last_demo_token",
+    "n_layers": 28,
+    "test_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "pairs": [
+      [
+        "uppercase",
+        "sentiment"
+      ],
+      [
+        "linear_2x",
+        "pattern_completion"
+      ],
+      [
+        "sentiment",
+        "linear_2x"
+      ],
+      [
+        "first_letter",
+        "antonym"
+      ]
+    ],
+    "n_test": 10,
+    "timestamp": "2026-01-28T00:46:13.896922"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 1,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 2,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 3,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 5,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 6,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 7,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 9,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 15,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 17,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 18,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 19,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 21,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 22,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 23,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 25,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 26,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0
+        }
+      ],
+      "localization_index": 0.0,
+      "peak_layer": 0,
+      "peak_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "pattern_completion",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 1,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 2,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 3,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 5,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 6,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 7,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 9,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 15,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 17,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 18,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 19,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 21,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 22,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 23,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 25,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 26,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0
+        }
+      ],
+      "localization_index": 0.0,
+      "peak_layer": 0,
+      "peak_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "linear_2x",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 1,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 2,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 3,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 5,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 6,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 7,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 9,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 15,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 17,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 18,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 19,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 21,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 22,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 23,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 25,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 26,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0
+        }
+      ],
+      "localization_index": 0.0,
+      "peak_layer": 0,
+      "peak_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "antonym",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 1,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 2,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 3,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 5,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 6,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 7,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 9,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 15,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 17,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 18,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 19,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 21,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 22,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 23,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 25,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 26,
+          "transfer_rate": 0.0
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0
+        }
+      ],
+      "localization_index": 0.0,
+      "peak_layer": 0,
+      "peak_rate": 0.0
+    }
+  ]
+}

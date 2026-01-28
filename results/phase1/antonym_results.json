@@ -1,0 +1,311 @@
+{
+  "task": "antonym",
+  "regime": "retrieval",
+  "outputs": [
+    {
+      "input": "true",
+      "expected": "false",
+      "output": "false",
+      "score": "correct"
+    },
+    {
+      "input": "alive",
+      "expected": "dead",
+      "output": "dead",
+      "score": "correct"
+    },
+    {
+      "input": "bright",
+      "expected": "dim",
+      "output": "dim",
+      "score": "correct"
+    },
+    {
+      "input": "dry",
+      "expected": "wet",
+      "output": "wet",
+      "score": "correct"
+    },
+    {
+      "input": "hard",
+      "expected": "soft",
+      "output": "soft",
+      "score": "correct"
+    },
+    {
+      "input": "generous",
+      "expected": "selfish",
+      "output": "stingy",
+      "score": "correct"
+    },
+    {
+      "input": "wise",
+      "expected": "foolish",
+      "output": "foolish",
+      "score": "correct"
+    },
+    {
+      "input": "loud",
+      "expected": "quiet",
+      "output": "quiet",
+      "score": "correct"
+    },
+    {
+      "input": "win",
+      "expected": "lose",
+      "output": "lose",
+      "score": "correct"
+    },
+    {
+      "input": "smooth",
+      "expected": "rough",
+      "output": "rough",
+      "score": "correct"
+    },
+    {
+      "input": "rise",
+      "expected": "fall",
+      "output": "fall",
+      "score": "correct"
+    },
+    {
+      "input": "cheap",
+      "expected": "expensive",
+      "output": "expensive",
+      "score": "correct"
+    },
+    {
+      "input": "early",
+      "expected": "late",
+      "output": "late",
+      "score": "correct"
+    },
+    {
+      "input": "strong",
+      "expected": "weak",
+      "output": "weak",
+      "score": "correct"
+    },
+    {
+      "input": "ancient",
+      "expected": "modern",
+      "output": "modern",
+      "score": "correct"
+    },
+    {
+      "input": "arrive",
+      "expected": "depart",
+      "output": "depart",
+      "score": "correct"
+    },
+    {
+      "input": "clean",
+      "expected": "dirty",
+      "output": "dirty",
+      "score": "correct"
+    },
+    {
+      "input": "love",
+      "expected": "hate",
+      "output": "hate",
+      "score": "correct"
+    },
+    {
+      "input": "teach",
+      "expected": "learn",
+      "output": "learn",
+      "score": "correct"
+    },
+    {
+      "input": "tall",
+      "expected": "short",
+      "output": "short",
+      "score": "correct"
+    },
+    {
+      "input": "expand",
+      "expected": "shrink",
+      "output": "contract",
+      "score": "correct"
+    },
+    {
+      "input": "brave",
+      "expected": "coward",
+      "output": "cowardly",
+      "score": "correct"
+    },
+    {
+      "input": "buy",
+      "expected": "sell",
+      "output": "sell",
+      "score": "correct"
+    },
+    {
+      "input": "maximum",
+      "expected": "minimum",
+      "output": "minimum",
+      "score": "correct"
+    },
+    {
+      "input": "complex",
+      "expected": "simple",
+      "output": "simple",
+      "score": "correct"
+    },
+    {
+      "input": "push",
+      "expected": "pull",
+      "output": "pull",
+      "score": "correct"
+    },
+    {
+      "input": "east",
+      "expected": "west",
+      "output": "west",
+      "score": "correct"
+    },
+    {
+      "input": "calm",
+      "expected": "nervous",
+      "output": "stormy",
+      "score": "correct"
+    },
+    {
+      "input": "clear",
+      "expected": "cloudy",
+      "output": "cloudy",
+      "score": "correct"
+    },
+    {
+      "input": "create",
+      "expected": "destroy",
+      "output": "destroy",
+      "score": "correct"
+    },
+    {
+      "input": "humble",
+      "expected": "arrogant",
+      "output": "proud",
+      "score": "correct"
+    },
+    {
+      "input": "attack",
+      "expected": "defend",
+      "output": "defense",
+      "score": "correct"
+    },
+    {
+      "input": "give",
+      "expected": "take",
+      "output": "take",
+      "score": "correct"
+    },
+    {
+      "input": "forget",
+      "expected": "remember",
+      "output": "remember",
+      "score": "correct"
+    },
+    {
+      "input": "full",
+      "expected": "empty",
+      "output": "empty",
+      "score": "correct"
+    },
+    {
+      "input": "praise",
+      "expected": "criticize",
+      "output": "blame",
+      "score": "correct"
+    },
+    {
+      "input": "include",
+      "expected": "exclude",
+      "output": "exclude",
+      "score": "correct"
+    },
+    {
+      "input": "rich",
+      "expected": "poor",
+      "output": "poor",
+      "score": "correct"
+    },
+    {
+      "input": "north",
+      "expected": "south",
+      "output": "south",
+      "score": "correct"
+    },
+    {
+      "input": "accept",
+      "expected": "reject",
+      "output": "reject",
+      "score": "correct"
+    },
+    {
+      "input": "long",
+      "expected": "short",
+      "output": "short",
+      "score": "correct"
+    },
+    {
+      "input": "start",
+      "expected": "stop",
+      "output": "stop",
+      "score": "correct"
+    },
+    {
+      "input": "thick",
+      "expected": "thin",
+      "output": "thin",
+      "score": "correct"
+    },
+    {
+      "input": "deep",
+      "expected": "shallow",
+      "output": "shallow",
+      "score": "correct"
+    },
+    {
+      "input": "open",
+      "expected": "closed",
+      "output": "closed",
+      "score": "correct"
+    },
+    {
+      "input": "sharp",
+      "expected": "dull",
+      "output": "dull",
+      "score": "correct"
+    },
+    {
+      "input": "sweet",
+      "expected": "bitter",
+      "output": "sour",
+      "score": "correct"
+    },
+    {
+      "input": "old",
+      "expected": "young",
+      "output": "young",
+      "score": "correct"
+    },
+    {
+      "input": "wide",
+      "expected": "narrow",
+      "output": "narrow",
+      "score": "correct"
+    },
+    {
+      "input": "bold",
+      "expected": "timid",
+      "output": "weak",
+      "score": "incorrect"
+    }
+  ],
+  "accuracy": 0.98,
+  "correct": 49,
+  "incorrect": 1,
+  "malformed": 0,
+  "passes_threshold": true
+}

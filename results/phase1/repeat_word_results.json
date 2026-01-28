@@ -1,0 +1,311 @@
+{
+  "task": "repeat_word",
+  "regime": "procedural",
+  "outputs": [
+    {
+      "input": "honey",
+      "expected": "honey honey",
+      "output": "honey honey",
+      "score": "correct"
+    },
+    {
+      "input": "frost",
+      "expected": "frost frost",
+      "output": "frost frost",
+      "score": "correct"
+    },
+    {
+      "input": "badge",
+      "expected": "badge badge",
+      "output": "badge badge",
+      "score": "correct"
+    },
+    {
+      "input": "stone",
+      "expected": "stone stone",
+      "output": "stone stone",
+      "score": "correct"
+    },
+    {
+      "input": "lemon",
+      "expected": "lemon lemon",
+      "output": "lemon lemon",
+      "score": "correct"
+    },
+    {
+      "input": "fjord",
+      "expected": "fjord fjord",
+      "output": "fjord fjord",
+      "score": "correct"
+    },
+    {
+      "input": "ivory",
+      "expected": "ivory ivory",
+      "output": "ivory ivory",
+      "score": "correct"
+    },
+    {
+      "input": "queen",
+      "expected": "queen queen",
+      "output": "queen queen",
+      "score": "correct"
+    },
+    {
+      "input": "lunar",
+      "expected": "lunar lunar",
+      "output": "lunar lunar",
+      "score": "correct"
+    },
+    {
+      "input": "youth",
+      "expected": "youth youth",
+      "output": "youth youth",
+      "score": "correct"
+    },
+    {
+      "input": "noble",
+      "expected": "noble noble",
+      "output": "noble noble",
+      "score": "correct"
+    },
+    {
+      "input": "dream",
+      "expected": "dream dream",
+      "output": "dream dream",
+      "score": "correct"
+    },
+    {
+      "input": "tower",
+      "expected": "tower tower",
+      "output": "tower tower",
+      "score": "correct"
+    },
+    {
+      "input": "knife",
+      "expected": "knife knife",
+      "output": "knife knife",
+      "score": "correct"
+    },
+    {
+      "input": "vivid",
+      "expected": "vivid vivid",
+      "output": "vivid vivid",
+      "score": "correct"
+    },
+    {
+      "input": "urban",
+      "expected": "urban urban",
+      "output": "urban urban",
+      "score": "correct"
+    },
+    {
+      "input": "river",
+      "expected": "river river",
+      "output": "river river",
+      "score": "correct"
+    },
+    {
+      "input": "globe",
+      "expected": "globe globe",
+      "output": "globe globe",
+      "score": "correct"
+    },
+    {
+      "input": "robin",
+      "expected": "robin robin",
+      "output": "robin robin",
+      "score": "correct"
+    },
+    {
+      "input": "grape",
+      "expected": "grape grape",
+      "output": "grape grape",
+      "score": "correct"
+    },
+    {
+      "input": "dwarf",
+      "expected": "dwarf dwarf",
+      "output": "dwarf dwarf",
+      "score": "correct"
+    },
+    {
+      "input": "ankle",
+      "expected": "ankle ankle",
+      "output": "ankle ankle",
+      "score": "correct"
+    },
+    {
+      "input": "piano",
+      "expected": "piano piano",
+      "output": "piano piano",
+      "score": "correct"
+    },
+    {
+      "input": "index",
+      "expected": "index index",
+      "output": "index index",
+      "score": "correct"
+    },
+    {
+      "input": "pixel",
+      "expected": "pixel pixel",
+      "output": "pixel pixel",
+      "score": "correct"
+    },
+    {
+      "input": "maple",
+      "expected": "maple maple",
+      "output": "maple maple",
+      "score": "correct"
+    },
+    {
+      "input": "kayak",
+      "expected": "kayak kayak",
+      "output": "kayak kayak",
+      "score": "correct"
+    },
+    {
+      "input": "candy",
+      "expected": "candy candy",
+      "output": "candy candy",
+      "score": "correct"
+    },
+    {
+      "input": "eagle",
+      "expected": "eagle eagle",
+      "output": "eagle eagle",
+      "score": "correct"
+    },
+    {
+      "input": "crane",
+      "expected": "crane crane",
+      "output": "crane crane",
+      "score": "correct"
+    },
+    {
+      "input": "glyph",
+      "expected": "glyph glyph",
+      "output": "glyph glyph",
+      "score": "correct"
+    },
+    {
+      "input": "sugar",
+      "expected": "sugar sugar",
+      "output": "sugar sugar",
+      "score": "correct"
+    },
+    {
+      "input": "ocean",
+      "expected": "ocean ocean",
+      "output": "ocean ocean",
+      "score": "correct"
+    },
+    {
+      "input": "ember",
+      "expected": "ember ember",
+      "output": "ember ember",
+      "score": "correct"
+    },
+    {
+      "input": "uncle",
+      "expected": "uncle uncle",
+      "output": "uncle uncle",
+      "score": "correct"
+    },
+    {
+      "input": "joker",
+      "expected": "joker joker",
+      "output": "joker joker",
+      "score": "correct"
+    },
+    {
+      "input": "haven",
+      "expected": "haven haven",
+      "output": "haven haven",
+      "score": "correct"
+    },
+    {
+      "input": "juice",
+      "expected": "juice juice",
+      "output": "juice juice",
+      "score": "correct"
+    },
+    {
+      "input": "jolly",
+      "expected": "jolly jolly",
+      "output": "jolly jolly",
+      "score": "correct"
+    },
+    {
+      "input": "trend",
+      "expected": "trend trend",
+      "output": "trend trend",
+      "score": "correct"
+    },
+    {
+      "input": "mango",
+      "expected": "mango mango",
+      "output": "mango mango",
+      "score": "correct"
+    },
+    {
+      "input": "quilt",
+      "expected": "quilt quilt",
+      "output": "quilt quilt",
+      "score": "correct"
+    },
+    {
+      "input": "nerve",
+      "expected": "nerve nerve",
+      "output": "nerve nerve",
+      "score": "correct"
+    },
+    {
+      "input": "pearl",
+      "expected": "pearl pearl",
+      "output": "pearl pearl",
+      "score": "correct"
+    },
+    {
+      "input": "valve",
+      "expected": "valve valve",
+      "output": "valve valve",
+      "score": "correct"
+    },
+    {
+      "input": "wheat",
+      "expected": "wheat wheat",
+      "output": "wheat wheat",
+      "score": "correct"
+    },
+    {
+      "input": "zebra",
+      "expected": "zebra zebra",
+      "output": "zebra zebra",
+      "score": "correct"
+    },
+    {
+      "input": "house",
+      "expected": "house house",
+      "output": "house house",
+      "score": "correct"
+    },
+    {
+      "input": "olive",
+      "expected": "olive olive",
+      "output": "olive olive",
+      "score": "correct"
+    },
+    {
+      "input": "waltz",
+      "expected": "waltz waltz",
+      "output": "waltz waltz",
+      "score": "correct"
+    }
+  ],
+  "accuracy": 1.0,
+  "correct": 50,
+  "incorrect": 0,
+  "malformed": 0,
+  "passes_threshold": true
+}

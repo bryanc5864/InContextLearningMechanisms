@@ -1,0 +1,88 @@
+tasks:
+  reverse:
+    type: string_manipulation
+    regime: procedural
+    description: "Reverse the input string"
+    demos:
+      - ["apple", "elppa"]
+      - ["brain", "niarb"]
+      - ["cloud", "duolc"]
+      - ["delta", "atled"]
+      - ["flame", "emalf"]
+
+  uppercase:
+    type: string_manipulation
+    regime: procedural
+    description: "Convert input to uppercase"
+    demos:
+      - ["apple", "APPLE"]
+      - ["brain", "BRAIN"]
+      - ["cloud", "CLOUD"]
+      - ["delta", "DELTA"]
+      - ["flame", "FLAME"]
+
+  pig_latin:
+    type: string_manipulation
+    regime: procedural
+    description: "Convert to pig latin"
+    demos:
+      - ["apple", "appleay"]
+      - ["brain", "ainbray"]
+      - ["cloud", "oudclay"]
+      - ["delta", "eltaday"]
+      - ["flame", "ameflay"]
+
+  length:
+    type: string_to_numeric
+    regime: counting
+    description: "Count characters in the input"
+    demos:
+      - ["apple", "5"]
+      - ["brain", "5"]
+      - ["cloud", "5"]
+      - ["delta", "5"]
+      - ["flame", "5"]
+
+  linear_2x:
+    type: numeric_regression
+    regime: gd_like
+    description: "Multiply input by 2"
+    demos:
+      - ["3", "6"]
+      - ["5", "10"]
+      - ["7", "14"]
+      - ["2", "4"]
+      - ["9", "18"]
+
+  sentiment:
+    type: semantic_classification
+    regime: bayesian
+    description: "Classify sentiment as positive or negative"
+    demos:
+      - ["joyful", "positive"]
+      - ["angry", "negative"]
+      - ["wonderful", "positive"]
+      - ["terrible", "negative"]
+      - ["cheerful", "positive"]
+
+  antonym:
+    type: lexical_retrieval
+    regime: retrieval
+    description: "Return the antonym"
+    demos:
+      - ["hot", "cold"]
+      - ["big", "small"]
+      - ["fast", "slow"]
+      - ["happy", "sad"]
+      - ["light", "dark"]
+
+  pattern_completion:
+    type: sequence_induction
+    regime: induction
+    description: "Complete the alternating pattern"
+    demos:
+      - ["A B A B A", "B"]
+      - ["1 2 1 2 1", "2"]
+      - ["X Y X Y X", "Y"]
+      - ["P Q P Q P", "Q"]
+      - ["M N M N M", "N"]

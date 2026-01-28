@@ -1,0 +1,4468 @@
+{
+  "metadata": {
+    "tasks": [
+      "uppercase",
+      "first_letter",
+      "repeat_word",
+      "length",
+      "linear_2x",
+      "sentiment",
+      "antonym",
+      "pattern_completion"
+    ],
+    "optimal_layer": 14,
+    "optimal_position": "last_demo_token",
+    "n_test_per_pair": 10,
+    "timestamp": "2026-01-28T00:36:34.201288"
+  },
+  "transfer_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.9,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "disruption_matrix": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.0
+    ],
+    [
+      0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "preservation_matrix": [
+    [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.9,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.9,
+      1.0
+    ],
+    [
+      0.9,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "controls": {
+    "baseline": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 1.0,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "zero_ablation": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 1.0,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "random_ablation": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 1.0,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    }
+  },
+  "task_vector_norms": {
+    "uppercase": 9.8046875,
+    "first_letter": 9.4609375,
+    "repeat_word": 10.375,
+    "length": 10.4140625,
+    "linear_2x": 10.421875,
+    "sentiment": 9.5390625,
+    "antonym": 10.0703125,
+    "pattern_completion": 9.921875
+  },
+  "transplant_details": [
+    {
+      "source": "uppercase",
+      "target": "uppercase",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "crane",
+          "output": "CRANE",
+          "classification": "source_task"
+        },
+        {
+          "input": "pixel",
+          "output": "PIXEL",
+          "classification": "source_task"
+        },
+        {
+          "input": "uncle",
+          "output": "UNCLE",
+          "classification": "source_task"
+        },
+        {
+          "input": "queen",
+          "output": "QUEEN",
+          "classification": "source_task"
+        },
+        {
+          "input": "badge",
+          "output": "BADGE",
+          "classification": "source_task"
+        },
+        {
+          "input": "lunar",
+          "output": "LUNAR",
+          "classification": "source_task"
+        },
+        {
+          "input": "house",
+          "output": "HOUSE",
+          "classification": "source_task"
+        },
+        {
+          "input": "grape",
+          "output": "GRAPE",
+          "classification": "source_task"
+        },
+        {
+          "input": "wheat",
+          "output": "WHEAT",
+          "classification": "source_task"
+        },
+        {
+          "input": "knife",
+          "output": "KNIFE",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "crane",
+          "output": "c",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "u",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "q",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "b",
+          "classification": "target_task"
+        },
+        {
+          "input": "lunar",
+          "output": "l",
+          "classification": "target_task"
+        },
+        {
+          "input": "house",
+          "output": "h",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "g",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "w",
+          "classification": "target_task"
+        },
+        {
+          "input": "knife",
+          "output": "k",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "crane",
+          "output": "crane crane",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "pixel pixel",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "uncle uncle",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "queen queen",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "badge badge",
+          "classification": "target_task"
+        },
+        {
+          "input": "lunar",
+          "output": "lunar lunar",
+          "classification": "target_task"
+        },
+        {
+          "input": "house",
+          "output": "house house",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "grape grape",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "wheat wheat",
+          "classification": "target_task"
+        },
+        {
+          "input": "knife",
+          "output": "knife knife",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "crane",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "lunar",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "house",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "knife",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "21",
+          "output": "42",
+          "classification": "target_task"
+        },
+        {
+          "input": "53",
+          "output": "106",
+          "classification": "target_task"
+        },
+        {
+          "input": "36",
+          "output": "72",
+          "classification": "target_task"
+        },
+        {
+          "input": "22",
+          "output": "44",
+          "classification": "target_task"
+        },
+        {
+          "input": "4",
+          "output": "8",
+          "classification": "target_task"
+        },
+        {
+          "input": "15",
+          "output": "30",
+          "classification": "target_task"
+        },
+        {
+          "input": "32",
+          "output": "64",
+          "classification": "target_task"
+        },
+        {
+          "input": "60",
+          "output": "120",
+          "classification": "target_task"
+        },
+        {
+          "input": "58",
+          "output": "116",
+          "classification": "target_task"
+        },
+        {
+          "input": "17",
+          "output": "34",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "affectionate",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "furious",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "pessimistic",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "sad",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "happy",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "miserable",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "fearful",
+          "output": "negative",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "create",
+          "output": "destroy",
+          "classification": "target_task"
+        },
+        {
+          "input": "complex",
+          "output": "simple",
+          "classification": "target_task"
+        },
+        {
+          "input": "full",
+          "output": "empty",
+          "classification": "target_task"
+        },
+        {
+          "input": "loud",
+          "output": "quiet",
+          "classification": "target_task"
+        },
+        {
+          "input": "bright",
+          "output": "dim",
+          "classification": "target_task"
+        },
+        {
+          "input": "win",
+          "output": "lose",
+          "classification": "target_task"
+        },
+        {
+          "input": "old",
+          "output": "young",
+          "classification": "target_task"
+        },
+        {
+          "input": "tall",
+          "output": "short",
+          "classification": "target_task"
+        },
+        {
+          "input": "sharp",
+          "output": "dull",
+          "classification": "target_task"
+        },
+        {
+          "input": "strong",
+          "output": "weak",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "! ? ! ? !",
+          "output": "?\n\nInput: 1 2 3 4 5",
+          "classification": "target_task"
+        },
+        {
+          "input": "H I H I H",
+          "output": "I",
+          "classification": "target_task"
+        },
+        {
+          "input": "c d c d c",
+          "output": "d",
+          "classification": "target_task"
+        },
+        {
+          "input": "5 6 5 6 5",
+          "output": "6",
+          "classification": "target_task"
+        },
+        {
+          "input": "o p o p o",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "D E D E D",
+          "output": "E",
+          "classification": "target_task"
+        },
+        {
+          "input": "E F E F E",
+          "output": "F",
+          "classification": "target_task"
+        },
+        {
+          "input": "C D C D C",
+          "output": "D",
+          "classification": "target_task"
+        },
+        {
+          "input": "g h g h g",
+          "output": "h",
+          "classification": "target_task"
+        },
+        {
+          "input": "I J I J I",
+          "output": "J",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "eagle",
+          "output": "EAGLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ANKLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "RIVER",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "VALVE",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "ZEBRA",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "BADGE",
+          "classification": "target_task"
+        },
+        {
+          "input": "nerve",
+          "output": "NERVE",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "MAPLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "FROST",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "GRAPE",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "first_letter",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "eagle",
+          "output": "e",
+          "classification": "source_task"
+        },
+        {
+          "input": "ankle",
+          "output": "a",
+          "classification": "source_task"
+        },
+        {
+          "input": "river",
+          "output": "r",
+          "classification": "source_task"
+        },
+        {
+          "input": "valve",
+          "output": "v",
+          "classification": "source_task"
+        },
+        {
+          "input": "zebra",
+          "output": "z",
+          "classification": "source_task"
+        },
+        {
+          "input": "badge",
+          "output": "b",
+          "classification": "source_task"
+        },
+        {
+          "input": "nerve",
+          "output": "n",
+          "classification": "source_task"
+        },
+        {
+          "input": "maple",
+          "output": "m",
+          "classification": "source_task"
+        },
+        {
+          "input": "frost",
+          "output": "f",
+          "classification": "source_task"
+        },
+        {
+          "input": "grape",
+          "output": "g",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "eagle",
+          "output": "eagle eagle",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ankle ankle",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "river river",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "valve valve",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "zebra zebra",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "badge badge",
+          "classification": "target_task"
+        },
+        {
+          "input": "nerve",
+          "output": "nerve nerve",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "maple maple",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "frost frost",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "grape grape",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "eagle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "nerve",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "42",
+          "output": "84",
+          "classification": "target_task"
+        },
+        {
+          "input": "52",
+          "output": "104",
+          "classification": "target_task"
+        },
+        {
+          "input": "30",
+          "output": "60",
+          "classification": "target_task"
+        },
+        {
+          "input": "48",
+          "output": "96",
+          "classification": "target_task"
+        },
+        {
+          "input": "12",
+          "output": "24",
+          "classification": "target_task"
+        },
+        {
+          "input": "32",
+          "output": "64",
+          "classification": "target_task"
+        },
+        {
+          "input": "54",
+          "output": "108",
+          "classification": "target_task"
+        },
+        {
+          "input": "17",
+          "output": "34",
+          "classification": "target_task"
+        },
+        {
+          "input": "4",
+          "output": "8",
+          "classification": "target_task"
+        },
+        {
+          "input": "58",
+          "output": "116",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "thrilled",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "content",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "loving",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "delighted",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "worried",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "hopeful",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "blissful",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "depressed",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "happy",
+          "output": "positive",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "clear",
+          "output": "cloudy",
+          "classification": "target_task"
+        },
+        {
+          "input": "brave",
+          "output": "cowardly",
+          "classification": "target_task"
+        },
+        {
+          "input": "clean",
+          "output": "dirty",
+          "classification": "target_task"
+        },
+        {
+          "input": "open",
+          "output": "closed",
+          "classification": "target_task"
+        },
+        {
+          "input": "sweet",
+          "output": "sour",
+          "classification": "target_task"
+        },
+        {
+          "input": "bright",
+          "output": "dim",
+          "classification": "target_task"
+        },
+        {
+          "input": "thick",
+          "output": "thin",
+          "classification": "target_task"
+        },
+        {
+          "input": "push",
+          "output": "pull",
+          "classification": "target_task"
+        },
+        {
+          "input": "alive",
+          "output": "dead",
+          "classification": "target_task"
+        },
+        {
+          "input": "tall",
+          "output": "short",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "first_letter",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "! ? ! ? !",
+          "output": "?\n\nInput: 1 2 3 4 5",
+          "classification": "target_task"
+        },
+        {
+          "input": "D E D E D",
+          "output": "E",
+          "classification": "target_task"
+        },
+        {
+          "input": "8 9 8 9 8",
+          "output": "9",
+          "classification": "target_task"
+        },
+        {
+          "input": "9 0 9 0 9",
+          "output": "0",
+          "classification": "target_task"
+        },
+        {
+          "input": "m n m n m",
+          "output": "n",
+          "classification": "target_task"
+        },
+        {
+          "input": "s t s t s",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "T U T U T",
+          "output": "U",
+          "classification": "target_task"
+        },
+        {
+          "input": "o p o p o",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "O N O N O",
+          "output": "N",
+          "classification": "target_task"
+        },
+        {
+          "input": "H I H I H",
+          "output": "I",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.1,
+      "preservation_rate": 0.9,
+      "counts": {
+        "source_task": 0,
+        "target_task": 9,
+        "neither": 1,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "index",
+          "output": "INDEX",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "KAYAK",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "MANGO",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "UNCLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "trend",
+          "output": "TRENDS",
+          "classification": "neither"
+        },
+        {
+          "input": "globe",
+          "output": "GLOBE",
+          "classification": "target_task"
+        },
+        {
+          "input": "eagle",
+          "output": "EAGLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "PIXEL",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "JOLLY",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "ZEBRA",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "index",
+          "output": "i",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "k",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "u",
+          "classification": "target_task"
+        },
+        {
+          "input": "trend",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "g",
+          "classification": "target_task"
+        },
+        {
+          "input": "eagle",
+          "output": "e",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "j",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "z",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "repeat_word",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "index",
+          "output": "index index",
+          "classification": "source_task"
+        },
+        {
+          "input": "kayak",
+          "output": "kayak kayak",
+          "classification": "source_task"
+        },
+        {
+          "input": "mango",
+          "output": "mango mango",
+          "classification": "source_task"
+        },
+        {
+          "input": "uncle",
+          "output": "uncle uncle",
+          "classification": "source_task"
+        },
+        {
+          "input": "trend",
+          "output": "trend trend",
+          "classification": "source_task"
+        },
+        {
+          "input": "globe",
+          "output": "globe globe",
+          "classification": "source_task"
+        },
+        {
+          "input": "eagle",
+          "output": "eagle eagle",
+          "classification": "source_task"
+        },
+        {
+          "input": "pixel",
+          "output": "pixel pixel",
+          "classification": "source_task"
+        },
+        {
+          "input": "jolly",
+          "output": "jolly jolly",
+          "classification": "source_task"
+        },
+        {
+          "input": "zebra",
+          "output": "zebra zebra",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "index",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "trend",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "eagle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "zebra",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "51",
+          "output": "102",
+          "classification": "target_task"
+        },
+        {
+          "input": "36",
+          "output": "72",
+          "classification": "target_task"
+        },
+        {
+          "input": "35",
+          "output": "70",
+          "classification": "target_task"
+        },
+        {
+          "input": "58",
+          "output": "116",
+          "classification": "target_task"
+        },
+        {
+          "input": "28",
+          "output": "56",
+          "classification": "target_task"
+        },
+        {
+          "input": "22",
+          "output": "44",
+          "classification": "target_task"
+        },
+        {
+          "input": "50",
+          "output": "100",
+          "classification": "target_task"
+        },
+        {
+          "input": "52",
+          "output": "104",
+          "classification": "target_task"
+        },
+        {
+          "input": "47",
+          "output": "94",
+          "classification": "target_task"
+        },
+        {
+          "input": "20",
+          "output": "40",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "generous",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "optimistic",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "hostile",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "furious",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "vindictive",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "amused",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "thrilled",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "frustrated",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "worried",
+          "output": "negative",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "maximum",
+          "output": "minimum",
+          "classification": "target_task"
+        },
+        {
+          "input": "east",
+          "output": "west",
+          "classification": "target_task"
+        },
+        {
+          "input": "long",
+          "output": "short",
+          "classification": "target_task"
+        },
+        {
+          "input": "full",
+          "output": "empty",
+          "classification": "target_task"
+        },
+        {
+          "input": "accept",
+          "output": "reject",
+          "classification": "target_task"
+        },
+        {
+          "input": "love",
+          "output": "hate",
+          "classification": "target_task"
+        },
+        {
+          "input": "clear",
+          "output": "cloudy",
+          "classification": "target_task"
+        },
+        {
+          "input": "complex",
+          "output": "simple",
+          "classification": "target_task"
+        },
+        {
+          "input": "north",
+          "output": "south",
+          "classification": "target_task"
+        },
+        {
+          "input": "sweet",
+          "output": "sour",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "r t r t r",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "O N O N O",
+          "output": "N",
+          "classification": "target_task"
+        },
+        {
+          "input": "R S R S R",
+          "output": "S",
+          "classification": "target_task"
+        },
+        {
+          "input": "c d c d c",
+          "output": "d",
+          "classification": "target_task"
+        },
+        {
+          "input": "2 3 2 3 2",
+          "output": "3",
+          "classification": "target_task"
+        },
+        {
+          "input": "y z y z y",
+          "output": "z",
+          "classification": "target_task"
+        },
+        {
+          "input": "u v u v u",
+          "output": "v",
+          "classification": "target_task"
+        },
+        {
+          "input": "1 0 1 0 1",
+          "output": "0",
+          "classification": "target_task"
+        },
+        {
+          "input": "Q R Q R Q",
+          "output": "R",
+          "classification": "target_task"
+        },
+        {
+          "input": "k l k l k",
+          "output": "l",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ivory",
+          "output": "IVORY",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "MAPLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "FROST",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ANKLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "VIVID",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "HONEY",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "OCEAN",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "QUEEN",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "MANGO",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "UNCLE",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ivory",
+          "output": "i",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "f",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "a",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "v",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "h",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "o",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "q",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "u",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ivory",
+          "output": "ivory ivory",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "maple maple",
+          "classification": "target_task"
+        },
+        {
+          "input": "frost",
+          "output": "frost frost",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ankle ankle",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "vivid vivid",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "honey honey",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "ocean ocean",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "queen queen",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "mango mango",
+          "classification": "target_task"
+        },
+        {
+          "input": "uncle",
+          "output": "uncle uncle",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ivory",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "maple",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "frost",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "ankle",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "vivid",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "honey",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "ocean",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "queen",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "mango",
+          "output": "5",
+          "classification": "source_task"
+        },
+        {
+          "input": "uncle",
+          "output": "5",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "31",
+          "output": "62",
+          "classification": "target_task"
+        },
+        {
+          "input": "28",
+          "output": "56",
+          "classification": "target_task"
+        },
+        {
+          "input": "34",
+          "output": "68",
+          "classification": "target_task"
+        },
+        {
+          "input": "15",
+          "output": "30",
+          "classification": "target_task"
+        },
+        {
+          "input": "14",
+          "output": "28",
+          "classification": "target_task"
+        },
+        {
+          "input": "51",
+          "output": "102",
+          "classification": "target_task"
+        },
+        {
+          "input": "11",
+          "output": "22",
+          "classification": "target_task"
+        },
+        {
+          "input": "45",
+          "output": "90",
+          "classification": "target_task"
+        },
+        {
+          "input": "18",
+          "output": "36",
+          "classification": "target_task"
+        },
+        {
+          "input": "55",
+          "output": "110",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "inspired",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "blissful",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "depressed",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "content",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "agitated",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "disgusted",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "enthusiastic",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "hostile",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "furious",
+          "output": "negative",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "wise",
+          "output": "foolish",
+          "classification": "target_task"
+        },
+        {
+          "input": "push",
+          "output": "pull",
+          "classification": "target_task"
+        },
+        {
+          "input": "alive",
+          "output": "dead",
+          "classification": "target_task"
+        },
+        {
+          "input": "brave",
+          "output": "cowardly",
+          "classification": "target_task"
+        },
+        {
+          "input": "ancient",
+          "output": "modern",
+          "classification": "target_task"
+        },
+        {
+          "input": "true",
+          "output": "false",
+          "classification": "target_task"
+        },
+        {
+          "input": "give",
+          "output": "take",
+          "classification": "target_task"
+        },
+        {
+          "input": "loud",
+          "output": "quiet",
+          "classification": "target_task"
+        },
+        {
+          "input": "long",
+          "output": "short",
+          "classification": "target_task"
+        },
+        {
+          "input": "full",
+          "output": "empty",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "p q p q p",
+          "output": "q",
+          "classification": "target_task"
+        },
+        {
+          "input": "B C B C B",
+          "output": "C",
+          "classification": "target_task"
+        },
+        {
+          "input": "Z Y Z Y Z",
+          "output": "Y",
+          "classification": "target_task"
+        },
+        {
+          "input": "q r q r q",
+          "output": "r",
+          "classification": "target_task"
+        },
+        {
+          "input": "U V U V U",
+          "output": "V",
+          "classification": "target_task"
+        },
+        {
+          "input": "D E D E D",
+          "output": "E",
+          "classification": "target_task"
+        },
+        {
+          "input": "r t r t r",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "5 6 5 6 5",
+          "output": "6",
+          "classification": "target_task"
+        },
+        {
+          "input": "R S R S R",
+          "output": "S",
+          "classification": "target_task"
+        },
+        {
+          "input": "c d c d c",
+          "output": "d",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ocean",
+          "output": "OCEAN",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "RIVER",
+          "classification": "target_task"
+        },
+        {
+          "input": "youth",
+          "output": "YOUTH",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ANKLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "MAPLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "QUEEN",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "BADGE",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "VIVID",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "PIXEL",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "INDEX",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ocean",
+          "output": "o",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "r",
+          "classification": "target_task"
+        },
+        {
+          "input": "youth",
+          "output": "y",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "a",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "q",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "b",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "v",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "i",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ocean",
+          "output": "ocean ocean",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "river river",
+          "classification": "target_task"
+        },
+        {
+          "input": "youth",
+          "output": "youth youth",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "ankle ankle",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "maple maple",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "queen queen",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "badge badge",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "vivid vivid",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "pixel pixel",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "index index",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "ocean",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "youth",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "ankle",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "maple",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "queen",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "badge",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "vivid",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "linear_2x",
+      "transfer_rate": 0.9,
+      "disruption_rate": 0.1,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 9,
+        "target_task": 0,
+        "neither": 1,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "27",
+          "output": "54",
+          "classification": "source_task"
+        },
+        {
+          "input": "6",
+          "output": "12",
+          "classification": "source_task"
+        },
+        {
+          "input": "13",
+          "output": "26",
+          "classification": "source_task"
+        },
+        {
+          "input": "54",
+          "output": "108",
+          "classification": "source_task"
+        },
+        {
+          "input": "25",
+          "output": "50",
+          "classification": "source_task"
+        },
+        {
+          "input": "48",
+          "output": "96",
+          "classification": "source_task"
+        },
+        {
+          "input": "24",
+          "output": "48",
+          "classification": "source_task"
+        },
+        {
+          "input": "46",
+          "output": "138",
+          "classification": "neither"
+        },
+        {
+          "input": "42",
+          "output": "84",
+          "classification": "source_task"
+        },
+        {
+          "input": "39",
+          "output": "78",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "enthusiastic",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "loving",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "confident",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "content",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "blissful",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "agitated",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "generous",
+          "output": "positive",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "give",
+          "output": "take",
+          "classification": "target_task"
+        },
+        {
+          "input": "clean",
+          "output": "dirty",
+          "classification": "target_task"
+        },
+        {
+          "input": "smooth",
+          "output": "rough",
+          "classification": "target_task"
+        },
+        {
+          "input": "brave",
+          "output": "cowardly",
+          "classification": "target_task"
+        },
+        {
+          "input": "push",
+          "output": "pull",
+          "classification": "target_task"
+        },
+        {
+          "input": "loud",
+          "output": "quiet",
+          "classification": "target_task"
+        },
+        {
+          "input": "bright",
+          "output": "dim",
+          "classification": "target_task"
+        },
+        {
+          "input": "ancient",
+          "output": "modern",
+          "classification": "target_task"
+        },
+        {
+          "input": "complex",
+          "output": "simple",
+          "classification": "target_task"
+        },
+        {
+          "input": "maximum",
+          "output": "minimum",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "linear_2x",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "J K J K J",
+          "output": "K",
+          "classification": "target_task"
+        },
+        {
+          "input": "7 8 7 8 7",
+          "output": "8",
+          "classification": "target_task"
+        },
+        {
+          "input": "6 7 6 7 6",
+          "output": "7",
+          "classification": "target_task"
+        },
+        {
+          "input": "o p o p o",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "G H G H G",
+          "output": "H",
+          "classification": "target_task"
+        },
+        {
+          "input": "5 6 5 6 5",
+          "output": "6",
+          "classification": "target_task"
+        },
+        {
+          "input": "q r q r q",
+          "output": "r",
+          "classification": "target_task"
+        },
+        {
+          "input": "8 9 8 9 8",
+          "output": "9",
+          "classification": "target_task"
+        },
+        {
+          "input": "w x w x w",
+          "output": "x",
+          "classification": "target_task"
+        },
+        {
+          "input": "u v u v u",
+          "output": "v",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "queen",
+          "output": "QUEEN",
+          "classification": "target_task"
+        },
+        {
+          "input": "crane",
+          "output": "CRANE",
+          "classification": "target_task"
+        },
+        {
+          "input": "noble",
+          "output": "NOBLE",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "VALVE",
+          "classification": "target_task"
+        },
+        {
+          "input": "fjord",
+          "output": "FJORD",
+          "classification": "target_task"
+        },
+        {
+          "input": "waltz",
+          "output": "WALTZ",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "GRAPE",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "KAYAK",
+          "classification": "target_task"
+        },
+        {
+          "input": "urban",
+          "output": "URBAN",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "GLOBE",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "queen",
+          "output": "q",
+          "classification": "target_task"
+        },
+        {
+          "input": "crane",
+          "output": "c",
+          "classification": "target_task"
+        },
+        {
+          "input": "noble",
+          "output": "n",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "v",
+          "classification": "target_task"
+        },
+        {
+          "input": "fjord",
+          "output": "f",
+          "classification": "target_task"
+        },
+        {
+          "input": "waltz",
+          "output": "w",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "g",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "k",
+          "classification": "target_task"
+        },
+        {
+          "input": "urban",
+          "output": "u",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "g",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "queen",
+          "output": "queen queen",
+          "classification": "target_task"
+        },
+        {
+          "input": "crane",
+          "output": "crane crane",
+          "classification": "target_task"
+        },
+        {
+          "input": "noble",
+          "output": "noble noble",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "valve valve",
+          "classification": "target_task"
+        },
+        {
+          "input": "fjord",
+          "output": "fjord fjord",
+          "classification": "target_task"
+        },
+        {
+          "input": "waltz",
+          "output": "waltz waltz",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "grape grape",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "kayak kayak",
+          "classification": "target_task"
+        },
+        {
+          "input": "urban",
+          "output": "urban urban",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "globe globe",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "queen",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "crane",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "noble",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "valve",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "fjord",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "waltz",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "grape",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "kayak",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "urban",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "globe",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "50",
+          "output": "100",
+          "classification": "target_task"
+        },
+        {
+          "input": "53",
+          "output": "106",
+          "classification": "target_task"
+        },
+        {
+          "input": "25",
+          "output": "50",
+          "classification": "target_task"
+        },
+        {
+          "input": "34",
+          "output": "68",
+          "classification": "target_task"
+        },
+        {
+          "input": "36",
+          "output": "72",
+          "classification": "target_task"
+        },
+        {
+          "input": "30",
+          "output": "60",
+          "classification": "target_task"
+        },
+        {
+          "input": "28",
+          "output": "56",
+          "classification": "target_task"
+        },
+        {
+          "input": "38",
+          "output": "76",
+          "classification": "target_task"
+        },
+        {
+          "input": "59",
+          "output": "118",
+          "classification": "target_task"
+        },
+        {
+          "input": "23",
+          "output": "46",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "sentiment",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "jealous",
+          "output": "negative",
+          "classification": "source_task"
+        },
+        {
+          "input": "affectionate",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "resentful",
+          "output": "negative",
+          "classification": "source_task"
+        },
+        {
+          "input": "delighted",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "envious",
+          "output": "negative",
+          "classification": "source_task"
+        },
+        {
+          "input": "jubilant",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "happy",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "optimistic",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "serene",
+          "output": "positive",
+          "classification": "source_task"
+        },
+        {
+          "input": "amused",
+          "output": "positive",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.1,
+      "preservation_rate": 0.9,
+      "counts": {
+        "source_task": 0,
+        "target_task": 9,
+        "neither": 1,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "loud",
+          "output": "quiet",
+          "classification": "target_task"
+        },
+        {
+          "input": "create",
+          "output": "destroy",
+          "classification": "target_task"
+        },
+        {
+          "input": "rise",
+          "output": "fall",
+          "classification": "target_task"
+        },
+        {
+          "input": "open",
+          "output": "closed",
+          "classification": "target_task"
+        },
+        {
+          "input": "generous",
+          "output": "stingy",
+          "classification": "target_task"
+        },
+        {
+          "input": "bold",
+          "output": "weak",
+          "classification": "neither"
+        },
+        {
+          "input": "tall",
+          "output": "short",
+          "classification": "target_task"
+        },
+        {
+          "input": "east",
+          "output": "west",
+          "classification": "target_task"
+        },
+        {
+          "input": "arrive",
+          "output": "depart",
+          "classification": "target_task"
+        },
+        {
+          "input": "love",
+          "output": "hate",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "1 0 1 0 1",
+          "output": "0",
+          "classification": "target_task"
+        },
+        {
+          "input": "O N O N O",
+          "output": "N",
+          "classification": "target_task"
+        },
+        {
+          "input": "r t r t r",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "B C B C B",
+          "output": "C",
+          "classification": "target_task"
+        },
+        {
+          "input": "Q R Q R Q",
+          "output": "R",
+          "classification": "target_task"
+        },
+        {
+          "input": "8 9 8 9 8",
+          "output": "9",
+          "classification": "target_task"
+        },
+        {
+          "input": "y z y z y",
+          "output": "z",
+          "classification": "target_task"
+        },
+        {
+          "input": "L M L M L",
+          "output": "M",
+          "classification": "target_task"
+        },
+        {
+          "input": "4 5 4 5 4",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "e f e f e",
+          "output": "f",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.1,
+      "preservation_rate": 0.9,
+      "counts": {
+        "source_task": 0,
+        "target_task": 9,
+        "neither": 1,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "lunar",
+          "output": "LUNAR",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "IVORY",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "JOLLY",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "MANGO",
+          "classification": "target_task"
+        },
+        {
+          "input": "stone",
+          "output": "STONE",
+          "classification": "target_task"
+        },
+        {
+          "input": "juice",
+          "output": "JUICE",
+          "classification": "target_task"
+        },
+        {
+          "input": "olive",
+          "output": "OLIVE",
+          "classification": "target_task"
+        },
+        {
+          "input": "tower",
+          "output": "TOWER",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "HONEY",
+          "classification": "target_task"
+        },
+        {
+          "input": "glyph",
+          "output": "GYLPH",
+          "classification": "neither"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "lunar",
+          "output": "l",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "i",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "j",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "stone",
+          "output": "s",
+          "classification": "target_task"
+        },
+        {
+          "input": "juice",
+          "output": "j",
+          "classification": "target_task"
+        },
+        {
+          "input": "olive",
+          "output": "o",
+          "classification": "target_task"
+        },
+        {
+          "input": "tower",
+          "output": "t",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "h",
+          "classification": "target_task"
+        },
+        {
+          "input": "glyph",
+          "output": "g",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "repeat_word",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "lunar",
+          "output": "lunar lunar",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "ivory ivory",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "jolly jolly",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "mango mango",
+          "classification": "target_task"
+        },
+        {
+          "input": "stone",
+          "output": "stone stone",
+          "classification": "target_task"
+        },
+        {
+          "input": "juice",
+          "output": "juice juice",
+          "classification": "target_task"
+        },
+        {
+          "input": "olive",
+          "output": "olive olive",
+          "classification": "target_task"
+        },
+        {
+          "input": "tower",
+          "output": "tower tower",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "honey honey",
+          "classification": "target_task"
+        },
+        {
+          "input": "glyph",
+          "output": "glyph glyph",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "lunar",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "jolly",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "stone",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "juice",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "olive",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "tower",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "honey",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "glyph",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "51",
+          "output": "102",
+          "classification": "target_task"
+        },
+        {
+          "input": "29",
+          "output": "58",
+          "classification": "target_task"
+        },
+        {
+          "input": "49",
+          "output": "98",
+          "classification": "target_task"
+        },
+        {
+          "input": "52",
+          "output": "104",
+          "classification": "target_task"
+        },
+        {
+          "input": "30",
+          "output": "60",
+          "classification": "target_task"
+        },
+        {
+          "input": "57",
+          "output": "114",
+          "classification": "target_task"
+        },
+        {
+          "input": "21",
+          "output": "42",
+          "classification": "target_task"
+        },
+        {
+          "input": "18",
+          "output": "36",
+          "classification": "target_task"
+        },
+        {
+          "input": "47",
+          "output": "94",
+          "classification": "target_task"
+        },
+        {
+          "input": "28",
+          "output": "56",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "pessimistic",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "inspired",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "frustrated",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "hostile",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "bitter",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "excited",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "anxious",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "peaceful",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "disgusted",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "elated",
+          "output": "positive",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "antonym",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "win",
+          "output": "lose",
+          "classification": "source_task"
+        },
+        {
+          "input": "wise",
+          "output": "foolish",
+          "classification": "source_task"
+        },
+        {
+          "input": "north",
+          "output": "south",
+          "classification": "source_task"
+        },
+        {
+          "input": "long",
+          "output": "short",
+          "classification": "source_task"
+        },
+        {
+          "input": "dry",
+          "output": "wet",
+          "classification": "source_task"
+        },
+        {
+          "input": "rich",
+          "output": "poor",
+          "classification": "source_task"
+        },
+        {
+          "input": "wide",
+          "output": "narrow",
+          "classification": "source_task"
+        },
+        {
+          "input": "early",
+          "output": "late",
+          "classification": "source_task"
+        },
+        {
+          "input": "true",
+          "output": "false",
+          "classification": "source_task"
+        },
+        {
+          "input": "humble",
+          "output": "proud",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "antonym",
+      "target": "pattern_completion",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "k l k l k",
+          "output": "l",
+          "classification": "target_task"
+        },
+        {
+          "input": "9 0 9 0 9",
+          "output": "0",
+          "classification": "target_task"
+        },
+        {
+          "input": "8 9 8 9 8",
+          "output": "9",
+          "classification": "target_task"
+        },
+        {
+          "input": "y z y z y",
+          "output": "z",
+          "classification": "target_task"
+        },
+        {
+          "input": "x z x z x",
+          "output": "z",
+          "classification": "target_task"
+        },
+        {
+          "input": "I J I J I",
+          "output": "J",
+          "classification": "target_task"
+        },
+        {
+          "input": "Z Y Z Y Z",
+          "output": "Y",
+          "classification": "target_task"
+        },
+        {
+          "input": "B C B C B",
+          "output": "C",
+          "classification": "target_task"
+        },
+        {
+          "input": "e f e f e",
+          "output": "f",
+          "classification": "target_task"
+        },
+        {
+          "input": "W X W X W",
+          "output": "X",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "uppercase",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "youth",
+          "output": "YOUTH",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "WHEAT",
+          "classification": "target_task"
+        },
+        {
+          "input": "sugar",
+          "output": "SUGAR",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "PIXEL",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "IVORY",
+          "classification": "target_task"
+        },
+        {
+          "input": "candy",
+          "output": "CANDY",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "RIVER",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "MANGO",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "OCEAN",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "INDEX",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "first_letter",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "youth",
+          "output": "y",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "w",
+          "classification": "target_task"
+        },
+        {
+          "input": "sugar",
+          "output": "s",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "p",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "i",
+          "classification": "target_task"
+        },
+        {
+          "input": "candy",
+          "output": "c",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "r",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "m",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "o",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "i",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "repeat_word",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "youth",
+          "output": "youth youth",
+          "classification": "source_task"
+        },
+        {
+          "input": "wheat",
+          "output": "wheat wheat",
+          "classification": "source_task"
+        },
+        {
+          "input": "sugar",
+          "output": "sugar sugar",
+          "classification": "source_task"
+        },
+        {
+          "input": "pixel",
+          "output": "pixel pixel",
+          "classification": "source_task"
+        },
+        {
+          "input": "ivory",
+          "output": "ivory ivory",
+          "classification": "source_task"
+        },
+        {
+          "input": "candy",
+          "output": "candy candy",
+          "classification": "source_task"
+        },
+        {
+          "input": "river",
+          "output": "river river",
+          "classification": "source_task"
+        },
+        {
+          "input": "mango",
+          "output": "mango mango",
+          "classification": "source_task"
+        },
+        {
+          "input": "ocean",
+          "output": "ocean ocean",
+          "classification": "source_task"
+        },
+        {
+          "input": "index",
+          "output": "index index",
+          "classification": "source_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "length",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "youth",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "wheat",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "sugar",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "pixel",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "ivory",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "candy",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "river",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "mango",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "ocean",
+          "output": "5",
+          "classification": "target_task"
+        },
+        {
+          "input": "index",
+          "output": "5",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "linear_2x",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "26",
+          "output": "52",
+          "classification": "target_task"
+        },
+        {
+          "input": "8",
+          "output": "16",
+          "classification": "target_task"
+        },
+        {
+          "input": "29",
+          "output": "58",
+          "classification": "target_task"
+        },
+        {
+          "input": "37",
+          "output": "74",
+          "classification": "target_task"
+        },
+        {
+          "input": "6",
+          "output": "12",
+          "classification": "target_task"
+        },
+        {
+          "input": "54",
+          "output": "108",
+          "classification": "target_task"
+        },
+        {
+          "input": "25",
+          "output": "50",
+          "classification": "target_task"
+        },
+        {
+          "input": "22",
+          "output": "44",
+          "classification": "target_task"
+        },
+        {
+          "input": "24",
+          "output": "48",
+          "classification": "target_task"
+        },
+        {
+          "input": "34",
+          "output": "68",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "sentiment",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "confident",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "miserable",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "compassionate",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "inspired",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "radiant",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "loving",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "hostile",
+          "output": "negative",
+          "classification": "target_task"
+        },
+        {
+          "input": "enthusiastic",
+          "output": "positive",
+          "classification": "target_task"
+        },
+        {
+          "input": "generous",
+          "output": "positive",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "antonym",
+      "transfer_rate": 0.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 1.0,
+      "counts": {
+        "source_task": 0,
+        "target_task": 10,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "smooth",
+          "output": "rough",
+          "classification": "target_task"
+        },
+        {
+          "input": "sharp",
+          "output": "dull",
+          "classification": "target_task"
+        },
+        {
+          "input": "attack",
+          "output": "defense",
+          "classification": "target_task"
+        },
+        {
+          "input": "complex",
+          "output": "simple",
+          "classification": "target_task"
+        },
+        {
+          "input": "wise",
+          "output": "foolish",
+          "classification": "target_task"
+        },
+        {
+          "input": "calm",
+          "output": "stormy",
+          "classification": "target_task"
+        },
+        {
+          "input": "clean",
+          "output": "dirty",
+          "classification": "target_task"
+        },
+        {
+          "input": "long",
+          "output": "short",
+          "classification": "target_task"
+        },
+        {
+          "input": "give",
+          "output": "take",
+          "classification": "target_task"
+        },
+        {
+          "input": "maximum",
+          "output": "minimum",
+          "classification": "target_task"
+        }
+      ]
+    },
+    {
+      "source": "pattern_completion",
+      "target": "pattern_completion",
+      "transfer_rate": 1.0,
+      "disruption_rate": 0.0,
+      "preservation_rate": 0.0,
+      "counts": {
+        "source_task": 10,
+        "target_task": 0,
+        "neither": 0,
+        "malformed": 0
+      },
+      "details": [
+        {
+          "input": "1 0 1 0 1",
+          "output": "0",
+          "classification": "source_task"
+        },
+        {
+          "input": "H I H I H",
+          "output": "I",
+          "classification": "source_task"
+        },
+        {
+          "input": "O N O N O",
+          "output": "N",
+          "classification": "source_task"
+        },
+        {
+          "input": "6 7 6 7 6",
+          "output": "7",
+          "classification": "source_task"
+        },
+        {
+          "input": "e f e f e",
+          "output": "f",
+          "classification": "source_task"
+        },
+        {
+          "input": "m n m n m",
+          "output": "n",
+          "classification": "source_task"
+        },
+        {
+          "input": "b d b d b",
+          "output": "d",
+          "classification": "source_task"
+        },
+        {
+          "input": "F G F G F",
+          "output": "G",
+          "classification": "source_task"
+        },
+        {
+          "input": "E F E F E",
+          "output": "F",
+          "classification": "source_task"
+        },
+        {
+          "input": "@ # @ # @",
+          "output": "#\n\nInput: $ % $ % $",
+          "classification": "source_task"
+        }
+      ]
+    }
+  ]
+}

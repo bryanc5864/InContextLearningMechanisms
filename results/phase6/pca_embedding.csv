@@ -1,0 +1,9 @@
+task,regime,pc1,pc2,pc3
+antonym,retrieval,1.312236,0.961634,4.363047
+first_letter,procedural,-2.233714,-1.001048,0.124094
+length,counting,-2.716143,-0.657312,-1.509439
+linear_2x,gd_like,5.284601,-0.868266,-2.689164
+pattern_completion,induction,3.810706,-0.932121,0.912573
+repeat_word,procedural,-2.430700,-2.028180,0.039624
+sentiment,bayesian,-0.889937,6.092520,-1.098213
+uppercase,procedural,-2.137047,-1.567228,-0.142523
