@@ -1,0 +1,4287 @@
+{
+  "metadata": {
+    "test_layers": [
+      0,
+      4,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      20,
+      24,
+      27
+    ],
+    "pairs": [
+      [
+        "uppercase",
+        "sentiment"
+      ],
+      [
+        "linear_2x",
+        "uppercase"
+      ],
+      [
+        "sentiment",
+        "first_letter"
+      ],
+      [
+        "pattern_completion",
+        "length"
+      ],
+      [
+        "antonym",
+        "repeat_word"
+      ],
+      [
+        "first_letter",
+        "linear_2x"
+      ]
+    ],
+    "n_test": 10,
+    "position": "first_query_token",
+    "timestamp": "2026-01-28T19:46:52.920488"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.3,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "negative",
+              "classification": "neither"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "negative",
+              "classification": "neither"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "negative",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.4,
+          "neither_rate": 0.6,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "neutral",
+              "classification": "neither"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "neutral",
+              "classification": "neither"
+            },
+            {
+              "input": "grateful",
+              "output": "neutral",
+              "classification": "neither"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "neutral",
+              "classification": "neither"
+            },
+            {
+              "input": "jealous",
+              "output": "neutral",
+              "classification": "neither"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "neutral",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "disgusted",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "depressed",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "gloomy",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "bitter",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "grateful",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "envious",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "inspired",
+              "output": "positive",
+              "classification": "target"
+            },
+            {
+              "input": "jealous",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "pessimistic",
+              "output": "negative",
+              "classification": "target"
+            },
+            {
+              "input": "confident",
+              "output": "positive",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "uppercase",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.3,
+          "details": [
+            {
+              "input": "crane",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "DELTA",
+              "classification": "neither"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "FLAME",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.3,
+          "neither_rate": 0.7,
+          "details": [
+            {
+              "input": "crane",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "DELTA",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "BRAIN",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "DELTA",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "grape",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "FLAME",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.5,
+          "neither_rate": 0.5,
+          "details": [
+            {
+              "input": "crane",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "DELTA",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BRADE",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "FLAME",
+              "classification": "neither"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "FLAME",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "crane",
+              "output": "CRANE",
+              "classification": "target"
+            },
+            {
+              "input": "pixel",
+              "output": "PIXEL",
+              "classification": "target"
+            },
+            {
+              "input": "uncle",
+              "output": "UNCLE",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "QUEEN",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "LUNAR",
+              "classification": "target"
+            },
+            {
+              "input": "house",
+              "output": "HOUSE",
+              "classification": "target"
+            },
+            {
+              "input": "grape",
+              "output": "GRAPE",
+              "classification": "target"
+            },
+            {
+              "input": "wheat",
+              "output": "WHEAT",
+              "classification": "target"
+            },
+            {
+              "input": "knife",
+              "output": "KNIFE",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "first_letter",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9,
+          "details": [
+            {
+              "input": "honey",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "f",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "neither_rate": 0.8,
+          "details": [
+            {
+              "input": "honey",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "f",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "neither_rate": 0.8,
+          "details": [
+            {
+              "input": "honey",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "f",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "f",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9,
+          "details": [
+            {
+              "input": "honey",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "g",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "g",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "g",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9,
+          "details": [
+            {
+              "input": "honey",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "g",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.5,
+          "neither_rate": 0.5,
+          "details": [
+            {
+              "input": "honey",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "s",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "i",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "g",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "g",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "h",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "b",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "s",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "i",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "q",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "y",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "h",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "b",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "s",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "i",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "q",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "y",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "h",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "b",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "s",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "i",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "q",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "y",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "h",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "b",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "s",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "i",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "q",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "l",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "y",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "length",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "5",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "5",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "repeat_word",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1,
+          "details": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "lemon lemon",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "w fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "ivory ivory",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "queen queen",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "lunar lunar",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "wide awake",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "wide badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "wide stone wide stone",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "warm fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "warm ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "wide queen wide queen",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "wide lunar wide",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "wide youth youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "wide awake",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "wide badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "wide stone wide stone",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "wide fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "wide ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "wide queen wide queen",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "wide lunar wide",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "wide youth youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "wide awake",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "wide badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "wide stone wide stone",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "wide fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "wide ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "wide queen wide queen",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "wide lunar wide",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "wide youth youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "wide awake",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "wide badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "wide stone wide stone",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "wide",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "wide fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "wide ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "wide queen wide queen",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "wide lunar wide",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "wide youth youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "neither_rate": 0.8,
+          "details": [
+            {
+              "input": "honey",
+              "output": "warm honey",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "warm",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "wide badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "warm lemon lemon",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "warm fjord fjord",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "warm ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "(no output)",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "wide lunar wide",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9,
+          "details": [
+            {
+              "input": "honey",
+              "output": "bright yellow",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "bright frost frost",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "bright badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "bright stone bright",
+              "classification": "neither"
+            },
+            {
+              "input": "lemon",
+              "output": "bright lemon",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "fjord fjord",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "bright ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "bright queen bright",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "bright lunar",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "bright youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9,
+          "details": [
+            {
+              "input": "honey",
+              "output": "(no output)",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "flame frost",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "bright badge badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "loud lemon",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "bright ivory ivory",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "(no output)",
+              "classification": "neither"
+            },
+            {
+              "input": "lunar",
+              "output": "loud lunar",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "wise youth",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.3,
+          "neither_rate": 0.7,
+          "details": [
+            {
+              "input": "honey",
+              "output": "h o n e y",
+              "classification": "neither"
+            },
+            {
+              "input": "frost",
+              "output": "flame frost",
+              "classification": "neither"
+            },
+            {
+              "input": "badge",
+              "output": "brain badge",
+              "classification": "neither"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "loud lemon",
+              "classification": "neither"
+            },
+            {
+              "input": "fjord",
+              "output": "f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "i v a o",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "queen queen",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "loud lunar",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.3,
+          "details": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "lemon lemon",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j",
+              "classification": "neither"
+            },
+            {
+              "input": "ivory",
+              "output": "i v a o",
+              "classification": "neither"
+            },
+            {
+              "input": "queen",
+              "output": "queen queen",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "luna luna",
+              "classification": "neither"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "lemon lemon",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "fjord fjord",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "ivory ivory",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "queen queen",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "lunar lunar",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "classification": "target"
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "classification": "target"
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "classification": "target"
+            },
+            {
+              "input": "stone",
+              "output": "stone stone",
+              "classification": "target"
+            },
+            {
+              "input": "lemon",
+              "output": "lemon lemon",
+              "classification": "target"
+            },
+            {
+              "input": "fjord",
+              "output": "fjord fjord",
+              "classification": "target"
+            },
+            {
+              "input": "ivory",
+              "output": "ivory ivory",
+              "classification": "target"
+            },
+            {
+              "input": "queen",
+              "output": "queen queen",
+              "classification": "target"
+            },
+            {
+              "input": "lunar",
+              "output": "lunar lunar",
+              "classification": "target"
+            },
+            {
+              "input": "youth",
+              "output": "youth youth",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "linear_2x",
+      "layer_results": [
+        {
+          "layer": 0,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "Error: Invalid input. Please enter a number that is a multiple of 3.",
+              "classification": "neither"
+            },
+            {
+              "input": "53",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "36",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "22",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "4",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "15",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "32",
+              "output": "Error: Invalid input. Please enter a number between 1 and 10.",
+              "classification": "neither"
+            },
+            {
+              "input": "60",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "58",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "17",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.3,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "15",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "Error: Invalid input. Please enter a positive integer.",
+              "classification": "neither"
+            }
+          ]
+        },
+        {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 11,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 16,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 24,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        },
+        {
+          "layer": 27,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "details": [
+            {
+              "input": "21",
+              "output": "42",
+              "classification": "target"
+            },
+            {
+              "input": "53",
+              "output": "106",
+              "classification": "target"
+            },
+            {
+              "input": "36",
+              "output": "72",
+              "classification": "target"
+            },
+            {
+              "input": "22",
+              "output": "44",
+              "classification": "target"
+            },
+            {
+              "input": "4",
+              "output": "8",
+              "classification": "target"
+            },
+            {
+              "input": "15",
+              "output": "30",
+              "classification": "target"
+            },
+            {
+              "input": "32",
+              "output": "64",
+              "classification": "target"
+            },
+            {
+              "input": "60",
+              "output": "120",
+              "classification": "target"
+            },
+            {
+              "input": "58",
+              "output": "116",
+              "classification": "target"
+            },
+            {
+              "input": "17",
+              "output": "34",
+              "classification": "target"
+            }
+          ]
+        }
+      ],
+      "peak_layer": 0,
+      "peak_transfer": 0.0
+    }
+  ],
+  "layer_summary": {
+    "0": 0.0,
+    "4": 0.0,
+    "8": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0,
+    "14": 0.0,
+    "16": 0.0,
+    "20": 0.0,
+    "24": 0.0,
+    "27": 0.0
+  }
+}
