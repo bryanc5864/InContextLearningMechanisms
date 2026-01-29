@@ -1,0 +1,53 @@
+2026-01-28 23:18:39,741 [INFO] Experiment 10: Attention Pattern Intervention
+2026-01-28 23:18:39,741 [INFO] Start: 2026-01-28T23:18:39.741590
+2026-01-28 23:20:12,572 [INFO] Experiment 10: Attention Pattern Intervention
+2026-01-28 23:20:12,572 [INFO] Start: 2026-01-28T23:20:12.572825
+2026-01-28 23:20:56,762 [INFO] Experiment 10: Attention Pattern Intervention
+2026-01-28 23:20:56,762 [INFO] Start: 2026-01-28T23:20:56.762945
+2026-01-28 23:21:17,272 [INFO] ============================================================
+2026-01-28 23:21:17,272 [INFO] Part A: Attention Knockout (zero demo info at layer L)
+2026-01-28 23:21:17,273 [INFO] ============================================================
+2026-01-28 23:21:17,273 [INFO] 
+Task: uppercase
+2026-01-28 23:21:32,390 [INFO]   Baseline: 1.00
+2026-01-28 23:21:46,851 [INFO]   Layer  4: acc=0.00 disruption=1.00 ***
+2026-01-28 23:22:01,454 [INFO]   Layer  8: acc=0.00 disruption=1.00 ***
+2026-01-28 23:22:15,705 [INFO]   Layer 12: acc=0.00 disruption=1.00 ***
+2026-01-28 23:22:29,977 [INFO]   Layer 16: acc=1.00 disruption=0.00 
+2026-01-28 23:22:44,326 [INFO]   Layer 20: acc=1.00 disruption=0.00 
+2026-01-28 23:22:44,327 [INFO] 
+Task: first_letter
+2026-01-28 23:22:58,546 [INFO]   Baseline: 1.00
+2026-01-28 23:23:12,773 [INFO]   Layer  4: acc=0.00 disruption=1.00 ***
+2026-01-28 23:23:26,888 [INFO]   Layer  8: acc=0.00 disruption=1.00 ***
+2026-01-28 23:23:40,472 [INFO]   Layer 12: acc=0.10 disruption=0.90 ***
+2026-01-28 23:23:53,881 [INFO]   Layer 16: acc=1.00 disruption=0.00 
+2026-01-28 23:24:07,290 [INFO]   Layer 20: acc=1.00 disruption=0.00 
+2026-01-28 23:24:07,291 [INFO] 
+Task: repeat_word
+2026-01-28 23:24:20,429 [INFO]   Baseline: 1.00
+2026-01-28 23:24:33,817 [INFO]   Layer  4: acc=0.00 disruption=1.00 ***
+2026-01-28 23:24:46,902 [INFO]   Layer  8: acc=0.00 disruption=1.00 ***
+2026-01-28 23:25:00,164 [INFO]   Layer 12: acc=0.00 disruption=1.00 ***
+2026-01-28 23:25:13,413 [INFO]   Layer 16: acc=1.00 disruption=0.00 
+2026-01-28 23:25:26,535 [INFO]   Layer 20: acc=1.00 disruption=0.00 
+2026-01-28 23:25:26,535 [INFO] 
+Task: length
+2026-01-28 23:25:39,673 [INFO]   Baseline: 1.00
+2026-01-28 23:25:52,678 [INFO]   Layer  4: acc=0.00 disruption=1.00 ***
+2026-01-28 23:26:05,669 [INFO]   Layer  8: acc=0.00 disruption=1.00 ***
+2026-01-28 23:26:18,612 [INFO]   Layer 12: acc=0.20 disruption=0.80 ***
+2026-01-28 23:26:31,576 [INFO]   Layer 16: acc=0.90 disruption=0.10 
+2026-01-28 23:26:44,302 [INFO]   Layer 20: acc=1.00 disruption=0.00 
+2026-01-28 23:26:44,302 [INFO] 
+============================================================
+2026-01-28 23:26:44,302 [INFO] Part B: Demo knockout effect by layer
+2026-01-28 23:26:44,302 [INFO] ============================================================
+2026-01-28 23:26:44,303 [INFO]   Layer  4: mean disruption = 1.000
+2026-01-28 23:26:44,303 [INFO]   Layer  8: mean disruption = 1.000
+2026-01-28 23:26:44,303 [INFO]   Layer 12: mean disruption = 0.925
+2026-01-28 23:26:44,303 [INFO]   Layer 16: mean disruption = 0.025
+2026-01-28 23:26:44,303 [INFO]   Layer 20: mean disruption = 0.000
+2026-01-28 23:26:44,304 [INFO] 
+Results saved to results/exp10
+2026-01-28 23:26:44,304 [INFO] Experiment 10 complete: 2026-01-28T23:26:44.304811

@@ -1,0 +1,198 @@
+2026-01-28 23:18:40,871 [INFO] Experiment 12: Layer-Wise Ablation Study
+2026-01-28 23:18:40,871 [INFO] Start: 2026-01-28T23:18:40.871401
+2026-01-28 23:26:59,492 [INFO] Experiment 12: Layer-Wise Ablation Study
+2026-01-28 23:26:59,493 [INFO] Start: 2026-01-28T23:26:59.493121
+2026-01-28 23:27:17,504 [INFO] ============================================================
+2026-01-28 23:27:17,506 [INFO] Part A: Single Layer Skip
+2026-01-28 23:27:17,506 [INFO] ============================================================
+2026-01-28 23:27:17,507 [INFO] 
+Task: uppercase
+2026-01-28 23:27:38,941 [INFO]   Baseline: 1.00
+2026-01-28 23:27:59,078 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:28:20,288 [INFO]   Skip layer  2: acc=1.00 drop=0.00 
+2026-01-28 23:28:42,364 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-28 23:29:04,541 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-28 23:29:27,293 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-28 23:29:49,780 [INFO]   Skip layer 10: acc=1.00 drop=0.00 
+2026-01-28 23:30:12,185 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-28 23:30:34,554 [INFO]   Skip layer 14: acc=0.93 drop=0.07 
+2026-01-28 23:30:56,750 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-28 23:31:19,180 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:31:41,622 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-28 23:32:03,794 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:32:26,237 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:32:49,389 [INFO]   Skip layer 26: acc=0.93 drop=0.07 
+2026-01-28 23:32:49,389 [INFO] 
+Task: first_letter
+2026-01-28 23:33:11,033 [INFO]   Baseline: 1.00
+2026-01-28 23:33:33,731 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:33:55,171 [INFO]   Skip layer  2: acc=0.93 drop=0.07 
+2026-01-28 23:34:16,984 [INFO]   Skip layer  4: acc=0.87 drop=0.13 
+2026-01-28 23:34:38,716 [INFO]   Skip layer  6: acc=0.80 drop=0.20 
+2026-01-28 23:35:00,804 [INFO]   Skip layer  8: acc=0.80 drop=0.20 
+2026-01-28 23:35:22,442 [INFO]   Skip layer 10: acc=0.80 drop=0.20 
+2026-01-28 23:35:44,257 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-28 23:36:06,724 [INFO]   Skip layer 14: acc=0.60 drop=0.40 ***
+2026-01-28 23:36:29,036 [INFO]   Skip layer 16: acc=0.93 drop=0.07 
+2026-01-28 23:36:51,113 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:37:13,357 [INFO]   Skip layer 20: acc=0.93 drop=0.07 
+2026-01-28 23:37:35,121 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:37:55,412 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:38:15,278 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-28 23:38:15,278 [INFO] 
+Task: repeat_word
+2026-01-28 23:38:35,025 [INFO]   Baseline: 1.00
+2026-01-28 23:38:55,080 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:39:14,845 [INFO]   Skip layer  2: acc=0.00 drop=1.00 ***
+2026-01-28 23:39:34,892 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-28 23:39:54,690 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-28 23:40:14,492 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-28 23:40:34,440 [INFO]   Skip layer 10: acc=1.00 drop=0.00 
+2026-01-28 23:40:54,197 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-28 23:41:14,209 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-28 23:41:34,421 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-28 23:41:54,422 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:42:14,394 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-28 23:42:34,171 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:42:54,323 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:43:14,101 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-28 23:43:14,101 [INFO] 
+Task: length
+2026-01-28 23:43:33,845 [INFO]   Baseline: 1.00
+2026-01-28 23:43:53,798 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:44:13,710 [INFO]   Skip layer  2: acc=1.00 drop=0.00 
+2026-01-28 23:44:33,591 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-28 23:44:53,520 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-28 23:45:13,273 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-28 23:45:33,134 [INFO]   Skip layer 10: acc=1.00 drop=0.00 
+2026-01-28 23:45:52,695 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-28 23:46:12,430 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-28 23:46:31,941 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-28 23:46:51,467 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:47:11,368 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-28 23:47:31,321 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:47:51,010 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:48:10,712 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-28 23:48:10,712 [INFO] 
+Task: linear_2x
+2026-01-28 23:48:30,889 [INFO]   Baseline: 1.00
+2026-01-28 23:48:52,817 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:49:14,820 [INFO]   Skip layer  2: acc=1.00 drop=0.00 
+2026-01-28 23:49:36,657 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-28 23:49:58,151 [INFO]   Skip layer  6: acc=0.87 drop=0.13 
+2026-01-28 23:50:20,389 [INFO]   Skip layer  8: acc=0.93 drop=0.07 
+2026-01-28 23:50:42,110 [INFO]   Skip layer 10: acc=0.93 drop=0.07 
+2026-01-28 23:51:04,086 [INFO]   Skip layer 12: acc=0.93 drop=0.07 
+2026-01-28 23:51:26,003 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-28 23:51:48,080 [INFO]   Skip layer 16: acc=0.87 drop=0.13 
+2026-01-28 23:52:10,233 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:52:32,305 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-28 23:52:54,308 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:53:16,339 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:53:38,518 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-28 23:53:38,519 [INFO] 
+Task: sentiment
+2026-01-28 23:54:00,588 [INFO]   Baseline: 1.00
+2026-01-28 23:54:22,375 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-28 23:54:44,644 [INFO]   Skip layer  2: acc=1.00 drop=0.00 
+2026-01-28 23:55:06,908 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-28 23:55:28,974 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-28 23:55:51,072 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-28 23:56:12,929 [INFO]   Skip layer 10: acc=1.00 drop=0.00 
+2026-01-28 23:56:34,779 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-28 23:56:56,979 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-28 23:57:19,027 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-28 23:57:41,146 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-28 23:58:03,468 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-28 23:58:25,300 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-28 23:58:47,057 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-28 23:59:08,922 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-28 23:59:08,922 [INFO] 
+Task: antonym
+2026-01-28 23:59:30,947 [INFO]   Baseline: 1.00
+2026-01-28 23:59:53,216 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-29 00:00:15,692 [INFO]   Skip layer  2: acc=0.87 drop=0.13 
+2026-01-29 00:00:37,826 [INFO]   Skip layer  4: acc=1.00 drop=0.00 
+2026-01-29 00:00:59,965 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-29 00:01:22,072 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-29 00:01:44,432 [INFO]   Skip layer 10: acc=1.00 drop=0.00 
+2026-01-29 00:02:06,721 [INFO]   Skip layer 12: acc=1.00 drop=0.00 
+2026-01-29 00:02:28,626 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-29 00:02:50,266 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-29 00:03:12,201 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-29 00:03:35,068 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-29 00:03:57,385 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-29 00:04:19,367 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-29 00:04:41,690 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-29 00:04:41,690 [INFO] 
+Task: pattern_completion
+2026-01-29 00:05:03,816 [INFO]   Baseline: 1.00
+2026-01-29 00:05:26,127 [INFO]   Skip layer  0: acc=0.00 drop=1.00 ***
+2026-01-29 00:05:48,388 [INFO]   Skip layer  2: acc=0.93 drop=0.07 
+2026-01-29 00:06:10,622 [INFO]   Skip layer  4: acc=0.93 drop=0.07 
+2026-01-29 00:06:33,098 [INFO]   Skip layer  6: acc=1.00 drop=0.00 
+2026-01-29 00:06:55,369 [INFO]   Skip layer  8: acc=1.00 drop=0.00 
+2026-01-29 00:07:17,829 [INFO]   Skip layer 10: acc=0.93 drop=0.07 
+2026-01-29 00:07:40,008 [INFO]   Skip layer 12: acc=0.93 drop=0.07 
+2026-01-29 00:08:02,268 [INFO]   Skip layer 14: acc=1.00 drop=0.00 
+2026-01-29 00:08:24,452 [INFO]   Skip layer 16: acc=1.00 drop=0.00 
+2026-01-29 00:08:46,746 [INFO]   Skip layer 18: acc=1.00 drop=0.00 
+2026-01-29 00:09:09,025 [INFO]   Skip layer 20: acc=1.00 drop=0.00 
+2026-01-29 00:09:31,176 [INFO]   Skip layer 22: acc=1.00 drop=0.00 
+2026-01-29 00:09:52,982 [INFO]   Skip layer 24: acc=1.00 drop=0.00 
+2026-01-29 00:10:14,882 [INFO]   Skip layer 26: acc=1.00 drop=0.00 
+2026-01-29 00:10:14,883 [INFO] 
+============================================================
+2026-01-29 00:10:14,883 [INFO] Part B: Phase Skip
+2026-01-29 00:10:14,883 [INFO] ============================================================
+2026-01-29 00:10:14,883 [INFO] 
+Task: uppercase
+2026-01-29 00:10:36,775 [INFO]   Skip early  (0-7): acc=0.00 drop=1.00 ***
+2026-01-29 00:10:58,586 [INFO]   Skip mid    (8-15): acc=0.00 drop=1.00 ***
+2026-01-29 00:11:20,426 [INFO]   Skip late   (16-23): acc=0.47 drop=0.53 ***
+2026-01-29 00:11:42,772 [INFO]   Skip final  (24-27): acc=0.00 drop=1.00 ***
+2026-01-29 00:11:42,773 [INFO] 
+Task: first_letter
+2026-01-29 00:12:04,903 [INFO]   Skip early  (0-7): acc=0.00 drop=1.00 ***
+2026-01-29 00:12:26,869 [INFO]   Skip mid    (8-15): acc=0.00 drop=1.00 ***
+2026-01-29 00:12:49,178 [INFO]   Skip late   (16-23): acc=0.27 drop=0.73 ***
+2026-01-29 00:13:11,047 [INFO]   Skip final  (24-27): acc=0.73 drop=0.27 
+2026-01-29 00:13:11,048 [INFO] 
+Task: repeat_word
+2026-01-29 00:13:33,033 [INFO]   Skip early  (0-7): acc=0.00 drop=1.00 ***
+2026-01-29 00:13:55,094 [INFO]   Skip mid    (8-15): acc=0.00 drop=1.00 ***
+2026-01-29 00:14:16,947 [INFO]   Skip late   (16-23): acc=0.87 drop=0.13 
+2026-01-29 00:14:39,133 [INFO]   Skip final  (24-27): acc=0.93 drop=0.07 
+2026-01-29 00:14:39,133 [INFO] 
+Task: length
+2026-01-29 00:15:01,012 [INFO]   Skip early  (0-7): acc=0.00 drop=1.00 ***
+2026-01-29 00:15:22,640 [INFO]   Skip mid    (8-15): acc=1.00 drop=0.00 
+2026-01-29 00:15:44,826 [INFO]   Skip late   (16-23): acc=1.00 drop=0.00 
+2026-01-29 00:16:06,948 [INFO]   Skip final  (24-27): acc=1.00 drop=0.00 
+2026-01-29 00:16:06,949 [INFO] 
+============================================================
+2026-01-29 00:16:06,949 [INFO] SUMMARY: Mean accuracy drop by layer
+2026-01-29 00:16:06,949 [INFO] ============================================================
+2026-01-29 00:16:06,950 [INFO]   Layer  0: mean drop = 1.000 ***
+2026-01-29 00:16:06,954 [INFO]   Layer  2: mean drop = 0.158 ***
+2026-01-29 00:16:06,954 [INFO]   Layer  4: mean drop = 0.025 
+2026-01-29 00:16:06,954 [INFO]   Layer  6: mean drop = 0.042 
+2026-01-29 00:16:06,955 [INFO]   Layer  8: mean drop = 0.033 
+2026-01-29 00:16:06,955 [INFO]   Layer 10: mean drop = 0.042 
+2026-01-29 00:16:06,955 [INFO]   Layer 12: mean drop = 0.017 
+2026-01-29 00:16:06,955 [INFO]   Layer 14: mean drop = 0.058 
+2026-01-29 00:16:06,955 [INFO]   Layer 16: mean drop = 0.025 
+2026-01-29 00:16:06,955 [INFO]   Layer 18: mean drop = 0.000 
+2026-01-29 00:16:06,955 [INFO]   Layer 20: mean drop = 0.008 
+2026-01-29 00:16:06,955 [INFO]   Layer 22: mean drop = 0.000 
+2026-01-29 00:16:06,956 [INFO]   Layer 24: mean drop = 0.000 
+2026-01-29 00:16:06,956 [INFO]   Layer 26: mean drop = 0.008 
+2026-01-29 00:16:06,956 [INFO] 
+SUMMARY: Mean accuracy drop by phase
+2026-01-29 00:16:06,956 [INFO]   early : mean drop = 1.000
+2026-01-29 00:16:06,956 [INFO]   mid   : mean drop = 0.750
+2026-01-29 00:16:06,956 [INFO]   late  : mean drop = 0.350
+2026-01-29 00:16:06,956 [INFO]   final : mean drop = 0.333
+2026-01-29 00:16:06,959 [INFO] 
+Results saved to results/exp12
+2026-01-29 00:16:06,960 [INFO] Experiment 12 complete: 2026-01-29T00:16:06.960064

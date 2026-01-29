@@ -1,0 +1,598 @@
+{
+  "metadata": {
+    "intervention_layer": 8,
+    "n_demos": 5,
+    "n_test": 20,
+    "timestamp": "2026-01-29T00:23:34.369064"
+  },
+  "instance_results": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "instances": [
+        {
+          "input": "honey",
+          "baseline_output": "h",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "frost",
+          "baseline_output": "f",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "badge",
+          "baseline_output": "b",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "stone",
+          "baseline_output": "s",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "lemon",
+          "baseline_output": "l",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "fjord",
+          "baseline_output": "f",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "ivory",
+          "baseline_output": "i",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "queen",
+          "baseline_output": "q",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "lunar",
+          "baseline_output": "l",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "youth",
+          "baseline_output": "y",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "noble",
+          "baseline_output": "n",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "dream",
+          "baseline_output": "d",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "tower",
+          "baseline_output": "t",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "knife",
+          "baseline_output": "k",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "vivid",
+          "baseline_output": "v",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "urban",
+          "baseline_output": "u",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "river",
+          "baseline_output": "r",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "globe",
+          "baseline_output": "g",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "robin",
+          "baseline_output": "r",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "grape",
+          "baseline_output": "g",
+          "intervened_output": "F",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        }
+      ],
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "instances": [
+        {
+          "input": "disgusted",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "depressed",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "gloomy",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "bitter",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "grateful",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "envious",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "inspired",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "jealous",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "pessimistic",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "confident",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "resentful",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "devastated",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "peaceful",
+          "baseline_output": "positive",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "fearful",
+          "baseline_output": "negative",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "agitated",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "serene",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "loving",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "amused",
+          "baseline_output": "positive",
+          "intervened_output": "positive FLAME",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "sorrowful",
+          "baseline_output": "negative",
+          "intervened_output": "negative",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "happy",
+          "baseline_output": "positive",
+          "intervened_output": "positive",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        }
+      ],
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "first_letter",
+      "instances": [
+        {
+          "input": "crane",
+          "baseline_output": "c",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "pixel",
+          "baseline_output": "p",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "uncle",
+          "baseline_output": "u",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "queen",
+          "baseline_output": "q",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "badge",
+          "baseline_output": "b",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "lunar",
+          "baseline_output": "l",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "house",
+          "baseline_output": "h",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "grape",
+          "baseline_output": "g",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "wheat",
+          "baseline_output": "w",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "knife",
+          "baseline_output": "k",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "kayak",
+          "baseline_output": "k",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "river",
+          "baseline_output": "r",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "urban",
+          "baseline_output": "u",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "eagle",
+          "baseline_output": "e",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "youth",
+          "baseline_output": "y",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "fjord",
+          "baseline_output": "f",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "index",
+          "baseline_output": "i",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "zebra",
+          "baseline_output": "z",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "honey",
+          "baseline_output": "h",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        },
+        {
+          "input": "trend",
+          "baseline_output": "t",
+          "intervened_output": "f",
+          "target_correct_baseline": true,
+          "source_correct_intervened": false
+        }
+      ],
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "repeat_word",
+      "instances": [
+        {
+          "input": "honey",
+          "baseline_output": "honey honey",
+          "intervened_output": "honey honey",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "frost",
+          "baseline_output": "frost frost",
+          "intervened_output": "frost frost",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "badge",
+          "baseline_output": "badge badge",
+          "intervened_output": "badge badge",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "stone",
+          "baseline_output": "stone stone",
+          "intervened_output": "stone stone",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "lemon",
+          "baseline_output": "lemon lemon",
+          "intervened_output": "lemon lemon",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "fjord",
+          "baseline_output": "fjord fjord",
+          "intervened_output": "fjord fjord",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "ivory",
+          "baseline_output": "ivory ivory",
+          "intervened_output": "ivory ivory",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "queen",
+          "baseline_output": "queen queen",
+          "intervened_output": "queen queen",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "lunar",
+          "baseline_output": "lunar lunar",
+          "intervened_output": "lunar lunar",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "youth",
+          "baseline_output": "youth youth",
+          "intervened_output": "youth youth",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "noble",
+          "baseline_output": "noble noble",
+          "intervened_output": "noble noble",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "dream",
+          "baseline_output": "dream dream",
+          "intervened_output": "dream dream",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "tower",
+          "baseline_output": "tower tower",
+          "intervened_output": "tower tower",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "knife",
+          "baseline_output": "knife knife",
+          "intervened_output": "knife knife",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "vivid",
+          "baseline_output": "vivid vivid",
+          "intervened_output": "vivid vivid",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "urban",
+          "baseline_output": "urban urban",
+          "intervened_output": "urban urban",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "river",
+          "baseline_output": "river river",
+          "intervened_output": "river river",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "globe",
+          "baseline_output": "globe globe",
+          "intervened_output": "globe globe",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "robin",
+          "baseline_output": "robin robin",
+          "intervened_output": "robin robin",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        },
+        {
+          "input": "grape",
+          "baseline_output": "grape grape",
+          "intervened_output": "grape grape",
+          "target_correct_baseline": true,
+          "source_correct_intervened": true
+        }
+      ],
+      "transfer_rate": 1.0
+    }
+  ]
+}

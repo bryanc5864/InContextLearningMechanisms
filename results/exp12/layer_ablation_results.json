@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "test_layers": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26
+    ],
+    "phases": {
+      "early": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "mid": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "late": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "final": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "n_layers": 28,
+    "n_test": 15,
+    "timestamp": "2026-01-29T00:16:06.956814"
+  },
+  "single_skip_results": [
+    {
+      "task": "uppercase",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        }
+      }
+    },
+    {
+      "task": "first_letter",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "4": {
+          "accuracy": 0.8666666666666667,
+          "drop": 0.1333333333333333
+        },
+        "6": {
+          "accuracy": 0.8,
+          "drop": 0.19999999999999996
+        },
+        "8": {
+          "accuracy": 0.8,
+          "drop": 0.19999999999999996
+        },
+        "10": {
+          "accuracy": 0.8,
+          "drop": 0.19999999999999996
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 0.6,
+          "drop": 0.4
+        },
+        "16": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "repeat_word",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "length",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "linear_2x",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 0.8666666666666667,
+          "drop": 0.1333333333333333
+        },
+        "8": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "10": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "12": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 0.8666666666666667,
+          "drop": 0.1333333333333333
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "sentiment",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "antonym",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 0.8666666666666667,
+          "drop": 0.1333333333333333
+        },
+        "4": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "12": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    },
+    {
+      "task": "pattern_completion",
+      "baseline": 1.0,
+      "layers": {
+        "0": {
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "2": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "4": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "6": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "8": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "10": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "12": {
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        },
+        "14": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "16": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "18": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "20": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "22": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "24": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "26": {
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    }
+  ],
+  "phase_skip_results": [
+    {
+      "task": "uppercase",
+      "baseline": 1.0,
+      "phases": {
+        "early": {
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "mid": {
+          "layers": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "late": {
+          "layers": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "accuracy": 0.4666666666666667,
+          "drop": 0.5333333333333333
+        },
+        "final": {
+          "layers": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        }
+      }
+    },
+    {
+      "task": "first_letter",
+      "baseline": 1.0,
+      "phases": {
+        "early": {
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "mid": {
+          "layers": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "late": {
+          "layers": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "accuracy": 0.26666666666666666,
+          "drop": 0.7333333333333334
+        },
+        "final": {
+          "layers": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "accuracy": 0.7333333333333333,
+          "drop": 0.2666666666666667
+        }
+      }
+    },
+    {
+      "task": "repeat_word",
+      "baseline": 1.0,
+      "phases": {
+        "early": {
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "mid": {
+          "layers": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "late": {
+          "layers": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "accuracy": 0.8666666666666667,
+          "drop": 0.1333333333333333
+        },
+        "final": {
+          "layers": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "accuracy": 0.9333333333333333,
+          "drop": 0.06666666666666665
+        }
+      }
+    },
+    {
+      "task": "length",
+      "baseline": 1.0,
+      "phases": {
+        "early": {
+          "layers": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "accuracy": 0.0,
+          "drop": 1.0
+        },
+        "mid": {
+          "layers": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "late": {
+          "layers": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "accuracy": 1.0,
+          "drop": 0.0
+        },
+        "final": {
+          "layers": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "accuracy": 1.0,
+          "drop": 0.0
+        }
+      }
+    }
+  ]
+}
