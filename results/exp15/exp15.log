@@ -1,0 +1,200 @@
+2026-01-29 01:51:29,506 [INFO] Experiment 15: Cross-Format Control
+2026-01-29 01:51:29,506 [INFO] Start: 2026-01-29T01:51:29.506472
+2026-01-29 01:53:42,168 [INFO] Experiment 15: Cross-Format Control
+2026-01-29 01:53:42,168 [INFO] Start: 2026-01-29T01:53:42.168409
+2026-01-29 01:54:02,950 [INFO] ============================================================
+2026-01-29 01:54:02,951 [INFO] Part A: Same Operation, Different Format
+2026-01-29 01:54:02,951 [INFO] Prediction: 0% transfer (format mismatch overrides semantic similarity)
+2026-01-29 01:54:02,951 [INFO] ============================================================
+2026-01-29 01:54:02,951 [INFO] 
+uppercase → uppercase_period
+2026-01-29 01:54:02,951 [INFO]   Same operation: True, Same format: False
+2026-01-29 01:54:40,420 [INFO] Experiment 15: Cross-Format Control
+2026-01-29 01:54:40,420 [INFO] Start: 2026-01-29T01:54:40.420406
+2026-01-29 01:55:01,359 [INFO] ============================================================
+2026-01-29 01:55:01,359 [INFO] Part A: Same Operation, Different Format
+2026-01-29 01:55:01,359 [INFO] Prediction: 0% transfer (format mismatch overrides semantic similarity)
+2026-01-29 01:55:01,360 [INFO] ============================================================
+2026-01-29 01:55:01,360 [INFO] 
+uppercase → uppercase_period
+2026-01-29 01:55:01,360 [INFO]   Same operation: True, Same format: False
+2026-01-29 01:55:53,765 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 01:55:53,765 [INFO]   Examples:
+2026-01-29 01:55:53,765 [INFO]     'honey': baseline='HONEY.', intervened='HONEY.', source_expected='HONEY'
+2026-01-29 01:55:53,765 [INFO]     'frost': baseline='FROST.', intervened='FROST.', source_expected='FROST'
+2026-01-29 01:55:53,765 [INFO]     'badge': baseline='BADGE.', intervened='BADGE.', source_expected='BADGE'
+2026-01-29 01:55:53,766 [INFO] 
+length → length_word
+2026-01-29 01:55:53,766 [INFO]   Same operation: True, Same format: False
+2026-01-29 01:56:44,046 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 01:56:44,047 [INFO]   Examples:
+2026-01-29 01:56:44,047 [INFO]     'honey': baseline='five', intervened='five', source_expected='5'
+2026-01-29 01:56:44,047 [INFO]     'frost': baseline='three', intervened='five', source_expected='5'
+2026-01-29 01:56:44,047 [INFO]     'badge': baseline='four', intervened='five', source_expected='5'
+2026-01-29 01:56:44,047 [INFO] 
+repeat_word → repeat_comma
+2026-01-29 01:56:44,047 [INFO]   Same operation: True, Same format: False
+2026-01-29 01:56:46,605 [INFO]   TRANSFER: 'honey' → 'honey honey'
+2026-01-29 01:56:49,138 [INFO]   TRANSFER: 'frost' → 'frost frost'
+2026-01-29 01:56:51,735 [INFO]   TRANSFER: 'badge' → 'badge badge'
+2026-01-29 01:56:54,560 [INFO]   TRANSFER: 'stone' → 'stone stone'
+2026-01-29 01:56:57,414 [INFO]   TRANSFER: 'lemon' → 'lemon lemon'
+2026-01-29 01:57:00,233 [INFO]   TRANSFER: 'fjord' → 'fjord fjord'
+2026-01-29 01:57:02,826 [INFO]   TRANSFER: 'ivory' → 'ivory ivory'
+2026-01-29 01:57:05,468 [INFO]   TRANSFER: 'queen' → 'queen queen'
+2026-01-29 01:57:07,895 [INFO]   TRANSFER: 'lunar' → 'lunar lunar'
+2026-01-29 01:57:10,705 [INFO]   TRANSFER: 'youth' → 'youth youth'
+2026-01-29 01:57:13,501 [INFO]   TRANSFER: 'noble' → 'noble noble'
+2026-01-29 01:57:16,315 [INFO]   TRANSFER: 'dream' → 'dream dream'
+2026-01-29 01:57:19,097 [INFO]   TRANSFER: 'tower' → 'tower tower'
+2026-01-29 01:57:21,878 [INFO]   TRANSFER: 'knife' → 'knife knife'
+2026-01-29 01:57:24,625 [INFO]   TRANSFER: 'vivid' → 'vivid vivid'
+2026-01-29 01:57:27,389 [INFO]   TRANSFER: 'urban' → 'urban urban'
+2026-01-29 01:57:33,006 [INFO]   TRANSFER: 'globe' → 'globe globe'
+2026-01-29 01:57:35,886 [INFO]   TRANSFER: 'robin' → 'robin robin'
+2026-01-29 01:57:38,745 [INFO]   Transfer rate: 0.90 (18/20)
+2026-01-29 01:57:38,745 [INFO]   Examples:
+2026-01-29 01:57:38,745 [INFO]     'honey': baseline='honey, honey', intervened='honey honey', source_expected='honey honey'
+2026-01-29 01:57:38,745 [INFO]     'frost': baseline='frost, frost', intervened='frost frost', source_expected='frost frost'
+2026-01-29 01:57:38,745 [INFO]     'badge': baseline='badge, badge', intervened='badge badge', source_expected='badge badge'
+2026-01-29 01:57:38,746 [INFO] 
+reverse → reverse_spaced
+2026-01-29 01:57:38,746 [INFO]   Same operation: True, Same format: False
+2026-01-29 01:57:44,555 [INFO]   TRANSFER: 'brain' → 'niarb'
+2026-01-29 01:58:32,411 [INFO]   Transfer rate: 0.05 (1/20)
+2026-01-29 01:58:32,411 [INFO]   Examples:
+2026-01-29 01:58:32,411 [INFO]     'cloud': baseline='o u l d c', intervened='u o d l a c', source_expected='duolc'
+2026-01-29 01:58:32,411 [INFO]     'brain': baseline='n i a r b', intervened='niarb', source_expected='niarb'
+2026-01-29 01:58:32,412 [INFO]     'queen': baseline='n e e u q', intervened='n e e u q', source_expected='neeuq'
+2026-01-29 01:58:32,412 [INFO] 
+============================================================
+2026-01-29 01:58:32,412 [INFO] Part B: Control Pairs
+2026-01-29 01:58:32,412 [INFO] ============================================================
+2026-01-29 01:58:32,412 [INFO] 
+uppercase → first_letter
+2026-01-29 01:58:32,412 [INFO]   Same operation: False, Same format: False
+2026-01-29 01:59:23,030 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 01:59:23,030 [INFO] 
+repeat_word → pattern_completion
+2026-01-29 01:59:23,030 [INFO]   Same operation: False, Same format: True
+2026-01-29 02:00:13,853 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 02:00:13,853 [INFO] 
+============================================================
+2026-01-29 02:00:13,853 [INFO] SUMMARY
+2026-01-29 02:00:13,853 [INFO] ============================================================
+2026-01-29 02:00:13,854 [INFO] 
+Same Operation, Different Format (Hypothesis: 0% transfer):
+2026-01-29 02:00:13,854 [INFO]   uppercase → uppercase_period: 0.00 [CONFIRMED]
+2026-01-29 02:00:13,854 [INFO]   length → length_word: 0.00 [CONFIRMED]
+2026-01-29 02:00:13,854 [INFO]   repeat_word → repeat_comma: 0.90 [UNEXPECTED]
+2026-01-29 02:00:13,854 [INFO]   reverse → reverse_spaced: 0.05 [CONFIRMED]
+2026-01-29 02:00:13,854 [INFO] 
+Control Pairs:
+2026-01-29 02:00:13,854 [INFO]   uppercase → first_letter: 0.00 (same_fmt=False)
+2026-01-29 02:00:13,854 [INFO]   repeat_word → pattern_completion: 0.00 (same_fmt=True)
+2026-01-29 02:00:13,854 [INFO] 
+============================================================
+2026-01-29 02:00:13,854 [INFO] INTERPRETATION
+2026-01-29 02:00:13,854 [INFO] ============================================================
+2026-01-29 02:00:13,855 [INFO] 
+Same operation, different format: 0.24 mean transfer
+2026-01-29 02:00:13,855 [INFO] Different operation, same format: 0.00 mean transfer
+2026-01-29 02:00:13,855 [INFO] 
+✗ FORMAT HYPOTHESIS PARTIALLY REFUTED:
+2026-01-29 02:00:13,855 [INFO]   Some semantic transfer occurs despite format mismatch.
+2026-01-29 02:00:43,541 [INFO] Experiment 15: Cross-Format Control
+2026-01-29 02:00:43,541 [INFO] Start: 2026-01-29T02:00:43.541724
+2026-01-29 02:01:00,670 [INFO] ============================================================
+2026-01-29 02:01:00,670 [INFO] Part A: Same Operation, Different Format
+2026-01-29 02:01:00,670 [INFO] Prediction: 0% transfer (format mismatch overrides semantic similarity)
+2026-01-29 02:01:00,670 [INFO] ============================================================
+2026-01-29 02:01:00,670 [INFO] 
+uppercase → uppercase_period
+2026-01-29 02:01:00,670 [INFO]   Same operation: True, Same format: False
+2026-01-29 02:01:53,132 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 02:01:53,132 [INFO]   Examples:
+2026-01-29 02:01:53,132 [INFO]     'honey': baseline='HONEY.', intervened='HONEY.', source_expected='HONEY'
+2026-01-29 02:01:53,133 [INFO]     'frost': baseline='FROST.', intervened='FROST.', source_expected='FROST'
+2026-01-29 02:01:53,133 [INFO]     'badge': baseline='BADGE.', intervened='BADGE.', source_expected='BADGE'
+2026-01-29 02:01:53,133 [INFO] 
+length → length_word
+2026-01-29 02:01:53,133 [INFO]   Same operation: True, Same format: False
+2026-01-29 02:02:44,456 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 02:02:44,456 [INFO]   Examples:
+2026-01-29 02:02:44,456 [INFO]     'honey': baseline='five', intervened='five', source_expected='5'
+2026-01-29 02:02:44,456 [INFO]     'frost': baseline='three', intervened='five', source_expected='5'
+2026-01-29 02:02:44,457 [INFO]     'badge': baseline='four', intervened='five', source_expected='5'
+2026-01-29 02:02:44,457 [INFO] 
+repeat_word → repeat_comma
+2026-01-29 02:02:44,457 [INFO]   Same operation: True, Same format: False
+2026-01-29 02:02:47,103 [INFO]   TRANSFER: 'honey' → 'honey honey'
+2026-01-29 02:02:49,659 [INFO]   TRANSFER: 'frost' → 'frost frost'
+2026-01-29 02:02:52,257 [INFO]   TRANSFER: 'badge' → 'badge badge'
+2026-01-29 02:02:54,821 [INFO]   TRANSFER: 'stone' → 'stone stone'
+2026-01-29 02:02:57,414 [INFO]   TRANSFER: 'lemon' → 'lemon lemon'
+2026-01-29 02:03:00,007 [INFO]   TRANSFER: 'fjord' → 'fjord fjord'
+2026-01-29 02:03:02,624 [INFO]   TRANSFER: 'ivory' → 'ivory ivory'
+2026-01-29 02:03:05,257 [INFO]   TRANSFER: 'queen' → 'queen queen'
+2026-01-29 02:03:07,901 [INFO]   TRANSFER: 'lunar' → 'lunar lunar'
+2026-01-29 02:03:10,529 [INFO]   TRANSFER: 'youth' → 'youth youth'
+2026-01-29 02:03:13,168 [INFO]   TRANSFER: 'noble' → 'noble noble'
+2026-01-29 02:03:15,714 [INFO]   TRANSFER: 'dream' → 'dream dream'
+2026-01-29 02:03:18,167 [INFO]   TRANSFER: 'tower' → 'tower tower'
+2026-01-29 02:03:20,629 [INFO]   TRANSFER: 'knife' → 'knife knife'
+2026-01-29 02:03:23,193 [INFO]   TRANSFER: 'vivid' → 'vivid vivid'
+2026-01-29 02:03:25,835 [INFO]   TRANSFER: 'urban' → 'urban urban'
+2026-01-29 02:03:31,047 [INFO]   TRANSFER: 'globe' → 'globe globe'
+2026-01-29 02:03:33,591 [INFO]   TRANSFER: 'robin' → 'robin robin'
+2026-01-29 02:03:36,130 [INFO]   Transfer rate: 0.90 (18/20)
+2026-01-29 02:03:36,131 [INFO]   Examples:
+2026-01-29 02:03:36,131 [INFO]     'honey': baseline='honey, honey', intervened='honey honey', source_expected='honey honey'
+2026-01-29 02:03:36,131 [INFO]     'frost': baseline='frost, frost', intervened='frost frost', source_expected='frost frost'
+2026-01-29 02:03:36,131 [INFO]     'badge': baseline='badge, badge', intervened='badge badge', source_expected='badge badge'
+2026-01-29 02:03:36,131 [INFO] 
+reverse → reverse_spaced
+2026-01-29 02:03:36,131 [INFO]   Same operation: True, Same format: False
+2026-01-29 02:03:41,265 [INFO]   TRANSFER: 'brain' → 'niarb'
+2026-01-29 02:04:27,458 [INFO]   Transfer rate: 0.05 (1/20)
+2026-01-29 02:04:27,458 [INFO]   Examples:
+2026-01-29 02:04:27,458 [INFO]     'cloud': baseline='o u l d c', intervened='u o d l a c', source_expected='duolc'
+2026-01-29 02:04:27,458 [INFO]     'brain': baseline='n i a r b', intervened='niarb', source_expected='niarb'
+2026-01-29 02:04:27,458 [INFO]     'queen': baseline='n e e u q', intervened='n e e u q', source_expected='neeuq'
+2026-01-29 02:04:27,458 [INFO] 
+============================================================
+2026-01-29 02:04:27,458 [INFO] Part B: Control Pairs
+2026-01-29 02:04:27,458 [INFO] ============================================================
+2026-01-29 02:04:27,459 [INFO] 
+uppercase → first_letter
+2026-01-29 02:04:27,459 [INFO]   Same operation: False, Same format: False
+2026-01-29 02:05:17,543 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 02:05:17,543 [INFO] 
+repeat_word → pattern_completion
+2026-01-29 02:05:17,543 [INFO]   Same operation: False, Same format: True
+2026-01-29 02:06:08,412 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-29 02:06:08,412 [INFO] 
+============================================================
+2026-01-29 02:06:08,412 [INFO] SUMMARY
+2026-01-29 02:06:08,413 [INFO] ============================================================
+2026-01-29 02:06:08,413 [INFO] 
+Same Operation, Different Format (Hypothesis: 0% transfer):
+2026-01-29 02:06:08,413 [INFO]   uppercase → uppercase_period: 0.00 [CONFIRMED]
+2026-01-29 02:06:08,413 [INFO]   length → length_word: 0.00 [CONFIRMED]
+2026-01-29 02:06:08,413 [INFO]   repeat_word → repeat_comma: 0.90 [UNEXPECTED]
+2026-01-29 02:06:08,413 [INFO]   reverse → reverse_spaced: 0.05 [CONFIRMED]
+2026-01-29 02:06:08,413 [INFO] 
+Control Pairs:
+2026-01-29 02:06:08,413 [INFO]   uppercase → first_letter: 0.00 (same_fmt=False)
+2026-01-29 02:06:08,413 [INFO]   repeat_word → pattern_completion: 0.00 (same_fmt=True)
+2026-01-29 02:06:08,413 [INFO] 
+============================================================
+2026-01-29 02:06:08,413 [INFO] INTERPRETATION
+2026-01-29 02:06:08,413 [INFO] ============================================================
+2026-01-29 02:06:08,414 [INFO] 
+Same operation, different format: 0.24 mean transfer
+2026-01-29 02:06:08,414 [INFO] Different operation, same format: 0.00 mean transfer
+2026-01-29 02:06:08,414 [INFO] 
+✗ FORMAT HYPOTHESIS PARTIALLY REFUTED:
+2026-01-29 02:06:08,414 [INFO]   Some semantic transfer occurs despite format mismatch.
+2026-01-29 02:06:08,415 [INFO] 
+Results saved to results/exp15
+2026-01-29 02:06:08,416 [INFO] Experiment 15 complete: 2026-01-29T02:06:08.416063

@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "intervention_layer": 8,
+    "n_demos": 5,
+    "n_test": 20,
+    "timestamp": "2026-01-29T02:06:08.414855"
+  },
+  "format_pairs": [
+    {
+      "source": "uppercase",
+      "target": "uppercase_period",
+      "same_operation": true,
+      "same_format": false,
+      "transfer_rate": 0.0,
+      "examples": [
+        {
+          "input": "honey",
+          "baseline": "HONEY.",
+          "intervened": "HONEY.",
+          "source_expected": "HONEY",
+          "target_expected": "HONEY.",
+          "transferred": false
+        },
+        {
+          "input": "frost",
+          "baseline": "FROST.",
+          "intervened": "FROST.",
+          "source_expected": "FROST",
+          "target_expected": "FROST.",
+          "transferred": false
+        },
+        {
+          "input": "badge",
+          "baseline": "BADGE.",
+          "intervened": "BADGE.",
+          "source_expected": "BADGE",
+          "target_expected": "BADGE.",
+          "transferred": false
+        }
+      ]
+    },
+    {
+      "source": "length",
+      "target": "length_word",
+      "same_operation": true,
+      "same_format": false,
+      "transfer_rate": 0.0,
+      "examples": [
+        {
+          "input": "honey",
+          "baseline": "five",
+          "intervened": "five",
+          "source_expected": "5",
+          "target_expected": "five",
+          "transferred": false
+        },
+        {
+          "input": "frost",
+          "baseline": "three",
+          "intervened": "five",
+          "source_expected": "5",
+          "target_expected": "five",
+          "transferred": false
+        },
+        {
+          "input": "badge",
+          "baseline": "four",
+          "intervened": "five",
+          "source_expected": "5",
+          "target_expected": "five",
+          "transferred": false
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "repeat_comma",
+      "same_operation": true,
+      "same_format": false,
+      "transfer_rate": 0.9,
+      "examples": [
+        {
+          "input": "honey",
+          "baseline": "honey, honey",
+          "intervened": "honey honey",
+          "source_expected": "honey honey",
+          "target_expected": "honey, honey",
+          "transferred": true
+        },
+        {
+          "input": "frost",
+          "baseline": "frost, frost",
+          "intervened": "frost frost",
+          "source_expected": "frost frost",
+          "target_expected": "frost, frost",
+          "transferred": true
+        },
+        {
+          "input": "badge",
+          "baseline": "badge, badge",
+          "intervened": "badge badge",
+          "source_expected": "badge badge",
+          "target_expected": "badge, badge",
+          "transferred": true
+        }
+      ]
+    },
+    {
+      "source": "reverse",
+      "target": "reverse_spaced",
+      "same_operation": true,
+      "same_format": false,
+      "transfer_rate": 0.05,
+      "examples": [
+        {
+          "input": "cloud",
+          "baseline": "o u l d c",
+          "intervened": "u o d l a c",
+          "source_expected": "duolc",
+          "target_expected": "d u o l c",
+          "transferred": false
+        },
+        {
+          "input": "brain",
+          "baseline": "n i a r b",
+          "intervened": "niarb",
+          "source_expected": "niarb",
+          "target_expected": "n i a r b",
+          "transferred": true
+        },
+        {
+          "input": "queen",
+          "baseline": "n e e u q",
+          "intervened": "n e e u q",
+          "source_expected": "neeuq",
+          "target_expected": "n e e u q",
+          "transferred": false
+        }
+      ]
+    }
+  ],
+  "control_pairs": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "same_operation": false,
+      "same_format": false,
+      "transfer_rate": 0.0,
+      "examples": [
+        {
+          "input": "honey",
+          "baseline": "h",
+          "intervened": "F",
+          "transferred": false
+        },
+        {
+          "input": "frost",
+          "baseline": "f",
+          "intervened": "f",
+          "transferred": false
+        },
+        {
+          "input": "badge",
+          "baseline": "b",
+          "intervened": "F",
+          "transferred": false
+        }
+      ]
+    },
+    {
+      "source": "repeat_word",
+      "target": "pattern_completion",
+      "same_operation": false,
+      "same_format": true,
+      "transfer_rate": 0.0,
+      "examples": [
+        {
+          "input": "Z Y Z Y Z",
+          "baseline": "Y",
+          "intervened": "Y",
+          "transferred": false
+        },
+        {
+          "input": "w x w x w",
+          "baseline": "x",
+          "intervened": "x",
+          "transferred": false
+        },
+        {
+          "input": "o p o p o",
+          "baseline": "p",
+          "intervened": "p",
+          "transferred": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "same_op_diff_fmt_mean": 0.23750000000000002,
+    "diff_op_same_fmt_mean": 0.0,
+    "hypothesis_confirmed": false
+  }
+}

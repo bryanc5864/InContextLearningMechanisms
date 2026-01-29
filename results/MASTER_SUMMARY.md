@@ -6,31 +6,31 @@
 
 ---
 
-## Phase 1-7: Initial Experiments
+## Experiments 1-7: Initial Experiments
 
-### Phase 1: Baseline Characterization
+### Experiment 1: Baseline Characterization
 All 8 tasks achieve high ICL accuracy (96-100%) with 5-shot prompting.
 
-### Phase 2: Representation Localization
+### Experiment 2: Representation Localization
 - Demo positions: 100% probe accuracy at all layers (trivially separable)
 - Query position: Peak 83% at layer 12
 
-### Phase 3-5: Single-Position Intervention FAILS
+### Experiments 3-5: Single-Position Intervention FAILS
 - **0% cross-task transfer** at layer 14, last_demo_token
-- **0% transfer at ALL 28 layers** (Phase 5 sweep)
+- **0% transfer at ALL 28 layers** (Exp 5 sweep)
 - Zero/random ablation = 100% accuracy (position not causally necessary)
 
-### Phase 6: Task Ontology
+### Experiment 6: Task Ontology
 - Procedural tasks cluster (cos > 0.86)
 - Regime structure significant (p=0.005)
 
-### Phase 7: Trajectory
+### Experiment 7: Trajectory
 - High representational change in early layers (0-8)
 - Stabilization in late layers (16-26)
 
 ---
 
-## Extended Experiments (8-14)
+## Experiments 8-15: Extended Experiments
 
 ### Experiment 8: Multi-Position Transplantation — **BREAKTHROUGH**
 
@@ -50,7 +50,7 @@ All 8 tasks achieve high ICL accuracy (96-100%) with 5-shot prompting.
 
 ### Experiment 9: Query Position Intervention — Null Result
 
-Intervening at the query position (where Phase 2 showed 83% probe accuracy at layer 12):
+Intervening at the query position (where Exp 2 showed 83% probe accuracy at layer 12):
 - **0% transfer at ALL layers** including layer 12
 - Confirms: probing accuracy ≠ causal importance
 - Query position aggregates task info but is not causally sufficient
@@ -121,9 +121,24 @@ This confirms the causal flow model: Demos (layers 0-12) → Query Position (lay
 
 **Key insight:** Reducing demo count does NOT increase transfer rate. The distributed encoding is fundamental, not an artifact of demo redundancy.
 
+### Experiment 15: Cross-Format Control — **Refined Format Hypothesis**
+
+Testing same semantic operation with different output formats:
+
+| Source → Target | Same Operation | Format Diff | Transfer |
+|-----------------|----------------|-------------|----------|
+| uppercase → uppercase_period | Yes | "WORD" vs "WORD." | **0%** |
+| length → length_word | Yes | "5" vs "five" | **0%** |
+| repeat_word → repeat_comma | Yes | "word word" vs "word, word" | **90%** |
+| reverse → reverse_spaced | Yes | "olleh" vs "o l l e h" | **5%** |
+
+**Key insight:** Transfer depends on **structural format similarity**, not exact match:
+- Structurally similar formats (word word ↔ word, word): 90% transfer
+- Structurally different formats (5 ↔ five, WORD ↔ WORD.): 0% transfer
+
 ---
 
-## Key Conclusions (Updated)
+## Key Conclusions (Final)
 
 ### 1. Task identity is distributed across demo OUTPUT tokens
 
@@ -145,9 +160,14 @@ The breakthrough from Experiment 8: replacing activations at ALL demo output pos
 - Transplanting to query position: **0% transfer** (Exp 9) — not sufficient for transfer
 - Query aggregates info from demos, but intervention must happen earlier (layer 8)
 
-### 4. Transfer requires OUTPUT FORMAT compatibility
+### 4. Transfer requires STRUCTURAL FORMAT compatibility (refined)
 
-From Experiment 13: Transfer is binary based on output format matching, not gradual based on "task identity" similarity. pattern_completion → repeat_word = 100% (both produce "word word"), all other pairs = 0%.
+From Experiments 13 and 15: Transfer depends on structural format similarity:
+- **Structurally identical:** 90-100% transfer (pattern_completion ↔ repeat_word)
+- **Minor format diff:** ~90% transfer (repeat_word → repeat_comma: space vs comma)
+- **Major format diff:** 0-5% transfer (uppercase → uppercase_period, length → length_word)
+
+The model encodes output **templates** (structural patterns), not exact formats.
 
 ### 5. Early layers are universally critical
 
@@ -189,28 +209,21 @@ Output Generation (Layers 16-28)
 ```
 results/
 ├── MASTER_SUMMARY.md          ← This file
-├── phase1-7/                  ← Original phases (SUMMARY.md in each)
-├── exp8/
-│   ├── multi_position_results.json
-│   └── SUMMARY.md             ← 90% transfer with multi-position
-├── exp9/
-│   ├── query_intervention_results.json
-│   └── SUMMARY.md             ← 0% transfer at query position
-├── exp10/
-│   ├── attention_results.json
-│   └── SUMMARY.md             ← Demo info processed by layer 16
-├── exp11/
-│   ├── patching_results.json
-│   └── SUMMARY.md             ← Query necessary, demo not
-├── exp12/
-│   ├── layer_ablation_results.json
-│   └── SUMMARY.md             ← Layer 0 critical, early phase essential
-├── exp13/
-│   ├── instance_analysis_results.json
-│   └── SUMMARY.md             ← Transfer = format matching
-└── exp14/
-    ├── demo_ablation_results.json
-    └── SUMMARY.md             ← Distribution is fundamental
+├── exp1/                      ← Baseline characterization
+├── exp2/                      ← Representation localization (probing)
+├── exp3/                      ← Single-position intervention
+├── exp4/                      ← Ablation controls
+├── exp5/                      ← Layer sweep
+├── exp6/                      ← Task ontology
+├── exp7/                      ← Activation trajectory
+├── exp8/                      ← Multi-position transplantation (BREAKTHROUGH)
+├── exp9/                      ← Query position intervention (null)
+├── exp10/                     ← Attention knockout
+├── exp11/                     ← Activation patching (causal tracing)
+├── exp12/                     ← Layer-wise ablation
+├── exp13/                     ← Instance-level analysis
+├── exp14/                     ← Demo count ablation
+└── exp15/                     ← Cross-format control (pending)
 ```
 
 ---
@@ -221,6 +234,6 @@ results/
 >
 > Single-position intervention fails because no single demo position is necessary (0% disruption when noised). However, **multi-position intervention at layer 8** achieves up to **90% task transfer** by replacing all demo output activations simultaneously.
 >
-> Crucially, **successful transfer requires output format compatibility** between source and target tasks. When formats match (e.g., pattern_completion → repeat_word), transfer is near-perfect; when they differ, transfer fails completely regardless of intervention strength.
+> Crucially, **successful transfer requires structural output format compatibility**. Transfer succeeds when source and target share the same output template structure (e.g., "word word" patterns), even with minor syntactic differences (space vs comma). Transfer fails when structural formats differ (e.g., digit "5" vs word "five", "WORD" vs "WORD."), regardless of semantic similarity—even identical operations with different output formats show 0% transfer.
 >
-> Layer 0 is universally critical (100% drop when skipped), while layers 8-12 represent the **'task identity commitment window'** where intervention is most effective. By layer 16, task identity has been routed to the query position and intervention becomes impossible."
+> This reveals that the model encodes **output templates**, not task identity per se. Layer 0 is universally critical (100% drop when skipped), while layers 8-12 represent the **'template commitment window'** where intervention is most effective. By layer 16, the output template has been routed to the query position and intervention becomes impossible."
