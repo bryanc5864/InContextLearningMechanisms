@@ -1,0 +1,57 @@
+2026-01-28 20:13:22,578 [INFO] Experiment 11: Activation Patching (Causal Tracing)
+2026-01-28 20:13:22,578 [INFO] Start: 2026-01-28T20:13:22.578792
+2026-01-28 20:13:45,580 [INFO] Testing layers: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26]
+2026-01-28 20:13:45,580 [INFO] Testing positions: ['last_demo_token', 'first_query_token']
+2026-01-28 20:13:45,580 [INFO] 
+==================================================
+2026-01-28 20:13:45,580 [INFO] Task: uppercase
+2026-01-28 20:13:45,580 [INFO] ==================================================
+2026-01-28 20:14:08,768 [INFO]   Baseline accuracy: 1.00
+2026-01-28 20:14:08,769 [INFO] 
+  Position: last_demo_token
+2026-01-28 20:15:36,581 [INFO]     Layer  0: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:17:04,564 [INFO]     Layer  2: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:18:32,206 [INFO]     Layer  4: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:20:00,478 [INFO]     Layer  6: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:21:27,222 [INFO]     Layer  8: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:22:54,576 [INFO]     Layer 10: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:24:21,120 [INFO]     Layer 12: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:25:47,938 [INFO]     Layer 14: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:27:15,073 [INFO]     Layer 16: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:28:41,138 [INFO]     Layer 18: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:30:04,828 [INFO]     Layer 20: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:31:33,154 [INFO]     Layer 22: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:33:02,370 [INFO]     Layer 24: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:34:31,455 [INFO]     Layer 26: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:34:31,455 [INFO] 
+  Position: first_query_token
+2026-01-28 20:35:59,731 [INFO]     Layer  0: acc@noise2.0=0.00 disruption=1.00 ***
+2026-01-28 20:37:27,478 [INFO]     Layer  2: acc@noise2.0=0.00 disruption=1.00 ***
+2026-01-28 20:38:55,884 [INFO]     Layer  4: acc@noise2.0=0.07 disruption=0.93 ***
+2026-01-28 20:40:24,461 [INFO]     Layer  6: acc@noise2.0=0.07 disruption=0.93 ***
+2026-01-28 20:41:52,899 [INFO]     Layer  8: acc@noise2.0=0.13 disruption=0.87 ***
+2026-01-28 20:43:20,987 [INFO]     Layer 10: acc@noise2.0=0.00 disruption=1.00 ***
+2026-01-28 20:44:49,672 [INFO]     Layer 12: acc@noise2.0=0.00 disruption=1.00 ***
+2026-01-28 20:46:18,354 [INFO]     Layer 14: acc@noise2.0=0.13 disruption=0.87 ***
+2026-01-28 20:47:46,016 [INFO]     Layer 16: acc@noise2.0=0.60 disruption=0.40 ***
+2026-01-28 20:49:14,519 [INFO]     Layer 18: acc@noise2.0=0.93 disruption=0.07 
+2026-01-28 20:50:42,525 [INFO]     Layer 20: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:52:10,852 [INFO]     Layer 22: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:53:39,769 [INFO]     Layer 24: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:55:07,837 [INFO]     Layer 26: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:55:07,838 [INFO] 
+==================================================
+2026-01-28 20:55:07,838 [INFO] Task: first_letter
+2026-01-28 20:55:07,838 [INFO] ==================================================
+2026-01-28 20:55:30,131 [INFO]   Baseline accuracy: 1.00
+2026-01-28 20:55:30,131 [INFO] 
+  Position: last_demo_token
+2026-01-28 20:56:59,202 [INFO]     Layer  0: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:58:27,608 [INFO]     Layer  2: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 20:59:56,433 [INFO]     Layer  4: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 21:01:25,304 [INFO]     Layer  6: acc@noise2.0=0.93 disruption=0.07 
+2026-01-28 21:02:53,157 [INFO]     Layer  8: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 21:04:20,650 [INFO]     Layer 10: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 21:05:45,672 [INFO]     Layer 12: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 21:07:13,807 [INFO]     Layer 14: acc@noise2.0=1.00 disruption=0.00 
+2026-01-28 21:08:42,503 [INFO]     Layer 16: acc@noise2.0=1.00 disruption=0.00 

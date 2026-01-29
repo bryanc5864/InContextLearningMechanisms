@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "demo_counts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_layer": 14,
+    "query_layer": 12,
+    "position_type": "last_demo_token",
+    "n_test": 15,
+    "test_pairs": [
+      [
+        "uppercase",
+        "sentiment"
+      ],
+      [
+        "linear_2x",
+        "first_letter"
+      ],
+      [
+        "pattern_completion",
+        "repeat_word"
+      ]
+    ],
+    "timestamp": "2026-01-28T20:30:17.634888"
+  },
+  "accuracy_by_demos": {
+    "1": {
+      "uppercase": 1.0,
+      "first_letter": 0.0,
+      "repeat_word": 0.7333333333333333,
+      "length": 0.13333333333333333,
+      "linear_2x": 0.6,
+      "sentiment": 0.6666666666666666,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "2": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 0.8666666666666667,
+      "sentiment": 0.8,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "3": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 0.8666666666666667,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "4": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 1.0,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    },
+    "5": {
+      "uppercase": 1.0,
+      "first_letter": 1.0,
+      "repeat_word": 1.0,
+      "length": 1.0,
+      "linear_2x": 1.0,
+      "sentiment": 1.0,
+      "antonym": 1.0,
+      "pattern_completion": 1.0
+    }
+  },
+  "transfer_by_demos": {
+    "1": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "2": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "3": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "4": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "5": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "probe_by_demos": {
+    "1": 0.5333333333333334,
+    "2": 0.5833333333333333,
+    "3": 0.55,
+    "4": 0.55,
+    "5": 0.5583333333333333
+  }
+}
