@@ -1,0 +1,79 @@
+2026-01-31 18:26:50,979 [INFO] Experiment 27: Complete Baselines
+2026-01-31 18:26:50,979 [INFO] Start: 2026-01-31T18:26:50.979212
+Loading meta-llama/Llama-3.2-3B-Instruct...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.02s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  6.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:14<00:00,  7.17s/it]
+2026-01-31 18:27:21,725 [INFO] Model: meta-llama/Llama-3.2-3B-Instruct, intervention layer: 8
+2026-01-31 18:27:21,725 [INFO] 
+============================================================
+2026-01-31 18:27:21,725 [INFO] Pair: uppercase -> first_letter
+2026-01-31 18:27:21,725 [INFO] ============================================================
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+2026-01-31 18:27:54,540 [INFO]   True source:   transfer=0.00
+2026-01-31 18:28:25,922 [INFO]   Random source: transfer=0.00
+2026-01-31 18:28:55,632 [INFO]   Shuffled pos:  transfer=0.00
+2026-01-31 18:29:26,246 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:29:26,246 [INFO] 
+============================================================
+2026-01-31 18:29:26,246 [INFO] Pair: uppercase -> repeat_word
+2026-01-31 18:29:26,246 [INFO] ============================================================
+2026-01-31 18:29:58,246 [INFO]   True source:   transfer=0.95
+2026-01-31 18:30:30,371 [INFO]   Random source: transfer=0.00
+2026-01-31 18:31:01,057 [INFO]   Shuffled pos:  transfer=0.55
+2026-01-31 18:31:31,708 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:31:31,708 [INFO] 
+============================================================
+2026-01-31 18:31:31,708 [INFO] Pair: first_letter -> repeat_word
+2026-01-31 18:31:31,708 [INFO] ============================================================
+2026-01-31 18:32:03,400 [INFO]   True source:   transfer=0.00
+2026-01-31 18:32:35,632 [INFO]   Random source: transfer=0.00
+2026-01-31 18:33:05,925 [INFO]   Shuffled pos:  transfer=0.00
+2026-01-31 18:33:36,970 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:33:36,970 [INFO] 
+============================================================
+2026-01-31 18:33:36,971 [INFO] Pair: uppercase -> sentiment
+2026-01-31 18:33:36,971 [INFO] ============================================================
+2026-01-31 18:34:08,696 [INFO]   True source:   transfer=0.00
+2026-01-31 18:34:39,868 [INFO]   Random source: transfer=0.00
+2026-01-31 18:35:10,277 [INFO]   Shuffled pos:  transfer=0.00
+2026-01-31 18:35:40,787 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:35:40,787 [INFO] 
+============================================================
+2026-01-31 18:35:40,788 [INFO] Pair: linear_2x -> length
+2026-01-31 18:35:40,788 [INFO] ============================================================
+2026-01-31 18:36:12,569 [INFO]   True source:   transfer=0.00
+2026-01-31 18:36:44,741 [INFO]   Random source: transfer=0.00
+2026-01-31 18:37:15,527 [INFO]   Shuffled pos:  transfer=0.00
+2026-01-31 18:37:45,245 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:37:45,246 [INFO] 
+============================================================
+2026-01-31 18:37:45,246 [INFO] Pair: sentiment -> antonym
+2026-01-31 18:37:45,246 [INFO] ============================================================
+2026-01-31 18:38:17,083 [INFO]   True source:   transfer=0.10
+2026-01-31 18:38:48,836 [INFO]   Random source: transfer=0.00
+2026-01-31 18:39:18,976 [INFO]   Shuffled pos:  transfer=0.00
+2026-01-31 18:39:49,284 [INFO]   Noise (mag):   transfer=0.00
+2026-01-31 18:39:49,285 [INFO] 
+============================================================
+2026-01-31 18:39:49,285 [INFO] SUMMARY
+2026-01-31 18:39:49,285 [INFO] ============================================================
+2026-01-31 18:39:49,285 [INFO] Pair                                    True   Random  Shuffle    Noise
+2026-01-31 18:39:49,285 [INFO] ----------------------------------------------------------------------
+2026-01-31 18:39:49,285 [INFO] uppercase -> first_letter               0.00     0.00     0.00     0.00
+2026-01-31 18:39:49,285 [INFO] uppercase -> repeat_word                0.95     0.00     0.55     0.00
+2026-01-31 18:39:49,285 [INFO] first_letter -> repeat_word             0.00     0.00     0.00     0.00
+2026-01-31 18:39:49,285 [INFO] uppercase -> sentiment                  0.00     0.00     0.00     0.00
+2026-01-31 18:39:49,285 [INFO] linear_2x -> length                     0.00     0.00     0.00     0.00
+2026-01-31 18:39:49,285 [INFO] sentiment -> antonym                    0.10     0.00     0.00     0.00
+2026-01-31 18:39:49,286 [INFO]   Mean true_source              : 0.175
+2026-01-31 18:39:49,286 [INFO]   Mean random_source            : 0.000
+2026-01-31 18:39:49,286 [INFO]   Mean shuffled_positions       : 0.092
+2026-01-31 18:39:49,286 [INFO]   Mean magnitude_noise          : 0.000
+2026-01-31 18:39:49,288 [INFO] 
+Results saved to results/exp27
+2026-01-31 18:39:49,288 [INFO] Experiment 27 complete: 2026-01-31T18:39:49.288279
+Loaded on cuda:4. 28 layers, d_model=3072

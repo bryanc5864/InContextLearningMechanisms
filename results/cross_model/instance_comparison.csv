@@ -1,0 +1,17 @@
+model,source,target,transfer_rate
+llama-3.2-3b-instruct,uppercase,first_letter,0.0
+llama-3.2-3b-instruct,uppercase,sentiment,0.0
+llama-3.2-3b-instruct,repeat_word,first_letter,0.0
+llama-3.2-3b-instruct,pattern_completion,repeat_word,1.0
+llama-3.2-1b-instruct,uppercase,first_letter,0.0
+llama-3.2-1b-instruct,uppercase,sentiment,0.0
+llama-3.2-1b-instruct,repeat_word,first_letter,0.0
+llama-3.2-1b-instruct,pattern_completion,repeat_word,1.0
+qwen2.5-1.5b-instruct,uppercase,first_letter,0.0
+qwen2.5-1.5b-instruct,uppercase,sentiment,0.0
+qwen2.5-1.5b-instruct,repeat_word,first_letter,0.0
+qwen2.5-1.5b-instruct,pattern_completion,repeat_word,1.0
+gemma-2-2b-it,uppercase,first_letter,1.0
+gemma-2-2b-it,uppercase,sentiment,0.9
+gemma-2-2b-it,repeat_word,first_letter,0.0
+gemma-2-2b-it,pattern_completion,repeat_word,1.0

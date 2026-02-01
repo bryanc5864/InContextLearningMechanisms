@@ -1,7 +1,26 @@
 """Model loading and management using HuggingFace transformers."""
 
 import torch
+
+# Compatibility shim: Gemma-2 cache uses torch._dynamo.mark_static_address
+# which requires PyTorch >= 2.1. Provide a no-op stub so older versions work.
+if not hasattr(torch, "_dynamo"):
+    class _FakeDynamo:
+        @staticmethod
+        def mark_static_address(*args, **kwargs):
+            pass
+    torch._dynamo = _FakeDynamo()
+
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig
+
+
+# Map of known architecture layer accessor paths.
+# Each entry is a tuple of attribute names to traverse from the top-level model.
+_LAYER_ACCESSORS = [
+    ("model", "layers"),        # LLaMA, Qwen, Mistral, Gemma
+    ("transformer", "h"),       # GPT-2, GPT-Neo
+    ("transformer", "blocks"),  # MPT
+]
 
 
 class HookedModel:
@@ -25,9 +44,49 @@ class HookedModel:
         self.n_heads = config.num_attention_heads
         self.vocab_size = config.vocab_size
 
+        self._layer_container = self._detect_layer_accessor()
+
+    # ------------------------------------------------------------------
+    # Multi-model helpers
+    # ------------------------------------------------------------------
+
+    def _detect_layer_accessor(self):
+        """Detect which attribute path leads to the list of transformer layers."""
+        for attrs in _LAYER_ACCESSORS:
+            obj = self.model
+            try:
+                for attr in attrs:
+                    obj = getattr(obj, attr)
+                # Verify it is subscriptable and has the right length
+                if len(obj) == self.n_layers:
+                    return obj
+            except (AttributeError, TypeError):
+                continue
+        raise RuntimeError(
+            f"Cannot detect layer accessor for {type(self.model).__name__}. "
+            "Add the correct path to _LAYER_ACCESSORS."
+        )
+
     def get_layer_module(self, layer: int):
         """Get the transformer layer module for hook registration."""
-        return self.model.model.layers[layer]
+        return self._layer_container[layer]
+
+    @property
+    def short_name(self) -> str:
+        """Filesystem-safe short identifier derived from the HF model id."""
+        name = self.model.config._name_or_path
+        # Take the part after the last '/'
+        name = name.rsplit("/", 1)[-1]
+        return name.lower()
+
+    def normalize_layer(self, layer: int) -> float:
+        """Convert absolute layer index to fractional depth in [0, 1)."""
+        return layer / self.n_layers
+
+    def layer_at_fraction(self, fraction: float) -> int:
+        """Convert fractional depth to the nearest absolute layer index."""
+        idx = int(round(fraction * self.n_layers))
+        return max(0, min(idx, self.n_layers - 1))
 
     def tokenize(self, text: str) -> torch.Tensor:
         """Tokenize text, returning token IDs on device."""
@@ -178,13 +237,24 @@ class HookedModel:
         return self.tokenizer.decode(gen_ids, skip_special_tokens=True).strip()
 
 
+def _select_dtype(model_name: str, dtype: torch.dtype) -> torch.dtype:
+    """Pick a safe dtype.  Qwen2.5 produces NaN in fp16 on older PyTorch/CUDA,
+    and RTX 2080 Ti lacks native bf16, so fall back to fp32."""
+    name_lower = model_name.lower()
+    if "qwen" in name_lower and dtype == torch.float16:
+        print(f"Note: overriding fp16 -> fp32 for {model_name} (fp16 produces NaN)")
+        return torch.float32
+    return dtype
+
+
 def load_model(
     model_name: str = "meta-llama/Llama-3.2-3B-Instruct",
     device: str = "cuda:3",
     dtype: torch.dtype = torch.float16,
 ) -> HookedModel:
     """Load model and tokenizer, return wrapped HookedModel."""
-    print(f"Loading {model_name}...")
+    dtype = _select_dtype(model_name, dtype)
+    print(f"Loading {model_name} (dtype={dtype})...")
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token

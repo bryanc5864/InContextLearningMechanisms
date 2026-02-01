@@ -1,0 +1,96 @@
+2026-01-31 21:59:51,125 [INFO] Experiment 13: Instance-Level Analysis
+2026-01-31 21:59:51,125 [INFO] Start: 2026-01-31T21:59:51.125818
+2026-01-31 22:00:32,324 [INFO] Model: Qwen/Qwen2.5-1.5B-Instruct (28 layers), intervention_layer=8
+2026-01-31 22:00:32,325 [INFO] ============================================================
+2026-01-31 22:00:32,325 [INFO] Part A: Instance-Level Transfer Analysis
+2026-01-31 22:00:32,325 [INFO] ============================================================
+2026-01-31 22:00:32,325 [INFO] 
+Transfer: uppercase → first_letter
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+2026-01-31 22:01:20,623 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-31 22:01:20,623 [INFO] 
+Transfer: uppercase → sentiment
+2026-01-31 22:02:06,678 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-31 22:02:06,679 [INFO] 
+Transfer: repeat_word → first_letter
+2026-01-31 22:02:51,268 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-31 22:02:51,268 [INFO] 
+Transfer: pattern_completion → repeat_word
+2026-01-31 22:02:53,290 [INFO]   TRANSFER: 'honey' → 'honey honey' (source task behavior)
+2026-01-31 22:02:55,549 [INFO]   TRANSFER: 'frost' → 'frost frost' (source task behavior)
+2026-01-31 22:02:57,874 [INFO]   TRANSFER: 'badge' → 'badge badge' (source task behavior)
+2026-01-31 22:03:00,097 [INFO]   TRANSFER: 'stone' → 'stone stone' (source task behavior)
+2026-01-31 22:03:02,118 [INFO]   TRANSFER: 'lemon' → 'lemon lemon' (source task behavior)
+2026-01-31 22:03:04,407 [INFO]   TRANSFER: 'fjord' → 'fjord fjord' (source task behavior)
+2026-01-31 22:03:06,438 [INFO]   TRANSFER: 'ivory' → 'ivory ivory' (source task behavior)
+2026-01-31 22:03:08,784 [INFO]   TRANSFER: 'queen' → 'queen queen' (source task behavior)
+2026-01-31 22:03:11,161 [INFO]   TRANSFER: 'lunar' → 'lunar lunar' (source task behavior)
+2026-01-31 22:03:13,513 [INFO]   TRANSFER: 'youth' → 'youth youth' (source task behavior)
+2026-01-31 22:03:15,457 [INFO]   TRANSFER: 'noble' → 'noble noble' (source task behavior)
+2026-01-31 22:03:17,749 [INFO]   TRANSFER: 'dream' → 'dream dream' (source task behavior)
+2026-01-31 22:03:20,230 [INFO]   TRANSFER: 'tower' → 'tower tower' (source task behavior)
+2026-01-31 22:03:22,687 [INFO]   TRANSFER: 'knife' → 'knife knife' (source task behavior)
+2026-01-31 22:03:25,112 [INFO]   TRANSFER: 'vivid' → 'vivid vivid' (source task behavior)
+2026-01-31 22:03:27,554 [INFO]   TRANSFER: 'urban' → 'urban urban' (source task behavior)
+2026-01-31 22:03:29,957 [INFO]   TRANSFER: 'river' → 'river river' (source task behavior)
+2026-01-31 22:03:32,367 [INFO]   TRANSFER: 'globe' → 'globe globe' (source task behavior)
+2026-01-31 22:03:34,914 [INFO]   TRANSFER: 'robin' → 'robin robin' (source task behavior)
+2026-01-31 22:03:37,178 [INFO]   TRANSFER: 'grape' → 'grape grape' (source task behavior)
+2026-01-31 22:03:37,182 [INFO]   Transfer rate: 1.00 (20/20)
+2026-01-31 22:03:37,182 [INFO] 
+============================================================
+2026-01-31 22:03:37,182 [INFO] Part B: Input Characteristics Analysis
+2026-01-31 22:03:37,182 [INFO] ============================================================
+2026-01-31 22:03:37,182 [INFO] 
+uppercase → first_letter:
+2026-01-31 22:03:37,183 [INFO]   Non-transferred (20): avg input len = 5.0
+2026-01-31 22:03:37,183 [INFO]     Examples: ['honey', 'frost', 'badge']
+2026-01-31 22:03:37,183 [INFO] 
+uppercase → sentiment:
+2026-01-31 22:03:37,183 [INFO]   Non-transferred (20): avg input len = 7.7
+2026-01-31 22:03:37,183 [INFO]     Examples: ['disgusted', 'depressed', 'gloomy']
+2026-01-31 22:03:37,183 [INFO] 
+repeat_word → first_letter:
+2026-01-31 22:03:37,183 [INFO]   Non-transferred (20): avg input len = 5.0
+2026-01-31 22:03:37,183 [INFO]     Examples: ['crane', 'pixel', 'uncle']
+2026-01-31 22:03:37,183 [INFO] 
+pattern_completion → repeat_word:
+2026-01-31 22:03:37,183 [INFO]   Transferred (20): avg input len = 5.0
+2026-01-31 22:03:37,183 [INFO]     Examples: ['honey', 'frost', 'badge']
+2026-01-31 22:03:37,183 [INFO] 
+============================================================
+2026-01-31 22:03:37,183 [INFO] Part C: Output Format Analysis
+2026-01-31 22:03:37,183 [INFO] ============================================================
+2026-01-31 22:03:37,183 [INFO] 
+uppercase → first_letter:
+2026-01-31 22:03:37,183 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 22:03:37,184 [INFO] 
+uppercase → sentiment:
+2026-01-31 22:03:37,184 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 22:03:37,184 [INFO] 
+repeat_word → first_letter:
+2026-01-31 22:03:37,184 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 22:03:37,184 [INFO] 
+pattern_completion → repeat_word:
+2026-01-31 22:03:37,184 [INFO]   Output types: {'numeric': 0, 'word': 0, 'phrase': 20, 'other': 0}
+2026-01-31 22:03:37,184 [INFO] 
+============================================================
+2026-01-31 22:03:37,184 [INFO] SUMMARY
+2026-01-31 22:03:37,184 [INFO] ============================================================
+2026-01-31 22:03:37,184 [INFO]   uppercase → first_letter: 0.00
+2026-01-31 22:03:37,184 [INFO]   uppercase → sentiment: 0.00
+2026-01-31 22:03:37,184 [INFO]   repeat_word → first_letter: 0.00
+2026-01-31 22:03:37,184 [INFO]   pattern_completion → repeat_word: 1.00
+2026-01-31 22:03:37,186 [INFO] 
+Results saved to results/qwen2.5-1.5b-instruct/exp13
+2026-01-31 22:03:37,186 [INFO] Experiment 13 complete: 2026-01-31T22:03:37.186829
+Note: overriding fp16 -> fp32 for Qwen/Qwen2.5-1.5B-Instruct (fp16 produces NaN)
+Loading Qwen/Qwen2.5-1.5B-Instruct (dtype=torch.float32)...
+Loaded on cuda:5. 28 layers, d_model=1536

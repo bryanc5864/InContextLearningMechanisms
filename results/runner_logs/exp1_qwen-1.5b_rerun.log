@@ -1,0 +1,314 @@
+2026-01-31 21:59:51,228 [INFO] Phase 1: Baseline Characterization
+2026-01-31 21:59:51,228 [INFO] Start time: 2026-01-31T21:59:51.228515
+2026-01-31 21:59:51,228 [INFO] Model: Qwen/Qwen2.5-1.5B-Instruct, Device: cuda:4, Demos: 5, Tests: 50
+2026-01-31 22:00:28,441 [INFO] Model info: {"name": "Qwen/Qwen2.5-1.5B-Instruct", "n_layers": 28, "d_model": 1536, "n_heads": 12, "vocab_size": 151936, "device": "cuda:4"}
+2026-01-31 22:00:28,443 [INFO] 
+============================================================
+2026-01-31 22:00:28,443 [INFO] Task: reverse (regime: procedural)
+2026-01-31 22:00:28,443 [INFO] ============================================================
+2026-01-31 22:00:28,443 [INFO] Demos: [('apple', 'elppa'), ('brain', 'niarb'), ('cloud', 'duolc'), ('delta', 'atled'), ('flame', 'emalf')]
+2026-01-31 22:00:28,443 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+2026-01-31 22:00:31,429 [INFO]   [  1/50] input='honey'         expected='yenoh'         got='yohen'         -> incorrect
+2026-01-31 22:00:32,598 [INFO]   [  2/50] input='frost'         expected='tsorf'         got='stcrof'        -> incorrect
+2026-01-31 22:00:33,909 [INFO]   [  3/50] input='badge'         expected='egdab'         got='adibg'         -> incorrect
+2026-01-31 22:00:35,360 [INFO]   [  4/50] input='stone'         expected='enots'         got='enost'         -> incorrect
+2026-01-31 22:00:36,773 [INFO]   [  5/50] input='lemon'         expected='nomel'         got='melen'         -> incorrect
+2026-01-31 22:00:38,185 [INFO]   [  6/50] input='fjord'         expected='drojf'         got='ordfj'         -> incorrect
+2026-01-31 22:00:39,592 [INFO]   [  7/50] input='ivory'         expected='yrovi'         got='vyiow'         -> incorrect
+2026-01-31 22:00:40,946 [INFO]   [  8/50] input='queen'         expected='neeuq'         got='enqaur'        -> incorrect
+2026-01-31 22:00:41,940 [INFO]   [  9/50] input='lunar'         expected='ranul'         got='onalul'        -> incorrect
+2026-01-31 22:00:43,078 [INFO]   [ 10/50] input='youth'         expected='htuoy'         got='hryou'         -> incorrect
+2026-01-31 22:00:45,464 [INFO]   [ 12/50] input='dream'         expected='maerd'         got='remdr'         -> incorrect
+2026-01-31 22:00:46,575 [INFO]   [ 13/50] input='tower'         expected='rewot'         got='rotaT'         -> incorrect
+2026-01-31 22:00:47,691 [INFO]   [ 14/50] input='knife'         expected='efink'         got='knif'          -> incorrect
+2026-01-31 22:00:48,824 [INFO]   [ 15/50] input='vivid'         expected='diviv'         got='idbiv'         -> incorrect
+2026-01-31 22:00:50,007 [INFO]   [ 16/50] input='urban'         expected='nabru'         got='rnuaiu'        -> incorrect
+2026-01-31 22:00:51,204 [INFO]   [ 17/50] input='river'         expected='revir'         got='iverr'         -> incorrect
+2026-01-31 22:00:52,329 [INFO]   [ 18/50] input='globe'         expected='ebolg'         got='eloig'         -> incorrect
+2026-01-31 22:00:53,430 [INFO]   [ 19/50] input='robin'         expected='nibor'         got='oibrn'         -> incorrect
+2026-01-31 22:00:54,541 [INFO]   [ 20/50] input='grape'         expected='eparg'         got='rapg'          -> incorrect
+2026-01-31 22:00:55,663 [INFO]   [ 21/50] input='dwarf'         expected='frawd'         got='rwfdu'         -> incorrect
+2026-01-31 22:00:56,799 [INFO]   [ 22/50] input='ankle'         expected='elkna'         got='nkelan'        -> incorrect
+2026-01-31 22:00:58,002 [INFO]   [ 23/50] input='piano'         expected='onaip'         got='inapoi'        -> incorrect
+2026-01-31 22:00:59,172 [INFO]   [ 24/50] input='index'         expected='xedni'         got='exind'         -> incorrect
+2026-01-31 22:01:00,306 [INFO]   [ 25/50] input='pixel'         expected='lexip'         got='xilip'         -> incorrect
+2026-01-31 22:01:01,509 [INFO]   [ 26/50] input='maple'         expected='elpam'         got='ampela'        -> incorrect
+2026-01-31 22:01:02,635 [INFO]   [ 27/50] input='kayak'         expected='kayak'         got='akyak'         -> incorrect
+2026-01-31 22:01:03,796 [INFO]   [ 28/50] input='candy'         expected='ydnac'         got='yncad'         -> incorrect
+2026-01-31 22:01:04,955 [INFO]   [ 29/50] input='eagle'         expected='elgae'         got='gaelc'         -> incorrect
+2026-01-31 22:01:05,946 [INFO]   [ 30/50] input='crane'         expected='enarc'         got='renac'         -> incorrect
+2026-01-31 22:01:07,007 [INFO]   [ 31/50] input='glyph'         expected='hpylg'         got='ylpig'         -> incorrect
+2026-01-31 22:01:08,163 [INFO]   [ 32/50] input='sugar'         expected='ragus'         got='ruags'         -> incorrect
+2026-01-31 22:01:09,345 [INFO]   [ 33/50] input='ocean'         expected='naeco'         got='nabooc'        -> incorrect
+2026-01-31 22:01:10,520 [INFO]   [ 34/50] input='ember'         expected='rebme'         got='mbera'         -> incorrect
+2026-01-31 22:01:11,716 [INFO]   [ 35/50] input='uncle'         expected='elcnu'         got='culeu'         -> incorrect
+2026-01-31 22:01:12,948 [INFO]   [ 36/50] input='joker'         expected='rekoj'         got='rojik'         -> incorrect
+2026-01-31 22:01:14,411 [INFO]   [ 37/50] input='haven'         expected='nevah'         got='enahvd'        -> incorrect
+2026-01-31 22:01:15,550 [INFO]   [ 38/50] input='juice'         expected='eciuj'         got='uijju'         -> incorrect
+2026-01-31 22:01:16,594 [INFO]   [ 39/50] input='jolly'         expected='ylloj'         got='oljly'         -> incorrect
+2026-01-31 22:01:17,713 [INFO]   [ 40/50] input='trend'         expected='dnert'         got='rnted'         -> incorrect
+2026-01-31 22:01:18,837 [INFO]   [ 41/50] input='mango'         expected='ognam'         got='amgonm'        -> incorrect
+2026-01-31 22:01:19,878 [INFO]   [ 42/50] input='quilt'         expected='tliuq'         got='tutql'         -> incorrect
+2026-01-31 22:01:20,871 [INFO]   [ 43/50] input='nerve'         expected='evren'         got='renuga'        -> incorrect
+2026-01-31 22:01:21,855 [INFO]   [ 44/50] input='pearl'         expected='lraep'         got='raper'         -> incorrect
+2026-01-31 22:01:23,004 [INFO]   [ 45/50] input='valve'         expected='evlav'         got='avelva'        -> incorrect
+2026-01-31 22:01:24,159 [INFO]   [ 46/50] input='wheat'         expected='taehw'         got='hwiat'         -> incorrect
+2026-01-31 22:01:25,263 [INFO]   [ 47/50] input='zebra'         expected='arbez'         got='ebraza'        -> incorrect
+2026-01-31 22:01:26,435 [INFO]   [ 48/50] input='house'         expected='esuoh'         got='huse'          -> incorrect
+2026-01-31 22:01:27,622 [INFO]   [ 49/50] input='olive'         expected='evilo'         got='lvoel'         -> incorrect
+2026-01-31 22:01:28,786 [INFO]   [ 50/50] input='waltz'         expected='ztlaw'         got='zlatw'         -> incorrect
+2026-01-31 22:01:28,786 [INFO] 
+Result: 2.0% accuracy (1/50) [49 incorrect, 0 malformed] in 60.3s
+2026-01-31 22:01:28,786 [WARNING]   BELOW 85% THRESHOLD — may exclude from later phases
+2026-01-31 22:01:28,786 [INFO] 
+============================================================
+2026-01-31 22:01:28,786 [INFO] Task: uppercase (regime: procedural)
+2026-01-31 22:01:28,786 [INFO] ============================================================
+2026-01-31 22:01:28,786 [INFO] Demos: [('apple', 'APPLE'), ('brain', 'BRAIN'), ('cloud', 'CLOUD'), ('delta', 'DELTA'), ('flame', 'FLAME')]
+2026-01-31 22:01:28,787 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+2026-01-31 22:01:40,548 [INFO]   [ 10/50] input='youth'         expected='YOUTH'         got='YOUTH'         -> correct
+2026-01-31 22:01:41,747 [INFO]   [ 11/50] input='noble'         expected='NOBLE'         got='NOLDE'         -> incorrect
+2026-01-31 22:01:52,213 [INFO]   [ 20/50] input='grape'         expected='GRAPE'         got='GRAPE'         -> correct
+2026-01-31 22:02:03,792 [INFO]   [ 30/50] input='crane'         expected='CRANE'         got='CRANE'         -> correct
+2026-01-31 22:02:05,024 [INFO]   [ 31/50] input='glyph'         expected='GLYPH'         got='GYPHL'         -> incorrect
+2026-01-31 22:02:14,566 [INFO]   [ 40/50] input='trend'         expected='TREND'         got='TRENDS'        -> incorrect
+2026-01-31 22:02:25,555 [INFO]   [ 50/50] input='waltz'         expected='WALTZ'         got='WALTZ'         -> correct
+2026-01-31 22:02:25,555 [INFO] 
+Result: 94.0% accuracy (47/50) [3 incorrect, 0 malformed] in 56.8s
+2026-01-31 22:02:25,555 [INFO] 
+============================================================
+2026-01-31 22:02:25,555 [INFO] Task: pig_latin (regime: procedural)
+2026-01-31 22:02:25,556 [INFO] ============================================================
+2026-01-31 22:02:25,556 [INFO] Demos: [('apple', 'appleay'), ('brain', 'ainbray'), ('cloud', 'oudclay'), ('delta', 'eltaday'), ('flame', 'ameflay')]
+2026-01-31 22:02:25,556 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+2026-01-31 22:02:26,693 [INFO]   [  1/50] input='honey'         expected='oneyhay'       got='ohynhay'       -> incorrect
+2026-01-31 22:02:27,891 [INFO]   [  2/50] input='frost'         expected='ostfray'       got='rofsray'       -> incorrect
+2026-01-31 22:02:29,011 [INFO]   [  3/50] input='badge'         expected='adgebay'       got='adagey'        -> incorrect
+2026-01-31 22:02:31,362 [INFO]   [  5/50] input='lemon'         expected='emonlay'       got='emolayn'       -> incorrect
+2026-01-31 22:02:32,534 [INFO]   [  6/50] input='fjord'         expected='ordfjay'       got='fjdory'        -> incorrect
+2026-01-31 22:02:33,592 [INFO]   [  7/50] input='ivory'         expected='ivoryay'       got='ivyaw'         -> incorrect
+2026-01-31 22:02:34,703 [INFO]   [  8/50] input='queen'         expected='ueenqay'       got='quenay'        -> incorrect
+2026-01-31 22:02:35,903 [INFO]   [  9/50] input='lunar'         expected='unarlay'       got='onylam'        -> incorrect
+2026-01-31 22:02:37,120 [INFO]   [ 10/50] input='youth'         expected='outhyay'       got='ythuytay'      -> incorrect
+2026-01-31 22:02:38,340 [INFO]   [ 11/50] input='noble'         expected='oblenay'       got='lbonaey'       -> incorrect
+2026-01-31 22:02:39,574 [INFO]   [ 12/50] input='dream'         expected='eamdray'       got='rmdrayn'       -> incorrect
+2026-01-31 22:02:40,801 [INFO]   [ 13/50] input='tower'         expected='owertay'       got='rotaey'        -> incorrect
+2026-01-31 22:02:42,009 [INFO]   [ 14/50] input='knife'         expected='ifeknay'       got='knifelay'      -> incorrect
+2026-01-31 22:02:43,222 [INFO]   [ 15/50] input='vivid'         expected='ividvay'       got='idavvy'        -> incorrect
+2026-01-31 22:02:44,375 [INFO]   [ 16/50] input='urban'         expected='urbanay'       got='uranuy'        -> incorrect
+2026-01-31 22:02:45,492 [INFO]   [ 17/50] input='river'         expected='iverray'       got='riverya'       -> incorrect
+2026-01-31 22:02:46,655 [INFO]   [ 18/50] input='globe'         expected='obeglay'       got='lobgula'       -> incorrect
+2026-01-31 22:02:47,812 [INFO]   [ 19/50] input='robin'         expected='obinray'       got='oibrayn'       -> incorrect
+2026-01-31 22:02:49,005 [INFO]   [ 20/50] input='grape'         expected='apegray'       got='pragave'       -> incorrect
+2026-01-31 22:02:50,134 [INFO]   [ 21/50] input='dwarf'         expected='arfdway'       got='awfrday'       -> incorrect
+2026-01-31 22:02:51,354 [INFO]   [ 22/50] input='ankle'         expected='ankleay'       got='ankelay'       -> incorrect
+2026-01-31 22:02:52,565 [INFO]   [ 23/50] input='piano'         expected='ianopay'       got='inopay'        -> incorrect
+2026-01-31 22:02:53,748 [INFO]   [ 24/50] input='index'         expected='indexay'       got='indexy'        -> incorrect
+2026-01-31 22:02:54,893 [INFO]   [ 25/50] input='pixel'         expected='ixelpay'       got='ilpaxy'        -> incorrect
+2026-01-31 22:02:56,037 [INFO]   [ 26/50] input='maple'         expected='aplemay'       got='amepfly'       -> incorrect
+2026-01-31 22:02:56,984 [INFO]   [ 27/50] input='kayak'         expected='ayakkay'       got='aikyay'        -> incorrect
+2026-01-31 22:02:57,935 [INFO]   [ 28/50] input='candy'         expected='andycay'       got='anycady'       -> incorrect
+2026-01-31 22:02:59,092 [INFO]   [ 29/50] input='eagle'         expected='eagleay'       got='eagle'         -> incorrect
+2026-01-31 22:03:00,159 [INFO]   [ 30/50] input='crane'         expected='anecray'       got='raneicy'       -> incorrect
+2026-01-31 22:03:01,063 [INFO]   [ 31/50] input='glyph'         expected='glyphay'       got='lphiguy'       -> incorrect
+2026-01-31 22:03:02,089 [INFO]   [ 32/50] input='sugar'         expected='ugarsay'       got='ugarosy'       -> incorrect
+2026-01-31 22:03:03,187 [INFO]   [ 33/50] input='ocean'         expected='oceanay'       got='onaoyncay'     -> incorrect
+2026-01-31 22:03:04,342 [INFO]   [ 34/50] input='ember'         expected='emberay'       got='mberam'        -> incorrect
+2026-01-31 22:03:05,534 [INFO]   [ 35/50] input='uncle'         expected='uncleay'       got='uncleuy'       -> incorrect
+2026-01-31 22:03:06,758 [INFO]   [ 36/50] input='joker'         expected='okerjay'       got='okjray'        -> incorrect
+2026-01-31 22:03:07,988 [INFO]   [ 37/50] input='haven'         expected='avenhay'       got='anvehay'       -> incorrect
+2026-01-31 22:03:09,189 [INFO]   [ 38/50] input='juice'         expected='uicejay'       got='ujiesay'       -> incorrect
+2026-01-31 22:03:10,344 [INFO]   [ 39/50] input='jolly'         expected='ollyjay'       got='oljylay'       -> incorrect
+2026-01-31 22:03:11,566 [INFO]   [ 40/50] input='trend'         expected='endtray'       got='rantydoy'      -> incorrect
+2026-01-31 22:03:12,820 [INFO]   [ 41/50] input='mango'         expected='angomay'       got='amgonay'       -> incorrect
+2026-01-31 22:03:14,048 [INFO]   [ 42/50] input='quilt'         expected='uiltqay'       got='uqiltaw'       -> incorrect
+2026-01-31 22:03:15,266 [INFO]   [ 43/50] input='nerve'         expected='ervenay'       got='rneauray'      -> incorrect
+2026-01-31 22:03:16,487 [INFO]   [ 44/50] input='pearl'         expected='earlpay'       got='elpray'        -> incorrect
+2026-01-31 22:03:17,663 [INFO]   [ 45/50] input='valve'         expected='alvevay'       got='avelyav'       -> incorrect
+2026-01-31 22:03:18,900 [INFO]   [ 46/50] input='wheat'         expected='eatwhay'       got='ahtwaiy'       -> incorrect
+2026-01-31 22:03:20,149 [INFO]   [ 47/50] input='zebra'         expected='ebrazay'       got='azebray'       -> incorrect
+2026-01-31 22:03:21,379 [INFO]   [ 48/50] input='house'         expected='ousehay'       got='houseyt'       -> incorrect
+2026-01-31 22:03:22,614 [INFO]   [ 49/50] input='olive'         expected='oliveay'       got='olivey'        -> incorrect
+2026-01-31 22:03:23,849 [INFO]   [ 50/50] input='waltz'         expected='altzway'       got='altwazy'       -> incorrect
+2026-01-31 22:03:23,849 [INFO] 
+Result: 2.0% accuracy (1/50) [49 incorrect, 0 malformed] in 58.3s
+2026-01-31 22:03:23,849 [WARNING]   BELOW 85% THRESHOLD — may exclude from later phases
+2026-01-31 22:03:23,849 [INFO] 
+============================================================
+2026-01-31 22:03:23,849 [INFO] Task: first_letter (regime: procedural)
+2026-01-31 22:03:23,849 [INFO] ============================================================
+2026-01-31 22:03:23,849 [INFO] Demos: [('apple', 'a'), ('brain', 'b'), ('cloud', 'c'), ('delta', 'd'), ('flame', 'f')]
+2026-01-31 22:03:23,849 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+2026-01-31 22:03:26,247 [INFO]   [  2/50] input='frost'         expected='f'             got='r'             -> incorrect
+2026-01-31 22:03:29,853 [INFO]   [  5/50] input='lemon'         expected='l'             got='m'             -> incorrect
+2026-01-31 22:03:31,128 [INFO]   [  6/50] input='fjord'         expected='f'             got='j'             -> incorrect
+2026-01-31 22:03:36,127 [INFO]   [ 10/50] input='youth'         expected='y'             got='y'             -> correct
+2026-01-31 22:03:37,255 [INFO]   [ 11/50] input='noble'         expected='n'             got='l'             -> incorrect
+2026-01-31 22:03:38,314 [INFO]   [ 12/50] input='dream'         expected='d'             got='m'             -> incorrect
+2026-01-31 22:03:48,167 [INFO]   [ 20/50] input='grape'         expected='g'             got='g'             -> correct
+2026-01-31 22:03:49,404 [INFO]   [ 21/50] input='dwarf'         expected='d'             got='w'             -> incorrect
+2026-01-31 22:03:50,630 [INFO]   [ 22/50] input='ankle'         expected='a'             got='l'             -> incorrect
+2026-01-31 22:03:58,050 [INFO]   [ 28/50] input='candy'         expected='c'             got='an'            -> incorrect
+2026-01-31 22:03:59,320 [INFO]   [ 29/50] input='eagle'         expected='e'             got='g'             -> incorrect
+2026-01-31 22:04:00,552 [INFO]   [ 30/50] input='crane'         expected='c'             got='r'             -> incorrect
+2026-01-31 22:04:02,992 [INFO]   [ 32/50] input='sugar'         expected='s'             got='u'             -> incorrect
+2026-01-31 22:04:07,890 [INFO]   [ 36/50] input='joker'         expected='j'             got='k'             -> incorrect
+2026-01-31 22:04:11,287 [INFO]   [ 39/50] input='jolly'         expected='j'             got='l'             -> incorrect
+2026-01-31 22:04:12,352 [INFO]   [ 40/50] input='trend'         expected='t'             got='t'             -> correct
+2026-01-31 22:04:15,300 [INFO]   [ 43/50] input='nerve'         expected='n'             got='r'             -> incorrect
+2026-01-31 22:04:22,506 [INFO]   [ 49/50] input='olive'         expected='o'             got='l'             -> incorrect
+2026-01-31 22:04:23,746 [INFO]   [ 50/50] input='waltz'         expected='w'             got='l'             -> incorrect
+2026-01-31 22:04:23,746 [INFO] 
+Result: 68.0% accuracy (34/50) [16 incorrect, 0 malformed] in 59.9s
+2026-01-31 22:04:23,746 [WARNING]   BELOW 85% THRESHOLD — may exclude from later phases
+2026-01-31 22:04:23,746 [INFO] 
+============================================================
+2026-01-31 22:04:23,746 [INFO] Task: repeat_word (regime: procedural)
+2026-01-31 22:04:23,746 [INFO] ============================================================
+2026-01-31 22:04:23,746 [INFO] Demos: [('apple', 'apple apple'), ('brain', 'brain brain'), ('cloud', 'cloud cloud'), ('delta', 'delta delta'), ('flame', 'flame flame')]
+2026-01-31 22:04:23,746 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+2026-01-31 22:04:36,056 [INFO]   [ 10/50] input='youth'         expected='youth youth'   got='youth youth'   -> correct
+2026-01-31 22:04:48,104 [INFO]   [ 20/50] input='grape'         expected='grape grape'   got='grape grape'   -> correct
+2026-01-31 22:04:59,779 [INFO]   [ 30/50] input='crane'         expected='crane crane'   got='crane crane'   -> correct
+2026-01-31 22:05:11,723 [INFO]   [ 40/50] input='trend'         expected='trend trend'   got='trend trend'   -> correct
+2026-01-31 22:05:23,177 [INFO]   [ 50/50] input='waltz'         expected='waltz waltz'   got='waltz waltz'   -> correct
+2026-01-31 22:05:23,177 [INFO] 
+Result: 100.0% accuracy (50/50) [0 incorrect, 0 malformed] in 59.4s
+2026-01-31 22:05:23,177 [INFO] 
+============================================================
+2026-01-31 22:05:23,178 [INFO] Task: length (regime: counting)
+2026-01-31 22:05:23,178 [INFO] ============================================================
+2026-01-31 22:05:23,178 [INFO] Demos: [('apple', '5'), ('brain', '5'), ('cloud', '5'), ('delta', '5'), ('flame', '5')]
+2026-01-31 22:05:23,178 [INFO] Test inputs (50): ['honey', 'frost', 'badge', 'stone', 'lemon']...
+2026-01-31 22:05:26,678 [INFO]   [  3/50] input='badge'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:27,840 [INFO]   [  4/50] input='stone'         expected='5'             got='4'             -> incorrect
+2026-01-31 22:05:32,512 [INFO]   [  8/50] input='queen'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:34,766 [INFO]   [ 10/50] input='youth'         expected='5'             got='5'             -> correct
+2026-01-31 22:05:38,135 [INFO]   [ 13/50] input='tower'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:40,497 [INFO]   [ 15/50] input='vivid'         expected='5'             got='7'             -> incorrect
+2026-01-31 22:05:41,661 [INFO]   [ 16/50] input='urban'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:42,652 [INFO]   [ 17/50] input='river'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:45,998 [INFO]   [ 20/50] input='grape'         expected='5'             got='5'             -> correct
+2026-01-31 22:05:48,296 [INFO]   [ 22/50] input='ankle'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:49,480 [INFO]   [ 23/50] input='piano'         expected='5'             got='7'             -> incorrect
+2026-01-31 22:05:55,066 [INFO]   [ 28/50] input='candy'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:05:57,370 [INFO]   [ 30/50] input='crane'         expected='5'             got='5'             -> correct
+2026-01-31 22:05:59,621 [INFO]   [ 32/50] input='sugar'         expected='5'             got='7'             -> incorrect
+2026-01-31 22:06:00,728 [INFO]   [ 33/50] input='ocean'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:02,957 [INFO]   [ 35/50] input='uncle'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:04,076 [INFO]   [ 36/50] input='joker'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:07,521 [INFO]   [ 39/50] input='jolly'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:08,695 [INFO]   [ 40/50] input='trend'         expected='5'             got='5'             -> correct
+2026-01-31 22:06:15,792 [INFO]   [ 46/50] input='wheat'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:16,985 [INFO]   [ 47/50] input='zebra'         expected='5'             got='7'             -> incorrect
+2026-01-31 22:06:20,462 [INFO]   [ 50/50] input='waltz'         expected='5'             got='6'             -> incorrect
+2026-01-31 22:06:20,462 [INFO] 
+Result: 64.0% accuracy (32/50) [18 incorrect, 0 malformed] in 57.3s
+2026-01-31 22:06:20,463 [WARNING]   BELOW 85% THRESHOLD — may exclude from later phases
+2026-01-31 22:06:20,463 [INFO] 
+============================================================
+2026-01-31 22:06:20,463 [INFO] Task: linear_2x (regime: gd_like)
+2026-01-31 22:06:20,463 [INFO] ============================================================
+2026-01-31 22:06:20,463 [INFO] Demos: [('3', '6'), ('5', '10'), ('7', '14'), ('2', '4'), ('9', '18')]
+2026-01-31 22:06:20,463 [INFO] Test inputs (50): ['36', '29', '55', '17', '22']...
+2026-01-31 22:06:22,289 [INFO]   [  2/50] input='29'            expected='58'            got='84'            -> incorrect
+2026-01-31 22:06:23,429 [INFO]   [  3/50] input='55'            expected='110'           got='165'           -> incorrect
+2026-01-31 22:06:24,438 [INFO]   [  4/50] input='17'            expected='34'            got='51'            -> incorrect
+2026-01-31 22:06:26,363 [INFO]   [  6/50] input='26'            expected='52'            got='78'            -> incorrect
+2026-01-31 22:06:27,521 [INFO]   [  7/50] input='56'            expected='112'           got='168'           -> incorrect
+2026-01-31 22:06:28,636 [INFO]   [  8/50] input='59'            expected='118'           got='171'           -> incorrect
+2026-01-31 22:06:30,907 [INFO]   [ 10/50] input='25'            expected='50'            got='75'            -> incorrect
+2026-01-31 22:06:33,834 [INFO]   [ 13/50] input='47'            expected='94'            got='96'            -> incorrect
+2026-01-31 22:06:34,998 [INFO]   [ 14/50] input='50'            expected='100'           got='1275'          -> incorrect
+2026-01-31 22:06:36,206 [INFO]   [ 15/50] input='35'            expected='70'            got='105'           -> incorrect
+2026-01-31 22:06:40,773 [INFO]   [ 19/50] input='52'            expected='104'           got='132'           -> incorrect
+2026-01-31 22:06:41,659 [INFO]   [ 20/50] input='10'            expected='20'            got='20'            -> correct
+2026-01-31 22:06:42,871 [INFO]   [ 21/50] input='34'            expected='68'            got='56'            -> incorrect
+2026-01-31 22:06:48,183 [INFO]   [ 26/50] input='30'            expected='60'            got='90'            -> incorrect
+2026-01-31 22:06:50,852 [INFO]   [ 28/50] input='31'            expected='62'            got='192'           -> incorrect
+2026-01-31 22:06:52,207 [INFO]   [ 29/50] input='57'            expected='114'           got='119'           -> incorrect
+2026-01-31 22:06:53,248 [INFO]   [ 30/50] input='24'            expected='48'            got='72'            -> incorrect
+2026-01-31 22:06:54,365 [INFO]   [ 31/50] input='37'            expected='74'            got='146'           -> incorrect
+2026-01-31 22:06:56,273 [INFO]   [ 33/50] input='32'            expected='64'            got='128'           -> incorrect
+2026-01-31 22:06:57,425 [INFO]   [ 34/50] input='18'            expected='36'            got='54'            -> incorrect
+2026-01-31 22:06:59,659 [INFO]   [ 36/50] input='38'            expected='76'            got='156'           -> incorrect
+2026-01-31 22:07:04,292 [INFO]   [ 40/50] input='58'            expected='116'           got='1716'          -> incorrect
+2026-01-31 22:07:06,527 [INFO]   [ 42/50] input='33'            expected='66'            got='165'           -> incorrect
+2026-01-31 22:07:07,662 [INFO]   [ 43/50] input='43'            expected='86'            got='84'            -> incorrect
+2026-01-31 22:07:09,627 [INFO]   [ 45/50] input='40'            expected='80'            got='120'           -> incorrect
+2026-01-31 22:07:14,836 [INFO]   [ 50/50] input='21'            expected='42'            got='42'            -> correct
+2026-01-31 22:07:14,836 [INFO] 
+Result: 52.0% accuracy (26/50) [24 incorrect, 0 malformed] in 54.4s
+2026-01-31 22:07:14,836 [WARNING]   BELOW 85% THRESHOLD — may exclude from later phases
+2026-01-31 22:07:14,836 [INFO] 
+============================================================
+2026-01-31 22:07:14,836 [INFO] Task: sentiment (regime: bayesian)
+2026-01-31 22:07:14,836 [INFO] ============================================================
+2026-01-31 22:07:14,836 [INFO] Demos: [('joyful', 'positive'), ('angry', 'negative'), ('wonderful', 'positive'), ('terrible', 'negative'), ('cheerful', 'positive')]
+2026-01-31 22:07:14,836 [INFO] Test inputs (50): ['disgusted', 'depressed', 'gloomy', 'bitter', 'grateful']...
+2026-01-31 22:07:26,085 [INFO]   [ 10/50] input='confident'     expected='positive'      got='positive'      -> correct
+2026-01-31 22:07:37,522 [INFO]   [ 20/50] input='happy'         expected='positive'      got='positive'      -> correct
+2026-01-31 22:07:39,790 [INFO]   [ 22/50] input='content'       expected='positive'      got='neutral'       -> malformed
+2026-01-31 22:07:48,661 [INFO]   [ 30/50] input='affectionate'  expected='positive'      got='positive'      -> correct
+2026-01-31 22:07:59,365 [INFO]   [ 40/50] input='vindictive'    expected='negative'      got='negative'      -> correct
+2026-01-31 22:08:10,427 [INFO]   [ 50/50] input='jubilant'      expected='positive'      got='positive'      -> correct
+2026-01-31 22:08:10,427 [INFO] 
+Result: 98.0% accuracy (49/50) [0 incorrect, 1 malformed] in 55.6s
+2026-01-31 22:08:10,427 [INFO] 
+============================================================
+2026-01-31 22:08:10,427 [INFO] Task: antonym (regime: retrieval)
+2026-01-31 22:08:10,428 [INFO] ============================================================
+2026-01-31 22:08:10,428 [INFO] Demos: [('hot', 'cold'), ('big', 'small'), ('fast', 'slow'), ('happy', 'sad'), ('light', 'dark')]
+2026-01-31 22:08:10,428 [INFO] Test inputs (50): ['true', 'alive', 'bright', 'dry', 'hard']...
+2026-01-31 22:08:21,866 [INFO]   [ 10/50] input='smooth'        expected='rough'         got='rough'         -> correct
+2026-01-31 22:08:33,338 [INFO]   [ 20/50] input='tall'          expected='short'         got='short'         -> correct
+2026-01-31 22:08:44,575 [INFO]   [ 30/50] input='create'        expected='destroy'       got='destroy'       -> correct
+2026-01-31 22:08:51,557 [INFO]   [ 36/50] input='praise'        expected='criticize'     got='criticism'     -> incorrect
+2026-01-31 22:08:56,100 [INFO]   [ 40/50] input='accept'        expected='reject'        got='reject'        -> correct
+2026-01-31 22:09:08,025 [INFO]   [ 50/50] input='bold'          expected='timid'         got='normal'        -> incorrect
+2026-01-31 22:09:08,025 [INFO] 
+Result: 96.0% accuracy (48/50) [2 incorrect, 0 malformed] in 57.6s
+2026-01-31 22:09:08,025 [INFO] 
+============================================================
+2026-01-31 22:09:08,025 [INFO] Task: pattern_completion (regime: induction)
+2026-01-31 22:09:08,026 [INFO] ============================================================
+2026-01-31 22:09:08,026 [INFO] Demos: [('A B A B A', 'B'), ('1 2 1 2 1', '2'), ('X Y X Y X', 'Y'), ('P Q P Q P', 'Q'), ('M N M N M', 'N')]
+2026-01-31 22:09:08,026 [INFO] Test inputs (50): ['Z Y Z Y Z', 'w x w x w', 'o p o p o', '9 0 9 0 9', 'K L K L K']...
+2026-01-31 22:09:20,728 [INFO]   [ 10/50] input='i j i j i'     expected='j'             got='j'             -> correct
+2026-01-31 22:09:33,169 [INFO]   [ 20/50] input='C D C D C'     expected='D'             got='D'             -> correct
+2026-01-31 22:09:45,009 [INFO]   [ 30/50] input='@ # @ # @'     expected='#'             got='#'             -> correct
+2026-01-31 22:09:57,465 [INFO]   [ 40/50] input='2 3 2 3 2'     expected='3'             got='3'             -> correct
+2026-01-31 22:10:09,654 [INFO]   [ 50/50] input='V W V W V'     expected='W'             got='W'             -> correct
+2026-01-31 22:10:09,654 [INFO] 
+Result: 100.0% accuracy (50/50) [0 incorrect, 0 malformed] in 61.6s
+2026-01-31 22:10:09,654 [INFO] 
+============================================================
+2026-01-31 22:10:09,654 [INFO] SUMMARY
+2026-01-31 22:10:09,654 [INFO] ============================================================
+2026-01-31 22:10:09,654 [INFO]   reverse                  :  2.0%  [FAIL]  (regime: procedural, 60.3s)
+2026-01-31 22:10:09,654 [INFO]   uppercase                : 94.0%  [PASS]  (regime: procedural, 56.8s)
+2026-01-31 22:10:09,654 [INFO]   pig_latin                :  2.0%  [FAIL]  (regime: procedural, 58.3s)
+2026-01-31 22:10:09,654 [INFO]   first_letter             : 68.0%  [FAIL]  (regime: procedural, 59.9s)
+2026-01-31 22:10:09,654 [INFO]   repeat_word              : 100.0%  [PASS]  (regime: procedural, 59.4s)
+2026-01-31 22:10:09,654 [INFO]   length                   : 64.0%  [FAIL]  (regime: counting, 57.3s)
+2026-01-31 22:10:09,655 [INFO]   linear_2x                : 52.0%  [FAIL]  (regime: gd_like, 54.4s)
+2026-01-31 22:10:09,655 [INFO]   sentiment                : 98.0%  [PASS]  (regime: bayesian, 55.6s)
+2026-01-31 22:10:09,655 [INFO]   antonym                  : 96.0%  [PASS]  (regime: retrieval, 57.6s)
+2026-01-31 22:10:09,655 [INFO]   pattern_completion       : 100.0%  [PASS]  (regime: induction, 61.6s)
+2026-01-31 22:10:09,655 [INFO] 
+Passing (5): ['uppercase', 'repeat_word', 'sentiment', 'antonym', 'pattern_completion']
+2026-01-31 22:10:09,655 [INFO] Failing (5): ['reverse', 'pig_latin', 'first_letter', 'length', 'linear_2x']
+2026-01-31 22:10:09,655 [INFO] Total time: 581.2s
+2026-01-31 22:10:09,664 [INFO] Results saved to results/qwen2.5-1.5b-instruct/exp1/baseline_results.json
+2026-01-31 22:10:09,664 [INFO] Summary CSV saved to results/qwen2.5-1.5b-instruct/exp1/baseline_summary.csv
+Note: overriding fp16 -> fp32 for Qwen/Qwen2.5-1.5B-Instruct (fp16 produces NaN)
+Loading Qwen/Qwen2.5-1.5B-Instruct (dtype=torch.float32)...
+Loaded on cuda:4. 28 layers, d_model=1536

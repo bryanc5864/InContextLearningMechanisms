@@ -1,0 +1,1787 @@
+{
+  "metadata": {
+    "test_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "positions": [
+      "first_query_token"
+    ],
+    "noise_scales": [
+      2.0,
+      5.0
+    ],
+    "n_test": 10,
+    "timestamp": "2026-01-31T19:52:07.659825"
+  },
+  "task_results": [
+    {
+      "task": "uppercase",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.8
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 0.8,
+                "5.0": 0.5
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.5
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.7
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "first_letter",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.6
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 0.8,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.8
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.5
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.5
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.7
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.6
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.4
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "repeat_word",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 0.9,
+                "5.0": 0.5
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.5
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "length",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "linear_2x",
+      "baseline_accuracy": 0.2,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.1
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.1
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": -0.09999999999999998
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 0.3,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 0.1,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.1
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 0.1,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": -0.09999999999999998
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": -0.09999999999999998
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": -0.09999999999999998
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.1
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 0.2,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "sentiment",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.6
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.4
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "antonym",
+      "baseline_accuracy": 1.0,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.7
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.8
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.19999999999999996
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 0.9
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.09999999999999998
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 1.0,
+                "5.0": 1.0
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "task": "pattern_completion",
+      "baseline_accuracy": 0.4,
+      "position_results": {
+        "first_query_token": {
+          "layers": {
+            "0": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "1": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "2": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.1
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.30000000000000004
+            },
+            "3": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.10000000000000003
+            },
+            "4": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.10000000000000003
+            },
+            "5": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "6": {
+              "noise_scales": {
+                "2.0": 0.3,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.10000000000000003
+            },
+            "7": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.2
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.2
+            },
+            "8": {
+              "noise_scales": {
+                "2.0": 0.3,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "9": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "10": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "11": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "12": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.3
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.10000000000000003
+            },
+            "13": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.5
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": -0.09999999999999998
+            },
+            "14": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "15": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "16": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "17": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "18": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "19": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "20": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "21": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "22": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "23": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "24": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            },
+            "25": {
+              "noise_scales": {
+                "2.0": 0.4,
+                "5.0": 0.4
+              },
+              "primary_noise_scale": "5.0",
+              "disruption": 0.0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

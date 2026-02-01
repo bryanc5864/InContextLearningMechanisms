@@ -1,0 +1,204 @@
+2026-01-31 17:19:53,786 [INFO] Experiment 8: Multi-Position Transplantation
+2026-01-31 17:19:53,786 [INFO] Start: 2026-01-31T17:19:53.786681
+2026-01-31 17:20:36,829 [INFO] Model: Qwen/Qwen2.5-1.5B-Instruct (28 layers), test_layers=[8, 12, 15, 17]
+2026-01-31 17:20:36,830 [INFO] 
+============================================================
+2026-01-31 17:20:36,830 [INFO] Pair: uppercase → first_letter
+2026-01-31 17:20:36,830 [INFO] ============================================================
+2026-01-31 17:20:36,830 [INFO] 
+  Layer 8:
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+2026-01-31 17:20:52,690 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:21:06,240 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:21:19,813 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:21:33,234 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:21:33,235 [INFO] 
+  Layer 12:
+2026-01-31 17:21:46,686 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:22:00,101 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:22:13,245 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:22:26,925 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:22:26,925 [INFO] 
+  Layer 15:
+2026-01-31 17:22:40,633 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:22:54,016 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:23:07,433 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:23:20,899 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:23:20,899 [INFO] 
+  Layer 17:
+2026-01-31 17:23:34,378 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:23:49,130 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:24:03,508 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:24:16,882 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:24:16,882 [INFO] 
+============================================================
+2026-01-31 17:24:16,882 [INFO] Pair: uppercase → repeat_word
+2026-01-31 17:24:16,882 [INFO] ============================================================
+2026-01-31 17:24:16,883 [INFO] 
+  Layer 8:
+2026-01-31 17:24:30,316 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:24:43,780 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:24:57,284 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:25:10,853 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:25:10,853 [INFO] 
+  Layer 12:
+2026-01-31 17:25:24,548 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:25:38,207 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:25:52,576 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:26:07,732 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:26:07,733 [INFO] 
+  Layer 15:
+2026-01-31 17:26:21,108 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:26:36,285 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:26:52,341 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:27:05,754 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:27:05,755 [INFO] 
+  Layer 17:
+2026-01-31 17:27:19,573 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:27:32,953 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:27:46,446 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:00,229 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:00,229 [INFO] 
+============================================================
+2026-01-31 17:28:00,229 [INFO] Pair: first_letter → repeat_word
+2026-01-31 17:28:00,229 [INFO] ============================================================
+2026-01-31 17:28:00,230 [INFO] 
+  Layer 8:
+2026-01-31 17:28:14,790 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:28,362 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:41,848 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:55,216 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:28:55,216 [INFO] 
+  Layer 12:
+2026-01-31 17:29:08,558 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:29:22,136 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:29:36,852 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:29:50,620 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:29:50,620 [INFO] 
+  Layer 15:
+2026-01-31 17:30:04,092 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:30:19,819 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:30:33,543 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:30:46,751 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:30:46,751 [INFO] 
+  Layer 17:
+2026-01-31 17:30:59,730 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:31:12,938 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:31:26,588 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:31:41,542 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:31:41,543 [INFO] 
+============================================================
+2026-01-31 17:31:41,543 [INFO] Pair: uppercase → sentiment
+2026-01-31 17:31:41,543 [INFO] ============================================================
+2026-01-31 17:31:41,543 [INFO] 
+  Layer 8:
+2026-01-31 17:31:54,685 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:32:07,675 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:32:20,927 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:32:37,483 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:32:37,483 [INFO] 
+  Layer 12:
+2026-01-31 17:32:51,442 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:33:06,241 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:33:19,632 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:33:32,995 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:33:32,995 [INFO] 
+  Layer 15:
+2026-01-31 17:33:47,148 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:34:00,646 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:34:14,201 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:34:27,878 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:34:27,878 [INFO] 
+  Layer 17:
+2026-01-31 17:34:41,747 [INFO]     all_demo     ( 34 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:34:55,636 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:35:09,491 [INFO]     output_only  ( 19 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:35:23,356 [INFO]     last_demo    (  7 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:35:23,356 [INFO] 
+============================================================
+2026-01-31 17:35:23,356 [INFO] Pair: linear_2x → length
+2026-01-31 17:35:23,356 [INFO] ============================================================
+2026-01-31 17:35:23,357 [INFO] 
+  Layer 8:
+2026-01-31 17:35:37,213 [INFO]     all_demo     ( 43 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:35:54,855 [INFO]     input_only   ( 20 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:36:10,961 [INFO]     output_only  ( 23 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:36:25,752 [INFO]     last_demo    (  9 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:36:25,753 [INFO] 
+  Layer 12:
+2026-01-31 17:36:41,848 [INFO]     all_demo     ( 43 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:36:55,742 [INFO]     input_only   ( 20 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:37:09,524 [INFO]     output_only  ( 23 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:37:23,227 [INFO]     last_demo    (  9 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:37:23,227 [INFO] 
+  Layer 15:
+2026-01-31 17:37:37,121 [INFO]     all_demo     ( 43 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:37:51,032 [INFO]     input_only   ( 20 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:38:04,684 [INFO]     output_only  ( 23 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:38:18,386 [INFO]     last_demo    (  9 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:38:18,386 [INFO] 
+  Layer 17:
+2026-01-31 17:38:33,017 [INFO]     all_demo     ( 43 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:38:49,096 [INFO]     input_only   ( 20 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:39:03,055 [INFO]     output_only  ( 23 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:39:16,695 [INFO]     last_demo    (  9 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:39:16,695 [INFO] 
+============================================================
+2026-01-31 17:39:16,695 [INFO] Pair: sentiment → antonym
+2026-01-31 17:39:16,695 [INFO] ============================================================
+2026-01-31 17:39:16,696 [INFO] 
+  Layer 8:
+2026-01-31 17:39:30,328 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:39:44,010 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:39:57,856 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:40:11,788 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:40:11,789 [INFO] 
+  Layer 12:
+2026-01-31 17:40:25,808 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:40:40,685 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:40:54,505 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:41:08,293 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:41:08,294 [INFO] 
+  Layer 15:
+2026-01-31 17:41:22,160 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:41:36,028 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:41:49,948 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:42:03,824 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:42:03,824 [INFO] 
+  Layer 17:
+2026-01-31 17:42:18,295 [INFO]     all_demo     ( 30 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:42:32,708 [INFO]     input_only   ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:42:46,296 [INFO]     output_only  ( 15 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:43:00,145 [INFO]     last_demo    (  6 pos): transfer=0.00 preserve=0.00 
+2026-01-31 17:43:00,145 [INFO] 
+============================================================
+2026-01-31 17:43:00,145 [INFO] SUMMARY BY CONDITION
+2026-01-31 17:43:00,145 [INFO] ============================================================
+2026-01-31 17:43:00,146 [INFO]   Layer  8, all_demo    : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 12, all_demo    : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 15, all_demo    : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 17, all_demo    : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer  8, input_only  : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 12, input_only  : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 15, input_only  : mean transfer = 0.000
+2026-01-31 17:43:00,146 [INFO]   Layer 17, input_only  : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer  8, output_only : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 12, output_only : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 15, output_only : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 17, output_only : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer  8, last_demo   : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 12, last_demo   : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 15, last_demo   : mean transfer = 0.000
+2026-01-31 17:43:00,147 [INFO]   Layer 17, last_demo   : mean transfer = 0.000
+2026-01-31 17:43:00,151 [INFO] 
+Results saved to results/qwen2.5-1.5b-instruct/exp8
+2026-01-31 17:43:00,151 [INFO] Experiment 8 complete: 2026-01-31T17:43:00.151127
+Loading Qwen/Qwen2.5-1.5B-Instruct...
+Loaded on cuda:4. 28 layers, d_model=1536

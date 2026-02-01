@@ -1,0 +1,125 @@
+2026-01-31 18:06:36,197 [INFO] Experiment 13: Instance-Level Analysis
+2026-01-31 18:06:36,197 [INFO] Start: 2026-01-31T18:06:36.197467
+2026-01-31 18:06:54,001 [INFO] Model: google/gemma-2-2b-it (26 layers), intervention_layer=8
+2026-01-31 18:06:54,002 [INFO] ============================================================
+2026-01-31 18:06:54,002 [INFO] Part A: Instance-Level Transfer Analysis
+2026-01-31 18:06:54,002 [INFO] ============================================================
+2026-01-31 18:06:54,002 [INFO] 
+Transfer: uppercase → first_letter
+2026-01-31 18:06:59,688 [INFO]   TRANSFER: 'honey' → 'HONEY' (source task behavior)
+2026-01-31 18:07:04,336 [INFO]   TRANSFER: 'frost' → 'FROST' (source task behavior)
+2026-01-31 18:07:08,981 [INFO]   TRANSFER: 'badge' → 'BADGE' (source task behavior)
+2026-01-31 18:07:13,621 [INFO]   TRANSFER: 'stone' → 'STONE' (source task behavior)
+2026-01-31 18:07:18,246 [INFO]   TRANSFER: 'lemon' → 'LEMON' (source task behavior)
+2026-01-31 18:07:22,868 [INFO]   TRANSFER: 'fjord' → 'FJORD' (source task behavior)
+2026-01-31 18:07:27,497 [INFO]   TRANSFER: 'ivory' → 'IVORY' (source task behavior)
+2026-01-31 18:07:32,139 [INFO]   TRANSFER: 'queen' → 'QUEEN' (source task behavior)
+2026-01-31 18:07:36,781 [INFO]   TRANSFER: 'lunar' → 'LUNAR' (source task behavior)
+2026-01-31 18:07:41,386 [INFO]   TRANSFER: 'youth' → 'YOUTH' (source task behavior)
+2026-01-31 18:07:46,029 [INFO]   TRANSFER: 'noble' → 'NOBLE' (source task behavior)
+2026-01-31 18:07:50,677 [INFO]   TRANSFER: 'dream' → 'DREAM' (source task behavior)
+2026-01-31 18:07:55,330 [INFO]   TRANSFER: 'tower' → 'TOWER' (source task behavior)
+2026-01-31 18:07:59,985 [INFO]   TRANSFER: 'knife' → 'KNIFE' (source task behavior)
+2026-01-31 18:08:04,594 [INFO]   TRANSFER: 'vivid' → 'VIVID' (source task behavior)
+2026-01-31 18:08:09,231 [INFO]   TRANSFER: 'urban' → 'URBAN' (source task behavior)
+2026-01-31 18:08:13,858 [INFO]   TRANSFER: 'river' → 'RIVER' (source task behavior)
+2026-01-31 18:08:18,479 [INFO]   TRANSFER: 'globe' → 'GLOBE' (source task behavior)
+2026-01-31 18:08:22,992 [INFO]   TRANSFER: 'robin' → 'ROBIN' (source task behavior)
+2026-01-31 18:08:27,656 [INFO]   TRANSFER: 'grape' → 'GRAPE' (source task behavior)
+2026-01-31 18:08:27,656 [INFO]   Transfer rate: 1.00 (20/20)
+2026-01-31 18:08:27,656 [INFO] 
+Transfer: uppercase → sentiment
+2026-01-31 18:08:32,420 [INFO]   TRANSFER: 'disgusted' → 'DISGUSTED' (source task behavior)
+2026-01-31 18:08:37,063 [INFO]   TRANSFER: 'depressed' → 'DEPRESSED' (source task behavior)
+2026-01-31 18:08:41,735 [INFO]   TRANSFER: 'gloomy' → 'GLOOMY' (source task behavior)
+2026-01-31 18:08:46,389 [INFO]   TRANSFER: 'bitter' → 'BITTER' (source task behavior)
+2026-01-31 18:08:51,135 [INFO]   TRANSFER: 'grateful' → 'GRATEFUL' (source task behavior)
+2026-01-31 18:08:55,600 [INFO]   TRANSFER: 'envious' → 'ENVIOUS' (source task behavior)
+2026-01-31 18:09:00,314 [INFO]   TRANSFER: 'inspired' → 'INSPIRED' (source task behavior)
+2026-01-31 18:09:05,010 [INFO]   TRANSFER: 'jealous' → 'JEALOUS' (source task behavior)
+2026-01-31 18:09:14,477 [INFO]   TRANSFER: 'confident' → 'CONFIDENT' (source task behavior)
+2026-01-31 18:09:19,178 [INFO]   TRANSFER: 'resentful' → 'RESENTFUL' (source task behavior)
+2026-01-31 18:09:26,833 [INFO]   TRANSFER: 'peaceful' → 'PEACEFUL' (source task behavior)
+2026-01-31 18:09:30,991 [INFO]   TRANSFER: 'fearful' → 'FEARFUL' (source task behavior)
+2026-01-31 18:09:35,465 [INFO]   TRANSFER: 'agitated' → 'AGITATED' (source task behavior)
+2026-01-31 18:09:40,126 [INFO]   TRANSFER: 'serene' → 'SERENE' (source task behavior)
+2026-01-31 18:09:44,783 [INFO]   TRANSFER: 'loving' → 'LOVING' (source task behavior)
+2026-01-31 18:09:49,397 [INFO]   TRANSFER: 'amused' → 'AMUSED' (source task behavior)
+2026-01-31 18:09:54,111 [INFO]   TRANSFER: 'sorrowful' → 'SORROWFUL' (source task behavior)
+2026-01-31 18:09:58,841 [INFO]   TRANSFER: 'happy' → 'HAPPY' (source task behavior)
+2026-01-31 18:09:58,841 [INFO]   Transfer rate: 0.90 (18/20)
+2026-01-31 18:09:58,841 [INFO] 
+Transfer: repeat_word → first_letter
+2026-01-31 18:11:32,805 [INFO]   Transfer rate: 0.00 (0/20)
+2026-01-31 18:11:32,806 [INFO] 
+Transfer: pattern_completion → repeat_word
+2026-01-31 18:11:37,756 [INFO]   TRANSFER: 'honey' → 'honey honey' (source task behavior)
+2026-01-31 18:11:42,541 [INFO]   TRANSFER: 'frost' → 'frost frost' (source task behavior)
+2026-01-31 18:11:47,341 [INFO]   TRANSFER: 'badge' → 'badge badge' (source task behavior)
+2026-01-31 18:11:52,140 [INFO]   TRANSFER: 'stone' → 'stone stone' (source task behavior)
+2026-01-31 18:11:56,995 [INFO]   TRANSFER: 'lemon' → 'lemon lemon' (source task behavior)
+2026-01-31 18:12:01,845 [INFO]   TRANSFER: 'fjord' → 'fjord fjord' (source task behavior)
+2026-01-31 18:12:06,545 [INFO]   TRANSFER: 'ivory' → 'ivory ivory' (source task behavior)
+2026-01-31 18:12:11,206 [INFO]   TRANSFER: 'queen' → 'queen queen' (source task behavior)
+2026-01-31 18:12:15,901 [INFO]   TRANSFER: 'lunar' → 'lunar lunar' (source task behavior)
+2026-01-31 18:12:20,636 [INFO]   TRANSFER: 'youth' → 'youth youth' (source task behavior)
+2026-01-31 18:12:25,352 [INFO]   TRANSFER: 'noble' → 'noble noble' (source task behavior)
+2026-01-31 18:12:30,107 [INFO]   TRANSFER: 'dream' → 'dream dream' (source task behavior)
+2026-01-31 18:12:34,805 [INFO]   TRANSFER: 'tower' → 'tower tower' (source task behavior)
+2026-01-31 18:12:39,451 [INFO]   TRANSFER: 'knife' → 'knife knife' (source task behavior)
+2026-01-31 18:12:44,091 [INFO]   TRANSFER: 'vivid' → 'vivid vivid' (source task behavior)
+2026-01-31 18:12:48,754 [INFO]   TRANSFER: 'urban' → 'urban urban' (source task behavior)
+2026-01-31 18:12:53,520 [INFO]   TRANSFER: 'river' → 'river river' (source task behavior)
+2026-01-31 18:12:58,277 [INFO]   TRANSFER: 'globe' → 'globe globe' (source task behavior)
+2026-01-31 18:13:02,763 [INFO]   TRANSFER: 'robin' → 'robin robin' (source task behavior)
+2026-01-31 18:13:07,599 [INFO]   TRANSFER: 'grape' → 'grape grape' (source task behavior)
+2026-01-31 18:13:07,599 [INFO]   Transfer rate: 1.00 (20/20)
+2026-01-31 18:13:07,599 [INFO] 
+============================================================
+2026-01-31 18:13:07,599 [INFO] Part B: Input Characteristics Analysis
+2026-01-31 18:13:07,599 [INFO] ============================================================
+2026-01-31 18:13:07,599 [INFO] 
+uppercase → first_letter:
+2026-01-31 18:13:07,600 [INFO]   Transferred (20): avg input len = 5.0
+2026-01-31 18:13:07,600 [INFO]     Examples: ['honey', 'frost', 'badge']
+2026-01-31 18:13:07,600 [INFO] 
+uppercase → sentiment:
+2026-01-31 18:13:07,600 [INFO]   Transferred (18): avg input len = 7.4
+2026-01-31 18:13:07,600 [INFO]     Examples: ['disgusted', 'depressed', 'gloomy']
+2026-01-31 18:13:07,600 [INFO]   Non-transferred (2): avg input len = 10.5
+2026-01-31 18:13:07,601 [INFO]     Examples: ['pessimistic', 'devastated']
+2026-01-31 18:13:07,601 [INFO] 
+repeat_word → first_letter:
+2026-01-31 18:13:07,601 [INFO]   Non-transferred (20): avg input len = 5.0
+2026-01-31 18:13:07,601 [INFO]     Examples: ['crane', 'pixel', 'uncle']
+2026-01-31 18:13:07,601 [INFO] 
+pattern_completion → repeat_word:
+2026-01-31 18:13:07,601 [INFO]   Transferred (20): avg input len = 5.0
+2026-01-31 18:13:07,601 [INFO]     Examples: ['honey', 'frost', 'badge']
+2026-01-31 18:13:07,601 [INFO] 
+============================================================
+2026-01-31 18:13:07,601 [INFO] Part C: Output Format Analysis
+2026-01-31 18:13:07,601 [INFO] ============================================================
+2026-01-31 18:13:07,601 [INFO] 
+uppercase → first_letter:
+2026-01-31 18:13:07,601 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 18:13:07,601 [INFO] 
+uppercase → sentiment:
+2026-01-31 18:13:07,602 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 18:13:07,602 [INFO] 
+repeat_word → first_letter:
+2026-01-31 18:13:07,602 [INFO]   Output types: {'numeric': 0, 'word': 20, 'phrase': 0, 'other': 0}
+2026-01-31 18:13:07,602 [INFO] 
+pattern_completion → repeat_word:
+2026-01-31 18:13:07,602 [INFO]   Output types: {'numeric': 0, 'word': 0, 'phrase': 20, 'other': 0}
+2026-01-31 18:13:07,602 [INFO] 
+============================================================
+2026-01-31 18:13:07,602 [INFO] SUMMARY
+2026-01-31 18:13:07,602 [INFO] ============================================================
+2026-01-31 18:13:07,602 [INFO]   uppercase → first_letter: 1.00
+2026-01-31 18:13:07,602 [INFO]   uppercase → sentiment: 0.90
+2026-01-31 18:13:07,602 [INFO]   repeat_word → first_letter: 0.00
+2026-01-31 18:13:07,602 [INFO]   pattern_completion → repeat_word: 1.00
+2026-01-31 18:13:07,605 [INFO] 
+Results saved to results/gemma-2-2b-it/exp13
+2026-01-31 18:13:07,605 [INFO] Experiment 13 complete: 2026-01-31T18:13:07.605172

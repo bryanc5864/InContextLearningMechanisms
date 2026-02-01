@@ -1,0 +1,218 @@
+2026-01-31 21:59:50,971 [INFO] Experiment 11: Activation Patching (Causal Tracing)
+2026-01-31 21:59:50,971 [INFO] Start: 2026-01-31T21:59:50.971328
+2026-01-31 22:00:28,687 [INFO] Model: Qwen/Qwen2.5-1.5B-Instruct (28 layers), test_layers=[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26]
+2026-01-31 22:00:28,687 [INFO] Testing positions: ['first_query_token']
+2026-01-31 22:00:28,687 [INFO] 
+==================================================
+2026-01-31 22:00:28,687 [INFO] Task: uppercase
+2026-01-31 22:00:28,687 [INFO] ==================================================
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/bcheng/miniconda3/envs/icl/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:623: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+2026-01-31 22:00:41,461 [INFO]   Baseline accuracy: 1.00
+2026-01-31 22:00:41,461 [INFO] 
+  Position: first_query_token
+2026-01-31 22:01:03,901 [INFO]     Layer  0: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:01:25,557 [INFO]     Layer  2: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:01:47,126 [INFO]     Layer  4: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:02:09,231 [INFO]     Layer  6: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:02:30,259 [INFO]     Layer  8: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:02:51,523 [INFO]     Layer 10: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:03:15,775 [INFO]     Layer 12: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:03:37,672 [INFO]     Layer 14: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:03:59,740 [INFO]     Layer 16: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:04:21,174 [INFO]     Layer 18: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:04:43,155 [INFO]     Layer 20: acc@noise5.0=0.50 disruption=0.50 ***
+2026-01-31 22:05:04,422 [INFO]     Layer 22: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:05:25,602 [INFO]     Layer 24: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:05:46,571 [INFO]     Layer 26: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:05:46,571 [INFO] 
+==================================================
+2026-01-31 22:05:46,571 [INFO] Task: first_letter
+2026-01-31 22:05:46,571 [INFO] ==================================================
+2026-01-31 22:05:56,713 [INFO]   Baseline accuracy: 0.70
+2026-01-31 22:05:56,713 [INFO] 
+  Position: first_query_token
+2026-01-31 22:06:17,227 [INFO]     Layer  0: acc@noise5.0=0.10 disruption=0.60 ***
+2026-01-31 22:06:38,406 [INFO]     Layer  2: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:06:59,265 [INFO]     Layer  4: acc@noise5.0=0.00 disruption=0.70 ***
+2026-01-31 22:07:20,430 [INFO]     Layer  6: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:07:45,619 [INFO]     Layer  8: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:08:05,715 [INFO]     Layer 10: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:08:29,806 [INFO]     Layer 12: acc@noise5.0=0.10 disruption=0.60 ***
+2026-01-31 22:08:56,419 [INFO]     Layer 14: acc@noise5.0=0.30 disruption=0.40 ***
+2026-01-31 22:09:16,498 [INFO]     Layer 16: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:09:37,149 [INFO]     Layer 18: acc@noise5.0=0.20 disruption=0.50 ***
+2026-01-31 22:09:58,060 [INFO]     Layer 20: acc@noise5.0=0.50 disruption=0.20 **
+2026-01-31 22:10:21,044 [INFO]     Layer 22: acc@noise5.0=0.60 disruption=0.10 
+2026-01-31 22:10:41,874 [INFO]     Layer 24: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:11:02,655 [INFO]     Layer 26: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:11:02,655 [INFO] 
+==================================================
+2026-01-31 22:11:02,655 [INFO] Task: repeat_word
+2026-01-31 22:11:02,655 [INFO] ==================================================
+2026-01-31 22:11:12,795 [INFO]   Baseline accuracy: 1.00
+2026-01-31 22:11:12,796 [INFO] 
+  Position: first_query_token
+2026-01-31 22:11:32,287 [INFO]     Layer  0: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:11:52,637 [INFO]     Layer  2: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:12:12,586 [INFO]     Layer  4: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:12:32,616 [INFO]     Layer  6: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:12:54,616 [INFO]     Layer  8: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:13:15,664 [INFO]     Layer 10: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:13:35,751 [INFO]     Layer 12: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:13:56,345 [INFO]     Layer 14: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:14:17,086 [INFO]     Layer 16: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:14:37,288 [INFO]     Layer 18: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:14:59,986 [INFO]     Layer 20: acc@noise5.0=0.50 disruption=0.50 ***
+2026-01-31 22:15:21,144 [INFO]     Layer 22: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:15:42,497 [INFO]     Layer 24: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:16:04,006 [INFO]     Layer 26: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:16:04,006 [INFO] 
+==================================================
+2026-01-31 22:16:04,006 [INFO] Task: length
+2026-01-31 22:16:04,006 [INFO] ==================================================
+2026-01-31 22:16:14,784 [INFO]   Baseline accuracy: 0.70
+2026-01-31 22:16:14,790 [INFO] 
+  Position: first_query_token
+2026-01-31 22:16:36,086 [INFO]     Layer  0: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:16:57,321 [INFO]     Layer  2: acc@noise5.0=0.40 disruption=0.30 ***
+2026-01-31 22:17:18,814 [INFO]     Layer  4: acc@noise5.0=0.10 disruption=0.60 ***
+2026-01-31 22:17:40,419 [INFO]     Layer  6: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:18:00,278 [INFO]     Layer  8: acc@noise5.0=0.80 disruption=-0.10 
+2026-01-31 22:18:21,808 [INFO]     Layer 10: acc@noise5.0=0.90 disruption=-0.20 
+2026-01-31 22:18:43,726 [INFO]     Layer 12: acc@noise5.0=1.00 disruption=-0.30 
+2026-01-31 22:19:05,587 [INFO]     Layer 14: acc@noise5.0=0.90 disruption=-0.20 
+2026-01-31 22:19:27,353 [INFO]     Layer 16: acc@noise5.0=0.90 disruption=-0.20 
+2026-01-31 22:19:53,315 [INFO]     Layer 18: acc@noise5.0=0.80 disruption=-0.10 
+2026-01-31 22:20:16,380 [INFO]     Layer 20: acc@noise5.0=0.80 disruption=-0.10 
+2026-01-31 22:20:38,413 [INFO]     Layer 22: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:21:00,149 [INFO]     Layer 24: acc@noise5.0=0.60 disruption=0.10 
+2026-01-31 22:21:21,854 [INFO]     Layer 26: acc@noise5.0=0.70 disruption=0.00 
+2026-01-31 22:21:21,854 [INFO] 
+==================================================
+2026-01-31 22:21:21,854 [INFO] Task: linear_2x
+2026-01-31 22:21:21,854 [INFO] ==================================================
+2026-01-31 22:21:31,940 [INFO]   Baseline accuracy: 0.30
+2026-01-31 22:21:31,940 [INFO] 
+  Position: first_query_token
+2026-01-31 22:21:53,781 [INFO]     Layer  0: acc@noise5.0=0.00 disruption=0.30 ***
+2026-01-31 22:22:14,730 [INFO]     Layer  2: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:22:38,387 [INFO]     Layer  4: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:23:02,964 [INFO]     Layer  6: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:23:25,234 [INFO]     Layer  8: acc@noise5.0=0.10 disruption=0.20 **
+2026-01-31 22:23:47,168 [INFO]     Layer 10: acc@noise5.0=0.10 disruption=0.20 **
+2026-01-31 22:24:08,581 [INFO]     Layer 12: acc@noise5.0=0.10 disruption=0.20 **
+2026-01-31 22:24:29,273 [INFO]     Layer 14: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:24:52,455 [INFO]     Layer 16: acc@noise5.0=0.50 disruption=-0.20 
+2026-01-31 22:25:12,777 [INFO]     Layer 18: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:25:33,315 [INFO]     Layer 20: acc@noise5.0=0.10 disruption=0.20 **
+2026-01-31 22:25:53,398 [INFO]     Layer 22: acc@noise5.0=0.20 disruption=0.10 
+2026-01-31 22:26:13,854 [INFO]     Layer 24: acc@noise5.0=0.30 disruption=0.00 
+2026-01-31 22:26:34,187 [INFO]     Layer 26: acc@noise5.0=0.30 disruption=0.00 
+2026-01-31 22:26:34,187 [INFO] 
+==================================================
+2026-01-31 22:26:34,187 [INFO] Task: sentiment
+2026-01-31 22:26:34,187 [INFO] ==================================================
+2026-01-31 22:26:45,083 [INFO]   Baseline accuracy: 1.00
+2026-01-31 22:26:45,083 [INFO] 
+  Position: first_query_token
+2026-01-31 22:27:06,666 [INFO]     Layer  0: acc@noise5.0=0.40 disruption=0.60 ***
+2026-01-31 22:27:29,020 [INFO]     Layer  2: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:27:55,018 [INFO]     Layer  4: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:28:16,912 [INFO]     Layer  6: acc@noise5.0=0.50 disruption=0.50 ***
+2026-01-31 22:28:38,480 [INFO]     Layer  8: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:29:00,383 [INFO]     Layer 10: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:29:22,239 [INFO]     Layer 12: acc@noise5.0=0.70 disruption=0.30 ***
+2026-01-31 22:29:44,265 [INFO]     Layer 14: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:30:06,368 [INFO]     Layer 16: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:30:28,242 [INFO]     Layer 18: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:30:50,755 [INFO]     Layer 20: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:31:16,193 [INFO]     Layer 22: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:31:38,077 [INFO]     Layer 24: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:32:00,339 [INFO]     Layer 26: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:32:00,339 [INFO] 
+==================================================
+2026-01-31 22:32:00,339 [INFO] Task: antonym
+2026-01-31 22:32:00,339 [INFO] ==================================================
+2026-01-31 22:32:11,549 [INFO]   Baseline accuracy: 1.00
+2026-01-31 22:32:11,550 [INFO] 
+  Position: first_query_token
+2026-01-31 22:32:33,971 [INFO]     Layer  0: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:32:57,079 [INFO]     Layer  2: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:33:19,335 [INFO]     Layer  4: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:33:41,402 [INFO]     Layer  6: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:34:03,971 [INFO]     Layer  8: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:34:29,364 [INFO]     Layer 10: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:34:55,298 [INFO]     Layer 12: acc@noise5.0=0.20 disruption=0.80 ***
+2026-01-31 22:35:18,044 [INFO]     Layer 14: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:35:40,291 [INFO]     Layer 16: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:36:02,414 [INFO]     Layer 18: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:36:24,601 [INFO]     Layer 20: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:36:46,831 [INFO]     Layer 22: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:37:10,310 [INFO]     Layer 24: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:37:32,446 [INFO]     Layer 26: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:37:32,447 [INFO] 
+==================================================
+2026-01-31 22:37:32,447 [INFO] Task: pattern_completion
+2026-01-31 22:37:32,447 [INFO] ==================================================
+2026-01-31 22:37:43,493 [INFO]   Baseline accuracy: 1.00
+2026-01-31 22:37:43,493 [INFO] 
+  Position: first_query_token
+2026-01-31 22:38:05,449 [INFO]     Layer  0: acc@noise5.0=0.00 disruption=1.00 ***
+2026-01-31 22:38:27,561 [INFO]     Layer  2: acc@noise5.0=0.10 disruption=0.90 ***
+2026-01-31 22:38:50,053 [INFO]     Layer  4: acc@noise5.0=0.30 disruption=0.70 ***
+2026-01-31 22:39:12,580 [INFO]     Layer  6: acc@noise5.0=0.60 disruption=0.40 ***
+2026-01-31 22:39:34,684 [INFO]     Layer  8: acc@noise5.0=0.60 disruption=0.40 ***
+2026-01-31 22:39:56,729 [INFO]     Layer 10: acc@noise5.0=0.80 disruption=0.20 **
+2026-01-31 22:40:18,823 [INFO]     Layer 12: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:40:40,937 [INFO]     Layer 14: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:41:03,240 [INFO]     Layer 16: acc@noise5.0=0.90 disruption=0.10 
+2026-01-31 22:41:25,581 [INFO]     Layer 18: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:41:47,699 [INFO]     Layer 20: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:42:10,624 [INFO]     Layer 22: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:42:32,710 [INFO]     Layer 24: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:42:55,557 [INFO]     Layer 26: acc@noise5.0=1.00 disruption=0.00 
+2026-01-31 22:42:55,558 [INFO] 
+============================================================
+2026-01-31 22:42:55,558 [INFO] CAUSAL IMPORTANCE HEATMAP (disruption at noise=5.0)
+2026-01-31 22:42:55,558 [INFO] ============================================================
+2026-01-31 22:42:55,558 [INFO] 
+Position: first_query_token
+2026-01-31 22:42:55,558 [INFO] Layer:      0      2      4      6      8     10     12     14     16     18     20     22     24     26
+2026-01-31 22:42:55,558 [INFO] uppercase   :  1.00   0.90   0.80   1.00   0.90   0.90   0.90   1.00   0.80   0.80   0.50   0.10   0.00   0.00
+2026-01-31 22:42:55,558 [INFO] first_letter:  0.60   0.50   0.70   0.50   0.50   0.50   0.60   0.40   0.50   0.50   0.20   0.10   0.00   0.00
+2026-01-31 22:42:55,558 [INFO] repeat_word :  1.00   1.00   0.90   0.90   1.00   0.80   1.00   0.80   0.90   0.80   0.50   0.00   0.00   0.00
+2026-01-31 22:42:55,558 [INFO] length      :  0.00   0.30   0.60   0.00  -0.10  -0.20  -0.30  -0.20  -0.20  -0.10  -0.10   0.00   0.10   0.00
+2026-01-31 22:42:55,558 [INFO] linear_2x   :  0.30   0.10   0.10   0.10   0.20   0.20   0.20   0.10  -0.20   0.10   0.20   0.10   0.00   0.00
+2026-01-31 22:42:55,559 [INFO] sentiment   :  0.60   0.70   0.70   0.50   0.70   0.10   0.30   0.10   0.00   0.00   0.00   0.00   0.00   0.00
+2026-01-31 22:42:55,559 [INFO] antonym     :  1.00   1.00   1.00   0.90   1.00   0.80   0.80   0.70   0.70   0.90   0.00   0.00   0.00   0.00
+2026-01-31 22:42:55,559 [INFO] pattern_completion:  1.00   0.90   0.70   0.40   0.40   0.20   0.10   0.10   0.10   0.00   0.00   0.00   0.00   0.00
+2026-01-31 22:42:55,559 [INFO] 
+============================================================
+2026-01-31 22:42:55,559 [INFO] MOST CRITICAL LAYERS (mean disruption > 0.1)
+2026-01-31 22:42:55,559 [INFO] ============================================================
+2026-01-31 22:42:55,559 [INFO] 
+first_query_token:
+2026-01-31 22:42:55,559 [INFO]   Layer  0: mean disruption = 0.688
+2026-01-31 22:42:55,559 [INFO]   Layer  2: mean disruption = 0.675
+2026-01-31 22:42:55,560 [INFO]   Layer  4: mean disruption = 0.688
+2026-01-31 22:42:55,560 [INFO]   Layer  6: mean disruption = 0.537
+2026-01-31 22:42:55,560 [INFO]   Layer  8: mean disruption = 0.575
+2026-01-31 22:42:55,560 [INFO]   Layer 10: mean disruption = 0.412
+2026-01-31 22:42:55,560 [INFO]   Layer 12: mean disruption = 0.450
+2026-01-31 22:42:55,560 [INFO]   Layer 14: mean disruption = 0.375
+2026-01-31 22:42:55,560 [INFO]   Layer 16: mean disruption = 0.325
+2026-01-31 22:42:55,560 [INFO]   Layer 18: mean disruption = 0.375
+2026-01-31 22:42:55,560 [INFO]   Layer 20: mean disruption = 0.162
+2026-01-31 22:42:55,565 [INFO] 
+Results saved to results/qwen2.5-1.5b-instruct/exp11
+2026-01-31 22:42:55,565 [INFO] Experiment 11 complete: 2026-01-31T22:42:55.565604
+Note: overriding fp16 -> fp32 for Qwen/Qwen2.5-1.5B-Instruct (fp16 produces NaN)
+Loading Qwen/Qwen2.5-1.5B-Instruct (dtype=torch.float32)...
+Loaded on cuda:2. 28 layers, d_model=1536

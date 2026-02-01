@@ -139,16 +139,17 @@ def extract_position_vectors(model, prompt, layer, positions):
     return vectors
 
 
-def run_instance_analysis(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp13"):
+def run_instance_analysis(model_name="meta-llama/Llama-3.2-3B-Instruct", device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp13"):
     logger = setup_logging(output_dir)
     logger.info("Experiment 13: Instance-Level Analysis")
     logger.info(f"Start: {datetime.now().isoformat()}")
 
-    model = load_model(device=device)
+    model = load_model(model_name, device=device)
     tasks = {name: TaskRegistry.get(name) for name in INCLUDED_TASKS}
 
-    # Use layer 8 based on Exp 8 findings
-    intervention_layer = 8
+    # Dynamic layer based on model depth (~30% depth, matching exp8 findings)
+    intervention_layer = model.layer_at_fraction(0.30)
+    logger.info(f"Model: {model_name} ({model.n_layers} layers), intervention_layer={intervention_layer}")
 
     # ═══════════════════════════════════════════════════════════════════
     # Part A: Instance-level transfer analysis
@@ -333,8 +334,9 @@ def run_instance_analysis(device="cuda:2", n_demos=5, n_test=20, output_dir="res
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
+    parser.add_argument("--model", default="meta-llama/Llama-3.2-3B-Instruct")
     parser.add_argument("--device", default="cuda:2")
     parser.add_argument("--n-test", type=int, default=20)
     parser.add_argument("--output-dir", default="results/exp13")
     args = parser.parse_args()
-    run_instance_analysis(device=args.device, n_test=args.n_test, output_dir=args.output_dir)
+    run_instance_analysis(model_name=args.model, device=args.device, n_test=args.n_test, output_dir=args.output_dir)

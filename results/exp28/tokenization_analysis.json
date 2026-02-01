@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "timestamp": "2026-01-31T23:05:34.603801"
+  },
+  "task_analyses": {
+    "uppercase": {
+      "mean_output_tokens": 1.8,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "example_outputs": [
+        "APPLE",
+        "BRAIN",
+        "CLOUD"
+      ]
+    },
+    "first_letter": {
+      "mean_output_tokens": 1.0,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "example_outputs": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "repeat_word": {
+      "mean_output_tokens": 2.0,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "example_outputs": [
+        "apple apple",
+        "brain brain",
+        "cloud cloud"
+      ]
+    },
+    "length": {
+      "mean_output_tokens": 2.0,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "example_outputs": [
+        "5",
+        "5",
+        "5"
+      ]
+    },
+    "linear_2x": {
+      "mean_output_tokens": 2.0,
+      "mean_input_tokens": 2.0,
+      "demo_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "example_outputs": [
+        "6",
+        "10",
+        "14"
+      ]
+    },
+    "sentiment": {
+      "mean_output_tokens": 1.0,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "example_outputs": [
+        "positive",
+        "negative",
+        "positive"
+      ]
+    },
+    "antonym": {
+      "mean_output_tokens": 1.0,
+      "mean_input_tokens": 1.0,
+      "demo_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "example_outputs": [
+        "cold",
+        "small",
+        "slow"
+      ]
+    },
+    "pattern_completion": {
+      "mean_output_tokens": 1.2,
+      "mean_input_tokens": 6.0,
+      "demo_output_token_counts": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "example_outputs": [
+        "B",
+        "2",
+        "Y"
+      ]
+    }
+  },
+  "pair_analyses": [
+    {
+      "source_total_tokens": 50,
+      "target_total_tokens": 46,
+      "token_count_diff": 4,
+      "source_output_token_counts": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "target_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_mean_output_tokens": 1.8,
+      "target_mean_output_tokens": 1.0,
+      "output_token_count_match": false,
+      "mean_output_token_diff": 0.8,
+      "source": "uppercase",
+      "target": "first_letter",
+      "transfer_rate": 0.0
+    },
+    {
+      "source_total_tokens": 50,
+      "target_total_tokens": 51,
+      "token_count_diff": 1,
+      "source_output_token_counts": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "target_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_mean_output_tokens": 1.8,
+      "target_mean_output_tokens": 2.0,
+      "output_token_count_match": false,
+      "mean_output_token_diff": 0.19999999999999996,
+      "source": "uppercase",
+      "target": "repeat_word",
+      "transfer_rate": 0.9
+    },
+    {
+      "source_total_tokens": 46,
+      "target_total_tokens": 51,
+      "token_count_diff": 5,
+      "source_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_mean_output_tokens": 1.0,
+      "target_mean_output_tokens": 2.0,
+      "output_token_count_match": false,
+      "mean_output_token_diff": 1.0,
+      "source": "first_letter",
+      "target": "repeat_word",
+      "transfer_rate": 0.0
+    },
+    {
+      "source_total_tokens": 51,
+      "target_total_tokens": 47,
+      "token_count_diff": 4,
+      "source_output_token_counts": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "target_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_mean_output_tokens": 1.8,
+      "target_mean_output_tokens": 1.0,
+      "output_token_count_match": false,
+      "mean_output_token_diff": 0.8,
+      "source": "uppercase",
+      "target": "sentiment",
+      "transfer_rate": 0.0
+    },
+    {
+      "source_total_tokens": 56,
+      "target_total_tokens": 51,
+      "token_count_diff": 5,
+      "source_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "target_output_token_counts": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "source_mean_output_tokens": 2.0,
+      "target_mean_output_tokens": 2.0,
+      "output_token_count_match": true,
+      "mean_output_token_diff": 0.0,
+      "source": "linear_2x",
+      "target": "length",
+      "transfer_rate": 0.0
+    },
+    {
+      "source_total_tokens": 46,
+      "target_total_tokens": 46,
+      "token_count_diff": 0,
+      "source_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target_output_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_mean_output_tokens": 1.0,
+      "target_mean_output_tokens": 1.0,
+      "output_token_count_match": true,
+      "mean_output_token_diff": 0.0,
+      "source": "sentiment",
+      "target": "antonym",
+      "transfer_rate": 0.1
+    }
+  ]
+}

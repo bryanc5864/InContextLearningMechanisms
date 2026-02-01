@@ -1,0 +1,11 @@
+task,regime,accuracy,correct,incorrect,malformed,passes_threshold,elapsed_s
+reverse,procedural,0.0200,1,49,0,False,116.4
+uppercase,procedural,0.9600,48,2,0,True,117.1
+pig_latin,procedural,0.0600,3,47,0,False,115.0
+first_letter,procedural,1.0000,50,0,0,True,116.1
+repeat_word,procedural,1.0000,50,0,0,True,115.5
+length,counting,1.0000,50,0,0,True,116.5
+linear_2x,gd_like,0.4400,22,28,0,False,117.0
+sentiment,bayesian,1.0000,50,0,0,True,118.6
+antonym,retrieval,0.9600,48,2,0,True,115.7
+pattern_completion,induction,0.4800,24,26,0,False,117.8

@@ -1,0 +1,850 @@
+{
+  "metadata": {
+    "test_layers": [
+      8,
+      12,
+      15,
+      17
+    ],
+    "conditions": [
+      "all_demo",
+      "input_only",
+      "output_only",
+      "last_demo"
+    ],
+    "pairs": [
+      [
+        "uppercase",
+        "first_letter"
+      ],
+      [
+        "uppercase",
+        "repeat_word"
+      ],
+      [
+        "first_letter",
+        "repeat_word"
+      ],
+      [
+        "uppercase",
+        "sentiment"
+      ],
+      [
+        "linear_2x",
+        "length"
+      ],
+      [
+        "sentiment",
+        "antonym"
+      ]
+    ],
+    "n_test": 10,
+    "timestamp": "2026-01-31T22:20:30.832242"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.1,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.2
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.1,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.9
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.4,
+          "neither_rate": 0.6
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.6,
+          "neither_rate": 0.4
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.9,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.1
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.4,
+          "neither_rate": 0.6
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.9,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.1
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.2,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.7
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.7,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.3
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.7,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.3
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.5,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.5
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.5,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.5
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        }
+      }
+    },
+    {
+      "source": "first_letter",
+      "target": "repeat_word",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.8,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.2
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.4,
+          "neither_rate": 0.6
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.5,
+          "neither_rate": 0.5
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "neither_rate": 0.8
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 34,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 19,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.1,
+          "neither_rate": 0.9
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "neither_rate": 0.8
+        }
+      }
+    },
+    {
+      "source": "linear_2x",
+      "target": "length",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 43,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 23,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 9,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 43,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 23,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 9,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 43,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 23,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 9,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 43,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.7,
+          "neither_rate": 0.3
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 23,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 9,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        }
+      }
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "conditions": {
+        "layer8_all_demo": {
+          "layer": 8,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer8_input_only": {
+          "layer": 8,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer8_output_only": {
+          "layer": 8,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 1.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.0
+        },
+        "layer8_last_demo": {
+          "layer": 8,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer12_all_demo": {
+          "layer": 12,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.9,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.1
+        },
+        "layer12_input_only": {
+          "layer": 12,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer12_output_only": {
+          "layer": 12,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 1.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.0
+        },
+        "layer12_last_demo": {
+          "layer": 12,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer15_all_demo": {
+          "layer": 15,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 1.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.0
+        },
+        "layer15_input_only": {
+          "layer": 15,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer15_output_only": {
+          "layer": 15,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.2,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.8
+        },
+        "layer15_last_demo": {
+          "layer": 15,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_all_demo": {
+          "layer": 17,
+          "condition": "all_demo",
+          "n_positions": 30,
+          "transfer_rate": 0.3,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.7
+        },
+        "layer17_input_only": {
+          "layer": 17,
+          "condition": "input_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0
+        },
+        "layer17_output_only": {
+          "layer": 17,
+          "condition": "output_only",
+          "n_positions": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "layer17_last_demo": {
+          "layer": 17,
+          "condition": "last_demo",
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    }
+  ]
+}

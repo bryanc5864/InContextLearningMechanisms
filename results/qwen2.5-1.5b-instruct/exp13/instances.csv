@@ -1,0 +1,81 @@
+source,target,input,baseline_output,intervened_output,transferred
+uppercase,first_letter,honey,h,g,no
+uppercase,first_letter,frost,r,g,no
+uppercase,first_letter,badge,b,g,no
+uppercase,first_letter,stone,s,g,no
+uppercase,first_letter,lemon,m,g,no
+uppercase,first_letter,fjord,j,g,no
+uppercase,first_letter,ivory,i,g,no
+uppercase,first_letter,queen,q,g,no
+uppercase,first_letter,lunar,l,g,no
+uppercase,first_letter,youth,y,g,no
+uppercase,first_letter,noble,l,g,no
+uppercase,first_letter,dream,m,g,no
+uppercase,first_letter,tower,t,g,no
+uppercase,first_letter,knife,k,g,no
+uppercase,first_letter,vivid,v,g,no
+uppercase,first_letter,urban,u,g,no
+uppercase,first_letter,river,r,g,no
+uppercase,first_letter,globe,g,g,no
+uppercase,first_letter,robin,r,g,no
+uppercase,first_letter,grape,g,g,no
+uppercase,sentiment,disgusted,negative,positive,no
+uppercase,sentiment,depressed,negative,positive,no
+uppercase,sentiment,gloomy,negative,positive,no
+uppercase,sentiment,bitter,negative,positive,no
+uppercase,sentiment,grateful,positive,positive,no
+uppercase,sentiment,envious,negative,positive,no
+uppercase,sentiment,inspired,positive,positive,no
+uppercase,sentiment,jealous,negative,positive,no
+uppercase,sentiment,pessimistic,negative,positive,no
+uppercase,sentiment,confident,positive,positive,no
+uppercase,sentiment,resentful,negative,positive,no
+uppercase,sentiment,devastated,negative,positive,no
+uppercase,sentiment,peaceful,positive,positive,no
+uppercase,sentiment,fearful,negative,positive,no
+uppercase,sentiment,agitated,negative,positive,no
+uppercase,sentiment,serene,positive,positive,no
+uppercase,sentiment,loving,positive,positive,no
+uppercase,sentiment,amused,positive,positive,no
+uppercase,sentiment,sorrowful,negative,positive,no
+uppercase,sentiment,happy,positive,positive,no
+repeat_word,first_letter,crane,r,g,no
+repeat_word,first_letter,pixel,p,p,no
+repeat_word,first_letter,uncle,u,u,no
+repeat_word,first_letter,queen,q,q,no
+repeat_word,first_letter,badge,b,g,no
+repeat_word,first_letter,lunar,l,m,no
+repeat_word,first_letter,house,h,h,no
+repeat_word,first_letter,grape,g,g,no
+repeat_word,first_letter,wheat,w,g,no
+repeat_word,first_letter,knife,k,k,no
+repeat_word,first_letter,kayak,k,k,no
+repeat_word,first_letter,river,r,r,no
+repeat_word,first_letter,urban,u,u,no
+repeat_word,first_letter,eagle,g,g,no
+repeat_word,first_letter,youth,y,y,no
+repeat_word,first_letter,fjord,j,g,no
+repeat_word,first_letter,index,i,g,no
+repeat_word,first_letter,zebra,z,x,no
+repeat_word,first_letter,honey,h,h,no
+repeat_word,first_letter,trend,t,t,no
+pattern_completion,repeat_word,honey,honey honey,honey honey,yes
+pattern_completion,repeat_word,frost,frost frost,frost frost,yes
+pattern_completion,repeat_word,badge,badge badge,badge badge,yes
+pattern_completion,repeat_word,stone,stone stone,stone stone,yes
+pattern_completion,repeat_word,lemon,lemon lemon,lemon lemon,yes
+pattern_completion,repeat_word,fjord,fjord fjord,fjord fjord,yes
+pattern_completion,repeat_word,ivory,ivory ivory,ivory ivory,yes
+pattern_completion,repeat_word,queen,queen queen,queen queen,yes
+pattern_completion,repeat_word,lunar,lunar lunar,lunar lunar,yes
+pattern_completion,repeat_word,youth,youth youth,youth youth,yes
+pattern_completion,repeat_word,noble,noble noble,noble noble,yes
+pattern_completion,repeat_word,dream,dream dream,dream dream,yes
+pattern_completion,repeat_word,tower,tower tower,tower tower,yes
+pattern_completion,repeat_word,knife,knife knife,knife knife,yes
+pattern_completion,repeat_word,vivid,vivid vivid,vivid vivid,yes
+pattern_completion,repeat_word,urban,urban urban,urban urban,yes
+pattern_completion,repeat_word,river,river river,river river,yes
+pattern_completion,repeat_word,globe,globe globe,globe globe,yes
+pattern_completion,repeat_word,robin,robin robin,robin robin,yes
+pattern_completion,repeat_word,grape,grape grape,grape grape,yes

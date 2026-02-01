@@ -1,0 +1,188 @@
+2026-01-31 23:05:03,579 [INFO] Experiment 29: Expanded Transfer Matrix (all 56 pairs)
+2026-01-31 23:05:03,579 [INFO] Start: 2026-01-31T23:05:03.579502
+2026-01-31 23:05:28,423 [INFO] Model: meta-llama/Llama-3.2-3B-Instruct (28 layers), intervention layer=8
+2026-01-31 23:05:28,423 [INFO] Total pairs to test: 56
+2026-01-31 23:05:28,423 [INFO] 
+[1/56] uppercase -> first_letter
+2026-01-31 23:05:42,617 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (34 positions) 
+2026-01-31 23:05:42,618 [INFO] 
+[2/56] uppercase -> repeat_word
+2026-01-31 23:05:55,972 [INFO]   transfer=0.90 preserve=0.00 neither=0.10 (34 positions) ***
+2026-01-31 23:05:55,973 [INFO] 
+[3/56] uppercase -> length
+2026-01-31 23:06:09,140 [INFO]   transfer=0.80 preserve=0.20 neither=0.00 (34 positions) ***
+2026-01-31 23:06:09,140 [INFO] 
+[4/56] uppercase -> linear_2x
+2026-01-31 23:06:22,344 [INFO]   transfer=1.00 preserve=0.00 neither=0.00 (34 positions) ***
+2026-01-31 23:06:22,344 [INFO] 
+[5/56] uppercase -> sentiment
+2026-01-31 23:06:35,301 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (34 positions) 
+2026-01-31 23:06:35,302 [INFO] 
+[6/56] uppercase -> antonym
+2026-01-31 23:06:47,520 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (34 positions) 
+2026-01-31 23:06:47,520 [INFO] 
+[7/56] uppercase -> pattern_completion
+2026-01-31 23:06:59,903 [INFO]   transfer=0.00 preserve=0.70 neither=0.30 (34 positions) 
+2026-01-31 23:06:59,903 [INFO] 
+[8/56] first_letter -> uppercase
+2026-01-31 23:07:12,152 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (30 positions) 
+2026-01-31 23:07:12,153 [INFO] 
+[9/56] first_letter -> repeat_word
+2026-01-31 23:07:25,808 [INFO]   transfer=0.00 preserve=0.40 neither=0.60 (30 positions) 
+2026-01-31 23:07:25,808 [INFO] 
+[10/56] first_letter -> length
+2026-01-31 23:07:38,781 [INFO]   transfer=0.00 preserve=0.60 neither=0.40 (30 positions) 
+2026-01-31 23:07:38,781 [INFO] 
+[11/56] first_letter -> linear_2x
+2026-01-31 23:07:51,381 [INFO]   transfer=0.00 preserve=0.30 neither=0.70 (30 positions) 
+2026-01-31 23:07:51,381 [INFO] 
+[12/56] first_letter -> sentiment
+2026-01-31 23:08:03,902 [INFO]   transfer=0.20 preserve=0.80 neither=0.00 (30 positions) 
+2026-01-31 23:08:03,903 [INFO] 
+[13/56] first_letter -> antonym
+2026-01-31 23:08:16,592 [INFO]   transfer=0.00 preserve=1.00 neither=0.00 (30 positions) 
+2026-01-31 23:08:16,592 [INFO] 
+[14/56] first_letter -> pattern_completion
+2026-01-31 23:08:28,696 [INFO]   transfer=0.10 preserve=0.90 neither=0.00 (30 positions) 
+2026-01-31 23:08:28,696 [INFO] 
+[15/56] repeat_word -> uppercase
+2026-01-31 23:08:41,245 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:08:41,245 [INFO] 
+[16/56] repeat_word -> first_letter
+2026-01-31 23:08:53,861 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:08:53,861 [INFO] 
+[17/56] repeat_word -> length
+2026-01-31 23:09:06,090 [INFO]   transfer=1.00 preserve=0.00 neither=0.00 (35 positions) ***
+2026-01-31 23:09:06,091 [INFO] 
+[18/56] repeat_word -> linear_2x
+2026-01-31 23:09:18,507 [INFO]   transfer=0.50 preserve=0.50 neither=0.00 (35 positions) ***
+2026-01-31 23:09:18,508 [INFO] 
+[19/56] repeat_word -> sentiment
+2026-01-31 23:09:30,870 [INFO]   transfer=0.00 preserve=0.50 neither=0.50 (35 positions) 
+2026-01-31 23:09:30,870 [INFO] 
+[20/56] repeat_word -> antonym
+2026-01-31 23:09:43,083 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:09:43,083 [INFO] 
+[21/56] repeat_word -> pattern_completion
+2026-01-31 23:09:56,220 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (35 positions) 
+2026-01-31 23:09:56,220 [INFO] 
+[22/56] length -> uppercase
+2026-01-31 23:10:09,247 [INFO]   transfer=1.00 preserve=0.00 neither=0.00 (35 positions) ***
+2026-01-31 23:10:09,248 [INFO] 
+[23/56] length -> first_letter
+2026-01-31 23:10:21,973 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:10:21,973 [INFO] 
+[24/56] length -> repeat_word
+2026-01-31 23:10:35,012 [INFO]   transfer=0.50 preserve=0.30 neither=0.20 (35 positions) ***
+2026-01-31 23:10:35,012 [INFO] 
+[25/56] length -> linear_2x
+2026-01-31 23:10:48,411 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:10:48,412 [INFO] 
+[26/56] length -> sentiment
+2026-01-31 23:11:01,020 [INFO]   transfer=0.00 preserve=0.40 neither=0.60 (35 positions) 
+2026-01-31 23:11:01,020 [INFO] 
+[27/56] length -> antonym
+2026-01-31 23:11:14,102 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (35 positions) 
+2026-01-31 23:11:14,102 [INFO] 
+[28/56] length -> pattern_completion
+2026-01-31 23:11:27,062 [INFO]   transfer=0.00 preserve=1.00 neither=0.00 (35 positions) 
+2026-01-31 23:11:27,062 [INFO] 
+[29/56] linear_2x -> uppercase
+2026-01-31 23:11:39,611 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:11:39,611 [INFO] 
+[30/56] linear_2x -> first_letter
+2026-01-31 23:11:52,202 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:11:52,203 [INFO] 
+[31/56] linear_2x -> repeat_word
+2026-01-31 23:12:04,638 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:12:04,638 [INFO] 
+[32/56] linear_2x -> length
+2026-01-31 23:12:17,337 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:12:17,337 [INFO] 
+[33/56] linear_2x -> sentiment
+2026-01-31 23:12:30,004 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:12:30,005 [INFO] 
+[34/56] linear_2x -> antonym
+2026-01-31 23:12:42,485 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (40 positions) 
+2026-01-31 23:12:42,486 [INFO] 
+[35/56] linear_2x -> pattern_completion
+2026-01-31 23:12:55,001 [INFO]   transfer=0.00 preserve=0.70 neither=0.30 (40 positions) 
+2026-01-31 23:12:55,002 [INFO] 
+[36/56] sentiment -> uppercase
+2026-01-31 23:13:07,886 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (30 positions) 
+2026-01-31 23:13:07,886 [INFO] 
+[37/56] sentiment -> first_letter
+2026-01-31 23:13:20,459 [INFO]   transfer=0.10 preserve=0.70 neither=0.20 (30 positions) 
+2026-01-31 23:13:20,459 [INFO] 
+[38/56] sentiment -> repeat_word
+2026-01-31 23:13:32,930 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (30 positions) 
+2026-01-31 23:13:32,930 [INFO] 
+[39/56] sentiment -> length
+2026-01-31 23:13:45,305 [INFO]   transfer=0.20 preserve=0.00 neither=0.80 (30 positions) 
+2026-01-31 23:13:45,305 [INFO] 
+[40/56] sentiment -> linear_2x
+2026-01-31 23:13:57,908 [INFO]   transfer=0.00 preserve=0.40 neither=0.60 (30 positions) 
+2026-01-31 23:13:57,909 [INFO] 
+[41/56] sentiment -> antonym
+2026-01-31 23:14:10,826 [INFO]   transfer=0.00 preserve=0.70 neither=0.30 (30 positions) 
+2026-01-31 23:14:10,826 [INFO] 
+[42/56] sentiment -> pattern_completion
+2026-01-31 23:14:23,750 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (30 positions) 
+2026-01-31 23:14:23,751 [INFO] 
+[43/56] antonym -> uppercase
+2026-01-31 23:14:37,184 [INFO]   transfer=0.00 preserve=0.60 neither=0.40 (30 positions) 
+2026-01-31 23:14:37,184 [INFO] 
+[44/56] antonym -> first_letter
+2026-01-31 23:14:50,079 [INFO]   transfer=0.00 preserve=0.10 neither=0.90 (30 positions) 
+2026-01-31 23:14:50,080 [INFO] 
+[45/56] antonym -> repeat_word
+2026-01-31 23:15:03,173 [INFO]   transfer=0.00 preserve=0.70 neither=0.30 (30 positions) 
+2026-01-31 23:15:03,173 [INFO] 
+[46/56] antonym -> length
+2026-01-31 23:15:15,948 [INFO]   transfer=0.00 preserve=0.10 neither=0.90 (30 positions) 
+2026-01-31 23:15:15,948 [INFO] 
+[47/56] antonym -> linear_2x
+2026-01-31 23:15:28,744 [INFO]   transfer=0.00 preserve=0.40 neither=0.60 (30 positions) 
+2026-01-31 23:15:28,745 [INFO] 
+[48/56] antonym -> sentiment
+2026-01-31 23:15:41,589 [INFO]   transfer=0.00 preserve=0.50 neither=0.50 (30 positions) 
+2026-01-31 23:15:41,590 [INFO] 
+[49/56] antonym -> pattern_completion
+2026-01-31 23:15:54,966 [INFO]   transfer=0.00 preserve=0.90 neither=0.10 (30 positions) 
+2026-01-31 23:15:54,966 [INFO] 
+[50/56] pattern_completion -> uppercase
+2026-01-31 23:16:08,533 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (56 positions) 
+2026-01-31 23:16:08,534 [INFO] 
+[51/56] pattern_completion -> first_letter
+2026-01-31 23:16:21,225 [INFO]   transfer=0.30 preserve=0.00 neither=0.70 (56 positions) 
+2026-01-31 23:16:21,226 [INFO] 
+[52/56] pattern_completion -> repeat_word
+2026-01-31 23:16:34,019 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (56 positions) 
+2026-01-31 23:16:34,019 [INFO] 
+[53/56] pattern_completion -> length
+2026-01-31 23:16:47,178 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (56 positions) 
+2026-01-31 23:16:47,179 [INFO] 
+[54/56] pattern_completion -> linear_2x
+2026-01-31 23:17:00,299 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (56 positions) 
+2026-01-31 23:17:00,299 [INFO] 
+[55/56] pattern_completion -> sentiment
+2026-01-31 23:17:13,505 [INFO]   transfer=0.00 preserve=0.00 neither=1.00 (56 positions) 
+2026-01-31 23:17:13,505 [INFO] 
+[56/56] pattern_completion -> antonym
+2026-01-31 23:17:26,278 [INFO]   transfer=0.30 preserve=0.00 neither=0.70 (56 positions) 
+2026-01-31 23:17:26,278 [INFO] 
+============================================================
+2026-01-31 23:17:26,278 [INFO] TRANSFER MATRIX (rows=source, cols=target)
+2026-01-31 23:17:26,278 [INFO] ============================================================
+2026-01-31 23:17:26,279 [INFO]             upperc  first_  repeat  length  linear  sentim  antony  patter
+2026-01-31 23:17:26,279 [INFO]  uppercase     -    0.00  0.90  0.80  1.00  0.00  0.00  0.00
+2026-01-31 23:17:26,279 [INFO] first_lett    0.00   -    0.00  0.00  0.00  0.20  0.00  0.10
+2026-01-31 23:17:26,279 [INFO] repeat_wor    0.00  0.00   -    1.00  0.50  0.00  0.00  0.00
+2026-01-31 23:17:26,279 [INFO]     length    1.00  0.00  0.50   -    0.00  0.00  0.00  0.00
+2026-01-31 23:17:26,279 [INFO]  linear_2x    0.00  0.00  0.00  0.00   -    0.00  0.00  0.00
+2026-01-31 23:17:26,279 [INFO]  sentiment    0.00  0.10  0.00  0.20  0.00   -    0.00  0.00
+2026-01-31 23:17:26,279 [INFO]    antonym    0.00  0.00  0.00  0.00  0.00  0.00   -    0.00
+2026-01-31 23:17:26,279 [INFO] pattern_co    0.00  0.30  0.00  0.00  0.00  0.00  0.30   -  
+2026-01-31 23:17:26,281 [INFO] 
+Results saved to results/exp29
+2026-01-31 23:17:26,282 [INFO] Experiment 29 complete: 2026-01-31T23:17:26.282124
