@@ -1,0 +1,70 @@
+2026-02-01 02:36:55,732 [INFO] Experiment 32: Sentiment Variant Transfer
+2026-02-01 02:36:55,733 [INFO] Start: 2026-02-01T02:36:55.733080
+2026-02-01 02:37:19,251 [INFO] ============================================================
+2026-02-01 02:37:19,252 [INFO] Part A: Baseline Accuracy
+2026-02-01 02:37:19,252 [INFO] ============================================================
+2026-02-01 02:37:33,755 [INFO]   sentiment                : 1.00 (20/20)
+2026-02-01 02:37:47,047 [INFO]   sentiment_goodbad        : 1.00 (20/20)
+2026-02-01 02:37:59,740 [INFO]   sentiment_symbol         : 1.00 (20/20)
+2026-02-01 02:37:59,740 [INFO] 
+============================================================
+2026-02-01 02:37:59,740 [INFO] Part B: Pairwise Transfer (+ Controls)
+2026-02-01 02:37:59,740 [INFO] ============================================================
+2026-02-01 02:37:59,740 [INFO] 
+  [VARIANT] sentiment → sentiment_goodbad
+2026-02-01 02:38:28,420 [INFO]     transfer=1.00  preserve=0.00  neither=0.00 ***
+2026-02-01 02:38:28,420 [INFO] 
+  [VARIANT] sentiment_goodbad → sentiment
+2026-02-01 02:38:56,131 [INFO]     transfer=0.95  preserve=0.05  neither=0.00 ***
+2026-02-01 02:38:56,131 [INFO] 
+  [VARIANT] sentiment → sentiment_symbol
+2026-02-01 02:39:23,308 [INFO]     transfer=0.55  preserve=0.00  neither=0.45 ***
+2026-02-01 02:39:23,309 [INFO] 
+  [VARIANT] sentiment_symbol → sentiment
+2026-02-01 02:39:51,199 [INFO]     transfer=0.25  preserve=0.75  neither=0.00 
+2026-02-01 02:39:51,199 [INFO] 
+  [VARIANT] sentiment_goodbad → sentiment_symbol
+2026-02-01 02:40:20,211 [INFO]     transfer=0.30  preserve=0.00  neither=0.70 
+2026-02-01 02:40:20,212 [INFO] 
+  [VARIANT] sentiment_symbol → sentiment_goodbad
+2026-02-01 02:40:48,620 [INFO]     transfer=0.45  preserve=0.50  neither=0.05 ***
+2026-02-01 02:40:48,621 [INFO] 
+  [CONTROL] sentiment → antonym
+2026-02-01 02:41:16,599 [INFO]     transfer=0.10  preserve=0.75  neither=0.15 
+2026-02-01 02:41:16,600 [INFO] 
+  [CONTROL] uppercase → sentiment
+2026-02-01 02:41:48,103 [INFO]     transfer=0.00  preserve=0.05  neither=0.95 
+2026-02-01 02:41:48,103 [INFO] 
+============================================================
+2026-02-01 02:41:48,103 [INFO] SUMMARY
+2026-02-01 02:41:48,103 [INFO] ============================================================
+2026-02-01 02:41:48,103 [INFO] 
+Baseline accuracy:
+2026-02-01 02:41:48,103 [INFO]   sentiment                : 1.00
+2026-02-01 02:41:48,103 [INFO]   sentiment_goodbad        : 1.00
+2026-02-01 02:41:48,104 [INFO]   sentiment_symbol         : 1.00
+2026-02-01 02:41:48,104 [INFO] 
+Sentiment variant transfers:
+2026-02-01 02:41:48,104 [INFO]   sentiment                 → sentiment_goodbad        : 1.00
+2026-02-01 02:41:48,104 [INFO]   sentiment_goodbad         → sentiment                : 0.95
+2026-02-01 02:41:48,104 [INFO]   sentiment                 → sentiment_symbol         : 0.55
+2026-02-01 02:41:48,104 [INFO]   sentiment_symbol          → sentiment                : 0.25
+2026-02-01 02:41:48,104 [INFO]   sentiment_goodbad         → sentiment_symbol         : 0.30
+2026-02-01 02:41:48,104 [INFO]   sentiment_symbol          → sentiment_goodbad        : 0.45
+2026-02-01 02:41:48,105 [INFO] 
+  Mean variant transfer: 0.583
+2026-02-01 02:41:48,105 [INFO] 
+Negative controls:
+2026-02-01 02:41:48,105 [INFO]   sentiment                 → antonym                  : 0.10
+2026-02-01 02:41:48,105 [INFO]   uppercase                 → sentiment                : 0.00
+2026-02-01 02:41:48,105 [INFO] 
+============================================================
+2026-02-01 02:41:48,105 [INFO] INTERPRETATION
+2026-02-01 02:41:48,105 [INFO] ============================================================
+2026-02-01 02:41:48,105 [INFO] High variant transfer → model encodes ABSTRACT task template
+2026-02-01 02:41:48,105 [INFO] (sentiment classification rule transfers across label sets)
+2026-02-01 02:41:48,106 [INFO] Variant transfer (0.58) > control (0.05)
+2026-02-01 02:41:48,106 [INFO] → Semantic similarity between variants contributes to transfer
+2026-02-01 02:41:48,108 [INFO] 
+Results saved to results/exp32
+2026-02-01 02:41:48,108 [INFO] Experiment 32 complete: 2026-02-01T02:41:48.108711

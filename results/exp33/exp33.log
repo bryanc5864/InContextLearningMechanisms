@@ -1,0 +1,131 @@
+2026-02-01 02:42:13,055 [INFO] Experiment 33: Variable-Length Output Tasks
+2026-02-01 02:42:13,056 [INFO] Start: 2026-02-01T02:42:13.056074
+2026-02-01 02:42:38,086 [INFO] ============================================================
+2026-02-01 02:42:38,087 [INFO] Part A: Baseline Accuracy (5-shot)
+2026-02-01 02:42:38,087 [INFO] ============================================================
+2026-02-01 02:42:59,608 [INFO]   repeat_n       : 1.00 (15/15)
+2026-02-01 02:42:59,608 [INFO]     'urban 2' → 'urban urban' (expected: 'urban urban') [correct]
+2026-02-01 02:42:59,608 [INFO]     'flame 3' → 'flame flame flame' (expected: 'flame flame flame') [correct]
+2026-02-01 02:42:59,608 [INFO]     'piano 3' → 'piano piano piano' (expected: 'piano piano piano') [correct]
+2026-02-01 02:43:18,163 [INFO]   spell_out      : 1.00 (15/15)
+2026-02-01 02:43:18,164 [INFO]     '25' → 'twenty five' (expected: 'twenty-five') [correct]
+2026-02-01 02:43:18,164 [INFO]     '8' → 'eight' (expected: 'eight') [correct]
+2026-02-01 02:43:18,164 [INFO]     '19' → 'nineteen' (expected: 'nineteen') [correct]
+2026-02-01 02:43:36,329 [INFO]   repeat_word    : 1.00 (15/15)
+2026-02-01 02:43:36,329 [INFO]     'honey' → 'honey honey' (expected: 'honey honey') [correct]
+2026-02-01 02:43:36,329 [INFO]     'frost' → 'frost frost' (expected: 'frost frost') [correct]
+2026-02-01 02:43:36,329 [INFO]     'badge' → 'badge badge' (expected: 'badge badge') [correct]
+2026-02-01 02:43:56,785 [INFO]   uppercase      : 1.00 (15/15)
+2026-02-01 02:43:56,785 [INFO]     'honey' → 'HONEY' (expected: 'HONEY') [correct]
+2026-02-01 02:43:56,785 [INFO]     'frost' → 'FROST' (expected: 'FROST') [correct]
+2026-02-01 02:43:56,785 [INFO]     'badge' → 'BADGE' (expected: 'BADGE') [correct]
+2026-02-01 02:44:16,192 [INFO]   length         : 1.00 (15/15)
+2026-02-01 02:44:16,193 [INFO]     'honey' → '5' (expected: '5') [correct]
+2026-02-01 02:44:16,193 [INFO]     'frost' → '5' (expected: '5') [correct]
+2026-02-01 02:44:16,193 [INFO]     'badge' → '5' (expected: '5') [correct]
+2026-02-01 02:44:16,193 [INFO] 
+============================================================
+2026-02-01 02:44:16,193 [INFO] Part B: Layer Sweep Transfer
+2026-02-01 02:44:16,193 [INFO] ============================================================
+2026-02-01 02:44:16,193 [INFO] 
+  Pair: repeat_n → repeat_word
+2026-02-01 02:44:37,250 [INFO]     Layer  4: transfer=0.00  preserve=0.00 
+2026-02-01 02:44:58,463 [INFO]     Layer  6: transfer=0.00  preserve=0.00 
+2026-02-01 02:45:19,527 [INFO]     Layer  8: transfer=0.00  preserve=0.00 
+2026-02-01 02:45:40,547 [INFO]     Layer 10: transfer=0.00  preserve=0.00 
+2026-02-01 02:46:02,134 [INFO]     Layer 12: transfer=0.00  preserve=0.00 
+2026-02-01 02:46:23,152 [INFO]     Layer 15: transfer=0.00  preserve=0.00 
+2026-02-01 02:46:23,152 [INFO] 
+  Pair: repeat_word → repeat_n
+2026-02-01 02:46:45,684 [INFO]     Layer  4: transfer=0.00  preserve=1.00 
+2026-02-01 02:47:07,796 [INFO]     Layer  6: transfer=0.00  preserve=0.93 
+2026-02-01 02:47:29,686 [INFO]     Layer  8: transfer=0.00  preserve=1.00 
+2026-02-01 02:47:51,191 [INFO]     Layer 10: transfer=0.00  preserve=1.00 
+2026-02-01 02:48:14,230 [INFO]     Layer 12: transfer=0.00  preserve=1.00 
+2026-02-01 02:48:34,094 [INFO]     Layer 15: transfer=0.00  preserve=1.00 
+2026-02-01 02:48:34,098 [INFO] 
+  Pair: uppercase → repeat_n
+2026-02-01 02:48:54,371 [INFO]     Layer  4: transfer=0.00  preserve=0.67 
+2026-02-01 02:49:15,593 [INFO]     Layer  6: transfer=0.00  preserve=0.33 
+2026-02-01 02:49:36,221 [INFO]     Layer  8: transfer=0.00  preserve=0.00 
+2026-02-01 02:49:56,095 [INFO]     Layer 10: transfer=0.00  preserve=0.00 
+2026-02-01 02:50:17,984 [INFO]     Layer 12: transfer=0.00  preserve=0.07 
+2026-02-01 02:50:38,022 [INFO]     Layer 15: transfer=0.00  preserve=1.00 
+2026-02-01 02:50:38,023 [INFO] 
+  Pair: repeat_n → uppercase
+2026-02-01 02:50:59,710 [INFO]     Layer  4: transfer=0.00  preserve=0.00 
+2026-02-01 02:51:20,081 [INFO]     Layer  6: transfer=0.00  preserve=0.00 
+2026-02-01 02:51:40,816 [INFO]     Layer  8: transfer=0.00  preserve=0.00 
+2026-02-01 02:52:02,605 [INFO]     Layer 10: transfer=0.00  preserve=0.00 
+2026-02-01 02:52:22,882 [INFO]     Layer 12: transfer=0.00  preserve=0.00 
+2026-02-01 02:52:43,840 [INFO]     Layer 15: transfer=0.00  preserve=0.00 
+2026-02-01 02:52:43,840 [INFO] 
+  Pair: spell_out → length
+2026-02-01 02:53:04,030 [INFO]     Layer  4: transfer=0.00  preserve=0.27 
+2026-02-01 02:53:25,311 [INFO]     Layer  6: transfer=0.00  preserve=0.13 
+2026-02-01 02:53:48,330 [INFO]     Layer  8: transfer=0.00  preserve=0.33 
+2026-02-01 02:54:11,135 [INFO]     Layer 10: transfer=0.00  preserve=0.07 
+2026-02-01 02:54:32,394 [INFO]     Layer 12: transfer=0.00  preserve=0.87 
+2026-02-01 02:54:53,279 [INFO]     Layer 15: transfer=0.00  preserve=1.00 
+2026-02-01 02:54:53,279 [INFO] 
+  Pair: length → spell_out
+2026-02-01 02:55:13,038 [INFO]     Layer  4: transfer=0.13  preserve=0.00 
+2026-02-01 02:55:33,997 [INFO]     Layer  6: transfer=0.13  preserve=0.13 
+2026-02-01 02:55:53,400 [INFO]     Layer  8: transfer=0.00  preserve=0.20 
+2026-02-01 02:56:14,365 [INFO]     Layer 10: transfer=0.00  preserve=0.27 
+2026-02-01 02:56:34,330 [INFO]     Layer 12: transfer=0.00  preserve=0.33 
+2026-02-01 02:56:54,519 [INFO]     Layer 15: transfer=0.00  preserve=1.00 
+2026-02-01 02:56:54,519 [INFO] 
+  Best layers per pair:
+2026-02-01 02:56:54,519 [INFO]     repeat_n → repeat_word: layer 4 (transfer=0.00)
+2026-02-01 02:56:54,520 [INFO]     repeat_word → repeat_n: layer 4 (transfer=0.00)
+2026-02-01 02:56:54,520 [INFO]     uppercase → repeat_n: layer 4 (transfer=0.00)
+2026-02-01 02:56:54,520 [INFO]     repeat_n → uppercase: layer 4 (transfer=0.00)
+2026-02-01 02:56:54,520 [INFO]     spell_out → length: layer 4 (transfer=0.00)
+2026-02-01 02:56:54,520 [INFO]     length → spell_out: layer 4 (transfer=0.13)
+2026-02-01 02:56:54,520 [INFO] 
+============================================================
+2026-02-01 02:56:54,520 [INFO] Part C: Length-Dependent Analysis (repeat_n)
+2026-02-01 02:56:54,520 [INFO] ============================================================
+2026-02-01 02:56:54,520 [INFO]   Inputs by N: {2: 7, 3: 6, 4: 4, 5: 3}
+2026-02-01 02:57:04,541 [INFO]   N=2: transfer=1.00 (7/7)
+2026-02-01 02:57:12,785 [INFO]   N=3: transfer=0.00 (0/6)
+2026-02-01 02:57:18,318 [INFO]   N=4: transfer=0.00 (0/4)
+2026-02-01 02:57:23,250 [INFO]   N=5: transfer=0.00 (0/3)
+2026-02-01 02:57:23,250 [INFO] 
+============================================================
+2026-02-01 02:57:23,250 [INFO] SUMMARY
+2026-02-01 02:57:23,250 [INFO] ============================================================
+2026-02-01 02:57:23,250 [INFO] 
+Baseline accuracy:
+2026-02-01 02:57:23,250 [INFO]   repeat_n       : 1.00
+2026-02-01 02:57:23,250 [INFO]   spell_out      : 1.00
+2026-02-01 02:57:23,250 [INFO]   repeat_word    : 1.00
+2026-02-01 02:57:23,250 [INFO]   uppercase      : 1.00
+2026-02-01 02:57:23,250 [INFO]   length         : 1.00
+2026-02-01 02:57:23,251 [INFO] 
+Best transfer layer per pair:
+2026-02-01 02:57:23,251 [INFO]   repeat_n        → repeat_word    : layer 4 (~14% depth), transfer=0.00
+2026-02-01 02:57:23,251 [INFO]   repeat_word     → repeat_n       : layer 4 (~14% depth), transfer=0.00
+2026-02-01 02:57:23,251 [INFO]   uppercase       → repeat_n       : layer 4 (~14% depth), transfer=0.00
+2026-02-01 02:57:23,251 [INFO]   repeat_n        → uppercase      : layer 4 (~14% depth), transfer=0.00
+2026-02-01 02:57:23,251 [INFO]   spell_out       → length         : layer 4 (~14% depth), transfer=0.00
+2026-02-01 02:57:23,251 [INFO]   length          → spell_out      : layer 4 (~14% depth), transfer=0.13
+2026-02-01 02:57:23,251 [INFO] 
+Length-dependent transfer (repeat_word → repeat_n at layer 8):
+2026-02-01 02:57:23,251 [INFO]   N=2: 1.00
+2026-02-01 02:57:23,251 [INFO]   N=3: 0.00
+2026-02-01 02:57:23,251 [INFO]   N=4: 0.00
+2026-02-01 02:57:23,251 [INFO]   N=5: 0.00
+2026-02-01 02:57:23,251 [INFO] 
+============================================================
+2026-02-01 02:57:23,251 [INFO] INTERPRETATION
+2026-02-01 02:57:23,251 [INFO] ============================================================
+2026-02-01 02:57:23,252 [INFO] 
+Average best layer: 4.0 (~14% depth)
+2026-02-01 02:57:23,252 [INFO] → Optimal depth shifted to ~14% for variable-length tasks
+2026-02-01 02:57:23,252 [INFO] 
+N=2 transfers better than N=5 → transfer degrades with output length mismatch
+2026-02-01 02:57:23,254 [INFO] 
+Results saved to results/exp33
+2026-02-01 02:57:23,254 [INFO] Experiment 33 complete: 2026-02-01T02:57:23.254970

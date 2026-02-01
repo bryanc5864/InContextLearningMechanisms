@@ -1,0 +1,16 @@
+pair,subset_name,n_output_positions,transfer_rate
+uppercase_repeat_word,first_output_per_demo,5,0.0
+uppercase_repeat_word,last_output_per_demo,5,0.0
+uppercase_repeat_word,every_other,10,0.0
+uppercase_repeat_word,first_demo_only,3,0.0
+uppercase_repeat_word,last_demo_only,4,0.0
+uppercase_length,first_output_per_demo,5,0.0
+uppercase_length,last_output_per_demo,5,0.0
+uppercase_length,every_other,10,0.0
+uppercase_length,first_demo_only,3,0.0
+uppercase_length,last_demo_only,4,0.0
+repeat_word_length,first_output_per_demo,5,0.0
+repeat_word_length,last_output_per_demo,5,0.0
+repeat_word_length,every_other,10,0.05
+repeat_word_length,first_demo_only,4,0.0
+repeat_word_length,last_demo_only,4,0.0

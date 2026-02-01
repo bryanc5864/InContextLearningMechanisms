@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "layer_sweep": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      15
+    ],
+    "n_demos": 5,
+    "n_test": 15,
+    "transfer_pairs": [
+      [
+        "repeat_n",
+        "repeat_word"
+      ],
+      [
+        "repeat_word",
+        "repeat_n"
+      ],
+      [
+        "uppercase",
+        "repeat_n"
+      ],
+      [
+        "repeat_n",
+        "uppercase"
+      ],
+      [
+        "spell_out",
+        "length"
+      ],
+      [
+        "length",
+        "spell_out"
+      ]
+    ],
+    "timestamp": "2026-02-01T02:57:23.252647"
+  },
+  "baselines": {
+    "repeat_n": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "examples": [
+        {
+          "input": "urban 2",
+          "output": "urban urban",
+          "expected": "urban urban",
+          "score": "correct"
+        },
+        {
+          "input": "flame 3",
+          "output": "flame flame flame",
+          "expected": "flame flame flame",
+          "score": "correct"
+        },
+        {
+          "input": "piano 3",
+          "output": "piano piano piano",
+          "expected": "piano piano piano",
+          "score": "correct"
+        }
+      ]
+    },
+    "spell_out": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "examples": [
+        {
+          "input": "25",
+          "output": "twenty five",
+          "expected": "twenty-five",
+          "score": "correct"
+        },
+        {
+          "input": "8",
+          "output": "eight",
+          "expected": "eight",
+          "score": "correct"
+        },
+        {
+          "input": "19",
+          "output": "nineteen",
+          "expected": "nineteen",
+          "score": "correct"
+        }
+      ]
+    },
+    "repeat_word": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "examples": [
+        {
+          "input": "honey",
+          "output": "honey honey",
+          "expected": "honey honey",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "output": "frost frost",
+          "expected": "frost frost",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "output": "badge badge",
+          "expected": "badge badge",
+          "score": "correct"
+        }
+      ]
+    },
+    "uppercase": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "examples": [
+        {
+          "input": "honey",
+          "output": "HONEY",
+          "expected": "HONEY",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "output": "FROST",
+          "expected": "FROST",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "output": "BADGE",
+          "expected": "BADGE",
+          "score": "correct"
+        }
+      ]
+    },
+    "length": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15,
+      "examples": [
+        {
+          "input": "honey",
+          "output": "5",
+          "expected": "5",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "output": "5",
+          "expected": "5",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "output": "5",
+          "expected": "5",
+          "score": "correct"
+        }
+      ]
+    }
+  },
+  "layer_sweep": [
+    {
+      "source": "repeat_n",
+      "target": "repeat_word",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        }
+      }
+    },
+    {
+      "source": "repeat_word",
+      "target": "repeat_n",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9333333333333333,
+          "n_positions": 35
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_n",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.6666666666666666,
+          "n_positions": 34
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.3333333333333333,
+          "n_positions": 34
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 34
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 34
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.06666666666666667,
+          "n_positions": 34
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 34
+        }
+      }
+    },
+    {
+      "source": "repeat_n",
+      "target": "uppercase",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "n_positions": 49
+        }
+      }
+    },
+    {
+      "source": "spell_out",
+      "target": "length",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.26666666666666666,
+          "n_positions": 35
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.13333333333333333,
+          "n_positions": 35
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.3333333333333333,
+          "n_positions": 35
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.06666666666666667,
+          "n_positions": 35
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.8666666666666667,
+          "n_positions": 35
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        }
+      }
+    },
+    {
+      "source": "length",
+      "target": "spell_out",
+      "layers": {
+        "4": {
+          "layer": 4,
+          "transfer_rate": 0.13333333333333333,
+          "preserve_rate": 0.0,
+          "n_positions": 35
+        },
+        "6": {
+          "layer": 6,
+          "transfer_rate": 0.13333333333333333,
+          "preserve_rate": 0.13333333333333333,
+          "n_positions": 35
+        },
+        "8": {
+          "layer": 8,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.2,
+          "n_positions": 35
+        },
+        "10": {
+          "layer": 10,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.26666666666666666,
+          "n_positions": 35
+        },
+        "12": {
+          "layer": 12,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.3333333333333333,
+          "n_positions": 35
+        },
+        "15": {
+          "layer": 15,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "n_positions": 35
+        }
+      }
+    }
+  ],
+  "length_dependent": {
+    "2": {
+      "n_value": 2,
+      "n_inputs": 7,
+      "transfer_count": 7,
+      "transfer_rate": 1.0
+    },
+    "3": {
+      "n_value": 3,
+      "n_inputs": 6,
+      "transfer_count": 0,
+      "transfer_rate": 0.0
+    },
+    "4": {
+      "n_value": 4,
+      "n_inputs": 4,
+      "transfer_count": 0,
+      "transfer_rate": 0.0
+    },
+    "5": {
+      "n_value": 5,
+      "n_inputs": 3,
+      "transfer_count": 0,
+      "transfer_rate": 0.0
+    }
+  }
+}

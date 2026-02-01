@@ -1,0 +1,475 @@
+{
+  "metadata": {
+    "intervention_layer": 8,
+    "n_demos": 5,
+    "n_test": 20,
+    "sentiment_pairs": [
+      [
+        "sentiment",
+        "sentiment_goodbad"
+      ],
+      [
+        "sentiment_goodbad",
+        "sentiment"
+      ],
+      [
+        "sentiment",
+        "sentiment_symbol"
+      ],
+      [
+        "sentiment_symbol",
+        "sentiment"
+      ],
+      [
+        "sentiment_goodbad",
+        "sentiment_symbol"
+      ],
+      [
+        "sentiment_symbol",
+        "sentiment_goodbad"
+      ]
+    ],
+    "control_pairs": [
+      [
+        "sentiment",
+        "antonym"
+      ],
+      [
+        "uppercase",
+        "sentiment"
+      ]
+    ],
+    "timestamp": "2026-02-01T02:41:48.106170"
+  },
+  "baselines": {
+    "sentiment": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20
+    },
+    "sentiment_goodbad": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20
+    },
+    "sentiment_symbol": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20
+    }
+  },
+  "transfer_results": [
+    {
+      "source": "sentiment",
+      "target": "sentiment_goodbad",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 1.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.0,
+      "examples": [
+        {
+          "input": "affectionate",
+          "output": "positive",
+          "source_expected": "positive",
+          "target_expected": "good",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "source_expected": "negative",
+          "target_expected": "bad",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "furious",
+          "output": "negative",
+          "source_expected": "negative",
+          "target_expected": "bad",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "source_expected": "negative",
+          "target_expected": "bad",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "source_expected": "negative",
+          "target_expected": "bad",
+          "source_correct": true,
+          "target_correct": false
+        }
+      ]
+    },
+    {
+      "source": "sentiment_goodbad",
+      "target": "sentiment",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 0.95,
+      "preserve_rate": 0.05,
+      "neither_rate": 0.0,
+      "examples": [
+        {
+          "input": "affectionate",
+          "output": "good",
+          "source_expected": "good",
+          "target_expected": "positive",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "despondent",
+          "output": "bad",
+          "source_expected": "bad",
+          "target_expected": "negative",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "furious",
+          "output": "bad",
+          "source_expected": "bad",
+          "target_expected": "negative",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "jealous",
+          "output": "bad",
+          "source_expected": "bad",
+          "target_expected": "negative",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "gloomy",
+          "output": "bad",
+          "source_expected": "bad",
+          "target_expected": "negative",
+          "source_correct": true,
+          "target_correct": false
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "sentiment_symbol",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 0.55,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.45,
+      "examples": [
+        {
+          "input": "thrilled",
+          "output": ": positive",
+          "source_expected": "positive",
+          "target_expected": "+",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "content",
+          "output": ": neutral",
+          "source_expected": "positive",
+          "target_expected": "+",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "loving",
+          "output": ": positive",
+          "source_expected": "positive",
+          "target_expected": "+",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "delighted",
+          "output": ": positive",
+          "source_expected": "positive",
+          "target_expected": "+",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "worried",
+          "output": ": positive",
+          "source_expected": "negative",
+          "target_expected": "-",
+          "source_correct": false,
+          "target_correct": false
+        }
+      ]
+    },
+    {
+      "source": "sentiment_symbol",
+      "target": "sentiment",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 0.25,
+      "preserve_rate": 0.75,
+      "neither_rate": 0.0,
+      "examples": [
+        {
+          "input": "affectionate",
+          "output": "positive",
+          "source_expected": "+",
+          "target_expected": "positive",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "despondent",
+          "output": "negative",
+          "source_expected": "-",
+          "target_expected": "negative",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "furious",
+          "output": "-",
+          "source_expected": "-",
+          "target_expected": "negative",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "jealous",
+          "output": "negative",
+          "source_expected": "-",
+          "target_expected": "negative",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "gloomy",
+          "output": "negative",
+          "source_expected": "-",
+          "target_expected": "negative",
+          "source_correct": false,
+          "target_correct": true
+        }
+      ]
+    },
+    {
+      "source": "sentiment_goodbad",
+      "target": "sentiment_symbol",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 0.3,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.7,
+      "examples": [
+        {
+          "input": "thrilled",
+          "output": ": bad",
+          "source_expected": "good",
+          "target_expected": "+",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "content",
+          "output": ": neutral",
+          "source_expected": "good",
+          "target_expected": "+",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "loving",
+          "output": ": bad",
+          "source_expected": "good",
+          "target_expected": "+",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "delighted",
+          "output": ": bad",
+          "source_expected": "good",
+          "target_expected": "+",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "worried",
+          "output": ": bad",
+          "source_expected": "bad",
+          "target_expected": "-",
+          "source_correct": true,
+          "target_correct": false
+        }
+      ]
+    },
+    {
+      "source": "sentiment_symbol",
+      "target": "sentiment_goodbad",
+      "is_control": false,
+      "n_positions": 30,
+      "transfer_rate": 0.45,
+      "preserve_rate": 0.5,
+      "neither_rate": 0.05,
+      "examples": [
+        {
+          "input": "thrilled",
+          "output": "good",
+          "source_expected": "+",
+          "target_expected": "good",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "content",
+          "output": "good",
+          "source_expected": "+",
+          "target_expected": "good",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "loving",
+          "output": "good",
+          "source_expected": "+",
+          "target_expected": "good",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "delighted",
+          "output": "good",
+          "source_expected": "+",
+          "target_expected": "good",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "worried",
+          "output": "-1",
+          "source_expected": "-",
+          "target_expected": "bad",
+          "source_correct": true,
+          "target_correct": false
+        }
+      ]
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "is_control": true,
+      "n_positions": 30,
+      "transfer_rate": 0.1,
+      "preserve_rate": 0.75,
+      "neither_rate": 0.15,
+      "examples": [
+        {
+          "input": "true",
+          "output": "positive",
+          "source_expected": "positive",
+          "target_expected": "N/A",
+          "source_correct": true,
+          "target_correct": false
+        },
+        {
+          "input": "alive",
+          "output": "dead",
+          "source_expected": "positive",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "bright",
+          "output": "light",
+          "source_expected": "positive",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "dry",
+          "output": "wet",
+          "source_expected": "positive",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": true
+        },
+        {
+          "input": "hard",
+          "output": "soft",
+          "source_expected": "positive",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": true
+        }
+      ]
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "is_control": true,
+      "n_positions": 34,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.05,
+      "neither_rate": 0.95,
+      "examples": [
+        {
+          "input": "generous",
+          "output": "happy",
+          "source_expected": "GENEROUS",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "optimistic",
+          "output": "happy",
+          "source_expected": "OPTIMISTIC",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "hostile",
+          "output": "happy",
+          "source_expected": "HOSTILE",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "furious",
+          "output": "happy",
+          "source_expected": "FURIOUS",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        },
+        {
+          "input": "vindictive",
+          "output": "positive",
+          "source_expected": "VINDICTIVE",
+          "target_expected": "N/A",
+          "source_correct": false,
+          "target_correct": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "mean_variant_transfer": 0.5833333333333334,
+    "mean_control_transfer": 0.05
+  }
+}

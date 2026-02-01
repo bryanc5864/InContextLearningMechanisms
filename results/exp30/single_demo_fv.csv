@@ -1,0 +1,13 @@
+pair,n_source_demos,n_positions,transfer_rate,preserve_rate,neither_rate
+uppercase_repeat_word,1,6,0.0,1.0,0.0
+uppercase_repeat_word,2,13,0.0,1.0,0.0
+uppercase_repeat_word,3,20,0.0,0.8,0.2
+uppercase_repeat_word,5,34,0.95,0.0,0.05
+uppercase_length,1,6,0.0,1.0,0.0
+uppercase_length,2,13,0.0,1.0,0.0
+uppercase_length,3,20,0.0,1.0,0.0
+uppercase_length,5,34,0.85,0.15,0.0
+repeat_word_length,1,7,0.0,1.0,0.0
+repeat_word_length,2,14,0.0,1.0,0.0
+repeat_word_length,3,21,0.0,1.0,0.0
+repeat_word_length,5,35,1.0,0.0,0.0

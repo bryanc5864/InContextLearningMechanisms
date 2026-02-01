@@ -1,0 +1,9 @@
+source,target,is_control,n_positions,transfer_rate,preserve_rate,neither_rate
+sentiment,sentiment_goodbad,False,30,1.0,0.0,0.0
+sentiment_goodbad,sentiment,False,30,0.95,0.05,0.0
+sentiment,sentiment_symbol,False,30,0.55,0.0,0.45
+sentiment_symbol,sentiment,False,30,0.25,0.75,0.0
+sentiment_goodbad,sentiment_symbol,False,30,0.3,0.0,0.7
+sentiment_symbol,sentiment_goodbad,False,30,0.45,0.5,0.05
+sentiment,antonym,True,30,0.1,0.75,0.15
+uppercase,sentiment,True,34,0.0,0.05,0.95
