@@ -1,0 +1,5 @@
+model,antonym,first_letter,length,linear_2x,pattern_completion,pig_latin,repeat_word,reverse,sentiment,uppercase
+llama-3.2-3b-instruct,0.82,,1.0,1.0,1.0,0.08,,0.56,1.0,0.96
+llama-3.2-1b-instruct,0.94,0.76,1.0,0.66,0.86,0.14,1.0,0.22,1.0,0.9
+qwen2.5-1.5b-instruct,0.96,0.68,0.64,0.52,1.0,0.02,1.0,0.02,0.98,0.94
+gemma-2-2b-it,0.96,1.0,1.0,0.44,0.48,0.06,1.0,0.02,1.0,0.96

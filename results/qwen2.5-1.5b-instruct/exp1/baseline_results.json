@@ -1,0 +1,3391 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "device": "cuda:4",
+    "n_demos": 5,
+    "n_test": 50,
+    "start_time": "2026-01-31T22:00:28.442510",
+    "model_info": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct",
+      "n_layers": 28,
+      "d_model": 1536,
+      "n_heads": 12,
+      "vocab_size": 151936,
+      "device": "cuda:4"
+    },
+    "end_time": "2026-01-31T22:10:09.654376",
+    "total_elapsed": 581.2
+  },
+  "tasks": {
+    "reverse": {
+      "task": "reverse",
+      "regime": "procedural",
+      "description": "Reverse the input string",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "elppa"
+        },
+        {
+          "input": "brain",
+          "output": "niarb"
+        },
+        {
+          "input": "cloud",
+          "output": "duolc"
+        },
+        {
+          "input": "delta",
+          "output": "atled"
+        },
+        {
+          "input": "flame",
+          "output": "emalf"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "yenoh",
+          "output": "yohen",
+          "score": "incorrect"
+        },
+        {
+          "input": "frost",
+          "expected": "tsorf",
+          "output": "stcrof",
+          "score": "incorrect"
+        },
+        {
+          "input": "badge",
+          "expected": "egdab",
+          "output": "adibg",
+          "score": "incorrect"
+        },
+        {
+          "input": "stone",
+          "expected": "enots",
+          "output": "enost",
+          "score": "incorrect"
+        },
+        {
+          "input": "lemon",
+          "expected": "nomel",
+          "output": "melen",
+          "score": "incorrect"
+        },
+        {
+          "input": "fjord",
+          "expected": "drojf",
+          "output": "ordfj",
+          "score": "incorrect"
+        },
+        {
+          "input": "ivory",
+          "expected": "yrovi",
+          "output": "vyiow",
+          "score": "incorrect"
+        },
+        {
+          "input": "queen",
+          "expected": "neeuq",
+          "output": "enqaur",
+          "score": "incorrect"
+        },
+        {
+          "input": "lunar",
+          "expected": "ranul",
+          "output": "onalul",
+          "score": "incorrect"
+        },
+        {
+          "input": "youth",
+          "expected": "htuoy",
+          "output": "hryou",
+          "score": "incorrect"
+        },
+        {
+          "input": "noble",
+          "expected": "elbon",
+          "output": "elbon",
+          "score": "correct"
+        },
+        {
+          "input": "dream",
+          "expected": "maerd",
+          "output": "remdr",
+          "score": "incorrect"
+        },
+        {
+          "input": "tower",
+          "expected": "rewot",
+          "output": "rotaT",
+          "score": "incorrect"
+        },
+        {
+          "input": "knife",
+          "expected": "efink",
+          "output": "knif",
+          "score": "incorrect"
+        },
+        {
+          "input": "vivid",
+          "expected": "diviv",
+          "output": "idbiv",
+          "score": "incorrect"
+        },
+        {
+          "input": "urban",
+          "expected": "nabru",
+          "output": "rnuaiu",
+          "score": "incorrect"
+        },
+        {
+          "input": "river",
+          "expected": "revir",
+          "output": "iverr",
+          "score": "incorrect"
+        },
+        {
+          "input": "globe",
+          "expected": "ebolg",
+          "output": "eloig",
+          "score": "incorrect"
+        },
+        {
+          "input": "robin",
+          "expected": "nibor",
+          "output": "oibrn",
+          "score": "incorrect"
+        },
+        {
+          "input": "grape",
+          "expected": "eparg",
+          "output": "rapg",
+          "score": "incorrect"
+        },
+        {
+          "input": "dwarf",
+          "expected": "frawd",
+          "output": "rwfdu",
+          "score": "incorrect"
+        },
+        {
+          "input": "ankle",
+          "expected": "elkna",
+          "output": "nkelan",
+          "score": "incorrect"
+        },
+        {
+          "input": "piano",
+          "expected": "onaip",
+          "output": "inapoi",
+          "score": "incorrect"
+        },
+        {
+          "input": "index",
+          "expected": "xedni",
+          "output": "exind",
+          "score": "incorrect"
+        },
+        {
+          "input": "pixel",
+          "expected": "lexip",
+          "output": "xilip",
+          "score": "incorrect"
+        },
+        {
+          "input": "maple",
+          "expected": "elpam",
+          "output": "ampela",
+          "score": "incorrect"
+        },
+        {
+          "input": "kayak",
+          "expected": "kayak",
+          "output": "akyak",
+          "score": "incorrect"
+        },
+        {
+          "input": "candy",
+          "expected": "ydnac",
+          "output": "yncad",
+          "score": "incorrect"
+        },
+        {
+          "input": "eagle",
+          "expected": "elgae",
+          "output": "gaelc",
+          "score": "incorrect"
+        },
+        {
+          "input": "crane",
+          "expected": "enarc",
+          "output": "renac",
+          "score": "incorrect"
+        },
+        {
+          "input": "glyph",
+          "expected": "hpylg",
+          "output": "ylpig",
+          "score": "incorrect"
+        },
+        {
+          "input": "sugar",
+          "expected": "ragus",
+          "output": "ruags",
+          "score": "incorrect"
+        },
+        {
+          "input": "ocean",
+          "expected": "naeco",
+          "output": "nabooc",
+          "score": "incorrect"
+        },
+        {
+          "input": "ember",
+          "expected": "rebme",
+          "output": "mbera",
+          "score": "incorrect"
+        },
+        {
+          "input": "uncle",
+          "expected": "elcnu",
+          "output": "culeu",
+          "score": "incorrect"
+        },
+        {
+          "input": "joker",
+          "expected": "rekoj",
+          "output": "rojik",
+          "score": "incorrect"
+        },
+        {
+          "input": "haven",
+          "expected": "nevah",
+          "output": "enahvd",
+          "score": "incorrect"
+        },
+        {
+          "input": "juice",
+          "expected": "eciuj",
+          "output": "uijju",
+          "score": "incorrect"
+        },
+        {
+          "input": "jolly",
+          "expected": "ylloj",
+          "output": "oljly",
+          "score": "incorrect"
+        },
+        {
+          "input": "trend",
+          "expected": "dnert",
+          "output": "rnted",
+          "score": "incorrect"
+        },
+        {
+          "input": "mango",
+          "expected": "ognam",
+          "output": "amgonm",
+          "score": "incorrect"
+        },
+        {
+          "input": "quilt",
+          "expected": "tliuq",
+          "output": "tutql",
+          "score": "incorrect"
+        },
+        {
+          "input": "nerve",
+          "expected": "evren",
+          "output": "renuga",
+          "score": "incorrect"
+        },
+        {
+          "input": "pearl",
+          "expected": "lraep",
+          "output": "raper",
+          "score": "incorrect"
+        },
+        {
+          "input": "valve",
+          "expected": "evlav",
+          "output": "avelva",
+          "score": "incorrect"
+        },
+        {
+          "input": "wheat",
+          "expected": "taehw",
+          "output": "hwiat",
+          "score": "incorrect"
+        },
+        {
+          "input": "zebra",
+          "expected": "arbez",
+          "output": "ebraza",
+          "score": "incorrect"
+        },
+        {
+          "input": "house",
+          "expected": "esuoh",
+          "output": "huse",
+          "score": "incorrect"
+        },
+        {
+          "input": "olive",
+          "expected": "evilo",
+          "output": "lvoel",
+          "score": "incorrect"
+        },
+        {
+          "input": "waltz",
+          "expected": "ztlaw",
+          "output": "zlatw",
+          "score": "incorrect"
+        }
+      ],
+      "accuracy": 0.02,
+      "correct": 1,
+      "incorrect": 49,
+      "malformed": 0,
+      "elapsed_seconds": 60.3,
+      "passes_threshold": false
+    },
+    "uppercase": {
+      "task": "uppercase",
+      "regime": "procedural",
+      "description": "Convert to uppercase",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "APPLE"
+        },
+        {
+          "input": "brain",
+          "output": "BRAIN"
+        },
+        {
+          "input": "cloud",
+          "output": "CLOUD"
+        },
+        {
+          "input": "delta",
+          "output": "DELTA"
+        },
+        {
+          "input": "flame",
+          "output": "FLAME"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "HONEY",
+          "output": "HONEY",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "expected": "FROST",
+          "output": "FROST",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "expected": "BADGE",
+          "output": "BADGE",
+          "score": "correct"
+        },
+        {
+          "input": "stone",
+          "expected": "STONE",
+          "output": "STONE",
+          "score": "correct"
+        },
+        {
+          "input": "lemon",
+          "expected": "LEMON",
+          "output": "LEMON",
+          "score": "correct"
+        },
+        {
+          "input": "fjord",
+          "expected": "FJORD",
+          "output": "FJORD",
+          "score": "correct"
+        },
+        {
+          "input": "ivory",
+          "expected": "IVORY",
+          "output": "IVORY",
+          "score": "correct"
+        },
+        {
+          "input": "queen",
+          "expected": "QUEEN",
+          "output": "QUEEN",
+          "score": "correct"
+        },
+        {
+          "input": "lunar",
+          "expected": "LUNAR",
+          "output": "LUNAR",
+          "score": "correct"
+        },
+        {
+          "input": "youth",
+          "expected": "YOUTH",
+          "output": "YOUTH",
+          "score": "correct"
+        },
+        {
+          "input": "noble",
+          "expected": "NOBLE",
+          "output": "NOLDE",
+          "score": "incorrect"
+        },
+        {
+          "input": "dream",
+          "expected": "DREAM",
+          "output": "DREAM",
+          "score": "correct"
+        },
+        {
+          "input": "tower",
+          "expected": "TOWER",
+          "output": "TOWER",
+          "score": "correct"
+        },
+        {
+          "input": "knife",
+          "expected": "KNIFE",
+          "output": "KNIFE",
+          "score": "correct"
+        },
+        {
+          "input": "vivid",
+          "expected": "VIVID",
+          "output": "VIVID",
+          "score": "correct"
+        },
+        {
+          "input": "urban",
+          "expected": "URBAN",
+          "output": "URBAN",
+          "score": "correct"
+        },
+        {
+          "input": "river",
+          "expected": "RIVER",
+          "output": "RIVER",
+          "score": "correct"
+        },
+        {
+          "input": "globe",
+          "expected": "GLOBE",
+          "output": "GLOBE",
+          "score": "correct"
+        },
+        {
+          "input": "robin",
+          "expected": "ROBIN",
+          "output": "ROBIN",
+          "score": "correct"
+        },
+        {
+          "input": "grape",
+          "expected": "GRAPE",
+          "output": "GRAPE",
+          "score": "correct"
+        },
+        {
+          "input": "dwarf",
+          "expected": "DWARF",
+          "output": "DWARF",
+          "score": "correct"
+        },
+        {
+          "input": "ankle",
+          "expected": "ANKLE",
+          "output": "ANKLE",
+          "score": "correct"
+        },
+        {
+          "input": "piano",
+          "expected": "PIANO",
+          "output": "PIANO",
+          "score": "correct"
+        },
+        {
+          "input": "index",
+          "expected": "INDEX",
+          "output": "INDEX",
+          "score": "correct"
+        },
+        {
+          "input": "pixel",
+          "expected": "PIXEL",
+          "output": "PIXEL",
+          "score": "correct"
+        },
+        {
+          "input": "maple",
+          "expected": "MAPLE",
+          "output": "MAPLE",
+          "score": "correct"
+        },
+        {
+          "input": "kayak",
+          "expected": "KAYAK",
+          "output": "KAYAK",
+          "score": "correct"
+        },
+        {
+          "input": "candy",
+          "expected": "CANDY",
+          "output": "CANDY",
+          "score": "correct"
+        },
+        {
+          "input": "eagle",
+          "expected": "EAGLE",
+          "output": "EAGLE",
+          "score": "correct"
+        },
+        {
+          "input": "crane",
+          "expected": "CRANE",
+          "output": "CRANE",
+          "score": "correct"
+        },
+        {
+          "input": "glyph",
+          "expected": "GLYPH",
+          "output": "GYPHL",
+          "score": "incorrect"
+        },
+        {
+          "input": "sugar",
+          "expected": "SUGAR",
+          "output": "SUGAR",
+          "score": "correct"
+        },
+        {
+          "input": "ocean",
+          "expected": "OCEAN",
+          "output": "OCEAN",
+          "score": "correct"
+        },
+        {
+          "input": "ember",
+          "expected": "EMBER",
+          "output": "EMBER",
+          "score": "correct"
+        },
+        {
+          "input": "uncle",
+          "expected": "UNCLE",
+          "output": "UNCLE",
+          "score": "correct"
+        },
+        {
+          "input": "joker",
+          "expected": "JOKER",
+          "output": "JOKER",
+          "score": "correct"
+        },
+        {
+          "input": "haven",
+          "expected": "HAVEN",
+          "output": "HAVEN",
+          "score": "correct"
+        },
+        {
+          "input": "juice",
+          "expected": "JUICE",
+          "output": "JUICE",
+          "score": "correct"
+        },
+        {
+          "input": "jolly",
+          "expected": "JOLLY",
+          "output": "JOLLY",
+          "score": "correct"
+        },
+        {
+          "input": "trend",
+          "expected": "TREND",
+          "output": "TRENDS",
+          "score": "incorrect"
+        },
+        {
+          "input": "mango",
+          "expected": "MANGO",
+          "output": "MANGO",
+          "score": "correct"
+        },
+        {
+          "input": "quilt",
+          "expected": "QUILT",
+          "output": "QUILT",
+          "score": "correct"
+        },
+        {
+          "input": "nerve",
+          "expected": "NERVE",
+          "output": "NERVE",
+          "score": "correct"
+        },
+        {
+          "input": "pearl",
+          "expected": "PEARL",
+          "output": "PEARL",
+          "score": "correct"
+        },
+        {
+          "input": "valve",
+          "expected": "VALVE",
+          "output": "VALVE",
+          "score": "correct"
+        },
+        {
+          "input": "wheat",
+          "expected": "WHEAT",
+          "output": "WHEAT",
+          "score": "correct"
+        },
+        {
+          "input": "zebra",
+          "expected": "ZEBRA",
+          "output": "ZEBRA",
+          "score": "correct"
+        },
+        {
+          "input": "house",
+          "expected": "HOUSE",
+          "output": "HOUSE",
+          "score": "correct"
+        },
+        {
+          "input": "olive",
+          "expected": "OLIVE",
+          "output": "OLIVE",
+          "score": "correct"
+        },
+        {
+          "input": "waltz",
+          "expected": "WALTZ",
+          "output": "WALTZ",
+          "score": "correct"
+        }
+      ],
+      "accuracy": 0.94,
+      "correct": 47,
+      "incorrect": 3,
+      "malformed": 0,
+      "elapsed_seconds": 56.8,
+      "passes_threshold": true
+    },
+    "pig_latin": {
+      "task": "pig_latin",
+      "regime": "procedural",
+      "description": "Convert to pig latin",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "appleay"
+        },
+        {
+          "input": "brain",
+          "output": "ainbray"
+        },
+        {
+          "input": "cloud",
+          "output": "oudclay"
+        },
+        {
+          "input": "delta",
+          "output": "eltaday"
+        },
+        {
+          "input": "flame",
+          "output": "ameflay"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "oneyhay",
+          "output": "ohynhay",
+          "score": "incorrect"
+        },
+        {
+          "input": "frost",
+          "expected": "ostfray",
+          "output": "rofsray",
+          "score": "incorrect"
+        },
+        {
+          "input": "badge",
+          "expected": "adgebay",
+          "output": "adagey",
+          "score": "incorrect"
+        },
+        {
+          "input": "stone",
+          "expected": "onestay",
+          "output": "onestay",
+          "score": "correct"
+        },
+        {
+          "input": "lemon",
+          "expected": "emonlay",
+          "output": "emolayn",
+          "score": "incorrect"
+        },
+        {
+          "input": "fjord",
+          "expected": "ordfjay",
+          "output": "fjdory",
+          "score": "incorrect"
+        },
+        {
+          "input": "ivory",
+          "expected": "ivoryay",
+          "output": "ivyaw",
+          "score": "incorrect"
+        },
+        {
+          "input": "queen",
+          "expected": "ueenqay",
+          "output": "quenay",
+          "score": "incorrect"
+        },
+        {
+          "input": "lunar",
+          "expected": "unarlay",
+          "output": "onylam",
+          "score": "incorrect"
+        },
+        {
+          "input": "youth",
+          "expected": "outhyay",
+          "output": "ythuytay",
+          "score": "incorrect"
+        },
+        {
+          "input": "noble",
+          "expected": "oblenay",
+          "output": "lbonaey",
+          "score": "incorrect"
+        },
+        {
+          "input": "dream",
+          "expected": "eamdray",
+          "output": "rmdrayn",
+          "score": "incorrect"
+        },
+        {
+          "input": "tower",
+          "expected": "owertay",
+          "output": "rotaey",
+          "score": "incorrect"
+        },
+        {
+          "input": "knife",
+          "expected": "ifeknay",
+          "output": "knifelay",
+          "score": "incorrect"
+        },
+        {
+          "input": "vivid",
+          "expected": "ividvay",
+          "output": "idavvy",
+          "score": "incorrect"
+        },
+        {
+          "input": "urban",
+          "expected": "urbanay",
+          "output": "uranuy",
+          "score": "incorrect"
+        },
+        {
+          "input": "river",
+          "expected": "iverray",
+          "output": "riverya",
+          "score": "incorrect"
+        },
+        {
+          "input": "globe",
+          "expected": "obeglay",
+          "output": "lobgula",
+          "score": "incorrect"
+        },
+        {
+          "input": "robin",
+          "expected": "obinray",
+          "output": "oibrayn",
+          "score": "incorrect"
+        },
+        {
+          "input": "grape",
+          "expected": "apegray",
+          "output": "pragave",
+          "score": "incorrect"
+        },
+        {
+          "input": "dwarf",
+          "expected": "arfdway",
+          "output": "awfrday",
+          "score": "incorrect"
+        },
+        {
+          "input": "ankle",
+          "expected": "ankleay",
+          "output": "ankelay",
+          "score": "incorrect"
+        },
+        {
+          "input": "piano",
+          "expected": "ianopay",
+          "output": "inopay",
+          "score": "incorrect"
+        },
+        {
+          "input": "index",
+          "expected": "indexay",
+          "output": "indexy",
+          "score": "incorrect"
+        },
+        {
+          "input": "pixel",
+          "expected": "ixelpay",
+          "output": "ilpaxy",
+          "score": "incorrect"
+        },
+        {
+          "input": "maple",
+          "expected": "aplemay",
+          "output": "amepfly",
+          "score": "incorrect"
+        },
+        {
+          "input": "kayak",
+          "expected": "ayakkay",
+          "output": "aikyay",
+          "score": "incorrect"
+        },
+        {
+          "input": "candy",
+          "expected": "andycay",
+          "output": "anycady",
+          "score": "incorrect"
+        },
+        {
+          "input": "eagle",
+          "expected": "eagleay",
+          "output": "eagle",
+          "score": "incorrect"
+        },
+        {
+          "input": "crane",
+          "expected": "anecray",
+          "output": "raneicy",
+          "score": "incorrect"
+        },
+        {
+          "input": "glyph",
+          "expected": "glyphay",
+          "output": "lphiguy",
+          "score": "incorrect"
+        },
+        {
+          "input": "sugar",
+          "expected": "ugarsay",
+          "output": "ugarosy",
+          "score": "incorrect"
+        },
+        {
+          "input": "ocean",
+          "expected": "oceanay",
+          "output": "onaoyncay",
+          "score": "incorrect"
+        },
+        {
+          "input": "ember",
+          "expected": "emberay",
+          "output": "mberam",
+          "score": "incorrect"
+        },
+        {
+          "input": "uncle",
+          "expected": "uncleay",
+          "output": "uncleuy",
+          "score": "incorrect"
+        },
+        {
+          "input": "joker",
+          "expected": "okerjay",
+          "output": "okjray",
+          "score": "incorrect"
+        },
+        {
+          "input": "haven",
+          "expected": "avenhay",
+          "output": "anvehay",
+          "score": "incorrect"
+        },
+        {
+          "input": "juice",
+          "expected": "uicejay",
+          "output": "ujiesay",
+          "score": "incorrect"
+        },
+        {
+          "input": "jolly",
+          "expected": "ollyjay",
+          "output": "oljylay",
+          "score": "incorrect"
+        },
+        {
+          "input": "trend",
+          "expected": "endtray",
+          "output": "rantydoy",
+          "score": "incorrect"
+        },
+        {
+          "input": "mango",
+          "expected": "angomay",
+          "output": "amgonay",
+          "score": "incorrect"
+        },
+        {
+          "input": "quilt",
+          "expected": "uiltqay",
+          "output": "uqiltaw",
+          "score": "incorrect"
+        },
+        {
+          "input": "nerve",
+          "expected": "ervenay",
+          "output": "rneauray",
+          "score": "incorrect"
+        },
+        {
+          "input": "pearl",
+          "expected": "earlpay",
+          "output": "elpray",
+          "score": "incorrect"
+        },
+        {
+          "input": "valve",
+          "expected": "alvevay",
+          "output": "avelyav",
+          "score": "incorrect"
+        },
+        {
+          "input": "wheat",
+          "expected": "eatwhay",
+          "output": "ahtwaiy",
+          "score": "incorrect"
+        },
+        {
+          "input": "zebra",
+          "expected": "ebrazay",
+          "output": "azebray",
+          "score": "incorrect"
+        },
+        {
+          "input": "house",
+          "expected": "ousehay",
+          "output": "houseyt",
+          "score": "incorrect"
+        },
+        {
+          "input": "olive",
+          "expected": "oliveay",
+          "output": "olivey",
+          "score": "incorrect"
+        },
+        {
+          "input": "waltz",
+          "expected": "altzway",
+          "output": "altwazy",
+          "score": "incorrect"
+        }
+      ],
+      "accuracy": 0.02,
+      "correct": 1,
+      "incorrect": 49,
+      "malformed": 0,
+      "elapsed_seconds": 58.3,
+      "passes_threshold": false
+    },
+    "first_letter": {
+      "task": "first_letter",
+      "regime": "procedural",
+      "description": "Extract the first letter",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "a"
+        },
+        {
+          "input": "brain",
+          "output": "b"
+        },
+        {
+          "input": "cloud",
+          "output": "c"
+        },
+        {
+          "input": "delta",
+          "output": "d"
+        },
+        {
+          "input": "flame",
+          "output": "f"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "h",
+          "output": "h",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "expected": "f",
+          "output": "r",
+          "score": "incorrect"
+        },
+        {
+          "input": "badge",
+          "expected": "b",
+          "output": "b",
+          "score": "correct"
+        },
+        {
+          "input": "stone",
+          "expected": "s",
+          "output": "s",
+          "score": "correct"
+        },
+        {
+          "input": "lemon",
+          "expected": "l",
+          "output": "m",
+          "score": "incorrect"
+        },
+        {
+          "input": "fjord",
+          "expected": "f",
+          "output": "j",
+          "score": "incorrect"
+        },
+        {
+          "input": "ivory",
+          "expected": "i",
+          "output": "i",
+          "score": "correct"
+        },
+        {
+          "input": "queen",
+          "expected": "q",
+          "output": "q",
+          "score": "correct"
+        },
+        {
+          "input": "lunar",
+          "expected": "l",
+          "output": "l",
+          "score": "correct"
+        },
+        {
+          "input": "youth",
+          "expected": "y",
+          "output": "y",
+          "score": "correct"
+        },
+        {
+          "input": "noble",
+          "expected": "n",
+          "output": "l",
+          "score": "incorrect"
+        },
+        {
+          "input": "dream",
+          "expected": "d",
+          "output": "m",
+          "score": "incorrect"
+        },
+        {
+          "input": "tower",
+          "expected": "t",
+          "output": "t",
+          "score": "correct"
+        },
+        {
+          "input": "knife",
+          "expected": "k",
+          "output": "k",
+          "score": "correct"
+        },
+        {
+          "input": "vivid",
+          "expected": "v",
+          "output": "v",
+          "score": "correct"
+        },
+        {
+          "input": "urban",
+          "expected": "u",
+          "output": "u",
+          "score": "correct"
+        },
+        {
+          "input": "river",
+          "expected": "r",
+          "output": "r",
+          "score": "correct"
+        },
+        {
+          "input": "globe",
+          "expected": "g",
+          "output": "g",
+          "score": "correct"
+        },
+        {
+          "input": "robin",
+          "expected": "r",
+          "output": "r",
+          "score": "correct"
+        },
+        {
+          "input": "grape",
+          "expected": "g",
+          "output": "g",
+          "score": "correct"
+        },
+        {
+          "input": "dwarf",
+          "expected": "d",
+          "output": "w",
+          "score": "incorrect"
+        },
+        {
+          "input": "ankle",
+          "expected": "a",
+          "output": "l",
+          "score": "incorrect"
+        },
+        {
+          "input": "piano",
+          "expected": "p",
+          "output": "p",
+          "score": "correct"
+        },
+        {
+          "input": "index",
+          "expected": "i",
+          "output": "i",
+          "score": "correct"
+        },
+        {
+          "input": "pixel",
+          "expected": "p",
+          "output": "p",
+          "score": "correct"
+        },
+        {
+          "input": "maple",
+          "expected": "m",
+          "output": "m",
+          "score": "correct"
+        },
+        {
+          "input": "kayak",
+          "expected": "k",
+          "output": "k",
+          "score": "correct"
+        },
+        {
+          "input": "candy",
+          "expected": "c",
+          "output": "an",
+          "score": "incorrect"
+        },
+        {
+          "input": "eagle",
+          "expected": "e",
+          "output": "g",
+          "score": "incorrect"
+        },
+        {
+          "input": "crane",
+          "expected": "c",
+          "output": "r",
+          "score": "incorrect"
+        },
+        {
+          "input": "glyph",
+          "expected": "g",
+          "output": "g",
+          "score": "correct"
+        },
+        {
+          "input": "sugar",
+          "expected": "s",
+          "output": "u",
+          "score": "incorrect"
+        },
+        {
+          "input": "ocean",
+          "expected": "o",
+          "output": "o",
+          "score": "correct"
+        },
+        {
+          "input": "ember",
+          "expected": "e",
+          "output": "e",
+          "score": "correct"
+        },
+        {
+          "input": "uncle",
+          "expected": "u",
+          "output": "u",
+          "score": "correct"
+        },
+        {
+          "input": "joker",
+          "expected": "j",
+          "output": "k",
+          "score": "incorrect"
+        },
+        {
+          "input": "haven",
+          "expected": "h",
+          "output": "h",
+          "score": "correct"
+        },
+        {
+          "input": "juice",
+          "expected": "j",
+          "output": "j",
+          "score": "correct"
+        },
+        {
+          "input": "jolly",
+          "expected": "j",
+          "output": "l",
+          "score": "incorrect"
+        },
+        {
+          "input": "trend",
+          "expected": "t",
+          "output": "t",
+          "score": "correct"
+        },
+        {
+          "input": "mango",
+          "expected": "m",
+          "output": "m",
+          "score": "correct"
+        },
+        {
+          "input": "quilt",
+          "expected": "q",
+          "output": "q",
+          "score": "correct"
+        },
+        {
+          "input": "nerve",
+          "expected": "n",
+          "output": "r",
+          "score": "incorrect"
+        },
+        {
+          "input": "pearl",
+          "expected": "p",
+          "output": "p",
+          "score": "correct"
+        },
+        {
+          "input": "valve",
+          "expected": "v",
+          "output": "v",
+          "score": "correct"
+        },
+        {
+          "input": "wheat",
+          "expected": "w",
+          "output": "w",
+          "score": "correct"
+        },
+        {
+          "input": "zebra",
+          "expected": "z",
+          "output": "z",
+          "score": "correct"
+        },
+        {
+          "input": "house",
+          "expected": "h",
+          "output": "h",
+          "score": "correct"
+        },
+        {
+          "input": "olive",
+          "expected": "o",
+          "output": "l",
+          "score": "incorrect"
+        },
+        {
+          "input": "waltz",
+          "expected": "w",
+          "output": "l",
+          "score": "incorrect"
+        }
+      ],
+      "accuracy": 0.68,
+      "correct": 34,
+      "incorrect": 16,
+      "malformed": 0,
+      "elapsed_seconds": 59.9,
+      "passes_threshold": false
+    },
+    "repeat_word": {
+      "task": "repeat_word",
+      "regime": "procedural",
+      "description": "Repeat the word twice",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "apple apple"
+        },
+        {
+          "input": "brain",
+          "output": "brain brain"
+        },
+        {
+          "input": "cloud",
+          "output": "cloud cloud"
+        },
+        {
+          "input": "delta",
+          "output": "delta delta"
+        },
+        {
+          "input": "flame",
+          "output": "flame flame"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "honey honey",
+          "output": "honey honey",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "expected": "frost frost",
+          "output": "frost frost",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "expected": "badge badge",
+          "output": "badge badge",
+          "score": "correct"
+        },
+        {
+          "input": "stone",
+          "expected": "stone stone",
+          "output": "stone stone",
+          "score": "correct"
+        },
+        {
+          "input": "lemon",
+          "expected": "lemon lemon",
+          "output": "lemon lemon",
+          "score": "correct"
+        },
+        {
+          "input": "fjord",
+          "expected": "fjord fjord",
+          "output": "fjord fjord",
+          "score": "correct"
+        },
+        {
+          "input": "ivory",
+          "expected": "ivory ivory",
+          "output": "ivory ivory",
+          "score": "correct"
+        },
+        {
+          "input": "queen",
+          "expected": "queen queen",
+          "output": "queen queen",
+          "score": "correct"
+        },
+        {
+          "input": "lunar",
+          "expected": "lunar lunar",
+          "output": "lunar lunar",
+          "score": "correct"
+        },
+        {
+          "input": "youth",
+          "expected": "youth youth",
+          "output": "youth youth",
+          "score": "correct"
+        },
+        {
+          "input": "noble",
+          "expected": "noble noble",
+          "output": "noble noble",
+          "score": "correct"
+        },
+        {
+          "input": "dream",
+          "expected": "dream dream",
+          "output": "dream dream",
+          "score": "correct"
+        },
+        {
+          "input": "tower",
+          "expected": "tower tower",
+          "output": "tower tower",
+          "score": "correct"
+        },
+        {
+          "input": "knife",
+          "expected": "knife knife",
+          "output": "knife knife",
+          "score": "correct"
+        },
+        {
+          "input": "vivid",
+          "expected": "vivid vivid",
+          "output": "vivid vivid",
+          "score": "correct"
+        },
+        {
+          "input": "urban",
+          "expected": "urban urban",
+          "output": "urban urban",
+          "score": "correct"
+        },
+        {
+          "input": "river",
+          "expected": "river river",
+          "output": "river river",
+          "score": "correct"
+        },
+        {
+          "input": "globe",
+          "expected": "globe globe",
+          "output": "globe globe",
+          "score": "correct"
+        },
+        {
+          "input": "robin",
+          "expected": "robin robin",
+          "output": "robin robin",
+          "score": "correct"
+        },
+        {
+          "input": "grape",
+          "expected": "grape grape",
+          "output": "grape grape",
+          "score": "correct"
+        },
+        {
+          "input": "dwarf",
+          "expected": "dwarf dwarf",
+          "output": "dwarf dwarf",
+          "score": "correct"
+        },
+        {
+          "input": "ankle",
+          "expected": "ankle ankle",
+          "output": "ankle ankle",
+          "score": "correct"
+        },
+        {
+          "input": "piano",
+          "expected": "piano piano",
+          "output": "piano piano",
+          "score": "correct"
+        },
+        {
+          "input": "index",
+          "expected": "index index",
+          "output": "index index",
+          "score": "correct"
+        },
+        {
+          "input": "pixel",
+          "expected": "pixel pixel",
+          "output": "pixel pixel",
+          "score": "correct"
+        },
+        {
+          "input": "maple",
+          "expected": "maple maple",
+          "output": "maple maple",
+          "score": "correct"
+        },
+        {
+          "input": "kayak",
+          "expected": "kayak kayak",
+          "output": "kayak kayak",
+          "score": "correct"
+        },
+        {
+          "input": "candy",
+          "expected": "candy candy",
+          "output": "candy candy",
+          "score": "correct"
+        },
+        {
+          "input": "eagle",
+          "expected": "eagle eagle",
+          "output": "eagle eagle",
+          "score": "correct"
+        },
+        {
+          "input": "crane",
+          "expected": "crane crane",
+          "output": "crane crane",
+          "score": "correct"
+        },
+        {
+          "input": "glyph",
+          "expected": "glyph glyph",
+          "output": "glyph glyph",
+          "score": "correct"
+        },
+        {
+          "input": "sugar",
+          "expected": "sugar sugar",
+          "output": "sugar sugar",
+          "score": "correct"
+        },
+        {
+          "input": "ocean",
+          "expected": "ocean ocean",
+          "output": "ocean ocean",
+          "score": "correct"
+        },
+        {
+          "input": "ember",
+          "expected": "ember ember",
+          "output": "ember ember",
+          "score": "correct"
+        },
+        {
+          "input": "uncle",
+          "expected": "uncle uncle",
+          "output": "uncle uncle",
+          "score": "correct"
+        },
+        {
+          "input": "joker",
+          "expected": "joker joker",
+          "output": "joker joker",
+          "score": "correct"
+        },
+        {
+          "input": "haven",
+          "expected": "haven haven",
+          "output": "haven haven",
+          "score": "correct"
+        },
+        {
+          "input": "juice",
+          "expected": "juice juice",
+          "output": "juice juice",
+          "score": "correct"
+        },
+        {
+          "input": "jolly",
+          "expected": "jolly jolly",
+          "output": "jolly jolly",
+          "score": "correct"
+        },
+        {
+          "input": "trend",
+          "expected": "trend trend",
+          "output": "trend trend",
+          "score": "correct"
+        },
+        {
+          "input": "mango",
+          "expected": "mango mango",
+          "output": "mango mango",
+          "score": "correct"
+        },
+        {
+          "input": "quilt",
+          "expected": "quilt quilt",
+          "output": "quilt quilt",
+          "score": "correct"
+        },
+        {
+          "input": "nerve",
+          "expected": "nerve nerve",
+          "output": "nerve nerve",
+          "score": "correct"
+        },
+        {
+          "input": "pearl",
+          "expected": "pearl pearl",
+          "output": "pearl pearl",
+          "score": "correct"
+        },
+        {
+          "input": "valve",
+          "expected": "valve valve",
+          "output": "valve valve",
+          "score": "correct"
+        },
+        {
+          "input": "wheat",
+          "expected": "wheat wheat",
+          "output": "wheat wheat",
+          "score": "correct"
+        },
+        {
+          "input": "zebra",
+          "expected": "zebra zebra",
+          "output": "zebra zebra",
+          "score": "correct"
+        },
+        {
+          "input": "house",
+          "expected": "house house",
+          "output": "house house",
+          "score": "correct"
+        },
+        {
+          "input": "olive",
+          "expected": "olive olive",
+          "output": "olive olive",
+          "score": "correct"
+        },
+        {
+          "input": "waltz",
+          "expected": "waltz waltz",
+          "output": "waltz waltz",
+          "score": "correct"
+        }
+      ],
+      "accuracy": 1.0,
+      "correct": 50,
+      "incorrect": 0,
+      "malformed": 0,
+      "elapsed_seconds": 59.4,
+      "passes_threshold": true
+    },
+    "length": {
+      "task": "length",
+      "regime": "counting",
+      "description": "Count characters in the input",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "apple",
+          "output": "5"
+        },
+        {
+          "input": "brain",
+          "output": "5"
+        },
+        {
+          "input": "cloud",
+          "output": "5"
+        },
+        {
+          "input": "delta",
+          "output": "5"
+        },
+        {
+          "input": "flame",
+          "output": "5"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "honey",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "frost",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "badge",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "stone",
+          "expected": "5",
+          "output": "4",
+          "score": "incorrect"
+        },
+        {
+          "input": "lemon",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "fjord",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "ivory",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "queen",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "lunar",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "youth",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "noble",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "dream",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "tower",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "knife",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "vivid",
+          "expected": "5",
+          "output": "7",
+          "score": "incorrect"
+        },
+        {
+          "input": "urban",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "river",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "globe",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "robin",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "grape",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "dwarf",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "ankle",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "piano",
+          "expected": "5",
+          "output": "7",
+          "score": "incorrect"
+        },
+        {
+          "input": "index",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "pixel",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "maple",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "kayak",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "candy",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "eagle",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "crane",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "glyph",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "sugar",
+          "expected": "5",
+          "output": "7",
+          "score": "incorrect"
+        },
+        {
+          "input": "ocean",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "ember",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "uncle",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "joker",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "haven",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "juice",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "jolly",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "trend",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "mango",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "quilt",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "nerve",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "pearl",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "valve",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "wheat",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        },
+        {
+          "input": "zebra",
+          "expected": "5",
+          "output": "7",
+          "score": "incorrect"
+        },
+        {
+          "input": "house",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "olive",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "waltz",
+          "expected": "5",
+          "output": "6",
+          "score": "incorrect"
+        }
+      ],
+      "accuracy": 0.64,
+      "correct": 32,
+      "incorrect": 18,
+      "malformed": 0,
+      "elapsed_seconds": 57.3,
+      "passes_threshold": false
+    },
+    "linear_2x": {
+      "task": "linear_2x",
+      "regime": "gd_like",
+      "description": "Multiply input by 2",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "3",
+          "output": "6"
+        },
+        {
+          "input": "5",
+          "output": "10"
+        },
+        {
+          "input": "7",
+          "output": "14"
+        },
+        {
+          "input": "2",
+          "output": "4"
+        },
+        {
+          "input": "9",
+          "output": "18"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "36",
+          "expected": "72",
+          "output": "72",
+          "score": "correct"
+        },
+        {
+          "input": "29",
+          "expected": "58",
+          "output": "84",
+          "score": "incorrect"
+        },
+        {
+          "input": "55",
+          "expected": "110",
+          "output": "165",
+          "score": "incorrect"
+        },
+        {
+          "input": "17",
+          "expected": "34",
+          "output": "51",
+          "score": "incorrect"
+        },
+        {
+          "input": "22",
+          "expected": "44",
+          "output": "44",
+          "score": "correct"
+        },
+        {
+          "input": "26",
+          "expected": "52",
+          "output": "78",
+          "score": "incorrect"
+        },
+        {
+          "input": "56",
+          "expected": "112",
+          "output": "168",
+          "score": "incorrect"
+        },
+        {
+          "input": "59",
+          "expected": "118",
+          "output": "171",
+          "score": "incorrect"
+        },
+        {
+          "input": "41",
+          "expected": "82",
+          "output": "82",
+          "score": "correct"
+        },
+        {
+          "input": "25",
+          "expected": "50",
+          "output": "75",
+          "score": "incorrect"
+        },
+        {
+          "input": "15",
+          "expected": "30",
+          "output": "30",
+          "score": "correct"
+        },
+        {
+          "input": "39",
+          "expected": "78",
+          "output": "78",
+          "score": "correct"
+        },
+        {
+          "input": "47",
+          "expected": "94",
+          "output": "96",
+          "score": "incorrect"
+        },
+        {
+          "input": "50",
+          "expected": "100",
+          "output": "1275",
+          "score": "incorrect"
+        },
+        {
+          "input": "35",
+          "expected": "70",
+          "output": "105",
+          "score": "incorrect"
+        },
+        {
+          "input": "60",
+          "expected": "120",
+          "output": "120",
+          "score": "correct"
+        },
+        {
+          "input": "8",
+          "expected": "16",
+          "output": "16",
+          "score": "correct"
+        },
+        {
+          "input": "27",
+          "expected": "54",
+          "output": "54",
+          "score": "correct"
+        },
+        {
+          "input": "52",
+          "expected": "104",
+          "output": "132",
+          "score": "incorrect"
+        },
+        {
+          "input": "10",
+          "expected": "20",
+          "output": "20",
+          "score": "correct"
+        },
+        {
+          "input": "34",
+          "expected": "68",
+          "output": "56",
+          "score": "incorrect"
+        },
+        {
+          "input": "16",
+          "expected": "32",
+          "output": "32",
+          "score": "correct"
+        },
+        {
+          "input": "48",
+          "expected": "96",
+          "output": "96",
+          "score": "correct"
+        },
+        {
+          "input": "28",
+          "expected": "56",
+          "output": "56",
+          "score": "correct"
+        },
+        {
+          "input": "44",
+          "expected": "88",
+          "output": "88",
+          "score": "correct"
+        },
+        {
+          "input": "30",
+          "expected": "60",
+          "output": "90",
+          "score": "incorrect"
+        },
+        {
+          "input": "1",
+          "expected": "2",
+          "output": "2",
+          "score": "correct"
+        },
+        {
+          "input": "31",
+          "expected": "62",
+          "output": "192",
+          "score": "incorrect"
+        },
+        {
+          "input": "57",
+          "expected": "114",
+          "output": "119",
+          "score": "incorrect"
+        },
+        {
+          "input": "24",
+          "expected": "48",
+          "output": "72",
+          "score": "incorrect"
+        },
+        {
+          "input": "37",
+          "expected": "74",
+          "output": "146",
+          "score": "incorrect"
+        },
+        {
+          "input": "42",
+          "expected": "84",
+          "output": "84",
+          "score": "correct"
+        },
+        {
+          "input": "32",
+          "expected": "64",
+          "output": "128",
+          "score": "incorrect"
+        },
+        {
+          "input": "18",
+          "expected": "36",
+          "output": "54",
+          "score": "incorrect"
+        },
+        {
+          "input": "45",
+          "expected": "90",
+          "output": "90",
+          "score": "correct"
+        },
+        {
+          "input": "38",
+          "expected": "76",
+          "output": "156",
+          "score": "incorrect"
+        },
+        {
+          "input": "54",
+          "expected": "108",
+          "output": "108",
+          "score": "correct"
+        },
+        {
+          "input": "19",
+          "expected": "38",
+          "output": "38",
+          "score": "correct"
+        },
+        {
+          "input": "51",
+          "expected": "102",
+          "output": "102",
+          "score": "correct"
+        },
+        {
+          "input": "58",
+          "expected": "116",
+          "output": "1716",
+          "score": "incorrect"
+        },
+        {
+          "input": "6",
+          "expected": "12",
+          "output": "12",
+          "score": "correct"
+        },
+        {
+          "input": "33",
+          "expected": "66",
+          "output": "165",
+          "score": "incorrect"
+        },
+        {
+          "input": "43",
+          "expected": "86",
+          "output": "84",
+          "score": "incorrect"
+        },
+        {
+          "input": "11",
+          "expected": "22",
+          "output": "22",
+          "score": "correct"
+        },
+        {
+          "input": "40",
+          "expected": "80",
+          "output": "120",
+          "score": "incorrect"
+        },
+        {
+          "input": "49",
+          "expected": "98",
+          "output": "98",
+          "score": "correct"
+        },
+        {
+          "input": "12",
+          "expected": "24",
+          "output": "24",
+          "score": "correct"
+        },
+        {
+          "input": "14",
+          "expected": "28",
+          "output": "28",
+          "score": "correct"
+        },
+        {
+          "input": "20",
+          "expected": "40",
+          "output": "40",
+          "score": "correct"
+        },
+        {
+          "input": "21",
+          "expected": "42",
+          "output": "42",
+          "score": "correct"
+        }
+      ],
+      "accuracy": 0.52,
+      "correct": 26,
+      "incorrect": 24,
+      "malformed": 0,
+      "elapsed_seconds": 54.4,
+      "passes_threshold": false
+    },
+    "sentiment": {
+      "task": "sentiment",
+      "regime": "bayesian",
+      "description": "Classify sentiment as positive or negative",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "joyful",
+          "output": "positive"
+        },
+        {
+          "input": "angry",
+          "output": "negative"
+        },
+        {
+          "input": "wonderful",
+          "output": "positive"
+        },
+        {
+          "input": "terrible",
+          "output": "negative"
+        },
+        {
+          "input": "cheerful",
+          "output": "positive"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "disgusted",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "depressed",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "gloomy",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "bitter",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "grateful",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "envious",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "inspired",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "jealous",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "pessimistic",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "confident",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "resentful",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "devastated",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "peaceful",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "fearful",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "agitated",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "serene",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "loving",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "amused",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "sorrowful",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "happy",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "spiteful",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "content",
+          "expected": "positive",
+          "output": "neutral",
+          "score": "malformed"
+        },
+        {
+          "input": "melancholy",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "generous",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "despondent",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "blissful",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "optimistic",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "radiant",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "thrilled",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "affectionate",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "elated",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "compassionate",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "enthusiastic",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "thankful",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "furious",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "cruel",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "dejected",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "excited",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "frustrated",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "vindictive",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "hostile",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "ecstatic",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "hopeful",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "proud",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "delighted",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        },
+        {
+          "input": "miserable",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "worried",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "sad",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "anxious",
+          "expected": "negative",
+          "output": "negative",
+          "score": "correct"
+        },
+        {
+          "input": "jubilant",
+          "expected": "positive",
+          "output": "positive",
+          "score": "correct"
+        }
+      ],
+      "accuracy": 0.98,
+      "correct": 49,
+      "incorrect": 0,
+      "malformed": 1,
+      "elapsed_seconds": 55.6,
+      "passes_threshold": true
+    },
+    "antonym": {
+      "task": "antonym",
+      "regime": "retrieval",
+      "description": "Return the antonym",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "hot",
+          "output": "cold"
+        },
+        {
+          "input": "big",
+          "output": "small"
+        },
+        {
+          "input": "fast",
+          "output": "slow"
+        },
+        {
+          "input": "happy",
+          "output": "sad"
+        },
+        {
+          "input": "light",
+          "output": "dark"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "true",
+          "expected": "false",
+          "output": "false",
+          "score": "correct"
+        },
+        {
+          "input": "alive",
+          "expected": "dead",
+          "output": "dead",
+          "score": "correct"
+        },
+        {
+          "input": "bright",
+          "expected": "dim",
+          "output": "dim",
+          "score": "correct"
+        },
+        {
+          "input": "dry",
+          "expected": "wet",
+          "output": "wet",
+          "score": "correct"
+        },
+        {
+          "input": "hard",
+          "expected": "soft",
+          "output": "easy",
+          "score": "correct"
+        },
+        {
+          "input": "generous",
+          "expected": "selfish",
+          "output": "stingy",
+          "score": "correct"
+        },
+        {
+          "input": "wise",
+          "expected": "foolish",
+          "output": "foolish",
+          "score": "correct"
+        },
+        {
+          "input": "loud",
+          "expected": "quiet",
+          "output": "quiet",
+          "score": "correct"
+        },
+        {
+          "input": "win",
+          "expected": "lose",
+          "output": "lose",
+          "score": "correct"
+        },
+        {
+          "input": "smooth",
+          "expected": "rough",
+          "output": "rough",
+          "score": "correct"
+        },
+        {
+          "input": "rise",
+          "expected": "fall",
+          "output": "fall",
+          "score": "correct"
+        },
+        {
+          "input": "cheap",
+          "expected": "expensive",
+          "output": "expensive",
+          "score": "correct"
+        },
+        {
+          "input": "early",
+          "expected": "late",
+          "output": "late",
+          "score": "correct"
+        },
+        {
+          "input": "strong",
+          "expected": "weak",
+          "output": "weak",
+          "score": "correct"
+        },
+        {
+          "input": "ancient",
+          "expected": "modern",
+          "output": "modern",
+          "score": "correct"
+        },
+        {
+          "input": "arrive",
+          "expected": "depart",
+          "output": "depart",
+          "score": "correct"
+        },
+        {
+          "input": "clean",
+          "expected": "dirty",
+          "output": "dirty",
+          "score": "correct"
+        },
+        {
+          "input": "love",
+          "expected": "hate",
+          "output": "hate",
+          "score": "correct"
+        },
+        {
+          "input": "teach",
+          "expected": "learn",
+          "output": "learn",
+          "score": "correct"
+        },
+        {
+          "input": "tall",
+          "expected": "short",
+          "output": "short",
+          "score": "correct"
+        },
+        {
+          "input": "expand",
+          "expected": "shrink",
+          "output": "contract",
+          "score": "correct"
+        },
+        {
+          "input": "brave",
+          "expected": "coward",
+          "output": "cowardly",
+          "score": "correct"
+        },
+        {
+          "input": "buy",
+          "expected": "sell",
+          "output": "sell",
+          "score": "correct"
+        },
+        {
+          "input": "maximum",
+          "expected": "minimum",
+          "output": "minimum",
+          "score": "correct"
+        },
+        {
+          "input": "complex",
+          "expected": "simple",
+          "output": "simple",
+          "score": "correct"
+        },
+        {
+          "input": "push",
+          "expected": "pull",
+          "output": "pull",
+          "score": "correct"
+        },
+        {
+          "input": "east",
+          "expected": "west",
+          "output": "west",
+          "score": "correct"
+        },
+        {
+          "input": "calm",
+          "expected": "nervous",
+          "output": "stormy",
+          "score": "correct"
+        },
+        {
+          "input": "clear",
+          "expected": "cloudy",
+          "output": "cloudy",
+          "score": "correct"
+        },
+        {
+          "input": "create",
+          "expected": "destroy",
+          "output": "destroy",
+          "score": "correct"
+        },
+        {
+          "input": "humble",
+          "expected": "arrogant",
+          "output": "proud",
+          "score": "correct"
+        },
+        {
+          "input": "attack",
+          "expected": "defend",
+          "output": "defense",
+          "score": "correct"
+        },
+        {
+          "input": "give",
+          "expected": "take",
+          "output": "take",
+          "score": "correct"
+        },
+        {
+          "input": "forget",
+          "expected": "remember",
+          "output": "remember",
+          "score": "correct"
+        },
+        {
+          "input": "full",
+          "expected": "empty",
+          "output": "empty",
+          "score": "correct"
+        },
+        {
+          "input": "praise",
+          "expected": "criticize",
+          "output": "criticism",
+          "score": "incorrect"
+        },
+        {
+          "input": "include",
+          "expected": "exclude",
+          "output": "exclude",
+          "score": "correct"
+        },
+        {
+          "input": "rich",
+          "expected": "poor",
+          "output": "poor",
+          "score": "correct"
+        },
+        {
+          "input": "north",
+          "expected": "south",
+          "output": "south",
+          "score": "correct"
+        },
+        {
+          "input": "accept",
+          "expected": "reject",
+          "output": "reject",
+          "score": "correct"
+        },
+        {
+          "input": "long",
+          "expected": "short",
+          "output": "short",
+          "score": "correct"
+        },
+        {
+          "input": "start",
+          "expected": "stop",
+          "output": "stop",
+          "score": "correct"
+        },
+        {
+          "input": "thick",
+          "expected": "thin",
+          "output": "thin",
+          "score": "correct"
+        },
+        {
+          "input": "deep",
+          "expected": "shallow",
+          "output": "shallow",
+          "score": "correct"
+        },
+        {
+          "input": "open",
+          "expected": "closed",
+          "output": "closed",
+          "score": "correct"
+        },
+        {
+          "input": "sharp",
+          "expected": "dull",
+          "output": "dull",
+          "score": "correct"
+        },
+        {
+          "input": "sweet",
+          "expected": "bitter",
+          "output": "sour",
+          "score": "correct"
+        },
+        {
+          "input": "old",
+          "expected": "young",
+          "output": "young",
+          "score": "correct"
+        },
+        {
+          "input": "wide",
+          "expected": "narrow",
+          "output": "narrow",
+          "score": "correct"
+        },
+        {
+          "input": "bold",
+          "expected": "timid",
+          "output": "normal",
+          "score": "incorrect"
+        }
+      ],
+      "accuracy": 0.96,
+      "correct": 48,
+      "incorrect": 2,
+      "malformed": 0,
+      "elapsed_seconds": 57.6,
+      "passes_threshold": true
+    },
+    "pattern_completion": {
+      "task": "pattern_completion",
+      "regime": "induction",
+      "description": "Complete the alternating pattern",
+      "n_demos": 5,
+      "n_test": 50,
+      "demos": [
+        {
+          "input": "A B A B A",
+          "output": "B"
+        },
+        {
+          "input": "1 2 1 2 1",
+          "output": "2"
+        },
+        {
+          "input": "X Y X Y X",
+          "output": "Y"
+        },
+        {
+          "input": "P Q P Q P",
+          "output": "Q"
+        },
+        {
+          "input": "M N M N M",
+          "output": "N"
+        }
+      ],
+      "outputs": [
+        {
+          "input": "Z Y Z Y Z",
+          "expected": "Y",
+          "output": "Y",
+          "score": "correct"
+        },
+        {
+          "input": "w x w x w",
+          "expected": "x",
+          "output": "x",
+          "score": "correct"
+        },
+        {
+          "input": "o p o p o",
+          "expected": "p",
+          "output": "p",
+          "score": "correct"
+        },
+        {
+          "input": "9 0 9 0 9",
+          "expected": "0",
+          "output": "0",
+          "score": "correct"
+        },
+        {
+          "input": "K L K L K",
+          "expected": "L",
+          "output": "L",
+          "score": "correct"
+        },
+        {
+          "input": "a c a c a",
+          "expected": "c",
+          "output": "c",
+          "score": "correct"
+        },
+        {
+          "input": "W X W X W",
+          "expected": "X",
+          "output": "X",
+          "score": "correct"
+        },
+        {
+          "input": "5 6 5 6 5",
+          "expected": "6",
+          "output": "6",
+          "score": "correct"
+        },
+        {
+          "input": "B C B C B",
+          "expected": "C",
+          "output": "C",
+          "score": "correct"
+        },
+        {
+          "input": "i j i j i",
+          "expected": "j",
+          "output": "j",
+          "score": "correct"
+        },
+        {
+          "input": "F G F G F",
+          "expected": "G",
+          "output": "G",
+          "score": "correct"
+        },
+        {
+          "input": "s t s t s",
+          "expected": "t",
+          "output": "t",
+          "score": "correct"
+        },
+        {
+          "input": "a b a b a",
+          "expected": "b",
+          "output": "b",
+          "score": "correct"
+        },
+        {
+          "input": "I J I J I",
+          "expected": "J",
+          "output": "J",
+          "score": "correct"
+        },
+        {
+          "input": "6 7 6 7 6",
+          "expected": "7",
+          "output": "7",
+          "score": "correct"
+        },
+        {
+          "input": "4 5 4 5 4",
+          "expected": "5",
+          "output": "5",
+          "score": "correct"
+        },
+        {
+          "input": "7 8 7 8 7",
+          "expected": "8",
+          "output": "8",
+          "score": "correct"
+        },
+        {
+          "input": "y z y z y",
+          "expected": "z",
+          "output": "z",
+          "score": "correct"
+        },
+        {
+          "input": "S T S T S",
+          "expected": "T",
+          "output": "T",
+          "score": "correct"
+        },
+        {
+          "input": "C D C D C",
+          "expected": "D",
+          "output": "D",
+          "score": "correct"
+        },
+        {
+          "input": "+ - + - +",
+          "expected": "-",
+          "output": "-",
+          "score": "correct"
+        },
+        {
+          "input": "m n m n m",
+          "expected": "n",
+          "output": "n",
+          "score": "correct"
+        },
+        {
+          "input": "J K J K J",
+          "expected": "K",
+          "output": "K",
+          "score": "correct"
+        },
+        {
+          "input": "r t r t r",
+          "expected": "t",
+          "output": "t",
+          "score": "correct"
+        },
+        {
+          "input": "1 0 1 0 1",
+          "expected": "0",
+          "output": "0",
+          "score": "correct"
+        },
+        {
+          "input": "D E D E D",
+          "expected": "E",
+          "output": "E",
+          "score": "correct"
+        },
+        {
+          "input": "O N O N O",
+          "expected": "N",
+          "output": "N",
+          "score": "correct"
+        },
+        {
+          "input": "q r q r q",
+          "expected": "r",
+          "output": "r",
+          "score": "correct"
+        },
+        {
+          "input": "u v u v u",
+          "expected": "v",
+          "output": "v",
+          "score": "correct"
+        },
+        {
+          "input": "@ # @ # @",
+          "expected": "#",
+          "output": "#",
+          "score": "correct"
+        },
+        {
+          "input": "b d b d b",
+          "expected": "d",
+          "output": "d",
+          "score": "correct"
+        },
+        {
+          "input": "U V U V U",
+          "expected": "V",
+          "output": "V",
+          "score": "correct"
+        },
+        {
+          "input": "H I H I H",
+          "expected": "I",
+          "output": "I",
+          "score": "correct"
+        },
+        {
+          "input": "! ? ! ? !",
+          "expected": "?",
+          "output": "?",
+          "score": "correct"
+        },
+        {
+          "input": "c d c d c",
+          "expected": "d",
+          "output": "d",
+          "score": "correct"
+        },
+        {
+          "input": "w y w y w",
+          "expected": "y",
+          "output": "y",
+          "score": "correct"
+        },
+        {
+          "input": "p q p q p",
+          "expected": "q",
+          "output": "q",
+          "score": "correct"
+        },
+        {
+          "input": "G H G H G",
+          "expected": "H",
+          "output": "H",
+          "score": "correct"
+        },
+        {
+          "input": "Q R Q R Q",
+          "expected": "R",
+          "output": "R",
+          "score": "correct"
+        },
+        {
+          "input": "2 3 2 3 2",
+          "expected": "3",
+          "output": "3",
+          "score": "correct"
+        },
+        {
+          "input": "R S R S R",
+          "expected": "S",
+          "output": "S",
+          "score": "correct"
+        },
+        {
+          "input": "L M L M L",
+          "expected": "M",
+          "output": "M",
+          "score": "correct"
+        },
+        {
+          "input": "T U T U T",
+          "expected": "U",
+          "output": "U",
+          "score": "correct"
+        },
+        {
+          "input": "3 4 3 4 3",
+          "expected": "4",
+          "output": "4",
+          "score": "correct"
+        },
+        {
+          "input": "e f e f e",
+          "expected": "f",
+          "output": "f",
+          "score": "correct"
+        },
+        {
+          "input": "g h g h g",
+          "expected": "h",
+          "output": "h",
+          "score": "correct"
+        },
+        {
+          "input": "k l k l k",
+          "expected": "l",
+          "output": "l",
+          "score": "correct"
+        },
+        {
+          "input": "x z x z x",
+          "expected": "z",
+          "output": "z",
+          "score": "correct"
+        },
+        {
+          "input": "E F E F E",
+          "expected": "F",
+          "output": "F",
+          "score": "correct"
+        },
+        {
+          "input": "V W V W V",
+          "expected": "W",
+          "output": "W",
+          "score": "correct"
+        }
+      ],
+      "accuracy": 1.0,
+      "correct": 50,
+      "incorrect": 0,
+      "malformed": 0,
+      "elapsed_seconds": 61.6,
+      "passes_threshold": true
+    }
+  }
+}

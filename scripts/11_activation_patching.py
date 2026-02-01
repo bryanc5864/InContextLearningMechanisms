@@ -87,21 +87,26 @@ def generate_with_noise(model, prompt, layer, position, noise_scale=1.0, max_new
     return text.strip().split("\n")[0].strip()
 
 
-def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp11"):
+def run_patching(model_name="meta-llama/Llama-3.2-3B-Instruct", device="cuda:2", n_demos=5, n_test=20,
+                  output_dir="results/exp11", noise_scales=None, positions=None):
     logger = setup_logging(output_dir)
     logger.info("Experiment 11: Activation Patching (Causal Tracing)")
     logger.info(f"Start: {datetime.now().isoformat()}")
 
-    model = load_model(device=device)
+    model = load_model(model_name, device=device)
     tasks = {name: TaskRegistry.get(name) for name in INCLUDED_TASKS}
 
-    # Test subset of layers (every 2nd layer for speed)
-    test_layers = list(range(0, 28, 2))  # 0, 2, 4, ..., 26
-    logger.info(f"Testing layers: {test_layers}")
-    logger.info(f"Testing positions: {POSITIONS}")
+    # Dynamic layer range: sample ~14 evenly-spaced layers
+    step = max(1, model.n_layers // 14)
+    test_layers = list(range(0, model.n_layers, step))
+    logger.info(f"Model: {model_name} ({model.n_layers} layers), test_layers={test_layers}")
+
+    # Allow overriding positions
+    test_positions = positions if positions is not None else POSITIONS
+    logger.info(f"Testing positions: {test_positions}")
 
     # Noise scales to test
-    noise_scales = [0.5, 1.0, 2.0, 5.0]
+    noise_scales = noise_scales if noise_scales is not None else [0.5, 1.0, 2.0, 5.0]
 
     all_results = []
 
@@ -141,7 +146,7 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
             "position_results": {},
         }
 
-        for pos_type in POSITIONS:
+        for pos_type in test_positions:
             logger.info(f"\n  Position: {pos_type}")
             pos_results = {"layers": {}}
 
@@ -165,9 +170,11 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
                     acc = correct / n_test
                     layer_data["noise_scales"][str(noise_scale)] = acc
 
-                # Use noise_scale=2.0 as the primary disruption measure
-                disruption = baseline_acc - layer_data["noise_scales"]["2.0"]
-                layer_data["disruption_at_2.0"] = disruption
+                # Use the highest noise scale as primary disruption measure
+                primary_scale = str(max(noise_scales))
+                disruption = baseline_acc - layer_data["noise_scales"][primary_scale]
+                layer_data["primary_noise_scale"] = primary_scale
+                layer_data["disruption"] = disruption
 
                 pos_results["layers"][str(layer)] = layer_data
 
@@ -179,7 +186,7 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
                     marker = ""
 
                 logger.info(
-                    f"    Layer {layer:2d}: acc@noise2.0={layer_data['noise_scales']['2.0']:.2f} "
+                    f"    Layer {layer:2d}: acc@noise{primary_scale}={layer_data['noise_scales'][primary_scale]:.2f} "
                     f"disruption={disruption:.2f} {marker}"
                 )
 
@@ -189,10 +196,10 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
 
     # Aggregate heatmap: which (layer, position) pairs are most critical?
     logger.info("\n" + "=" * 60)
-    logger.info("CAUSAL IMPORTANCE HEATMAP (disruption at noise=2.0)")
+    logger.info(f"CAUSAL IMPORTANCE HEATMAP (disruption at noise={max(noise_scales)})")
     logger.info("=" * 60)
 
-    for pos_type in POSITIONS:
+    for pos_type in test_positions:
         logger.info(f"\nPosition: {pos_type}")
         logger.info("Layer:  " + "  ".join(f"{l:5d}" for l in test_layers))
 
@@ -203,7 +210,7 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
 
             disruptions = []
             for l in test_layers:
-                d = layers_data.get(str(l), {}).get("disruption_at_2.0", 0)
+                d = layers_data.get(str(l), {}).get("disruption", 0)
                 disruptions.append(d)
 
             row = "  ".join(f"{d:5.2f}" for d in disruptions)
@@ -214,13 +221,13 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
     logger.info("MOST CRITICAL LAYERS (mean disruption > 0.1)")
     logger.info("=" * 60)
 
-    for pos_type in POSITIONS:
+    for pos_type in test_positions:
         layer_disruptions = {l: [] for l in test_layers}
         for task_result in all_results:
             pos_data = task_result["position_results"].get(pos_type, {})
             layers_data = pos_data.get("layers", {})
             for l in test_layers:
-                d = layers_data.get(str(l), {}).get("disruption_at_2.0", 0)
+                d = layers_data.get(str(l), {}).get("disruption", 0)
                 layer_disruptions[l].append(d)
 
         logger.info(f"\n{pos_type}:")
@@ -233,7 +240,7 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
     results = {
         "metadata": {
             "test_layers": test_layers,
-            "positions": POSITIONS,
+            "positions": test_positions,
             "noise_scales": noise_scales,
             "n_test": n_test,
             "timestamp": datetime.now().isoformat(),
@@ -249,11 +256,11 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
         f.write("task,position," + ",".join(f"layer_{l}" for l in test_layers) + "\n")
         for task_result in all_results:
             task_name = task_result["task"]
-            for pos_type in POSITIONS:
+            for pos_type in test_positions:
                 pos_data = task_result["position_results"].get(pos_type, {})
                 layers_data = pos_data.get("layers", {})
                 disruptions = [
-                    str(layers_data.get(str(l), {}).get("disruption_at_2.0", 0))
+                    str(layers_data.get(str(l), {}).get("disruption", 0))
                     for l in test_layers
                 ]
                 f.write(f"{task_name},{pos_type}," + ",".join(disruptions) + "\n")
@@ -266,8 +273,21 @@ def run_patching(device="cuda:2", n_demos=5, n_test=20, output_dir="results/exp1
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
+    parser.add_argument("--model", default="meta-llama/Llama-3.2-3B-Instruct")
     parser.add_argument("--device", default="cuda:2")
     parser.add_argument("--n-test", type=int, default=20)
     parser.add_argument("--output-dir", default="results/exp11")
+    parser.add_argument("--noise-scales", type=float, nargs="+", default=None,
+                        help="Noise scales to test (default: 0.5 1.0 2.0 5.0)")
+    parser.add_argument("--positions", nargs="+", default=None,
+                        choices=["last_demo_token", "first_query_token"],
+                        help="Position types to test (default: both)")
     args = parser.parse_args()
-    run_patching(device=args.device, n_test=args.n_test, output_dir=args.output_dir)
+    run_patching(
+        model_name=args.model,
+        device=args.device,
+        n_test=args.n_test,
+        output_dir=args.output_dir,
+        noise_scales=args.noise_scales,
+        positions=args.positions,
+    )

@@ -1,0 +1,114 @@
+2026-01-31 17:19:50,886 [INFO] Experiment 19: Template Similarity Metric
+2026-01-31 17:19:50,886 [INFO] Start: 2026-01-31T17:19:50.886828
+2026-01-31 17:19:50,887 [INFO]   uppercase: {'avg_out_words': 1.0, 'avg_out_chars': 5.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 1.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 1.0}
+2026-01-31 17:19:50,888 [INFO]   first_letter: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 0.2}
+2026-01-31 17:19:50,888 [INFO]   repeat_word: {'avg_out_words': 2.0, 'avg_out_chars': 11.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 0.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 2.2}
+2026-01-31 17:19:50,888 [INFO]   length: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 1.0, 'numeric_frac': 1.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 0.2}
+2026-01-31 17:19:50,889 [INFO]   linear_2x: {'avg_out_words': 1.0, 'avg_out_chars': 1.6, 'avg_in_words': 1.0, 'numeric_frac': 1.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 1.6}
+2026-01-31 17:19:50,889 [INFO]   sentiment: {'avg_out_words': 1.0, 'avg_out_chars': 8.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 1.1644444444444446}
+2026-01-31 17:19:50,889 [INFO]   antonym: {'avg_out_words': 1.0, 'avg_out_chars': 4.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 1.0799999999999998}
+2026-01-31 17:19:50,889 [INFO]   pattern_completion: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 5.0, 'numeric_frac': 0.2, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.8, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 0.11111111111111112}
+2026-01-31 17:19:50,890 [INFO] 
+Total pairs: 56
+2026-01-31 17:19:50,893 [INFO] 
+Loaded transfer rates for 6 pairs
+2026-01-31 17:19:50,893 [INFO] Matched pairs: 6
+2026-01-31 17:19:54,928 [INFO] 
+============================================================
+2026-01-31 17:19:54,928 [INFO] CORRELATION: Template Similarity vs Transfer Rate
+2026-01-31 17:19:54,928 [INFO] ============================================================
+2026-01-31 17:19:54,928 [INFO]   Pearson r:   0.3988
+2026-01-31 17:19:54,928 [INFO]   R-squared:   0.1590
+2026-01-31 17:19:54,928 [INFO]   p-value:     0.433546
+2026-01-31 17:19:54,928 [INFO]   95% CI (r):  [0.0000, 0.9833]
+2026-01-31 17:19:54,929 [INFO]     uppercase            -> first_letter        : sim=0.667, transfer=0.000
+2026-01-31 17:19:54,929 [INFO]     uppercase            -> repeat_word         : sim=0.957, transfer=0.900
+2026-01-31 17:19:54,929 [INFO]     uppercase            -> sentiment           : sim=0.968, transfer=0.000
+2026-01-31 17:19:54,929 [INFO]     first_letter         -> repeat_word         : sim=0.599, transfer=0.000
+2026-01-31 17:19:54,929 [INFO]     linear_2x            -> length              : sim=0.873, transfer=0.000
+2026-01-31 17:19:54,929 [INFO]     sentiment            -> antonym             : sim=0.972, transfer=0.100
+2026-01-31 17:19:54,931 [INFO] 
+Results saved to results/exp19
+2026-01-31 17:19:54,931 [INFO] Experiment 19 complete: 2026-01-31T17:19:54.931834
+2026-01-31 23:19:12,409 [INFO] Experiment 19: Template Similarity Metric
+2026-01-31 23:19:12,409 [INFO] Start: 2026-01-31T23:19:12.409750
+2026-01-31 23:19:12,410 [INFO]   uppercase: {'avg_out_words': 1.0, 'avg_out_chars': 5.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 1.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 1.0}
+2026-01-31 23:19:12,410 [INFO]   first_letter: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 0.2}
+2026-01-31 23:19:12,411 [INFO]   repeat_word: {'avg_out_words': 2.0, 'avg_out_chars': 11.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 0.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 2.2}
+2026-01-31 23:19:12,411 [INFO]   length: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 1.0, 'numeric_frac': 1.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 0.2}
+2026-01-31 23:19:12,412 [INFO]   linear_2x: {'avg_out_words': 1.0, 'avg_out_chars': 1.6, 'avg_in_words': 1.0, 'numeric_frac': 1.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 1.6}
+2026-01-31 23:19:12,412 [INFO]   sentiment: {'avg_out_words': 1.0, 'avg_out_chars': 8.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 1.1644444444444446}
+2026-01-31 23:19:12,413 [INFO]   antonym: {'avg_out_words': 1.0, 'avg_out_chars': 4.0, 'avg_in_words': 1.0, 'numeric_frac': 0.0, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.0, 'all_lower_frac': 1.0, 'identity_frac': 0.0, 'len_ratio': 1.0799999999999998}
+2026-01-31 23:19:12,413 [INFO]   pattern_completion: {'avg_out_words': 1.0, 'avg_out_chars': 1.0, 'avg_in_words': 5.0, 'numeric_frac': 0.2, 'single_word_frac': 1.0, 'has_punct_frac': 0.0, 'all_upper_frac': 0.8, 'all_lower_frac': 0.0, 'identity_frac': 0.0, 'len_ratio': 0.11111111111111112}
+2026-01-31 23:19:12,413 [INFO] 
+Total pairs: 56
+2026-01-31 23:19:12,419 [INFO] 
+Loaded transfer rates for 56 pairs
+2026-01-31 23:19:12,420 [INFO] Matched pairs: 56
+2026-01-31 23:19:16,078 [INFO] 
+============================================================
+2026-01-31 23:19:16,078 [INFO] CORRELATION: Template Similarity vs Transfer Rate
+2026-01-31 23:19:16,078 [INFO] ============================================================
+2026-01-31 23:19:16,078 [INFO]   Pearson r:   -0.0536
+2026-01-31 23:19:16,078 [INFO]   R-squared:   0.0029
+2026-01-31 23:19:16,079 [INFO]   p-value:     0.694792
+2026-01-31 23:19:16,079 [INFO]   95% CI (r):  [-0.2635, 0.1537]
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> first_letter        : sim=0.667, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> repeat_word         : sim=0.957, transfer=0.900
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> length              : sim=0.667, transfer=0.800
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> linear_2x           : sim=0.762, transfer=1.000
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> sentiment           : sim=0.968, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> antonym             : sim=0.956, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     uppercase            -> pattern_completion  : sim=0.440, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     first_letter         -> uppercase           : sim=0.667, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     first_letter         -> repeat_word         : sim=0.599, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     first_letter         -> length              : sim=0.802, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     first_letter         -> linear_2x           : sim=0.726, transfer=0.000
+2026-01-31 23:19:16,079 [INFO]     first_letter         -> sentiment           : sim=0.654, transfer=0.200
+2026-01-31 23:19:16,080 [INFO]     first_letter         -> antonym             : sim=0.795, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     first_letter         -> pattern_completion  : sim=0.667, transfer=0.100
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> uppercase           : sim=0.957, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> first_letter        : sim=0.599, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> length              : sim=0.560, transfer=1.000
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> linear_2x           : sim=0.696, transfer=0.500
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> sentiment           : sim=0.989, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> antonym             : sim=0.954, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     repeat_word          -> pattern_completion  : sim=0.297, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     length               -> uppercase           : sim=0.667, transfer=1.000
+2026-01-31 23:19:16,080 [INFO]     length               -> first_letter        : sim=0.802, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     length               -> repeat_word         : sim=0.560, transfer=0.500
+2026-01-31 23:19:16,080 [INFO]     length               -> linear_2x           : sim=0.873, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     length               -> sentiment           : sim=0.601, transfer=0.000
+2026-01-31 23:19:16,080 [INFO]     length               -> antonym             : sim=0.699, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     length               -> pattern_completion  : sim=0.684, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> uppercase           : sim=0.762, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> first_letter        : sim=0.726, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> repeat_word         : sim=0.696, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> length              : sim=0.873, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> sentiment           : sim=0.702, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> antonym             : sim=0.801, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     linear_2x            -> pattern_completion  : sim=0.555, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> uppercase           : sim=0.968, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> first_letter        : sim=0.654, transfer=0.100
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> repeat_word         : sim=0.989, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> length              : sim=0.601, transfer=0.200
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> linear_2x           : sim=0.702, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> antonym             : sim=0.972, transfer=0.000
+2026-01-31 23:19:16,081 [INFO]     sentiment            -> pattern_completion  : sim=0.339, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> uppercase           : sim=0.956, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> first_letter        : sim=0.795, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> repeat_word         : sim=0.954, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> length              : sim=0.699, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> linear_2x           : sim=0.801, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> sentiment           : sim=0.972, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     antonym              -> pattern_completion  : sim=0.451, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> uppercase           : sim=0.440, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> first_letter        : sim=0.667, transfer=0.300
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> repeat_word         : sim=0.297, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> length              : sim=0.684, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> linear_2x           : sim=0.555, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> sentiment           : sim=0.339, transfer=0.000
+2026-01-31 23:19:16,082 [INFO]     pattern_completion   -> antonym             : sim=0.451, transfer=0.300
+2026-01-31 23:19:16,085 [INFO] 
+Results saved to results/exp19
+2026-01-31 23:19:16,085 [INFO] Experiment 19 complete: 2026-01-31T23:19:16.085477

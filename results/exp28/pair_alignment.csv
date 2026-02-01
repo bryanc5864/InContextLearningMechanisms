@@ -1,0 +1,7 @@
+source,target,source_tokens,target_tokens,token_diff,output_match,transfer_rate
+uppercase,first_letter,50,46,4,False,0.0
+uppercase,repeat_word,50,51,1,False,0.9
+first_letter,repeat_word,46,51,5,False,0.0
+uppercase,sentiment,51,47,4,False,0.0
+linear_2x,length,56,51,5,True,0.0
+sentiment,antonym,46,46,0,True,0.1

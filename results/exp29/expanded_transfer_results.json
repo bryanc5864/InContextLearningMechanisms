@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "layer": 8,
+    "n_demos": 5,
+    "n_test": 10,
+    "n_pairs": 56,
+    "condition": "all_demo",
+    "timestamp": "2026-01-31T23:17:26.279971"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.9,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.8,
+      "preserve_rate": 0.2,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 1.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "uppercase",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "uppercase",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 34,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.7,
+      "neither_rate": 0.3
+    },
+    {
+      "source": "first_letter",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "first_letter",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.4,
+      "neither_rate": 0.6
+    },
+    {
+      "source": "first_letter",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.6,
+      "neither_rate": 0.4
+    },
+    {
+      "source": "first_letter",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.3,
+      "neither_rate": 0.7
+    },
+    {
+      "source": "first_letter",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.2,
+      "preserve_rate": 0.8,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 1.0,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.1,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 1.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.5,
+      "preserve_rate": 0.5,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.5,
+      "neither_rate": 0.5
+    },
+    {
+      "source": "repeat_word",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "length",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 1.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "length",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.5,
+      "preserve_rate": 0.3,
+      "neither_rate": 0.2
+    },
+    {
+      "source": "length",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "length",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.4,
+      "neither_rate": 0.6
+    },
+    {
+      "source": "length",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "length",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 35,
+      "transfer_rate": 0.0,
+      "preserve_rate": 1.0,
+      "neither_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 40,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.7,
+      "neither_rate": 0.3
+    },
+    {
+      "source": "sentiment",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "sentiment",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.1,
+      "preserve_rate": 0.7,
+      "neither_rate": 0.2
+    },
+    {
+      "source": "sentiment",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "sentiment",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.2,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.8
+    },
+    {
+      "source": "sentiment",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.4,
+      "neither_rate": 0.6
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.7,
+      "neither_rate": 0.3
+    },
+    {
+      "source": "sentiment",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "antonym",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.6,
+      "neither_rate": 0.4
+    },
+    {
+      "source": "antonym",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.1,
+      "neither_rate": 0.9
+    },
+    {
+      "source": "antonym",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.7,
+      "neither_rate": 0.3
+    },
+    {
+      "source": "antonym",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.1,
+      "neither_rate": 0.9
+    },
+    {
+      "source": "antonym",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.4,
+      "neither_rate": 0.6
+    },
+    {
+      "source": "antonym",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.5,
+      "neither_rate": 0.5
+    },
+    {
+      "source": "antonym",
+      "target": "pattern_completion",
+      "layer": 8,
+      "n_positions": 30,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.9,
+      "neither_rate": 0.1
+    },
+    {
+      "source": "pattern_completion",
+      "target": "uppercase",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "first_letter",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.3,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.7
+    },
+    {
+      "source": "pattern_completion",
+      "target": "repeat_word",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "length",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "linear_2x",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "sentiment",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.0,
+      "preserve_rate": 0.0,
+      "neither_rate": 1.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "antonym",
+      "layer": 8,
+      "n_positions": 56,
+      "transfer_rate": 0.3,
+      "preserve_rate": 0.0,
+      "neither_rate": 0.7
+    }
+  ]
+}

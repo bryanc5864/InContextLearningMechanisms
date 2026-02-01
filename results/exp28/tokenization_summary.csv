@@ -1,0 +1,9 @@
+task,mean_output_tokens,mean_input_tokens
+uppercase,1.8,1.0
+first_letter,1.0,1.0
+repeat_word,2.0,1.0
+length,2.0,1.0
+linear_2x,2.0,2.0
+sentiment,1.0,1.0
+antonym,1.0,1.0
+pattern_completion,1.2,6.0

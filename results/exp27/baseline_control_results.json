@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "layer": 8,
+    "n_demos": 5,
+    "n_test": 20,
+    "seed": 42,
+    "third_task": "pattern_completion",
+    "timestamp": "2026-01-31T18:39:49.286916"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.05,
+          "neither_rate": 0.95
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.95,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.05
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.55,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.45
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    },
+    {
+      "source": "first_letter",
+      "target": "repeat_word",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.4,
+          "neither_rate": 0.6
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.95,
+          "neither_rate": 0.05
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.25,
+          "neither_rate": 0.75
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    },
+    {
+      "source": "linear_2x",
+      "target": "length",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.05,
+          "neither_rate": 0.95
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        }
+      }
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "layer": 8,
+      "baselines": {
+        "true_source": {
+          "transfer_rate": 0.1,
+          "preserve_rate": 0.75,
+          "neither_rate": 0.15
+        },
+        "random_source": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 1.0
+        },
+        "shuffled_positions": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.9,
+          "neither_rate": 0.1
+        },
+        "magnitude_noise": {
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.05,
+          "neither_rate": 0.95
+        }
+      }
+    }
+  ]
+}

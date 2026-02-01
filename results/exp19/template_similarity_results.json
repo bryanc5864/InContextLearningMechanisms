@@ -1,0 +1,521 @@
+{
+  "metadata": {
+    "n_tasks": 8,
+    "n_pairs_total": 56,
+    "n_pairs_matched": 56,
+    "feature_names": [
+      "all_lower_frac",
+      "all_upper_frac",
+      "avg_in_words",
+      "avg_out_chars",
+      "avg_out_words",
+      "has_punct_frac",
+      "identity_frac",
+      "len_ratio",
+      "numeric_frac",
+      "single_word_frac"
+    ],
+    "timestamp": "2026-01-31T23:19:16.082954"
+  },
+  "task_features": {
+    "uppercase": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 5.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 0.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 1.0,
+      "all_lower_frac": 0.0,
+      "identity_frac": 0.0,
+      "len_ratio": 1.0
+    },
+    "first_letter": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 1.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 0.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 1.0,
+      "identity_frac": 0.0,
+      "len_ratio": 0.2
+    },
+    "repeat_word": {
+      "avg_out_words": 2.0,
+      "avg_out_chars": 11.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 0.0,
+      "single_word_frac": 0.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 1.0,
+      "identity_frac": 0.0,
+      "len_ratio": 2.2
+    },
+    "length": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 1.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 1.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 0.0,
+      "identity_frac": 0.0,
+      "len_ratio": 0.2
+    },
+    "linear_2x": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 1.6,
+      "avg_in_words": 1.0,
+      "numeric_frac": 1.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 0.0,
+      "identity_frac": 0.0,
+      "len_ratio": 1.6
+    },
+    "sentiment": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 8.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 0.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 1.0,
+      "identity_frac": 0.0,
+      "len_ratio": 1.1644444444444446
+    },
+    "antonym": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 4.0,
+      "avg_in_words": 1.0,
+      "numeric_frac": 0.0,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.0,
+      "all_lower_frac": 1.0,
+      "identity_frac": 0.0,
+      "len_ratio": 1.0799999999999998
+    },
+    "pattern_completion": {
+      "avg_out_words": 1.0,
+      "avg_out_chars": 1.0,
+      "avg_in_words": 5.0,
+      "numeric_frac": 0.2,
+      "single_word_frac": 1.0,
+      "has_punct_frac": 0.0,
+      "all_upper_frac": 0.8,
+      "all_lower_frac": 0.0,
+      "identity_frac": 0.0,
+      "len_ratio": 0.11111111111111112
+    }
+  },
+  "pairwise_similarity": [
+    {
+      "source": "uppercase",
+      "target": "first_letter",
+      "cosine_similarity": 0.6669,
+      "euclidean_distance": 4.3174,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "cosine_similarity": 0.9572,
+      "euclidean_distance": 6.4374,
+      "transfer_rate": 0.9
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "cosine_similarity": 0.6669,
+      "euclidean_distance": 4.3174,
+      "transfer_rate": 0.8
+    },
+    {
+      "source": "uppercase",
+      "target": "linear_2x",
+      "cosine_similarity": 0.7618,
+      "euclidean_distance": 3.731,
+      "transfer_rate": 1.0
+    },
+    {
+      "source": "uppercase",
+      "target": "sentiment",
+      "cosine_similarity": 0.9682,
+      "euclidean_distance": 3.3207,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "antonym",
+      "cosine_similarity": 0.9556,
+      "euclidean_distance": 1.7339,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "uppercase",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.4401,
+      "euclidean_distance": 5.7332,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "uppercase",
+      "cosine_similarity": 0.6669,
+      "euclidean_distance": 4.3174,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "repeat_word",
+      "cosine_similarity": 0.599,
+      "euclidean_distance": 10.2956,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "length",
+      "cosine_similarity": 0.8016,
+      "euclidean_distance": 1.4142,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "linear_2x",
+      "cosine_similarity": 0.7257,
+      "euclidean_distance": 2.0785,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "sentiment",
+      "cosine_similarity": 0.6543,
+      "euclidean_distance": 7.0661,
+      "transfer_rate": 0.2
+    },
+    {
+      "source": "first_letter",
+      "target": "antonym",
+      "cosine_similarity": 0.7955,
+      "euclidean_distance": 3.1264,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "first_letter",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.6671,
+      "euclidean_distance": 4.2057,
+      "transfer_rate": 0.1
+    },
+    {
+      "source": "repeat_word",
+      "target": "uppercase",
+      "cosine_similarity": 0.9572,
+      "euclidean_distance": 6.4374,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "first_letter",
+      "cosine_similarity": 0.599,
+      "euclidean_distance": 10.2956,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "cosine_similarity": 0.5602,
+      "euclidean_distance": 10.3923,
+      "transfer_rate": 1.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "linear_2x",
+      "cosine_similarity": 0.6956,
+      "euclidean_distance": 9.6291,
+      "transfer_rate": 0.5
+    },
+    {
+      "source": "repeat_word",
+      "target": "sentiment",
+      "cosine_similarity": 0.9889,
+      "euclidean_distance": 3.4745,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "antonym",
+      "cosine_similarity": 0.9536,
+      "euclidean_distance": 7.2287,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "repeat_word",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.2966,
+      "euclidean_distance": 11.1375,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "uppercase",
+      "cosine_similarity": 0.6669,
+      "euclidean_distance": 4.3174,
+      "transfer_rate": 1.0
+    },
+    {
+      "source": "length",
+      "target": "first_letter",
+      "cosine_similarity": 0.8016,
+      "euclidean_distance": 1.4142,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "repeat_word",
+      "cosine_similarity": 0.5602,
+      "euclidean_distance": 10.3923,
+      "transfer_rate": 0.5
+    },
+    {
+      "source": "length",
+      "target": "linear_2x",
+      "cosine_similarity": 0.8732,
+      "euclidean_distance": 1.5232,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "sentiment",
+      "cosine_similarity": 0.6008,
+      "euclidean_distance": 7.2063,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "antonym",
+      "cosine_similarity": 0.6986,
+      "euclidean_distance": 3.4314,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "length",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.6837,
+      "euclidean_distance": 4.1579,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "uppercase",
+      "cosine_similarity": 0.7618,
+      "euclidean_distance": 3.731,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "first_letter",
+      "cosine_similarity": 0.7257,
+      "euclidean_distance": 2.0785,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "repeat_word",
+      "cosine_similarity": 0.6956,
+      "euclidean_distance": 9.6291,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "length",
+      "cosine_similarity": 0.8732,
+      "euclidean_distance": 1.5232,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "sentiment",
+      "cosine_similarity": 0.7023,
+      "euclidean_distance": 6.5688,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "antonym",
+      "cosine_similarity": 0.8009,
+      "euclidean_distance": 2.8338,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "linear_2x",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.555,
+      "euclidean_distance": 4.4561,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "uppercase",
+      "cosine_similarity": 0.9682,
+      "euclidean_distance": 3.3207,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "first_letter",
+      "cosine_similarity": 0.6543,
+      "euclidean_distance": 7.0661,
+      "transfer_rate": 0.1
+    },
+    {
+      "source": "sentiment",
+      "target": "repeat_word",
+      "cosine_similarity": 0.9889,
+      "euclidean_distance": 3.4745,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "length",
+      "cosine_similarity": 0.6008,
+      "euclidean_distance": 7.2063,
+      "transfer_rate": 0.2
+    },
+    {
+      "source": "sentiment",
+      "target": "linear_2x",
+      "cosine_similarity": 0.7023,
+      "euclidean_distance": 6.5688,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "antonym",
+      "cosine_similarity": 0.9724,
+      "euclidean_distance": 4.0009,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "sentiment",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.3392,
+      "euclidean_distance": 8.2334,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "uppercase",
+      "cosine_similarity": 0.9556,
+      "euclidean_distance": 1.7339,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "first_letter",
+      "cosine_similarity": 0.7955,
+      "euclidean_distance": 3.1264,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "repeat_word",
+      "cosine_similarity": 0.9536,
+      "euclidean_distance": 7.2287,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "length",
+      "cosine_similarity": 0.6986,
+      "euclidean_distance": 3.4314,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "linear_2x",
+      "cosine_similarity": 0.8009,
+      "euclidean_distance": 2.8338,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "sentiment",
+      "cosine_similarity": 0.9724,
+      "euclidean_distance": 4.0009,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "antonym",
+      "target": "pattern_completion",
+      "cosine_similarity": 0.4512,
+      "euclidean_distance": 5.2554,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "uppercase",
+      "cosine_similarity": 0.4401,
+      "euclidean_distance": 5.7332,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "first_letter",
+      "cosine_similarity": 0.6671,
+      "euclidean_distance": 4.2057,
+      "transfer_rate": 0.3
+    },
+    {
+      "source": "pattern_completion",
+      "target": "repeat_word",
+      "cosine_similarity": 0.2966,
+      "euclidean_distance": 11.1375,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "length",
+      "cosine_similarity": 0.6837,
+      "euclidean_distance": 4.1579,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "linear_2x",
+      "cosine_similarity": 0.555,
+      "euclidean_distance": 4.4561,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "sentiment",
+      "cosine_similarity": 0.3392,
+      "euclidean_distance": 8.2334,
+      "transfer_rate": 0.0
+    },
+    {
+      "source": "pattern_completion",
+      "target": "antonym",
+      "cosine_similarity": 0.4512,
+      "euclidean_distance": 5.2554,
+      "transfer_rate": 0.3
+    }
+  ],
+  "correlation": {
+    "pearson_r": -0.0536,
+    "r_squared": 0.0029,
+    "p_value": 0.694792,
+    "bootstrap_ci_95": [
+      -0.2635,
+      0.1537
+    ]
+  }
+}
