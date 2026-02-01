@@ -1,0 +1,610 @@
+{
+  "metadata": {
+    "intervention_layer": 8,
+    "n_demos": 5,
+    "n_test": 20,
+    "random_subset_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      10
+    ],
+    "n_random_subsets": 10,
+    "pairs": [
+      [
+        "uppercase",
+        "repeat_word"
+      ],
+      [
+        "uppercase",
+        "length"
+      ],
+      [
+        "repeat_word",
+        "length"
+      ]
+    ],
+    "timestamp": "2026-02-01T04:03:40.081309"
+  },
+  "part_a_random_subsets": [
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "total_output_positions": 19,
+      "baseline_all_rate": 0.95,
+      "output_only_all_rate": 0.95,
+      "subset_sizes": {
+        "1": {
+          "size": 1,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "size": 2,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "size": 3,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "size": 4,
+          "mean_transfer_rate": 0.005,
+          "std_transfer_rate": 0.015,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "size": 5,
+          "mean_transfer_rate": 0.015000000000000003,
+          "std_transfer_rate": 0.032015621187164243,
+          "all_rates": [
+            0.05,
+            0.0,
+            0.0,
+            0.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "size": 7,
+          "mean_transfer_rate": 0.03,
+          "std_transfer_rate": 0.07483314773547882,
+          "all_rates": [
+            0.0,
+            0.25,
+            0.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "size": 10,
+          "mean_transfer_rate": 0.06499999999999999,
+          "std_transfer_rate": 0.08077747210701756,
+          "all_rates": [
+            0.05,
+            0.0,
+            0.15,
+            0.2,
+            0.0,
+            0.05,
+            0.0,
+            0.0,
+            0.0,
+            0.2
+          ]
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "total_output_positions": 19,
+      "baseline_all_rate": 0.85,
+      "output_only_all_rate": 0.75,
+      "subset_sizes": {
+        "1": {
+          "size": 1,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "size": 2,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "size": 3,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "size": 4,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "size": 5,
+          "mean_transfer_rate": 0.01,
+          "std_transfer_rate": 0.02,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.05,
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "size": 7,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "size": 10,
+          "mean_transfer_rate": 0.19,
+          "std_transfer_rate": 0.23430749027719963,
+          "all_rates": [
+            0.05,
+            0.55,
+            0.0,
+            0.6,
+            0.05,
+            0.45,
+            0.0,
+            0.2,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "total_output_positions": 20,
+      "baseline_all_rate": 1.0,
+      "output_only_all_rate": 1.0,
+      "subset_sizes": {
+        "1": {
+          "size": 1,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "size": 2,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "size": 3,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "size": 4,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "size": 5,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "size": 7,
+          "mean_transfer_rate": 0.0,
+          "std_transfer_rate": 0.0,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "size": 10,
+          "mean_transfer_rate": 0.045,
+          "std_transfer_rate": 0.08200609733428363,
+          "all_rates": [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15,
+            0.05,
+            0.0
+          ]
+        }
+      }
+    }
+  ],
+  "part_b_structured_subsets": [
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "subsets": {
+        "first_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            13,
+            23,
+            33,
+            43
+          ]
+        },
+        "last_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            6,
+            16,
+            26,
+            36,
+            46
+          ]
+        },
+        "every_other": {
+          "n_output_positions": 10,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            6,
+            14,
+            16,
+            24,
+            26,
+            34,
+            36,
+            44,
+            46
+          ]
+        },
+        "first_demo_only": {
+          "n_output_positions": 3,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            5,
+            6
+          ]
+        },
+        "last_demo_only": {
+          "n_output_positions": 4,
+          "transfer_rate": 0.0,
+          "positions": [
+            43,
+            44,
+            45,
+            46
+          ]
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "subsets": {
+        "first_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            13,
+            23,
+            33,
+            43
+          ]
+        },
+        "last_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            6,
+            16,
+            26,
+            36,
+            46
+          ]
+        },
+        "every_other": {
+          "n_output_positions": 10,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            6,
+            14,
+            16,
+            24,
+            26,
+            34,
+            36,
+            44,
+            46
+          ]
+        },
+        "first_demo_only": {
+          "n_output_positions": 3,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            5,
+            6
+          ]
+        },
+        "last_demo_only": {
+          "n_output_positions": 4,
+          "transfer_rate": 0.0,
+          "positions": [
+            43,
+            44,
+            45,
+            46
+          ]
+        }
+      }
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "subsets": {
+        "first_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            14,
+            24,
+            34,
+            44
+          ]
+        },
+        "last_output_per_demo": {
+          "n_output_positions": 5,
+          "transfer_rate": 0.0,
+          "positions": [
+            7,
+            17,
+            27,
+            37,
+            47
+          ]
+        },
+        "every_other": {
+          "n_output_positions": 10,
+          "transfer_rate": 0.05,
+          "positions": [
+            4,
+            6,
+            14,
+            16,
+            24,
+            26,
+            34,
+            36,
+            44,
+            46
+          ]
+        },
+        "first_demo_only": {
+          "n_output_positions": 4,
+          "transfer_rate": 0.0,
+          "positions": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "last_demo_only": {
+          "n_output_positions": 4,
+          "transfer_rate": 0.0,
+          "positions": [
+            44,
+            45,
+            46,
+            47
+          ]
+        }
+      }
+    }
+  ]
+}

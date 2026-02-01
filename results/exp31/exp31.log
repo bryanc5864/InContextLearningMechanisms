@@ -1,0 +1,92 @@
+2026-02-01 02:17:49,267 [INFO] Experiment 31: Output Token Position Scaling
+2026-02-01 02:17:49,267 [INFO] Start: 2026-02-01T02:17:49.267879
+2026-02-01 02:19:51,201 [INFO] Experiment 31: Output Token Position Scaling
+2026-02-01 02:19:51,201 [INFO] Start: 2026-02-01T02:19:51.201900
+2026-02-01 02:20:13,755 [INFO] ============================================================
+2026-02-01 02:20:13,756 [INFO] Part A: Random Output Position Subsets
+2026-02-01 02:20:13,756 [INFO] ============================================================
+2026-02-01 02:20:13,756 [INFO] 
+  Pair: uppercase → repeat_word
+2026-02-01 02:20:16,566 [INFO]     Total output positions: 19
+2026-02-01 02:20:45,389 [INFO]     Baseline (ALL positions): 0.95
+2026-02-01 02:21:14,581 [INFO]     Output-only (all 19 positions): 0.95
+2026-02-01 02:25:49,480 [INFO]     Size  1: 0.000 ± 0.000
+2026-02-01 02:30:22,332 [INFO]     Size  2: 0.000 ± 0.000
+2026-02-01 02:34:38,847 [INFO]     Size  3: 0.000 ± 0.000
+2026-02-01 02:39:07,027 [INFO]     Size  4: 0.005 ± 0.015
+2026-02-01 02:43:44,409 [INFO]     Size  5: 0.015 ± 0.032
+2026-02-01 02:48:17,481 [INFO]     Size  7: 0.030 ± 0.075
+2026-02-01 02:52:46,112 [INFO]     Size 10: 0.065 ± 0.081
+2026-02-01 02:52:46,112 [INFO] 
+  Pair: uppercase → length
+2026-02-01 02:52:47,480 [INFO]     Total output positions: 19
+2026-02-01 02:53:13,363 [INFO]     Baseline (ALL positions): 0.85
+2026-02-01 02:53:42,628 [INFO]     Output-only (all 19 positions): 0.75
+2026-02-01 02:58:13,293 [INFO]     Size  1: 0.000 ± 0.000
+2026-02-01 03:02:38,903 [INFO]     Size  2: 0.000 ± 0.000
+2026-02-01 03:07:03,660 [INFO]     Size  3: 0.000 ± 0.000
+2026-02-01 03:11:33,085 [INFO]     Size  4: 0.000 ± 0.000
+2026-02-01 03:16:01,918 [INFO]     Size  5: 0.010 ± 0.020
+2026-02-01 03:20:32,605 [INFO]     Size  7: 0.000 ± 0.000
+2026-02-01 03:24:50,639 [INFO]     Size 10: 0.190 ± 0.234
+2026-02-01 03:24:50,639 [INFO] 
+  Pair: repeat_word → length
+2026-02-01 03:24:51,954 [INFO]     Total output positions: 20
+2026-02-01 03:25:17,835 [INFO]     Baseline (ALL positions): 1.00
+2026-02-01 03:25:43,632 [INFO]     Output-only (all 20 positions): 1.00
+2026-02-01 03:30:07,960 [INFO]     Size  1: 0.000 ± 0.000
+2026-02-01 03:34:36,365 [INFO]     Size  2: 0.000 ± 0.000
+2026-02-01 03:39:02,573 [INFO]     Size  3: 0.000 ± 0.000
+2026-02-01 03:43:25,240 [INFO]     Size  4: 0.000 ± 0.000
+2026-02-01 03:47:48,642 [INFO]     Size  5: 0.000 ± 0.000
+2026-02-01 03:52:18,757 [INFO]     Size  7: 0.000 ± 0.000
+2026-02-01 03:56:45,568 [INFO]     Size 10: 0.045 ± 0.082
+2026-02-01 03:56:45,568 [INFO] 
+============================================================
+2026-02-01 03:56:45,568 [INFO] Part B: Structured Output Position Subsets
+2026-02-01 03:56:45,568 [INFO] ============================================================
+2026-02-01 03:56:45,568 [INFO] 
+  Pair: uppercase → repeat_word
+2026-02-01 03:57:14,897 [INFO]     first_output_per_demo     ( 5 pos): 0.00
+2026-02-01 03:57:42,131 [INFO]     last_output_per_demo      ( 5 pos): 0.00
+2026-02-01 03:58:09,209 [INFO]     every_other               (10 pos): 0.00
+2026-02-01 03:58:35,474 [INFO]     first_demo_only           ( 3 pos): 0.00
+2026-02-01 03:59:02,491 [INFO]     last_demo_only            ( 4 pos): 0.00
+2026-02-01 03:59:02,492 [INFO] 
+  Pair: uppercase → length
+2026-02-01 03:59:31,734 [INFO]     first_output_per_demo     ( 5 pos): 0.00
+2026-02-01 03:59:58,848 [INFO]     last_output_per_demo      ( 5 pos): 0.00
+2026-02-01 04:00:26,861 [INFO]     every_other               (10 pos): 0.00
+2026-02-01 04:00:55,041 [INFO]     first_demo_only           ( 3 pos): 0.00
+2026-02-01 04:01:23,049 [INFO]     last_demo_only            ( 4 pos): 0.00
+2026-02-01 04:01:23,050 [INFO] 
+  Pair: repeat_word → length
+2026-02-01 04:01:52,358 [INFO]     first_output_per_demo     ( 5 pos): 0.00
+2026-02-01 04:02:20,486 [INFO]     last_output_per_demo      ( 5 pos): 0.00
+2026-02-01 04:02:46,977 [INFO]     every_other               (10 pos): 0.05
+2026-02-01 04:03:13,053 [INFO]     first_demo_only           ( 4 pos): 0.00
+2026-02-01 04:03:40,079 [INFO]     last_demo_only            ( 4 pos): 0.00
+2026-02-01 04:03:40,079 [INFO] 
+============================================================
+2026-02-01 04:03:40,079 [INFO] SUMMARY
+2026-02-01 04:03:40,079 [INFO] ============================================================
+2026-02-01 04:03:40,079 [INFO] 
+Part A - Random subset scaling (mean across pairs):
+2026-02-01 04:03:40,080 [INFO]   Size  1: 0.000
+2026-02-01 04:03:40,080 [INFO]   Size  2: 0.000
+2026-02-01 04:03:40,080 [INFO]   Size  3: 0.000
+2026-02-01 04:03:40,080 [INFO]   Size  4: 0.002
+2026-02-01 04:03:40,080 [INFO]   Size  5: 0.008
+2026-02-01 04:03:40,080 [INFO]   Size  7: 0.010
+2026-02-01 04:03:40,080 [INFO]   Size 10: 0.100
+2026-02-01 04:03:40,080 [INFO]   ALL output: 0.900
+2026-02-01 04:03:40,080 [INFO] 
+Part B - Structured subsets (mean across pairs):
+2026-02-01 04:03:40,080 [INFO]   every_other              : 0.017
+2026-02-01 04:03:40,081 [INFO]   first_demo_only          : 0.000
+2026-02-01 04:03:40,081 [INFO]   first_output_per_demo    : 0.000
+2026-02-01 04:03:40,081 [INFO]   last_demo_only           : 0.000
+2026-02-01 04:03:40,081 [INFO]   last_output_per_demo     : 0.000
+2026-02-01 04:03:40,083 [INFO] 
+Results saved to results/exp31
+2026-02-01 04:03:40,083 [INFO] Experiment 31 complete: 2026-02-01T04:03:40.083632

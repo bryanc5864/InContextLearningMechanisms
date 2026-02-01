@@ -1,0 +1,99 @@
+2026-02-01 02:17:47,856 [INFO] Experiment 30: Single-Demo Function Vectors
+2026-02-01 02:17:47,856 [INFO] Start: 2026-02-01T02:17:47.856823
+2026-02-01 02:17:47,856 [INFO] Source demo counts: [1, 2, 3, 5]
+2026-02-01 02:17:47,856 [INFO] Target always 5-shot
+2026-02-01 02:19:49,756 [INFO] Experiment 30: Single-Demo Function Vectors
+2026-02-01 02:19:49,757 [INFO] Start: 2026-02-01T02:19:49.757016
+2026-02-01 02:19:49,757 [INFO] Source demo counts: [1, 2, 3, 5]
+2026-02-01 02:19:49,757 [INFO] Target always 5-shot
+2026-02-01 02:20:16,027 [INFO] 
+============================================================
+2026-02-01 02:20:16,027 [INFO] Pair: uppercase → repeat_word
+2026-02-01 02:20:16,027 [INFO] ============================================================
+2026-02-01 02:20:16,027 [INFO] 
+  Source demos: 1
+2026-02-01 02:20:18,318 [INFO]     Positions transplanted: 6 (avg tokens per prompt: 6.0)
+2026-02-01 02:20:42,357 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:20:42,358 [INFO] 
+  Source demos: 2
+2026-02-01 02:20:43,527 [INFO]     Positions transplanted: 13 (avg tokens per prompt: 13.0)
+2026-02-01 02:21:08,020 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:21:08,021 [INFO] 
+  Source demos: 3
+2026-02-01 02:21:09,336 [INFO]     Positions transplanted: 20 (avg tokens per prompt: 20.0)
+2026-02-01 02:21:34,395 [INFO]     transfer=0.00  preserve=0.80  neither=0.20 
+2026-02-01 02:21:34,395 [INFO] 
+  Source demos: 5
+2026-02-01 02:21:35,773 [INFO]     Positions transplanted: 34 (avg tokens per prompt: 34.0)
+2026-02-01 02:22:03,365 [INFO]     transfer=0.95  preserve=0.00  neither=0.05 ***
+2026-02-01 02:22:03,366 [INFO] 
+============================================================
+2026-02-01 02:22:03,366 [INFO] Pair: uppercase → length
+2026-02-01 02:22:03,366 [INFO] ============================================================
+2026-02-01 02:22:03,366 [INFO] 
+  Source demos: 1
+2026-02-01 02:22:04,550 [INFO]     Positions transplanted: 6 (avg tokens per prompt: 6.0)
+2026-02-01 02:22:28,810 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:22:28,810 [INFO] 
+  Source demos: 2
+2026-02-01 02:22:30,002 [INFO]     Positions transplanted: 13 (avg tokens per prompt: 13.0)
+2026-02-01 02:22:54,211 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:22:54,212 [INFO] 
+  Source demos: 3
+2026-02-01 02:22:55,465 [INFO]     Positions transplanted: 20 (avg tokens per prompt: 20.0)
+2026-02-01 02:23:20,595 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:23:20,595 [INFO] 
+  Source demos: 5
+2026-02-01 02:23:21,874 [INFO]     Positions transplanted: 34 (avg tokens per prompt: 34.0)
+2026-02-01 02:23:46,643 [INFO]     transfer=0.85  preserve=0.15  neither=0.00 ***
+2026-02-01 02:23:46,643 [INFO] 
+============================================================
+2026-02-01 02:23:46,643 [INFO] Pair: repeat_word → length
+2026-02-01 02:23:46,643 [INFO] ============================================================
+2026-02-01 02:23:46,643 [INFO] 
+  Source demos: 1
+2026-02-01 02:23:47,834 [INFO]     Positions transplanted: 7 (avg tokens per prompt: 7.0)
+2026-02-01 02:24:12,034 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:24:12,035 [INFO] 
+  Source demos: 2
+2026-02-01 02:24:13,270 [INFO]     Positions transplanted: 14 (avg tokens per prompt: 14.0)
+2026-02-01 02:24:37,521 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:24:37,522 [INFO] 
+  Source demos: 3
+2026-02-01 02:24:38,772 [INFO]     Positions transplanted: 21 (avg tokens per prompt: 21.0)
+2026-02-01 02:25:02,647 [INFO]     transfer=0.00  preserve=1.00  neither=0.00 
+2026-02-01 02:25:02,648 [INFO] 
+  Source demos: 5
+2026-02-01 02:25:03,955 [INFO]     Positions transplanted: 35 (avg tokens per prompt: 35.0)
+2026-02-01 02:25:29,546 [INFO]     transfer=1.00  preserve=0.00  neither=0.00 ***
+2026-02-01 02:25:29,547 [INFO] 
+============================================================
+2026-02-01 02:25:29,547 [INFO] SUMMARY: Transfer Rate by Source Demo Count
+2026-02-01 02:25:29,547 [INFO] ============================================================
+2026-02-01 02:25:29,547 [INFO] 
+  uppercase → repeat_word:
+2026-02-01 02:25:29,547 [INFO]     1-shot: transfer=0.00 (6 positions)
+2026-02-01 02:25:29,547 [INFO]     2-shot: transfer=0.00 (13 positions)
+2026-02-01 02:25:29,547 [INFO]     3-shot: transfer=0.00 (20 positions)
+2026-02-01 02:25:29,547 [INFO]     5-shot: transfer=0.95 (34 positions)
+2026-02-01 02:25:29,547 [INFO] 
+  uppercase → length:
+2026-02-01 02:25:29,547 [INFO]     1-shot: transfer=0.00 (6 positions)
+2026-02-01 02:25:29,547 [INFO]     2-shot: transfer=0.00 (13 positions)
+2026-02-01 02:25:29,548 [INFO]     3-shot: transfer=0.00 (20 positions)
+2026-02-01 02:25:29,548 [INFO]     5-shot: transfer=0.85 (34 positions)
+2026-02-01 02:25:29,548 [INFO] 
+  repeat_word → length:
+2026-02-01 02:25:29,548 [INFO]     1-shot: transfer=0.00 (7 positions)
+2026-02-01 02:25:29,548 [INFO]     2-shot: transfer=0.00 (14 positions)
+2026-02-01 02:25:29,548 [INFO]     3-shot: transfer=0.00 (21 positions)
+2026-02-01 02:25:29,548 [INFO]     5-shot: transfer=1.00 (35 positions)
+2026-02-01 02:25:29,548 [INFO] 
+  Mean transfer across pairs:
+2026-02-01 02:25:29,548 [INFO]     1-shot: 0.000 ± 0.000
+2026-02-01 02:25:29,549 [INFO]     2-shot: 0.000 ± 0.000
+2026-02-01 02:25:29,549 [INFO]     3-shot: 0.000 ± 0.000
+2026-02-01 02:25:29,549 [INFO]     5-shot: 0.933 ± 0.062
+2026-02-01 02:25:29,551 [INFO] 
+Results saved to results/exp30
+2026-02-01 02:25:29,551 [INFO] Experiment 30 complete: 2026-02-01T02:25:29.551416

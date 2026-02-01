@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "source_demo_counts": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "target_n_demos": 5,
+    "intervention_layer": 8,
+    "n_test": 20,
+    "pairs": [
+      [
+        "uppercase",
+        "repeat_word"
+      ],
+      [
+        "uppercase",
+        "length"
+      ],
+      [
+        "repeat_word",
+        "length"
+      ]
+    ],
+    "timestamp": "2026-02-01T02:25:29.549508"
+  },
+  "pair_results": [
+    {
+      "source": "uppercase",
+      "target": "repeat_word",
+      "demo_counts": {
+        "1": {
+          "n_source_demos": 1,
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "2": {
+          "n_source_demos": 2,
+          "n_positions": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "3": {
+          "n_source_demos": 3,
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 0.8,
+          "neither_rate": 0.2,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "honey honey",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "frost frost",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "badge badge",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "5": {
+          "n_source_demos": 5,
+          "n_positions": 34,
+          "transfer_rate": 0.95,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.05,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "BADGE",
+              "source_correct": true,
+              "target_correct": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "uppercase",
+      "target": "length",
+      "demo_counts": {
+        "1": {
+          "n_source_demos": 1,
+          "n_positions": 6,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "2": {
+          "n_source_demos": 2,
+          "n_positions": 13,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "3": {
+          "n_source_demos": 3,
+          "n_positions": 20,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "frost",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "5": {
+          "n_source_demos": 5,
+          "n_positions": 34,
+          "transfer_rate": 0.85,
+          "preserve_rate": 0.15,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "honey",
+              "output": "HONEY",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "frost",
+              "output": "FROST",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "badge",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "repeat_word",
+      "target": "length",
+      "demo_counts": {
+        "1": {
+          "n_source_demos": 1,
+          "n_positions": 7,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "crane",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "pixel",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "uncle",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "2": {
+          "n_source_demos": 2,
+          "n_positions": 14,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "crane",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "pixel",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "uncle",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "3": {
+          "n_source_demos": 3,
+          "n_positions": 21,
+          "transfer_rate": 0.0,
+          "preserve_rate": 1.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "crane",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "pixel",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            },
+            {
+              "input": "uncle",
+              "output": "5",
+              "source_correct": false,
+              "target_correct": true
+            }
+          ]
+        },
+        "5": {
+          "n_source_demos": 5,
+          "n_positions": 35,
+          "transfer_rate": 1.0,
+          "preserve_rate": 0.0,
+          "neither_rate": 0.0,
+          "examples": [
+            {
+              "input": "crane",
+              "output": "crane crane",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "pixel",
+              "output": "pixel pixel",
+              "source_correct": true,
+              "target_correct": false
+            },
+            {
+              "input": "uncle",
+              "output": "uncle uncle",
+              "source_correct": true,
+              "target_correct": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
